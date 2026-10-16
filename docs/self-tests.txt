@@ -1,0 +1,7 @@
+PASS: path traversal rejected
+PASS: source-copy and write instructions
+PASS: embedded LZ4 roundtrip
+PASS: embedded release signature
+PASS: tampered release rejected
+PASS: failed update restores previous folder and already-replaced bootstrap
+PASS: verified update publishes and preserves previous installation

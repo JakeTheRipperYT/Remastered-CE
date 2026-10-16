@@ -1,0 +1,9 @@
+# Local game files and developer-only material
+*.pack
+CE.dll
+Empire.Retail.x64.dll
+RemasteredCE_Bootstrap.exe
+*private*.xml
+*.pdb
+*.obj
+*.log

@@ -1,0 +1,2 @@
+0137b5a18cf58f97594cf0823e600efe9b5d4220c8728d08e6072d71575cccee  RemasteredCE-0.1.0-preview.rce
+10e327912b5d71aabf89622b97b771c31a7f5a2575d6ec13d5a648f7321de72f  RemasteredCE_Installer_Preview.zip
