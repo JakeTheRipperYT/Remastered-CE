@@ -27,7 +27,7 @@ public sealed class ReleaseVersion : IComparable<ReleaseVersion> {
 }
 public sealed class OnlineRelease {public string Version,DownloadUrl;public long Size;}
 public static class OnlineUpdates {
- public const string AppVersion="0.1.4-preview";
+ public const string AppVersion="0.1.5-preview";
  public const string ApiUrl="https://api.github.com/repos/JakeTheRipperYT/Remastered-CE/releases?per_page=100";
  const string DownloadPrefix="https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/";
  const int MaxPackage=64*1024*1024;

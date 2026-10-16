@@ -1,0 +1,15 @@
+{
+  "installerVersion": "0.1.5-preview",
+  "layoutVersion": 2,
+  "gameExecutable": "RemasteredCE/shogun2_complete_edition.exe",
+  "localRuntime": "RemasteredCE/nvngx_dlss.dll",
+  "userConfirmedDLSSSelectable": true,
+  "installerExecutableAndRuntimeMatchUserTestedFiles": true,
+  "oldInstallerRejectsNewSchemaBeforeBuilding": true,
+  "gamePacksAndEngineUnchanged": true,
+  "baseDataLinkCount": 359,
+  "baseDataLinksMatchWorkingInstallation": true,
+  "installerLauncherMatchesWorkingLauncher": true,
+  "fullInstallerReconstructionPassed": true,
+  "freshInstallUserTestPending": true
+}

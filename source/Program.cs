@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -36,7 +36,7 @@ public sealed class MainForm : Form {
  public MainForm(bool preview=false){
   Icon=Icon.ExtractAssociatedIcon(Application.ExecutablePath);Text="Remastered CE";ClientSize=new Size(810,650);MinimumSize=new Size(820,690);StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(23,27,30);ForeColor=Color.FromArgb(235,239,240);AutoScaleMode=AutoScaleMode.Dpi;
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.4",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.5",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
   Controls.Add(new Label{Text="Release package",AutoSize=true,Location=new Point(30,286)});StyleBox(package);package.Location=new Point(30,312);package.Size=new Size(505,29);package.ReadOnly=true;package.Text="GitHub — latest release";Controls.Add(package);
   ButtonStyle(github,"GitHub",new Rectangle(547,310,108,33));github.Click+=(s,e)=>{package.Tag=null;package.Text="GitHub — latest release";};
@@ -125,14 +125,20 @@ static class SelfTests {
    Directory.CreateDirectory(Engine.Under(uninstallRoot,"RemasteredCE.previous_test"));File.WriteAllText(Engine.Under(uninstallRoot,"RemasteredCE.previous_test/keep.txt"),"previous version");
    foreach(string pack in packs)File.WriteAllText(Engine.Under(live,pack),"modified pack");File.WriteAllText(Engine.Under(live,"CE.dll"),"modified engine");
    foreach(string name in new[]{"Launch_Remastered_CE.exe","RemasteredCE_Bootstrap.exe"}){File.WriteAllText(Engine.Under(live,name),name);File.WriteAllText(Engine.Under(uninstallRoot,name),name);File.WriteAllText(Engine.Under(live,"previous-launchers/"+name),"previous launcher");}
-   var state=new Dictionary<string,object>{{"schema",1},{"engineHash","fixture"},{"files",packs.Select(x=>new Dictionary<string,object>{{"file",x}}).ToArray()}};
+   File.WriteAllText(Engine.Under(live,"shogun2_complete_edition.exe"),"copied bootstrap");File.WriteAllText(Engine.Under(live,"nvngx_dlss.dll"),"copied NVIDIA runtime");File.WriteAllText(Engine.Under(uninstallRoot,"nvngx_dlss.dll"),"vanilla NVIDIA runtime");
+   Directory.CreateDirectory(Engine.Under(uninstallRoot,"data/subfolder"));File.WriteAllText(Engine.Under(uninstallRoot,"data/subfolder/base.txt"),"base data");
+   string[] linked=new Engine().LinkBaseData(uninstallRoot,live);
+   if(linked.Length!=1 || File.ReadAllText(Engine.Under(live,"data/subfolder/base.txt"))!="base data" || File.ReadAllText(Engine.Under(live,"data/data.pack"))!="modified pack")throw new Exception("Base data linking failed.");
+   results.Add("PASS: base data links include nested files and preserve modified packs");
+   var state=new Dictionary<string,object>{{"schema",1},{"layoutVersion",2},{"engineHash","fixture"},{"files",packs.Select(x=>new Dictionary<string,object>{{"file",x}}).ToArray()}};
+   state["baseDataFiles"]=linked;
    var wrong=new Dictionary<string,object>(state);wrong["files"]=new[]{new Dictionary<string,object>{{"file","../shogun2_complete_edition.exe"}}};File.WriteAllText(record,J.Json().Serialize(wrong));
    rejected=false;try{new Engine().Uninstall(uninstallRoot);}catch(InvalidDataException){rejected=true;}if(!rejected || !File.Exists(Engine.Under(live,"CE.dll")))throw new Exception("Unsafe uninstall record was accepted.");results.Add("PASS: uninstall rejects unexpected file paths before removing anything");
    File.WriteAllText(record,J.Json().Serialize(state));File.WriteAllText(Engine.Under(uninstallRoot,"Launch_Remastered_CE.exe"),"unrecognized replacement");
    rejected=false;try{new Engine().Uninstall(uninstallRoot);}catch(IOException){rejected=true;}if(!rejected || !File.Exists(Engine.Under(live,"CE.dll")))throw new Exception("Unrecognized launcher was removed.");results.Add("PASS: uninstall preserves an unrecognized root launcher and stops before deletion");
    File.WriteAllText(Engine.Under(uninstallRoot,"Launch_Remastered_CE.exe"),"Launch_Remastered_CE.exe");File.WriteAllText(Engine.Under(live,"keep-user-file.txt"),"user file");new Engine().Uninstall(uninstallRoot);
-   if(File.Exists(record)||File.Exists(Engine.Under(live,"CE.dll"))||packs.Any(x=>File.Exists(Engine.Under(live,x)))||File.Exists(Engine.Under(uninstallRoot,"Launch_Remastered_CE.exe"))||File.Exists(Engine.Under(uninstallRoot,"RemasteredCE_Bootstrap.exe")))throw new Exception("Uninstall left managed files.");
-   if(File.ReadAllText(Engine.Under(uninstallRoot,"shogun2_complete_edition.exe"))!="vanilla executable"||File.ReadAllText(Engine.Under(uninstallRoot,"data/data.pack"))!="vanilla pack"||!File.Exists(Engine.Under(uninstallRoot,"RemasteredCE.previous_test/keep.txt"))||!File.Exists(Engine.Under(live,"keep-user-file.txt")))throw new Exception("Uninstall removed unrelated files.");results.Add("PASS: uninstall removes managed files and launchers; preserves vanilla, user files, and previous versions");
+   if(File.Exists(Engine.Under(live,"data/subfolder/base.txt"))||File.Exists(Engine.Under(live,"shogun2_complete_edition.exe"))||File.Exists(Engine.Under(live,"nvngx_dlss.dll"))||File.Exists(record)||File.Exists(Engine.Under(live,"CE.dll"))||packs.Any(x=>File.Exists(Engine.Under(live,x)))||File.Exists(Engine.Under(uninstallRoot,"Launch_Remastered_CE.exe"))||File.Exists(Engine.Under(uninstallRoot,"RemasteredCE_Bootstrap.exe")))throw new Exception("Uninstall left managed files.");
+   if(File.ReadAllText(Engine.Under(uninstallRoot,"data/subfolder/base.txt"))!="base data"||File.ReadAllText(Engine.Under(uninstallRoot,"nvngx_dlss.dll"))!="vanilla NVIDIA runtime"||File.ReadAllText(Engine.Under(uninstallRoot,"shogun2_complete_edition.exe"))!="vanilla executable"||File.ReadAllText(Engine.Under(uninstallRoot,"data/data.pack"))!="vanilla pack"||!File.Exists(Engine.Under(uninstallRoot,"RemasteredCE.previous_test/keep.txt"))||!File.Exists(Engine.Under(live,"keep-user-file.txt")))throw new Exception("Uninstall removed unrelated files.");results.Add("PASS: uninstall removes managed files and launchers; preserves vanilla including NVIDIA runtime, user files, and previous versions");
   }finally{Engine.NoLinks(uninstallRoot);if(!Path.GetFileName(uninstallRoot).StartsWith("RCE-uninstall-test-",StringComparison.Ordinal))throw new Exception("Invalid uninstall-test cleanup target.");Directory.Delete(uninstallRoot,true);}
   if(!OnlineUpdates.NeedsUpdate("0.1.9-preview","0.1.10-preview")||OnlineUpdates.NeedsUpdate("0.1.10-preview","0.1.9-preview")||OnlineUpdates.NeedsUpdate("0.1.3-preview","0.1.3-preview")||ReleaseVersion.Parse("1.0.0-preview.10").CompareTo(ReleaseVersion.Parse("1.0.0-preview.2"))<=0||ReleaseVersion.Parse("1.0.0").CompareTo(ReleaseVersion.Parse("1.0.0-preview"))<=0)throw new Exception("Release version ordering failed.");results.Add("PASS: updater orders versions numerically and avoids same-version installs and downgrades");
   var onlineRows=new List<object>();

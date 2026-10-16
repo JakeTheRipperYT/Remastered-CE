@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.IO.Compression;
 using System.Collections;
@@ -38,7 +38,7 @@ public sealed class Release : IDisposable {
    result.Helper=J.Parse(Encoding.UTF8.GetString(ReadEntry(archive,"helper.json",1024*1024)));
    result.Launcher=ReadEntry(archive,"launcher.exe",1024*1024);
   }
-  if(J.N(result.Manifest,"schema")!=1)throw new InvalidDataException("This update requires a newer installer. Download the installer ZIP from the Remastered CE GitHub releases page.");
+  if(J.N(result.Manifest,"schema")!=1 && J.N(result.Manifest,"schema")!=2)throw new InvalidDataException("This update requires a newer installer. Download the installer ZIP from the Remastered CE GitHub releases page.");
   if(result.Manifest.ContainsKey("minimumInstallerVersion") && ReleaseVersion.Parse(OnlineUpdates.AppVersion).CompareTo(ReleaseVersion.Parse(J.S(result.Manifest,"minimumInstallerVersion")))<0)throw new InvalidDataException("This release needs a newer installer. Download the latest installer ZIP from the Remastered CE GitHub releases page.");return result;
  }
  static byte[] ReadEntry(ZipArchive zip,string name,int limit){var e=zip.GetEntry(name);if(e==null || e.Length>limit)throw new InvalidDataException("Invalid package component: "+name);using(var s=e.Open())using(var m=new MemoryStream()){s.CopyTo(m);return m.ToArray();}}
@@ -56,6 +56,21 @@ public static class Lz4 {
  public static byte[] Encode(byte[] data,string codec,int level){if(codec=="raw")return data;Init();var dest=new byte[LZ4_compressBound(data.Length)];int n=codec=="fast"?LZ4_compress_default(data,dest,data.Length,dest.Length):LZ4_compress_HC(data,dest,data.Length,dest.Length,level);if(n<=0)throw new InvalidDataException("Asset compression failed.");Array.Resize(ref dest,n);return dest;}
 }
 public sealed class Engine {
+ [DllImport("kernel32.dll",CharSet=CharSet.Unicode,SetLastError=true)]
+ static extern bool CreateHardLinkW(string target,string source,IntPtr reserved);
+ public string[] LinkBaseData(string ce,string stage){
+  string sourceRoot=Under(ce,"data");NoLinks(sourceRoot);
+  var linked=new List<string>();
+  foreach(string source in Directory.EnumerateFiles(sourceRoot,"*",SearchOption.AllDirectories)){
+   Cancel.ThrowIfCancellationRequested();NoLinks(Path.GetDirectoryName(source));RejectLinkedFile(source);
+   string relative="data/"+source.Substring(sourceRoot.Length+1).Replace('\\','/');
+   string target=Under(stage,relative);if(File.Exists(target))continue;
+   Directory.CreateDirectory(Path.GetDirectoryName(target));
+   if(!CreateHardLinkW(target,source,IntPtr.Zero))throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error(),"Unable to link required base game data: "+relative);
+   linked.Add(relative);
+  }
+  return linked.ToArray();
+ }
  public Action<string,int> Progress;
  public CancellationToken Cancel;
  public void Log(string s,int p){if(Progress!=null)Progress(s,p);Cancel.ThrowIfCancellationRequested();}
@@ -71,6 +86,7 @@ public sealed class Engine {
   if(!File.Exists(Under(legacy,"Shogun2.exe")))throw new FileNotFoundException("Select the original Shogun 2 installation containing Shogun2.exe.");
   Log("Verifying CE executable…",0);RequireHash(Under(ce,"shogun2_complete_edition.exe"),J.S(r.Manifest,"ceExeSha256"));
   Log("Verifying vanilla CE engine…",2);RequireHash(Under(ce,"empire.retail.x64.dll"),J.S(r.Manifest,"engineSourceSha256"));
+  if(J.N(r.Manifest,"schema")==2){Log("Verifying the locally installed NVIDIA DLSS runtime…",3);RequireHash(Under(ce,"nvngx_dlss.dll"),J.S(r.Manifest,"dlssRuntimeSha256"));}
   int i=0;foreach(object item in J.Arr(r.Manifest["files"])){var f=J.Obj(item);Log("Verifying vanilla "+J.S(f,"source")+"…",3+i*3);RequireHash(Under(ce,J.S(f,"source")),J.S(f,"sourceSha256"));i++;}
  }
  byte[] Source(Dictionary<string,object> s,string ce,string legacy){string root=J.S(s,"root")=="legacy"?legacy:ce;string file=Under(root,J.S(s,"file"));long off=J.N(s,"offset"),stored=J.N(s,"stored");if(off<0||stored<0||stored>256*1024*1024)throw new InvalidDataException("Invalid source range.");byte[] data=new byte[(int)stored];using(var stream=File.OpenRead(file)){if(off>stream.Length-stored)throw new InvalidDataException("Source archive version differs: "+file);stream.Position=off;ReadAll(stream,data);}
@@ -88,7 +104,16 @@ public sealed class Engine {
   }
   Log("Building the separate Remastered engine…",88);byte[] dll=File.ReadAllBytes(Under(ce,"empire.retail.x64.dll"));using(var stream=new MemoryStream(dll,true))ApplyWrites(stream,J.Arr(release.Manifest["enginePatches"]));if(Hash(dll)!=J.S(release.Manifest,"engineEditedSha256"))throw new InvalidDataException("Engine modifications failed verification.");dll=PePatch.Inject(dll,release.Helper);if(Hash(dll)!=J.S(release.Manifest,"engineFinalSha256"))throw new InvalidDataException("Engine path redirection failed verification.");File.WriteAllBytes(Under(stage,"CE.dll"),dll);
   byte[] exe=File.ReadAllBytes(Under(ce,"shogun2_complete_edition.exe"));byte[] expected=Encoding.ASCII.GetBytes("Empire.Retail.x64.dll\0"),replacement=Encoding.ASCII.GetBytes("RemasteredCE\\CE.dll\0");const int pathOffset=0xe5f8;if(!exe.Skip(pathOffset).Take(expected.Length).SequenceEqual(expected))throw new InvalidDataException("Unsupported bootstrap DLL-path layout.");Array.Clear(exe,pathOffset,expected.Length);Buffer.BlockCopy(replacement,0,exe,pathOffset,replacement.Length);File.WriteAllBytes(Under(stage,"RemasteredCE_Bootstrap.exe"),exe);File.WriteAllBytes(Under(stage,"Launch_Remastered_CE.exe"),release.Launcher);
-  var state=new Dictionary<string,object>{{"schema",1},{"version",J.S(release.Manifest,"version")},{"packageSha256",release.PackageHash},{"ceBuild",J.S(release.Manifest,"ceBuild")},{"installedUtc",DateTime.UtcNow.ToString("o")},{"engineHash",Hash(dll)},{"files",J.Arr(release.Manifest["files"]).Select(J.Obj).Select(x=>new Dictionary<string,object>{{"file",J.S(x,"destination")},{"sha256",J.S(x,"sha256")}}).ToArray()}};File.WriteAllText(Under(stage,"install-state.json"),J.Json().Serialize(state));Log("All generated files verified.",94);
+  bool dlssLayout=J.N(release.Manifest,"schema")==2;
+  if(dlssLayout){
+   // NGX availability was verified with the original executable name and a local adjacent runtime.
+   Array.Clear(exe,pathOffset,expected.Length);replacement=Encoding.ASCII.GetBytes("CE.dll\0");Buffer.BlockCopy(replacement,0,exe,pathOffset,replacement.Length);
+   File.WriteAllBytes(Under(stage,"shogun2_complete_edition.exe"),exe);Log("Copying the local NVIDIA DLSS runtime…",92);
+   CopyFile(Under(ce,"nvngx_dlss.dll"),Under(stage,"nvngx_dlss.dll"));RequireHash(Under(stage,"nvngx_dlss.dll"),J.S(release.Manifest,"dlssRuntimeSha256"));
+  }
+  var state=new Dictionary<string,object>{{"schema",1},{"version",J.S(release.Manifest,"version")},{"packageSha256",release.PackageHash},{"ceBuild",J.S(release.Manifest,"ceBuild")},{"installedUtc",DateTime.UtcNow.ToString("o")},{"engineHash",Hash(dll)},{"files",J.Arr(release.Manifest["files"]).Select(J.Obj).Select(x=>new Dictionary<string,object>{{"file",J.S(x,"destination")},{"sha256",J.S(x,"sha256")}}).ToArray()}};
+  if(dlssLayout){state["layoutVersion"]=2;Log("Linking required local base game data…",93);state["baseDataFiles"]=LinkBaseData(ce,stage);}
+  File.WriteAllText(Under(stage,"install-state.json"),J.Json().Serialize(state));Log("All generated files verified.",94);
  }
  void CopyFile(string source,string target){byte[] b=new byte[8*1024*1024];using(var input=File.OpenRead(source))using(var output=new FileStream(target,FileMode.CreateNew,FileAccess.Write,FileShare.None)){int n;while((n=input.Read(b,0,b.Length))>0){Cancel.ThrowIfCancellationRequested();output.Write(b,0,n);}output.Flush(true);}}
  public void Install(Release r,string ce,string legacy){
@@ -113,6 +138,15 @@ public sealed class Engine {
    var recorded=J.Arr(installed["files"]).Select(J.Obj).Select(x=>J.S(x,"file")).ToArray();
    if(recorded.Length!=packs.Length || !new HashSet<string>(recorded,StringComparer.Ordinal).SetEquals(packs))throw new InvalidDataException("Unexpected installed file paths; nothing was removed.");
    var owned=new List<string>();foreach(string pack in packs)owned.Add(Under(live,pack));owned.Add(Under(live,"CE.dll"));
+   if(installed.ContainsKey("layoutVersion")){
+    if(J.N(installed,"layoutVersion")!=2)throw new InvalidDataException("Unrecognized installation layout; nothing was removed.");
+    owned.Add(Under(live,"shogun2_complete_edition.exe"));owned.Add(Under(live,"nvngx_dlss.dll"));
+   }
+   if(installed.ContainsKey("baseDataFiles"))foreach(object item in J.Arr(installed["baseDataFiles"])){
+    string relative=Convert.ToString(item);
+    if(!relative.StartsWith("data/",StringComparison.Ordinal) || packs.Contains(relative))throw new InvalidDataException("Unexpected base data path; nothing was removed.");
+    owned.Add(Under(live,relative));
+   }
    foreach(string name in new[]{"Launch_Remastered_CE.exe","RemasteredCE_Bootstrap.exe"}){
     string local=Under(live,name),root=Under(ce,name),backup=Under(live,"previous-launchers/"+name);
     RejectLinkedFile(local);RejectLinkedFile(root);RejectLinkedFile(backup);NoLinks(Path.GetDirectoryName(backup));
@@ -127,6 +161,8 @@ public sealed class Engine {
    // Remove only our named files. Keep the record until file removal succeeds, allowing retries.
    foreach(string path in owned)if(File.Exists(path))File.Delete(path);
    File.Delete(record);
+   string dataFolder=Under(live,"data");
+   if(Directory.Exists(dataFolder))foreach(string folder in Directory.EnumerateDirectories(dataFolder,"*",SearchOption.AllDirectories).OrderByDescending(x=>x.Length))if(!Directory.EnumerateFileSystemEntries(folder).Any())Directory.Delete(folder);
    foreach(string folder in new[]{Under(live,"data"),Under(live,"previous-launchers"),live})if(Directory.Exists(folder) && !Directory.EnumerateFileSystemEntries(folder).Any())Directory.Delete(folder);
    Log(Directory.Exists(live)?"Uninstalled. Unrecognized files in RemasteredCE were retained.":"Uninstalled Remastered CE. Vanilla files and previous-version backups were retained.",100);
   }

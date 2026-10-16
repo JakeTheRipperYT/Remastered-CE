@@ -1,4 +1,4 @@
-# Remastered CE â€” installer preview 0.1.4
+# Remastered CE â€” installer preview 0.1.5
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
@@ -10,15 +10,23 @@ Requires Windows x64, .NET Framework 4.8, Steam, and both games installed. This 
 
 The application constructs the modified packs and engine from local installations. The distribution contains patch instructions, an original launcher, a redirection helper, and the LZ4 library; it does not include the complete game EXE, engine DLL, or game packs. This describes the distribution format, not a legal clearance.
 
-Generated game files go in <CE folder>\RemasteredCE. Two custom launcher files, Launch_Remastered_CE.exe and RemasteredCE_Bootstrap.exe, go beside the vanilla executable. The original game EXE, engine DLL, and packs are not replaced. Launch the original game through Steam to play vanilla. Existing third-party mods are not removed or managed. Settings, saves, and caches remain shared with CE.
+Generated game files go in <CE folder>\RemasteredCE. The separate game executable keeps its original filename inside this folder, beside the copied NVIDIA DLSS runtime and modified engine. Launch_Remastered_CE.exe remains beside the vanilla executable; a legacy bootstrap is retained for compatibility. The original game EXE, engine DLL, and packs are not replaced. Launch the original game through Steam to play vanilla. Existing third-party mods are not removed or managed. Settings, saves, and caches remain shared with CE.
 
-The generated installation is approximately 4 GiB. Each update requires enough additional space for another complete staged copy; the previous Remastered folder is retained as RemasteredCE.previous_<timestamp>. Keep those previous folders until satisfied with the update. Remove only identified older Remastered folders to reclaim space.
+Required unchanged CE data files are linked locally into the separate data folder, preserving the four modified packs. These hard links require a filesystem supporting Windows hard links (normally NTFS); they do not duplicate the large base packs. Updates recreate the links from the currently installed CE files. Uninstall removes the Remastered links while retaining their vanilla files.
+
+The generated installation uses approximately 4 GiB of additional disk space. Each update requires enough additional space for another complete staged copy; the previous Remastered folder is retained as RemasteredCE.previous_<timestamp>. Keep those previous folders until satisfied with the update. Remove only identified older Remastered folders to reclaim space.
 
 ## Uninstall
 
 Open this version of RemasteredCE_Setup.exe, select the Complete Edition folder, and choose **Uninstall Remastered CE**. Confirm to remove the active installation's managed packs, engine, and matching root launchers. This works with installations made by earlier installer previews; reinstalling first is unnecessary. The original Shogun 2 installation is not required for uninstall.
 
 Vanilla files, saves, settings, other mods, previous-version backup folders, and unrecognized files are kept. If a root launcher has been replaced with a different file, uninstall stops before deleting managed files. Close the game before uninstalling. The downloaded installer itself remains available for reinstalling.
+
+## DLSS launch fix
+
+Preview 0.1.5 fixes DLSS being greyed out in the separate Remastered launch when it is available in vanilla CE. The launcher now starts RemasteredCE/shogun2_complete_edition.exe with the original executable filename, and the installer copies the NVIDIA DLSS runtime from your local CE installation beside it. NVIDIA capability checks remain active; this does not enable DLSS on unsupported hardware.
+
+Download the **0.1.5 installer ZIP** once. Earlier installers cannot build this new launch layout and will ask for a newer installer. No NVIDIA DLL or complete game executable is redistributed; both are copied from your installed CE files.
 
 ## Updates
 
@@ -34,10 +42,10 @@ Updates are built and verified in a staging folder before publication. An ordina
 
 ## Preview validation
 
-A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. Fresh installation and in-game launch have been tested successfully.
+A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. The working launch layout has loaded successfully in-game with DLSS available. The 0.1.5 installer reconstructs that layout; a fresh-install user test is pending.
 
-The installer-generated build has now been tested in-game.
+Installer reconstruction and automated checks passed. A fresh-install user test of this release is pending.
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.4-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.5-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.

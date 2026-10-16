@@ -22,7 +22,7 @@ void entry(void){
  if(!i)goto error;
  root[i]=0;
  for(j=0;j<i;++j)exe[j]=root[j];
- {const WCHAR* name=(const WCHAR*)L"RemasteredCE_Bootstrap.exe";j=0;do{exe[i+j]=name[j];}while(name[j++]);}
+ {const WCHAR* name=(const WCHAR*)L"RemasteredCE\\shogun2_complete_edition.exe";j=0;do{exe[i+j]=name[j];}while(name[j++]);}
  if(!SetEnvironmentVariableW((const WCHAR*)L"SteamAppId",(const WCHAR*)L"3846830"))goto error;
  if(!SetEnvironmentVariableW((const WCHAR*)L"SteamGameId",(const WCHAR*)L"3846830"))goto error;
  startup.cb=sizeof(startup);
