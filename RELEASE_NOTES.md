@@ -1,13 +1,11 @@
-# Remastered CE 0.1.0 preview
+# Remastered CE 0.1.1 preview
 
 By JakeTheRipper.
 
-- Initial installer and patch manager for CE Steam build 25810990.
-- Requires local installations of Complete Edition and original Shogun 2.
-- Constructs modified files separately and preserves vanilla game files.
-- Supports signed `.rce` update packages and staged installation with rollback.
-- Full reconstruction, signature/tamper checks, and update rollback tests passed.
+Fixes the shader compile error reported in 0.1.0. The original installer reconstructed the pack index but did not move 766 unchanged shader assets to the offsets listed in that index. This release reconstructs those entries from the local vanilla pack too.
 
-**Testing preview:** the installer-generated build still requires an in-game smoke test. Automatic update downloads are not implemented. Source hash checks reject unsupported builds. Settings, saves, caches, and existing third-party mods remain shared with CE.
+All 51,386 decoded assets in all four generated packs match the working pre-installer backup. Full reconstruction and update rollback tests passed. The installer-generated build still needs an in-game smoke test.
 
-Download **RemasteredCE_Installer_Preview.zip** for the initial installation. The `.rce` asset contains the same included release and can be used to test the update selector.
+Requires CE Steam build 25810990 and original Shogun 2 installed locally. Vanilla game files remain untouched. Existing installations can select the signed 0.1.1 `.rce` file using **Update file...**, then choose **Install / Update Remastered CE**. New users should extract **RemasteredCE_Installer_Preview.zip** and run **RemasteredCE_Setup.exe**.
+
+Automatic update downloads are not implemented. Settings, saves, caches, and third-party mods remain shared with CE.

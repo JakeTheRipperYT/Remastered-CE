@@ -69,7 +69,7 @@ public sealed class MainForm : Form {
 
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
 
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.0",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.1",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
 
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
 

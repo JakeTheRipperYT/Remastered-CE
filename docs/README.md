@@ -1,4 +1,4 @@
-# Remastered CE — installer preview 0.1.0
+# Remastered CE â€” installer preview 0.1.1
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
@@ -24,10 +24,10 @@ Updates are built and verified in a staging folder before publication. An ordina
 
 ## Preview validation
 
-A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. The UI preview was inspected. The installer-generated build has not yet had an in-game smoke test, and this installer has not replaced the current working game installation.
+A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. The installer-generated build still needs an in-game smoke test.
 
 The previous manually installed build was tested in-game. Treat this package as a local test preview before sharing it with followers.
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.0-preview.rce is the same release, useful for testing the update selector. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.1-preview.rce is the same release, useful for testing the update selector. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.

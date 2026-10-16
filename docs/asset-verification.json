@@ -1,0 +1,26 @@
+[
+  {
+    "pack": "data.pack",
+    "entries": 24802,
+    "decodedBytes": 5380658868,
+    "mismatches": []
+  },
+  {
+    "pack": "shaders.pack",
+    "entries": 786,
+    "decodedBytes": 8115626,
+    "mismatches": []
+  },
+  {
+    "pack": "bp_orig.pack",
+    "entries": 26,
+    "decodedBytes": 33280213,
+    "mismatches": []
+  },
+  {
+    "pack": "web_content.pack",
+    "entries": 25772,
+    "decodedBytes": 301370168,
+    "mismatches": []
+  }
+]
