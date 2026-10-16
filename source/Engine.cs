@@ -38,7 +38,8 @@ public sealed class Release : IDisposable {
    result.Helper=J.Parse(Encoding.UTF8.GetString(ReadEntry(archive,"helper.json",1024*1024)));
    result.Launcher=ReadEntry(archive,"launcher.exe",1024*1024);
   }
-  if(J.N(result.Manifest,"schema")!=1)throw new InvalidDataException("This update requires a newer installer.");return result;
+  if(J.N(result.Manifest,"schema")!=1)throw new InvalidDataException("This update requires a newer installer. Download the installer ZIP from the Remastered CE GitHub releases page.");
+  if(result.Manifest.ContainsKey("minimumInstallerVersion") && ReleaseVersion.Parse(OnlineUpdates.AppVersion).CompareTo(ReleaseVersion.Parse(J.S(result.Manifest,"minimumInstallerVersion")))<0)throw new InvalidDataException("This release needs a newer installer. Download the latest installer ZIP from the Remastered CE GitHub releases page.");return result;
  }
  static byte[] ReadEntry(ZipArchive zip,string name,int limit){var e=zip.GetEntry(name);if(e==null || e.Length>limit)throw new InvalidDataException("Invalid package component: "+name);using(var s=e.Open())using(var m=new MemoryStream()){s.CopyTo(m);return m.ToArray();}}
  public void Dispose(){}

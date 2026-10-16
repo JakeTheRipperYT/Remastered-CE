@@ -8,3 +8,8 @@ PASS: verified update publishes and preserves previous installation
 PASS: uninstall rejects unexpected file paths before removing anything
 PASS: uninstall preserves an unrecognized root launcher and stops before deletion
 PASS: uninstall removes managed files and launchers; preserves vanilla, user files, and previous versions
+PASS: updater orders versions numerically and avoids same-version installs and downgrades
+PASS: updater selects newest published package including prereleases and excludes drafts
+PASS: updater rejects download addresses outside the release repository
+PASS: updater rejects a signed package that differs from the advertised version
+PASS: cancelled update download stops before making a request or changing game files

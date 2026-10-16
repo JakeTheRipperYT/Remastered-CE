@@ -1,13 +1,11 @@
-# Remastered CE 0.1.2 preview
+# Remastered CE 0.1.3 preview
 
 By JakeTheRipper.
 
-Adds **Uninstall Remastered CE** to the installer. It removes the active installation's managed packs, engine, and matching launchers after confirmation. Vanilla game files, saves, settings, unrecognized files, and previous-version backups are retained. The game must be closed. No original Shogun 2 folder is required for uninstall.
+**Install / Update Remastered CE now downloads updates directly from GitHub.** Leave GitHub selected, then click Install / Update. The installer checks published releases (including prereleases), downloads the newest signed `.rce` package, verifies its signature and version, and installs through the existing staged update process. It reports when the installed version is already current and does not downgrade it automatically.
 
-The new installer can uninstall existing 0.1.0 and 0.1.1 installations without reinstalling them first. If a root launcher differs from the installed copy, uninstall stops before deleting anything.
+The **Offline...** menu lets you use the bundled release or select a downloaded `.rce` file. Network failures leave the game installation untouched. No GitHub sign-in is required.
 
-Uninstall tests passed for normal removal, preservation of vanilla and unrelated files, rejection of unsafe installation records, and preservation of an unrecognized root launcher. Existing signature and update rollback tests also passed.
+Download and extract **RemasteredCE_Installer_Preview.zip** once to get this new application. The `.rce` package alone does not add online updating to an older installer.
 
-Retains the 0.1.1 shader reconstruction fix. Generated game contents are unchanged; all 51,386 packed assets were previously verified against the working backup. Fresh installation and in-game launch have now been tested successfully.
-
-Download **RemasteredCE_Installer_Preview.zip**, extract it, and run **RemasteredCE_Setup.exe**. The `.rce` file alone updates game content and does not replace the installer application.
+Uninstall remains available. Generated game contents retain the shader fix and match the previously tested build. Fresh installation and in-game launch were tested on that build. Online updater tests cover version ordering, current-version/downgrade handling, prerelease/draft selection, download address restrictions, signed package version matching, and cancellation. A live GitHub download and signature check also passed without changing the installed game.

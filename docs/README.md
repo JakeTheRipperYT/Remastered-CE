@@ -1,8 +1,8 @@
-# Remastered CE â€” installer preview 0.1.2
+# Remastered CE â€” installer preview 0.1.3
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
-Extract the ZIP, then run RemasteredCE_Setup.exe. Select the installed Complete Edition and original Total War SHOGUN 2 folders, close the games, and choose **Install / Update Remastered CE**. The included release is already selected. Use **Launch Remastered CE** after installation.
+Extract the ZIP, then run RemasteredCE_Setup.exe. Select the installed Complete Edition and original Total War SHOGUN 2 folders, close the games, and choose **Install / Update Remastered CE**. GitHub is selected by default; the newest published signed release is downloaded automatically when you click Install / Update. Use **Launch Remastered CE** after installation.
 
 Requires Windows x64, .NET Framework 4.8, Steam, and both games installed. This preview supports CE Steam build 25810990 with the exact source files used for development. The installer verifies source hashes and stops on unsupported or modified files. Do not restore old vanilla backups over a newer Steam build to bypass that check.
 
@@ -16,13 +16,17 @@ The generated installation is approximately 4 GiB. Each update requires enough a
 
 ## Uninstall
 
-Open this version of RemasteredCE_Setup.exe, select the Complete Edition folder, and choose **Uninstall Remastered CE**. Confirm to remove the active installation's managed packs, engine, and matching root launchers. This works with installations made by previews 0.1.0 and 0.1.1; reinstalling first is unnecessary. The original Shogun 2 installation is not required for uninstall.
+Open this version of RemasteredCE_Setup.exe, select the Complete Edition folder, and choose **Uninstall Remastered CE**. Confirm to remove the active installation's managed packs, engine, and matching root launchers. This works with installations made by earlier installer previews; reinstalling first is unnecessary. The original Shogun 2 installation is not required for uninstall.
 
 Vanilla files, saves, settings, other mods, previous-version backup folders, and unrecognized files are kept. If a root launcher has been replaced with a different file, uninstall stops before deleting managed files. Close the game before uninstalling. The downloaded installer itself remains available for reinstalling.
 
 ## Updates
 
-For this first preview, download an .rce release file separately, choose **Update file...**, then **Install / Update Remastered CE**. The application verifies its release signature before accepting it. There is no configured download server or automatic online update check yet. The installer EXE itself is not Authenticode-signed; the release package signature is a separate mechanism.
+Leave **GitHub** selected and click **Install / Update Remastered CE**. The application checks the public GitHub releases, including prereleases, selects the highest published supported version, downloads its `.rce` package, and verifies its signature and advertised version before installation. If the installed version is the same or newer, it reports that you are up to date and leaves the installed files in place. No GitHub account or sign-in is needed.
+
+For offline use, click **Offline...** and choose either the included release or a previously downloaded `.rce` file. Select **GitHub** to return to online updates. Network failures do not silently install an older version or change the game files.
+
+Download this new installer ZIP once to gain online updates; an `.rce` package updates game content and does not replace an older installer application. A future release that requires a newer installer will tell you to download its installer ZIP. The installer EXE itself is not Authenticode-signed; the release package signature is a separate mechanism.
 
 Unknown CA updates are rejected during installation. The untouched Steam installation remains available, including any newer files Steam installs. This preview does not guarantee an already installed Remastered build will remain compatible after a CA update. Stop using that Remastered build until a compatible release is available.
 
@@ -36,4 +40,4 @@ The installer-generated build has now been tested in-game.
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.2-preview.rce is the same release, useful for testing the update selector. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.3-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.

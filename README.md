@@ -6,7 +6,7 @@ Installer, updates, and release notes for Remastered CE for Shogun 2 Complete Ed
 
 ## Download
 
-[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.2-preview).
+[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.3-preview).
 
 Extract the installer ZIP and run RemasteredCE_Setup.exe. Both Complete Edition and original Total War SHOGUN 2 must be installed. Select both game folders, close the game, and choose **Install / Update Remastered CE**.
 
@@ -18,7 +18,9 @@ The installer builds the separate RemasteredCE folder using local game files. Va
 
 To uninstall an existing installation, open the new installer and choose **Uninstall Remastered CE**. Vanilla files, saves, settings, unrecognized files, and previous-version backups are kept.
 
-For updates, download a signed `.rce` package, select **Update file...**, and install it. Automatic download checks are not implemented in this preview.
+For updates, leave **GitHub** selected and click **Install / Update Remastered CE**. The application downloads and verifies the newest signed update automatically, or reports that you are already up to date. Use **Offline...** for the included release or a downloaded `.rce` file. No GitHub sign-in is needed.
+
+Download the 0.1.3 installer ZIP once to get online updating; an `.rce` file alone does not upgrade an older installer application.
 
 See [installation details and limitations](docs/README.md), [validation results](docs/self-tests.txt), and [third-party notices](THIRD_PARTY_NOTICES.txt).
 
