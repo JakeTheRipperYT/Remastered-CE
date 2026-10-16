@@ -6,9 +6,11 @@ Installer, updates, and release notes for Remastered CE for Shogun 2 Complete Ed
 
 See the [full mod changelog](CHANGELOG.md) for gameplay, graphics, artwork, and audio changes.
 
+The 0.1.6 update corrects only the vanilla shader reference; Remastered game outputs are unchanged from 0.1.5.
+
 ## Download
 
-[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.5-preview).
+[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.6-preview).
 
 Extract the installer ZIP and run RemasteredCE_Setup.exe. Both Complete Edition and original Total War SHOGUN 2 must be installed. Select both game folders, close the game, and choose **Install / Update Remastered CE**.
 

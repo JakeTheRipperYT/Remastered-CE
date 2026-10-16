@@ -1,0 +1,13 @@
+{
+  "by": "JakeTheRipper",
+  "release": "0.1.6-preview",
+  "vanillaShaderReferenceSha256": "7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f",
+  "vanillaShaderReferenceBytes": 8398735,
+  "generatedShaderPackSha256": "ff57178659e9c69d098dfa22638d72269b25ce6a3c8a8514c9489b7328f86c46",
+  "fullShaderRecipeReplayPassed": true,
+  "allGeneratedPackHashesUnchangedFrom015": true,
+  "engineChangesUnchanged": true,
+  "launcherUnchanged": true,
+  "newSmokeAndBloodPortIncluded": false,
+  "completeShaderPackDistributed": false
+}

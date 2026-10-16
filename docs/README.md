@@ -1,4 +1,4 @@
-# Remastered CE â€” installer preview 0.1.5
+# Remastered CE â€” installer preview 0.1.6
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
@@ -48,4 +48,8 @@ Installer reconstruction and automated checks passed. A fresh-install user test 
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.5-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.6-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+
+## Vanilla shader reference correction
+
+The vanilla shader reference for 0.1.6 is the supplied shaders.pack (SHA-256 7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f). The installer checks this reference in the local CE installation. Generated Remastered shaders and all other game outputs remain identical to 0.1.5. The reference pack itself is not distributed.
