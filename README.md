@@ -4,6 +4,8 @@ By **JakeTheRipper**.
 
 Installer, updates, and release notes for Remastered CE for Shogun 2 Complete Edition.
 
+See the [full mod changelog](CHANGELOG.md) for gameplay, graphics, artwork, and audio changes.
+
 ## Download
 
 [Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.5-preview).
