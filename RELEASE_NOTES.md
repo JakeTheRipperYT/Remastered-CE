@@ -8,6 +8,6 @@ The new installer can uninstall existing 0.1.0 and 0.1.1 installations without r
 
 Uninstall tests passed for normal removal, preservation of vanilla and unrelated files, rejection of unsafe installation records, and preservation of an unrecognized root launcher. Existing signature and update rollback tests also passed.
 
-Retains the 0.1.1 shader reconstruction fix. Generated game contents are unchanged; all 51,386 packed assets were previously verified against the working backup. In-game validation is still pending.
+Retains the 0.1.1 shader reconstruction fix. Generated game contents are unchanged; all 51,386 packed assets were previously verified against the working backup. Fresh installation and in-game launch have now been tested successfully.
 
 Download **RemasteredCE_Installer_Preview.zip**, extract it, and run **RemasteredCE_Setup.exe**. The `.rce` file alone updates game content and does not replace the installer application.

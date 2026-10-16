@@ -30,9 +30,9 @@ Updates are built and verified in a staging folder before publication. An ordina
 
 ## Preview validation
 
-A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. The installer-generated build still needs an in-game smoke test.
+A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. Fresh installation and in-game launch have been tested successfully.
 
-The previous manually installed build was tested in-game. Treat this package as a local test preview before sharing it with followers.
+The installer-generated build has now been tested in-game.
 
 ## Included files
 

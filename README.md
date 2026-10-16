@@ -12,7 +12,7 @@ Extract the installer ZIP and run RemasteredCE_Setup.exe. Both Complete Edition 
 
 **Use 0.1.1 or newer. Version 0.1.0 had a shader reconstruction bug and should not be installed.**
 
-**This is a testing preview.** Full file reconstruction and update rollback tests passed. The installer-generated build still needs an in-game smoke test before a general release.
+Fresh installation and in-game launch have been tested successfully. Full file reconstruction and update rollback tests also passed.
 
 The installer builds the separate RemasteredCE folder using local game files. Vanilla game files are not replaced. No complete game EXE, engine DLL, or game packs are supplied here.
 
