@@ -1,11 +1,13 @@
-# Remastered CE 0.1.1 preview
+# Remastered CE 0.1.2 preview
 
 By JakeTheRipper.
 
-Fixes the shader compile error reported in 0.1.0. The original installer reconstructed the pack index but did not move 766 unchanged shader assets to the offsets listed in that index. This release reconstructs those entries from the local vanilla pack too.
+Adds **Uninstall Remastered CE** to the installer. It removes the active installation's managed packs, engine, and matching launchers after confirmation. Vanilla game files, saves, settings, unrecognized files, and previous-version backups are retained. The game must be closed. No original Shogun 2 folder is required for uninstall.
 
-All 51,386 decoded assets in all four generated packs match the working pre-installer backup. Full reconstruction and update rollback tests passed. The installer-generated build still needs an in-game smoke test.
+The new installer can uninstall existing 0.1.0 and 0.1.1 installations without reinstalling them first. If a root launcher differs from the installed copy, uninstall stops before deleting anything.
 
-Requires CE Steam build 25810990 and original Shogun 2 installed locally. Vanilla game files remain untouched. Existing installations can select the signed 0.1.1 `.rce` file using **Update file...**, then choose **Install / Update Remastered CE**. New users should extract **RemasteredCE_Installer_Preview.zip** and run **RemasteredCE_Setup.exe**.
+Uninstall tests passed for normal removal, preservation of vanilla and unrelated files, rejection of unsafe installation records, and preservation of an unrecognized root launcher. Existing signature and update rollback tests also passed.
 
-Automatic update downloads are not implemented. Settings, saves, caches, and third-party mods remain shared with CE.
+Retains the 0.1.1 shader reconstruction fix. Generated game contents are unchanged; all 51,386 packed assets were previously verified against the working backup. In-game validation is still pending.
+
+Download **RemasteredCE_Installer_Preview.zip**, extract it, and run **RemasteredCE_Setup.exe**. The `.rce` file alone updates game content and does not replace the installer application.

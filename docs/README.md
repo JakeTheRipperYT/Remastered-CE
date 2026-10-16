@@ -1,4 +1,4 @@
-# Remastered CE â€” installer preview 0.1.1
+# Remastered CE â€” installer preview 0.1.2
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
@@ -13,6 +13,12 @@ The application constructs the modified packs and engine from local installation
 Generated game files go in <CE folder>\RemasteredCE. Two custom launcher files, Launch_Remastered_CE.exe and RemasteredCE_Bootstrap.exe, go beside the vanilla executable. The original game EXE, engine DLL, and packs are not replaced. Launch the original game through Steam to play vanilla. Existing third-party mods are not removed or managed. Settings, saves, and caches remain shared with CE.
 
 The generated installation is approximately 4 GiB. Each update requires enough additional space for another complete staged copy; the previous Remastered folder is retained as RemasteredCE.previous_<timestamp>. Keep those previous folders until satisfied with the update. Remove only identified older Remastered folders to reclaim space.
+
+## Uninstall
+
+Open this version of RemasteredCE_Setup.exe, select the Complete Edition folder, and choose **Uninstall Remastered CE**. Confirm to remove the active installation's managed packs, engine, and matching root launchers. This works with installations made by previews 0.1.0 and 0.1.1; reinstalling first is unnecessary. The original Shogun 2 installation is not required for uninstall.
+
+Vanilla files, saves, settings, other mods, previous-version backup folders, and unrecognized files are kept. If a root launcher has been replaced with a different file, uninstall stops before deleting managed files. Close the game before uninstalling. The downloaded installer itself remains available for reinstalling.
 
 ## Updates
 
@@ -30,4 +36,4 @@ The previous manually installed build was tested in-game. Treat this package as 
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.1-preview.rce is the same release, useful for testing the update selector. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.2-preview.rce is the same release, useful for testing the update selector. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.

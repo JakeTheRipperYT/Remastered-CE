@@ -5,3 +5,6 @@ PASS: embedded release signature
 PASS: tampered release rejected
 PASS: failed update restores previous folder and already-replaced bootstrap
 PASS: verified update publishes and preserves previous installation
+PASS: uninstall rejects unexpected file paths before removing anything
+PASS: uninstall preserves an unrecognized root launcher and stops before deletion
+PASS: uninstall removes managed files and launchers; preserves vanilla, user files, and previous versions
