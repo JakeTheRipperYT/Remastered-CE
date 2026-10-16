@@ -6,13 +6,15 @@ Installer, updates, and release notes for Remastered CE for Shogun 2 Complete Ed
 
 ## Download
 
-[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.3-preview).
+[Download the installer preview](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.4-preview).
 
 Extract the installer ZIP and run RemasteredCE_Setup.exe. Both Complete Edition and original Total War SHOGUN 2 must be installed. Select both game folders, close the game, and choose **Install / Update Remastered CE**.
 
 **Use 0.1.1 or newer. Version 0.1.0 had a shader reconstruction bug and should not be installed.**
 
 Fresh installation and in-game launch have been tested successfully. Full file reconstruction and update rollback tests also passed.
+
+The Remastered launcher and installer use a distinct white-helmet icon. Existing users can receive the launcher icon through Install / Update.
 
 The installer builds the separate RemasteredCE folder using local game files. Vanilla game files are not replaced. No complete game EXE, engine DLL, or game packs are supplied here.
 

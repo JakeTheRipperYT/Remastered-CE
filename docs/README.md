@@ -1,8 +1,8 @@
-# Remastered CE â€” installer preview 0.1.3
+# Remastered CE â€” installer preview 0.1.4
 
 Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
 
-Extract the ZIP, then run RemasteredCE_Setup.exe. Select the installed Complete Edition and original Total War SHOGUN 2 folders, close the games, and choose **Install / Update Remastered CE**. GitHub is selected by default; the newest published signed release is downloaded automatically when you click Install / Update. Use **Launch Remastered CE** after installation.
+Extract the ZIP, then run RemasteredCE_Setup.exe. Select the installed Complete Edition and original Total War SHOGUN 2 folders, close the games, and choose **Install / Update Remastered CE**. GitHub is selected by default; the newest published signed release is downloaded automatically when you click Install / Update. Use **Launch Remastered CE** after installation. The launcher now has a distinct white-helmet icon, also used by the installer. Existing users can get the launcher icon through the GitHub update flow.
 
 Requires Windows x64, .NET Framework 4.8, Steam, and both games installed. This preview supports CE Steam build 25810990 with the exact source files used for development. The installer verifies source hashes and stops on unsupported or modified files. Do not restore old vanilla backups over a newer Steam build to bypass that check.
 
@@ -40,4 +40,4 @@ The installer-generated build has now been tested in-game.
 
 ## Included files
 
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.3-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
+RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.4-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
