@@ -1,4 +1,4 @@
-# Remastered CE installer 0.1.7
+# Remastered CE installer 0.1.8
 
 By **JakeTheRipper**.
 
@@ -12,7 +12,7 @@ The DLSS launch layout and launcher are unchanged from the working release: the 
 
 ## Included changes
 
-0.1.7 includes the Better Vanilla Smoke matchlock port and atlas-cell correction, GBJ blood effects and ground-splatter artwork, the ground-decal alpha correction, and the confirmed diplomacy party-selection fix for break-alliance and trade-embargo lists. Existing campaign, artwork, audio, building-smoke, grass and queue changes remain included. See [the changelog](../CHANGELOG.md).
+0.1.8 includes the Better Vanilla Smoke matchlock port and atlas-cell correction, GBJ blood effects and ground-splatter artwork, the ground-decal alpha correction, and the confirmed diplomacy party-selection fix for break-alliance and trade-embargo lists. Existing campaign, artwork, audio, building-smoke, grass and queue changes remain included. See [the changelog](../CHANGELOG.md).
 
 The failed wake shader experiment is excluded. Naval-wake seams remain under investigation.
 
@@ -26,14 +26,14 @@ If there is no preferences script yet, launch the game once and set `proximity_f
 
 Leave **GitHub** selected and click **Install / Update Remastered CE** to download the newest published signed package. Prereleases are included; drafts are excluded. No GitHub sign-in is needed. Package signature and version checks run before installation. **Offline...** accepts the included or downloaded `.rce` package.
 
-Existing 0.1.5/0.1.6 installer applications can install this game update, including the diplomacy and effects fixes. Their application code does not replace itself: use the 0.1.7 installer ZIP for automatic unit-fading preference handling, or set the preference manually. Applications older than 0.1.5 require the new installer ZIP.
+Existing 0.1.5/0.1.6 installer applications can install this game update, including the diplomacy and effects fixes. Their application code does not replace itself: use the 0.1.8 installer ZIP for automatic unit-fading preference handling, or set the preference manually. Applications older than 0.1.5 require the new installer ZIP.
 
 **Uninstall Remastered CE** removes managed Remastered files and links while preserving vanilla files, settings, saves, unrecognized files and previous-version backups. Updates stage and verify files before publication, with rollback on ordinary publication failures. If Windows blocks rollback, retain the reported backups. The installer EXE is not Authenticode-signed; update-package signing is separate.
 
 ## Validation
 
-The signed release passed a full production-installer reconstruction in a separate folder, including all four output-pack hashes, the modified engine, original-name executable, NVIDIA runtime and base-data links. Installer self-checks passed signature/tamper, updater-selection, rollback and uninstall checks. Unit-preference checks preserved unrelated graphics and controls and the original backup across UTF-8 with/without BOM and both UTF-16 byte orders.
+0.1.8 passed targeted checks for the exact UI reconstruction/compression, engine-helper instructions and branch targets, unchanged launcher, and package signature. The installer implementation is unchanged apart from its version label. Full reconstruction and rollback/uninstall checks were completed for 0.1.7; that broader suite was not repeated for this patch.
 
-The component fixes were tested locally during development. A new in-game launch of this exact packaged release has not been claimed. See [release verification](release-verification-0.1.7.json) and [self-check results](self-tests.txt).
+The component fixes were tested locally during development. A new in-game launch of this exact packaged release has not been claimed. See [release verification](release-verification-0.1.8.json) and [self-check results](self-tests.txt).
 
 The vanilla shader reference remains SHA-256 `7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f`. The reference pack itself is not distributed. THIRD_PARTY_NOTICES.txt includes LZ4 licensing and source-mod credits.

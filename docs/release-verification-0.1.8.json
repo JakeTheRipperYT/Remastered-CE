@@ -1,0 +1,16 @@
+{
+  "version": "0.1.8-preview",
+  "author": "JakeTheRipper",
+  "localFixConfirmedAcrossMultipleClans": true,
+  "allianceQueryMatchesConfirmedLocalInstructionsAndTargets": true,
+  "nativeSectionsUnchangedExceptTwoAllianceCalls": true,
+  "uiRecipeReplayedExactly": true,
+  "productionUiCompressionMatches": true,
+  "packageSignatureVerified": true,
+  "workingLauncherUnchanged": true,
+  "diagnosticsExcluded": true,
+  "minimumInstallerVersion": "0.1.5-preview",
+  "freshPackagedBuildTestedInGame": false,
+  "engineSha256": "d98b690f12f3698b5457fcdaa58cb6c11e7986c0903f48d9bf442f8c0cce8c22",
+  "dataPackSha256": "52de66de92bd11c9244e11df7aa96ee3e32654fd79ad16094c263f286fcff009"
+}

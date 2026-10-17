@@ -2,8 +2,8 @@
 
 By JakeTheRipper.
 
-Four CE UI call sites select the appropriate first/second negotiating-party mode before querying trade partners or alliances. The eligibility functions themselves remain unchanged.
+0.1.8 explicitly shows the offer/demand list_box components when the stance is break_alliance. The Lua change is limited to this menu state. Runtime capture showed a valid Murakami row (220 by 24 pixels) inside an invisible demand list_box. The local correction was confirmed across multiple clans.
 
-Trade call RVAs: `0x1686d86`, `0x1686df0`; alliance call RVAs: `0x1686ee3`, `0x1686f4d`.
+The confirmed local alliance-only query uses the requested faction's actual allies and retains the existing faction exclusions and negotiating-party removal. It is relocated into the existing .cepath helper, with its unwind data, for compatibility with existing installers. Only the two alliance UI call operands change from 0.1.7. Trade UI calls and original engine functions remain unchanged.
 
-Each leaf wrapper executes `cmp r8, [rcx+0x28]`, `sete r9b`, then tail-jumps to the original trade (`0xccf210`) or alliance (`0xc3cde0`) function. This matches the confirmed installed fix. Wrappers are appended to the existing redirection-helper payload; no additional engine section or installer schema is required. Existing path-redirection helper code and all native text bytes outside these four calls remain unchanged.
+Temporary native/Lua diagnostic hooks are excluded. Release construction checks the helper instructions and branch destinations against the confirmed local candidate and checks the exact UI compression through the production installer implementation.
