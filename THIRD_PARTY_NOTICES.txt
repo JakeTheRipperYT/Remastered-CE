@@ -1,4 +1,4 @@
-LZ4 v1.9.4 — https://github.com/lz4/lz4/tree/v1.9.4
+LZ4 v1.9.4 â€” https://github.com/lz4/lz4/tree/v1.9.4
 
 LZ4 Library
 Copyright (c) 2011-2020, Yann Collet
@@ -24,3 +24,11 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Mod content credits
+
+Better Vanilla Smoke: source of the ported matchlock firing-smoke effect.
+GBJ blood rework (supplied gjb_reworkdata archive, with_effects2 variant): source of the ported blood effects and ground-splatter artwork.
+CE compatibility changes, atlas corrections and ground-decal alpha correction: JakeTheRipper.
+These source mods are not represented as original work by JakeTheRipper.

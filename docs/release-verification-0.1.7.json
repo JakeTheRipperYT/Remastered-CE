@@ -1,0 +1,36 @@
+{
+  "version": "0.1.7-preview",
+  "author": "JakeTheRipper",
+  "signedExternalAndEmbeddedPackagesVerified": true,
+  "productionInstallerBuildPassed": true,
+  "generatedPackCount": 4,
+  "recipeAssetsReconstructed": 3294,
+  "linkedBaseDataFiles": 359,
+  "generatedPacks": [
+    {
+      "file": "data/data.pack",
+      "sha256": "49999b23105e6aae8633cbf253a5497554505d68fea8a30f6144bec9f71387b2"
+    },
+    {
+      "file": "data/shaders.pack",
+      "sha256": "557b8609be67db84a06369970b276b6eb3c4a4e8ddba803f5aa64544f17ff228"
+    },
+    {
+      "file": "data/bp_orig.pack",
+      "sha256": "2114ed6a19eea9ed6693c64e5a19dd3de10cc2a44d6933e2d210d55a8b440c54"
+    },
+    {
+      "file": "data/web_content.pack",
+      "sha256": "9356ab855c3c80a427b7654deb62b0fa146113e51cfb76b0e104cf889fb0c82b"
+    }
+  ],
+  "engineSha256": "ca30aa527633c388fb5537fdc11897ec78c141d529bab6687c1ddf95ecd7ed53",
+  "engineNativeCodeUnchangedExceptFourDiplomacyCallSites": true,
+  "diplomacyWrappersMatchConfirmedInstalledLogic": true,
+  "workingLauncherUnchanged": true,
+  "failedWakeExperimentRevertedAndExcluded": true,
+  "unitPreferencePreservesOtherSettingsAndEncoding": true,
+  "newPackagedBuildTestedInGame": false,
+  "existingUpdaterMinimum": "0.1.5-preview",
+  "automaticUnitPreferenceRequiresNewInstaller": true
+}

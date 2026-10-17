@@ -1,35 +1,17 @@
-# Remastered CE 0.1.6 preview
+# Remastered CE 0.1.7 preview
 
 By JakeTheRipper.
 
-Corrects only the installer’s vanilla shader reference to the supplied shaders.pack. No changes to Remastered shader output, other game packs, the engine, launcher behavior, or settings.
+Includes the Better Vanilla Smoke matchlock port with corrected animation-cell sizes, GBJ blood effects and visible ground splatters, the ground-blood alpha compatibility fix, and the confirmed diplomacy fix for empty break-alliance and trade-embargo clan lists. Existing building-smoke changes are retained.
 
-The vanilla shader reference for 0.1.6 is the supplied shaders.pack (SHA-256 7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f). The installer checks this reference in the local CE installation. Generated Remastered shaders and all other game outputs remain identical to 0.1.5. The reference pack itself is not distributed.
+The 0.1.7 installer also disables near-camera unit fading in an existing CE preferences script. It changes only `proximity_fading`, preserves the file encoding and other settings, and saves a `.remasteredce-unit-fade.bak` backup. This preference is shared with vanilla CE. If no preferences script exists yet, launch the game once and set `proximity_fading false;` afterward.
 
-Download **RemasteredCE_Installer_Preview.zip**, extract it, and run **RemasteredCE_Setup.exe**. Existing 0.1.5 installers can obtain the signed 0.1.6 package through Install / Update. The update requires the matching vanilla shader source in the local CE data folder.
+Download **RemasteredCE_Installer_Preview.zip**, extract it, and run **RemasteredCE_Setup.exe**. Both installed Steam games are required. Vanilla game files remain untouched. Complete game files and the NVIDIA runtime are reconstructed or copied from local installations.
 
-The complete shader reconstruction was replayed against the supplied reference and matched the existing Remastered shader hash exactly. External and embedded package signatures passed verification. Installer application code is unchanged from 0.1.5; its previously tested safeguards remain in place.
+Existing 0.1.5/0.1.6 installer applications can download the signed 0.1.7 game update through **Install / Update**. Their application code does not upgrade itself, so use the new installer ZIP for automatic unit-fading preference handling, or set that preference manually. The working white-helmet launcher and DLSS launch layout are unchanged.
 
-The local Better Vanilla Smoke / GBJ blood port and its animation-cell correction are not included in this release. No installed game files were replaced while preparing this reference correction.
+The failed naval-wake shader experiment was reverted and is excluded. Wake investigation remains local; this release makes no naval-wake fix claim.
 
-## Mod changelog
+Individual local fixes were tested during development, including visible ground blood, disabled unit proximity fading, and populated diplomacy demand lists. Release reconstruction and signature validation are checked separately; a fresh in-game run of the newly packaged installer is not claimed.
 
-1. **Campaign trees:** Replaced CE campaign-tree models with vanilla models while preserving CE’s original placement records.
-2. **Campaign terrain:** Applied CE ROTS ground textures and material maps across all four seasons; water assets retained.
-3. **Campaign rendering:** Applied ROTS terrain-rendering and seasonal lighting settings to the base campaign.
-4. **Spring battles:** Added clear blue skies and neutralised yellow sunlight in spring clear-day profiles.
-5. **Screen-space shadows:** Enabled edge rejection, removing the black-bar artifacts.
-6. **Banner shadows:** Excluded floating unit banners from screen-space shadow casting.
-7. **Building smoke:** Replaced siege smoke with darkened matchlock-derived particles, tuning ascent, expansion, lifetime, wind and particle counts.
-8. **Particle performance:** Added wider near-camera fading for the targeted smoke and ember effects.
-9. **Unit sprites:** Applied vanilla’s final soldier-to-sprite transition distances; retained CE’s intermediate mesh LODs and foliage distances.
-10. **War Is Slaughter traits:** Set enemy-morale penalties to −1/−2/−3 across the three levels.
-11. **Brave/Cowardly traits:** Set morale progression to +1/+2/+3 and −1/−2/−3 respectively.
-12. **Unit cards:** Restored original artwork, including campaign, frontend and UI skin copies.
-13. **General portraits:** Restored original portraits, including the covered ROTS/FOTS variants.
-14. **Encyclopedia artwork:** Restored original encyclopedia unit images.
-15. **Movement audio:** Restored the short confirmation cue for ungrouped Alt-drag orders; confirmed working.
-16. **Development backups and switching:** Preserved original files and baselines in JakeTheRipper’s local development backups, and created vanilla/edited swap batches. Their edited snapshot predates later changes.
-17. **Grass/vegetation dithering:** Patched the CE grass shader to remove the broken stationary screen-space dither/jitter effect.
-18. **Order queues and siege pathfinding:** Increased order queue limits from 500 to 2000, reducing average siege lockups caused by pathfinding overflow from 30–85 seconds to 0–3 seconds.
-19. **Movement-order feedback:** Fixed the audio bug that caused movement-order feedback audio not to play.
+See [CHANGELOG.md](https://github.com/JakeTheRipperYT/Remastered-CE/blob/main/CHANGELOG.md) for the complete mod changelog and THIRD_PARTY_NOTICES.txt for credits.

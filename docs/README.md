@@ -1,55 +1,39 @@
-# Remastered CE â€” installer preview 0.1.6
+# Remastered CE installer 0.1.7
 
-Created by **JakeTheRipper**. Preview images use example paths rather than developer machine paths.
+By **JakeTheRipper**.
 
-Extract the ZIP, then run RemasteredCE_Setup.exe. Select the installed Complete Edition and original Total War SHOGUN 2 folders, close the games, and choose **Install / Update Remastered CE**. GitHub is selected by default; the newest published signed release is downloaded automatically when you click Install / Update. Use **Launch Remastered CE** after installation. The launcher now has a distinct white-helmet icon, also used by the installer. Existing users can get the launcher icon through the GitHub update flow.
+Extract the installer ZIP and run **RemasteredCE_Setup.exe**, keeping its `.config` file alongside it. Both Steam editions must be installed. The installer detects Steam libraries or accepts selected folders. Close the game, then choose **Install / Update Remastered CE**. Use the white-helmet **Launch Remastered CE** application afterward.
 
-Requires Windows x64, .NET Framework 4.8, Steam, and both games installed. This preview supports CE Steam build 25810990 with the exact source files used for development. The installer verifies source hashes and stops on unsupported or modified files. Do not restore old vanilla backups over a newer Steam build to bypass that check.
+Windows x64, .NET Framework 4.8 and a filesystem supporting Windows hard links (normally NTFS) are required. This release supports CE Steam build 25810990 with matching original file hashes. Unsupported or modified inputs are rejected. Do not restore old vanilla files over a newer Steam build to bypass this check.
 
-## Files and disk space
+The installer builds `<CE folder>/RemasteredCE` from local installations. Unchanged CE data is linked locally; four modified packs are reconstructed separately. Vanilla game files are not replaced. The game executable, engine DLL and NVIDIA runtime are not distributed. Settings, saves and shader caches remain shared with CE. The installation adds approximately 4 GiB; updates require space for another staged copy and retain the previous installation.
 
-The application constructs the modified packs and engine from local installations. The distribution contains patch instructions, an original launcher, a redirection helper, and the LZ4 library; it does not include the complete game EXE, engine DLL, or game packs. This describes the distribution format, not a legal clearance.
+The DLSS launch layout and launcher are unchanged from the working release: the separate executable retains its original filename, with the locally copied NVIDIA runtime beside it. Normal hardware capability checks remain active.
 
-Generated game files go in <CE folder>\RemasteredCE. The separate game executable keeps its original filename inside this folder, beside the copied NVIDIA DLSS runtime and modified engine. Launch_Remastered_CE.exe remains beside the vanilla executable; a legacy bootstrap is retained for compatibility. The original game EXE, engine DLL, and packs are not replaced. Launch the original game through Steam to play vanilla. Existing third-party mods are not removed or managed. Settings, saves, and caches remain shared with CE.
+## Included changes
 
-Required unchanged CE data files are linked locally into the separate data folder, preserving the four modified packs. These hard links require a filesystem supporting Windows hard links (normally NTFS); they do not duplicate the large base packs. Updates recreate the links from the currently installed CE files. Uninstall removes the Remastered links while retaining their vanilla files.
+0.1.7 includes the Better Vanilla Smoke matchlock port and atlas-cell correction, GBJ blood effects and ground-splatter artwork, the ground-decal alpha correction, and the confirmed diplomacy party-selection fix for break-alliance and trade-embargo lists. Existing campaign, artwork, audio, building-smoke, grass and queue changes remain included. See [the changelog](../CHANGELOG.md).
 
-The generated installation uses approximately 4 GiB of additional disk space. Each update requires enough additional space for another complete staged copy; the previous Remastered folder is retained as RemasteredCE.previous_<timestamp>. Keep those previous folders until satisfied with the update. Remove only identified older Remastered folders to reclaim space.
+The failed wake shader experiment is excluded. Naval-wake seams remain under investigation.
 
-## Uninstall
+## Unit camera preference
 
-Open this version of RemasteredCE_Setup.exe, select the Complete Edition folder, and choose **Uninstall Remastered CE**. Confirm to remove the active installation's managed packs, engine, and matching root launchers. This works with installations made by earlier installer previews; reinstalling first is unnecessary. The original Shogun 2 installation is not required for uninstall.
+The new installer sets `proximity_fading false;` in an existing CE preferences script. This removes near-camera unit fading. It preserves graphics, camera/control values, comments and file encoding, and saves the original script as `preferences.script.txt.remasteredce-unit-fade.bak`. The setting is shared with vanilla CE. Uninstall retains settings and this backup.
 
-Vanilla files, saves, settings, other mods, previous-version backup folders, and unrecognized files are kept. If a root launcher has been replaced with a different file, uninstall stops before deleting managed files. Close the game before uninstalling. The downloaded installer itself remains available for reinstalling.
+If there is no preferences script yet, launch the game once and set `proximity_fading false;` in the script afterward. A preference-write failure does not undo a successful game installation; the installer reports the manual setting instead.
 
-## DLSS launch fix
+## Updates and uninstall
 
-Preview 0.1.5 fixes DLSS being greyed out in the separate Remastered launch when it is available in vanilla CE. The launcher now starts RemasteredCE/shogun2_complete_edition.exe with the original executable filename, and the installer copies the NVIDIA DLSS runtime from your local CE installation beside it. NVIDIA capability checks remain active; this does not enable DLSS on unsupported hardware.
+Leave **GitHub** selected and click **Install / Update Remastered CE** to download the newest published signed package. Prereleases are included; drafts are excluded. No GitHub sign-in is needed. Package signature and version checks run before installation. **Offline...** accepts the included or downloaded `.rce` package.
 
-Download the **0.1.5 installer ZIP** once. Earlier installers cannot build this new launch layout and will ask for a newer installer. No NVIDIA DLL or complete game executable is redistributed; both are copied from your installed CE files.
+Existing 0.1.5/0.1.6 installer applications can install this game update, including the diplomacy and effects fixes. Their application code does not replace itself: use the 0.1.7 installer ZIP for automatic unit-fading preference handling, or set the preference manually. Applications older than 0.1.5 require the new installer ZIP.
 
-## Updates
+**Uninstall Remastered CE** removes managed Remastered files and links while preserving vanilla files, settings, saves, unrecognized files and previous-version backups. Updates stage and verify files before publication, with rollback on ordinary publication failures. If Windows blocks rollback, retain the reported backups. The installer EXE is not Authenticode-signed; update-package signing is separate.
 
-Leave **GitHub** selected and click **Install / Update Remastered CE**. The application checks the public GitHub releases, including prereleases, selects the highest published supported version, downloads its `.rce` package, and verifies its signature and advertised version before installation. If the installed version is the same or newer, it reports that you are up to date and leaves the installed files in place. No GitHub account or sign-in is needed.
+## Validation
 
-For offline use, click **Offline...** and choose either the included release or a previously downloaded `.rce` file. Select **GitHub** to return to online updates. Network failures do not silently install an older version or change the game files.
+The signed release passed a full production-installer reconstruction in a separate folder, including all four output-pack hashes, the modified engine, original-name executable, NVIDIA runtime and base-data links. Installer self-checks passed signature/tamper, updater-selection, rollback and uninstall checks. Unit-preference checks preserved unrelated graphics and controls and the original backup across UTF-8 with/without BOM and both UTF-16 byte orders.
 
-Download this new installer ZIP once to gain online updates; an `.rce` package updates game content and does not replace an older installer application. A future release that requires a newer installer will tell you to download its installer ZIP. The installer EXE itself is not Authenticode-signed; the release package signature is a separate mechanism.
+The component fixes were tested locally during development. A new in-game launch of this exact packaged release has not been claimed. See [release verification](release-verification-0.1.7.json) and [self-check results](self-tests.txt).
 
-Unknown CA updates are rejected during installation. The untouched Steam installation remains available, including any newer files Steam installs. This preview does not guarantee an already installed Remastered build will remain compatible after a CA update. Stop using that Remastered build until a compatible release is available.
-
-Updates are built and verified in a staging folder before publication. An ordinary publication failure triggers rollback to the previous Remastered installation. If Windows prevents rollback, keep the retained files and follow the reported error; abrupt power loss is not covered by the rollback tests.
-
-## Preview validation
-
-A complete reconstruction from the local CE and original Shogun 2 installations passed all output hashes, including the redirected engine. Self-tests passed source-copy/write reconstruction, LZ4 compression, package signature validation, tamper rejection, and successful/failed update publication with rollback. Every one of the 51,386 decoded packed assets was also compared with the working pre-installer backup and matched. This catches relocated unchanged entries as well as modified assets. The UI preview was inspected. The working launch layout has loaded successfully in-game with DLSS available. The 0.1.5 installer reconstructs that layout; a fresh-install user test is pending.
-
-Installer reconstruction and automated checks passed. A fresh-install user test of this release is pending.
-
-## Included files
-
-RemasteredCE_Setup.exe contains the initial release. Keep its .config file beside it. The separately supplied RemasteredCE-0.1.6-preview.rce is the same release, available for offline updates. THIRD_PARTY_NOTICES.txt contains the LZ4 license. Source code is provided in source/ for inspection; release signing credentials are excluded.
-
-## Vanilla shader reference correction
-
-The vanilla shader reference for 0.1.6 is the supplied shaders.pack (SHA-256 7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f). The installer checks this reference in the local CE installation. Generated Remastered shaders and all other game outputs remain identical to 0.1.5. The reference pack itself is not distributed.
+The vanilla shader reference remains SHA-256 `7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f`. The reference pack itself is not distributed. THIRD_PARTY_NOTICES.txt includes LZ4 licensing and source-mod credits.

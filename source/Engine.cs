@@ -116,13 +116,42 @@ public sealed class Engine {
   File.WriteAllText(Under(stage,"install-state.json"),J.Json().Serialize(state));Log("All generated files verified.",94);
  }
  void CopyFile(string source,string target){byte[] b=new byte[8*1024*1024];using(var input=File.OpenRead(source))using(var output=new FileStream(target,FileMode.CreateNew,FileAccess.Write,FileShare.None)){int n;while((n=input.Read(b,0,b.Length))>0){Cancel.ThrowIfCancellationRequested();output.Write(b,0,n);}output.Flush(true);}}
+
+ public static bool ApplyUnitCameraPreference(string path){
+  if(!File.Exists(path))return false;
+  byte[] original=File.ReadAllBytes(path);Encoding encoding;
+  if(original.Length>=2 && original[0]==255 && original[1]==254)encoding=new UnicodeEncoding(false,true,true);
+  else if(original.Length>=2 && original[0]==254 && original[1]==255)encoding=new UnicodeEncoding(true,true,true);
+  else encoding=new UTF8Encoding(original.Length>=3 && original[0]==239 && original[1]==187 && original[2]==191,true);
+  byte[] preamble=encoding.GetPreamble();int skip=preamble.Length;
+  string text=encoding.GetString(original,skip,original.Length-skip);
+  var expression=new System.Text.RegularExpressions.Regex(@"(?m)^([ \t]*proximity_fading[ \t]+)(?:true|false)([ \t]*;[^\r\n]*)(?=\r?$)");
+  string updated=expression.Replace(text,"${1}false${2}");
+  if(!expression.IsMatch(text)){string newline=text.Contains("\r\n")?"\r\n":"\n";updated=text+(text.Length>0 && !text.EndsWith("\n")?newline:"")+"proximity_fading false;"+newline;}
+  if(updated==text)return false;
+  string backup=path+".remasteredce-unit-fade.bak";
+  if(!File.Exists(backup))File.WriteAllBytes(backup,original);
+  string temporary=path+".remasteredce-"+Guid.NewGuid().ToString("N")+".tmp";
+  try{File.WriteAllBytes(temporary,preamble.Concat(encoding.GetBytes(updated)).ToArray());File.Replace(temporary,path,null);}
+  finally{if(File.Exists(temporary))File.Delete(temporary);}
+  return true;
+ }
+ void ApplyReleasePreferences(Release release){
+  if(!release.Manifest.ContainsKey("disableUnitProximityFading") || !Convert.ToBoolean(release.Manifest["disableUnitProximityFading"]))return;
+  string preferences=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),@"The Creative Assembly\Shogun2CompleteEdition\Steam\scripts\preferences.script.txt");
+  try{if(ApplyUnitCameraPreference(preferences))Log("Disabled near-camera unit fading; other preferences preserved. A preference backup was saved.",99);}
+  catch(IOException){Log("Installed successfully. Unit camera preference could not be updated; set proximity_fading false manually.",99);}
+  catch(UnauthorizedAccessException){Log("Installed successfully. Unit camera preference could not be updated; set proximity_fading false manually.",99);}
+  catch(DecoderFallbackException){Log("Installed successfully. Preference encoding was not recognized; set proximity_fading false manually.",99);}
+ }
+
  public void Install(Release r,string ce,string legacy){
   ce=Path.GetFullPath(ce);NoLinks(ce);GameClosed();string live=Under(ce,"RemasteredCE");NoLinks(live);
   using(var installLock=new FileStream(Under(ce,".remastered-install.lock"),FileMode.OpenOrCreate,FileAccess.ReadWrite,FileShare.None)){
    string stamp=DateTime.UtcNow.ToString("yyyyMMdd_HHmmss")+"_"+Guid.NewGuid().ToString("N").Substring(0,6);string stage=Under(ce,"RemasteredCE.staging_"+stamp);string previous=Under(ce,"RemasteredCE.previous_"+stamp);bool retainStage=false;
    try{
     var drive=new DriveInfo(Path.GetPathRoot(ce));long needed=J.Arr(r.Manifest["files"]).Select(J.Obj).Sum(f=>J.N(f,"length"))+512L*1024*1024;if(drive.AvailableFreeSpace<needed)throw new IOException("Not enough free disk space to stage this update safely.");
-    Directory.CreateDirectory(stage);Build(r,ce,legacy,stage);Cancel.ThrowIfCancellationRequested();GameClosed();Log("Publishing verified Remastered files...",96);PublishVerified(stage,ce,previous);Log("Installed "+J.S(r.Manifest,"version")+". Vanilla game files were not replaced.",100);
+    Directory.CreateDirectory(stage);Build(r,ce,legacy,stage);Cancel.ThrowIfCancellationRequested();GameClosed();Log("Publishing verified Remastered files...",96);PublishVerified(stage,ce,previous);ApplyReleasePreferences(r);Log("Installed "+J.S(r.Manifest,"version")+". Vanilla game files were not replaced.",100);
    }catch(AggregateException){retainStage=true;throw;}finally{if(!retainStage && Directory.Exists(stage)){NoLinks(stage);if(!Path.GetFileName(stage).StartsWith("RemasteredCE.staging_",StringComparison.Ordinal))throw new IOException("Invalid staging cleanup target.");Directory.Delete(stage,true);}}
   }
  }

@@ -1,4 +1,3 @@
-Installer 0.1.5 safety checks (application code unchanged in this release):
 PASS: path traversal rejected
 PASS: source-copy and write instructions
 PASS: embedded LZ4 roundtrip
@@ -15,9 +14,3 @@ PASS: updater selects newest published package including prereleases and exclude
 PASS: updater rejects download addresses outside the release repository
 PASS: updater rejects a signed package that differs from the advertised version
 PASS: cancelled update download stops before making a request or changing game files
-
-Reference correction 0.1.6:
-PASS: complete shader recipe replay against supplied vanilla reference
-PASS: all generated pack hashes unchanged from 0.1.5
-PASS: signed external and embedded 0.1.6 packages
-PASS: no new smoke/blood content included
