@@ -31,10 +31,6 @@ By **JakeTheRipper**.
 
 24. **Alliance demand-list visibility (0.1.8):** Fixed hidden offer/demand list boxes in the Demand Break Alliance menu. Runtime tracing confirmed the allied-clan row was populated but its parent list was hidden. Confirmed working across multiple clans. Temporary diagnostics are excluded.
 
-25. **Morale and fatigue tooltip colours (0.1.9):** Added colour coding to 21 battle-tooltip state labels, retaining CE wording. Adapted from the supplied Bug fix collection.
-26. **Hell difficulty (0.1.9):** Added a sixth difficulty position after Legendary for the base Shogun 2 campaign. Hell retains Legendary campaign/battle rules and AI difficulty bonuses, with the Realm Divide fame threshold set to -1. The Hell label displays correctly and battle realism, battle difficulty and Realm Divide controls lock as they do on Legendary. Local gameplay was confirmed working.
-27. **Proximity Fading control (0.1.9):** Added a graphics-menu checkbox below SSAO, affecting near-camera unit fading. Fixed its caption and placement, and added the setting to CE's preference writer so On and Off persist across restarts. Persistence was confirmed in-game. Updates preserve the player's choice.
-
-28. **Installer compatibility (0.1.10):** Fixed Unsupported destination pack by supporting the tooltip localisation pack. Requires the new installer ZIP; older installers now stop with an explicit newer-installer message before installation. Uninstall accepts both four-pack and five-pack installations. A full production build verified all five packs and the engine/launch layout.
-
-29. **Campaign-selection crash (0.1.11):** Fixed packaged Hell UI state writes into read-only metadata. Runtime flags and the label object now use writable engine data; text stays read-only. Windows-mapped helper checks passed for the label, campaign UI writes and Hell/Legendary settings. Game assets are unchanged from 0.1.10.
+25. **Morale and fatigue tooltip colours (0.1.9):** Added colour coding to 21 battle-tooltip state labels while retaining CE wording. Adapted from the supplied Bug fix collection.
+26. **Hell difficulty (0.1.9):** Added a sixth difficulty position after Legendary for the base Shogun 2 campaign. Hell retains Legendary campaign and battle rules and AI difficulty bonuses, with the Realm Divide fame threshold set to -1. The Hell label displays correctly and battle realism, battle difficulty and Realm Divide controls lock as they do on Legendary.
+27. **Proximity Fading control (0.1.9):** Added a graphics-menu checkbox below SSAO for near-camera unit fading. The setting now saves as On or Off across restarts, and updates preserve the player's choice.
