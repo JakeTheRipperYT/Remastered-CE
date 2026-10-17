@@ -2,6 +2,8 @@
 
 By JakeTheRipper.
 
+Blood and smoke rework: Orendiz. Thank you for the original effects used in this patch.
+
 Includes the Better Vanilla Smoke matchlock port with corrected animation-cell sizes, GBJ blood effects and visible ground splatters, the ground-blood alpha compatibility fix, and the confirmed diplomacy fix for empty break-alliance and trade-embargo clan lists. Existing building-smoke changes are retained.
 
 The 0.1.7 installer also disables near-camera unit fading in an existing CE preferences script. It changes only `proximity_fading`, preserves the file encoding and other settings, and saves a `.remasteredce-unit-fade.bak` backup. This preference is shared with vanilla CE. If no preferences script exists yet, launch the game once and set `proximity_fading false;` afterward.

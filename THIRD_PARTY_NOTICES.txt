@@ -28,6 +28,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Mod content credits
 
+Blood and smoke rework: Orendiz. Thank you for the original effects used in this patch.
+
 Better Vanilla Smoke: source of the ported matchlock firing-smoke effect.
 GBJ blood rework (supplied gjb_reworkdata archive, with_effects2 variant): source of the ported blood effects and ground-splatter artwork.
 CE compatibility changes, atlas corrections and ground-decal alpha correction: JakeTheRipper.

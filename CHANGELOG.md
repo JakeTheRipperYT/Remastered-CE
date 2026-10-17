@@ -26,3 +26,5 @@ By **JakeTheRipper**.
 21. **Blood effects:** Ported GBJ blood effects and ground-splatter textures, restored ground-blood rendering, and corrected decal alpha handling. Ground splatters were confirmed visible in-game.
 22. **Unit proximity fading:** Disabled near-camera unit fading with `proximity_fading false;`. The 0.1.7 installer applies this to an existing preferences script, preserves other settings and encoding, and saves a backup. CE and Remastered share this preference.
 23. **Diplomacy:** Fixed empty clan-selection lists for demands to break an alliance or impose a trade embargo by correcting which negotiating party the UI queries. Confirmed with Takeda negotiating with Murakami about Jinbo.
+
+**Credit:** Orendiz for his blood and smoke rework used in the 0.1.7 patch.
