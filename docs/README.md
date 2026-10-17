@@ -1,4 +1,4 @@
-# Remastered CE installer 0.1.9
+# Remastered CE installer 0.1.10
 
 By **JakeTheRipper**.
 
@@ -20,7 +20,7 @@ The previous diplomacy, DLSS, smoke/blood, artwork and rendering changes are ret
 
 ## Updates and verification
 
-Leave GitHub selected and choose Install / Update for the newest signed release. Existing installers from 0.1.5 onward support this package. Download the new ZIP to update the installer application itself. Unsupported/newer vanilla builds are rejected instead of overwriting their files.
+Leave GitHub selected and choose Install / Update for the newest signed release. 0.1.10 requires the new installer ZIP because it adds localisation-pack support. An older installer reports that it needs replacing before copying files. Unsupported/newer vanilla builds are rejected instead of overwriting their files.
 
 Production checks replay the three new asset recipes with exact compression, compare relocated native helpers and hooks with the confirmed local implementation, and verify the release signature. Local Hell gameplay and proximity-setting persistence were confirmed; a fresh packaged in-game installation has not been claimed.
 

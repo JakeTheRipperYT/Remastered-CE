@@ -1,0 +1,13 @@
+{
+  "version": "0.1.10-preview",
+  "author": "JakeTheRipper",
+  "minimumInstallerVersion": "0.1.10-preview",
+  "fullProductionBuildPassed": true,
+  "allFivePackHashesVerified": true,
+  "engineAndLaunchLayoutVerified": true,
+  "packageSignatureVerified": true,
+  "olderInstallerRejectedBeforeInstallation": true,
+  "gameRecipesUnchangedFrom019": true,
+  "freshPackagedInGameTest": false,
+  "installerSelfTestsPassed": true
+}

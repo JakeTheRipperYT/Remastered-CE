@@ -8,7 +8,7 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.9](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.9-preview)**
+**[Download Remastered CE 0.1.10](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.10-preview)**
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -51,6 +51,8 @@ The launcher starts the separate Remastered CE executable inside the `Remastered
 Your normal Complete Edition installation remains available separately through Steam.
 
 ## Updating
+
+**For 0.1.10, download and extract the new installer ZIP, then run that copy of `RemasteredCE_Setup.exe`. Older installer applications do not support the new localisation pack and must be replaced.**
 
 Updating is the same as installing:
 
