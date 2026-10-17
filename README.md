@@ -12,25 +12,7 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
-## What the patch does
-
-Remastered CE currently includes a mixture of restoration work, visual improvements and bug fixes, including:
-
-- Restored original unit cards, general portraits and encyclopedia artwork.
-- Restored and improved campaign terrain, seasonal lighting and campaign-tree presentation.
-- Improved spring battle lighting and skies.
-- Fixed screen-space shadow artifacts and removed unit-banner shadow problems.
-- Restored vanilla soldier-to-sprite transition distances while retaining CE's intermediate model LODs.
-- Fixed broken grass and vegetation dithering.
-- Reworked building smoke, matchlock smoke, blood effects and ground blood rendering.
-- Restored missing movement-order audio feedback.
-- Increased the order queue limit from 500 to 2000, greatly reducing long siege pathfinding lockups.
-- Corrected War Is Slaughter and Brave/Cowardly trait values.
-- Disabled the near-camera unit fading introduced by CE.
-- Fixed diplomacy clan-selection problems for break-alliance and trade-embargo demands.
-- Fixed hidden alliance demand lists in the diplomacy interface.
-
-See the **[full changelog](CHANGELOG.md)** for every included change.
+See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 
 ## Before installing
 
