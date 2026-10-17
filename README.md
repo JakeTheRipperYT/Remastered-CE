@@ -8,7 +8,7 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.8](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.8-preview)**
+**[Download Remastered CE 0.1.9](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.9-preview)**
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -78,7 +78,7 @@ The installer:
 
 1. Verifies the supported Complete Edition executable, engine and required source files.
 2. Extracts the required original assets from your locally installed games.
-3. Reconstructs the four modified game packs used by Remastered CE.
+3. Reconstructs the five modified game packs used by Remastered CE.
 4. Builds a separate Remastered CE engine and executable layout.
 5. Hard-links unchanged Complete Edition data into the separate `RemasteredCE` folder instead of needlessly duplicating everything.
 6. Verifies the finished files before switching the completed build into place.
@@ -88,7 +88,7 @@ Vanilla Complete Edition game files are not overwritten.
 
 ### Unit fading setting
 
-The current installer also sets `proximity_fading false;` in your existing Complete Edition preferences file to stop units fading away when the camera gets close. That preferences file is shared by vanilla CE and Remastered CE, so this one setting also affects normal Complete Edition. The installer preserves the rest of your settings and creates a backup before changing it.
+In Graphics options, use **Proximity Fading** below SSAO to enable or disable units fading near the camera. The choice is saved across restarts and preserved by updates. This preference is shared by vanilla CE and Remastered CE; other settings are preserved.
 
 ## More information
 

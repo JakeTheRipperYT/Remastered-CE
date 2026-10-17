@@ -1,0 +1,11 @@
+{
+  "version": "0.1.9-preview",
+  "author": "JakeTheRipper",
+  "nativeHelpersMatchConfirmedLocalCodeAndTargets": true,
+  "nativeHooksMatchConfirmedLocalCodeAndTargets": true,
+  "threeAssetRecipesVerifiedWithProductionInstaller": true,
+  "minimumInstallerVersion": "0.1.5-preview",
+  "userConfirmedProximityPersistence": true,
+  "userConfirmedHellGameplay": true,
+  "freshPackagedBuildTestedInGame": false
+}

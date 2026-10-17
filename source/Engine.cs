@@ -126,8 +126,10 @@ public sealed class Engine {
   byte[] preamble=encoding.GetPreamble();int skip=preamble.Length;
   string text=encoding.GetString(original,skip,original.Length-skip);
   var expression=new System.Text.RegularExpressions.Regex(@"(?m)^([ \t]*proximity_fading[ \t]+)(?:true|false)([ \t]*;[^\r\n]*)(?=\r?$)");
-  string updated=expression.Replace(text,"${1}false${2}");
-  if(!expression.IsMatch(text)){string newline=text.Contains("\r\n")?"\r\n":"\n";updated=text+(text.Length>0 && !text.EndsWith("\n")?newline:"")+"proximity_fading false;"+newline;}
+  // Preserve the player's saved toggle choice during installs and updates.
+  if(expression.IsMatch(text))return false;
+  string newline=text.Contains("\r\n")?"\r\n":"\n";
+  string updated=text+(text.Length>0 && !text.EndsWith("\n")?newline:"")+"proximity_fading false;"+newline;
   if(updated==text)return false;
   string backup=path+".remasteredce-unit-fade.bak";
   if(!File.Exists(backup))File.WriteAllBytes(backup,original);

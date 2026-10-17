@@ -30,3 +30,7 @@ By **JakeTheRipper**.
 **Credit:** Orendiz for his blood and smoke rework used in the 0.1.7 patch.
 
 24. **Alliance demand-list visibility (0.1.8):** Fixed hidden offer/demand list boxes in the Demand Break Alliance menu. Runtime tracing confirmed the allied-clan row was populated but its parent list was hidden. Confirmed working across multiple clans. Temporary diagnostics are excluded.
+
+25. **Morale and fatigue tooltip colours (0.1.9):** Added colour coding to 21 battle-tooltip state labels, retaining CE wording. Adapted from the supplied Bug fix collection.
+26. **Hell difficulty (0.1.9):** Added a sixth difficulty position after Legendary for the base Shogun 2 campaign. Hell retains Legendary campaign/battle rules and AI difficulty bonuses, with the Realm Divide fame threshold set to -1. The Hell label displays correctly and battle realism, battle difficulty and Realm Divide controls lock as they do on Legendary. Local gameplay was confirmed working.
+27. **Proximity Fading control (0.1.9):** Added a graphics-menu checkbox below SSAO, affecting near-camera unit fading. Fixed its caption and placement, and added the setting to CE's preference writer so On and Off persist across restarts. Persistence was confirmed in-game. Updates preserve the player's choice.

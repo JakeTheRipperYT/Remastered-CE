@@ -1,4 +1,4 @@
-# Remastered CE installer 0.1.8
+# Remastered CE installer 0.1.9
 
 By **JakeTheRipper**.
 
@@ -6,34 +6,22 @@ Extract the installer ZIP and run **RemasteredCE_Setup.exe**, keeping its `.conf
 
 Windows x64, .NET Framework 4.8 and a filesystem supporting Windows hard links (normally NTFS) are required. This release supports CE Steam build 25810990 with matching original file hashes. Unsupported or modified inputs are rejected. Do not restore old vanilla files over a newer Steam build to bypass this check.
 
-The installer builds `<CE folder>/RemasteredCE` from local installations. Unchanged CE data is linked locally; four modified packs are reconstructed separately. Vanilla game files are not replaced. The game executable, engine DLL and NVIDIA runtime are not distributed. Settings, saves and shader caches remain shared with CE. The installation adds approximately 4 GiB; updates require space for another staged copy and retain the previous installation.
+The installer builds `<CE folder>/RemasteredCE` from local installations. Unchanged CE data is linked locally; five modified packs are reconstructed separately. Vanilla game files are not replaced. The game executable, engine DLL and NVIDIA runtime are not distributed. Settings, saves and shader caches remain shared with CE. The installation adds approximately 4 GiB; updates require space for another staged copy and retain the previous installation.
 
 The DLSS launch layout and launcher are unchanged from the working release: the separate executable retains its original filename, with the locally copied NVIDIA runtime beside it. Normal hardware capability checks remain active.
 
 ## Included changes
 
-0.1.8 includes the Better Vanilla Smoke matchlock port and atlas-cell correction, GBJ blood effects and ground-splatter artwork, the ground-decal alpha correction, and the confirmed diplomacy party-selection fix for break-alliance and trade-embargo lists. Existing campaign, artwork, audio, building-smoke, grass and queue changes remain included. See [the changelog](../CHANGELOG.md).
+0.1.9 adds Hell difficulty after Legendary in the base Shogun 2 campaign, retaining Legendary rules and AI bonuses while setting required Realm Divide fame to -1. Battle-tooltip morale and fatigue labels gain colour coding.
 
-The failed wake shader experiment is excluded. Naval-wake seams remain under investigation.
+Graphics options now include **Proximity Fading** below SSAO. Checked enables near-camera unit fading; unchecked disables it. Both choices persist across normal restarts. Settings remain shared with vanilla CE. Updates preserve an existing selection.
 
-## Unit camera preference
+The previous diplomacy, DLSS, smoke/blood, artwork and rendering changes are retained. Blood and smoke rework: **Orendiz**. Tooltip colours: supplied **Bug fix collection**.
 
-The new installer sets `proximity_fading false;` in an existing CE preferences script. This removes near-camera unit fading. It preserves graphics, camera/control values, comments and file encoding, and saves the original script as `preferences.script.txt.remasteredce-unit-fade.bak`. The setting is shared with vanilla CE. Uninstall retains settings and this backup.
+## Updates and verification
 
-If there is no preferences script yet, launch the game once and set `proximity_fading false;` in the script afterward. A preference-write failure does not undo a successful game installation; the installer reports the manual setting instead.
+Leave GitHub selected and choose Install / Update for the newest signed release. Existing installers from 0.1.5 onward support this package. Download the new ZIP to update the installer application itself. Unsupported/newer vanilla builds are rejected instead of overwriting their files.
 
-## Updates and uninstall
+Production checks replay the three new asset recipes with exact compression, compare relocated native helpers and hooks with the confirmed local implementation, and verify the release signature. Local Hell gameplay and proximity-setting persistence were confirmed; a fresh packaged in-game installation has not been claimed.
 
-Leave **GitHub** selected and click **Install / Update Remastered CE** to download the newest published signed package. Prereleases are included; drafts are excluded. No GitHub sign-in is needed. Package signature and version checks run before installation. **Offline...** accepts the included or downloaded `.rce` package.
-
-Existing 0.1.5/0.1.6 installer applications can install this game update, including the diplomacy and effects fixes. Their application code does not replace itself: use the 0.1.8 installer ZIP for automatic unit-fading preference handling, or set the preference manually. Applications older than 0.1.5 require the new installer ZIP.
-
-**Uninstall Remastered CE** removes managed Remastered files and links while preserving vanilla files, settings, saves, unrecognized files and previous-version backups. Updates stage and verify files before publication, with rollback on ordinary publication failures. If Windows blocks rollback, retain the reported backups. The installer EXE is not Authenticode-signed; update-package signing is separate.
-
-## Validation
-
-0.1.8 passed targeted checks for the exact UI reconstruction/compression, engine-helper instructions and branch targets, unchanged launcher, and package signature. The installer implementation is unchanged apart from its version label. Full reconstruction and rollback/uninstall checks were completed for 0.1.7; that broader suite was not repeated for this patch.
-
-The component fixes were tested locally during development. A new in-game launch of this exact packaged release has not been claimed. See [release verification](release-verification-0.1.8.json) and [self-check results](self-tests.txt).
-
-The vanilla shader reference remains SHA-256 `7d6ff45568b25a4c9729fa6df32e1c79ba51ba3ea5a7e35058d77217fd32847f`. The reference pack itself is not distributed. THIRD_PARTY_NOTICES.txt includes LZ4 licensing and source-mod credits.
+See THIRD_PARTY_NOTICES.txt for licensing and source-mod credits.

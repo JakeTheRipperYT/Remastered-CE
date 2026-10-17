@@ -36,7 +36,7 @@ public sealed class MainForm : Form {
  public MainForm(bool preview=false){
   Icon=Icon.ExtractAssociatedIcon(Application.ExecutablePath);Text="Remastered CE";ClientSize=new Size(810,650);MinimumSize=new Size(820,690);StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(23,27,30);ForeColor=Color.FromArgb(235,239,240);AutoScaleMode=AutoScaleMode.Dpi;
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.8",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.9",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
   Controls.Add(new Label{Text="Release package",AutoSize=true,Location=new Point(30,286)});StyleBox(package);package.Location=new Point(30,312);package.Size=new Size(505,29);package.ReadOnly=true;package.Text="GitHub — latest release";Controls.Add(package);
   ButtonStyle(github,"GitHub",new Rectangle(547,310,108,33));github.Click+=(s,e)=>{package.Tag=null;package.Text="GitHub — latest release";};
@@ -110,7 +110,7 @@ static class SelfTests {
   byte[] source=Encoding.ASCII.GetBytes("abcdefgh");object[] ops={new Dictionary<string,object>{{"copy",2},{"length",3}},new Dictionary<string,object>{{"data",Convert.ToBase64String(Encoding.ASCII.GetBytes("XYZ"))}}};if(Encoding.ASCII.GetString(Engine.Transform(source,ops))!="cdeXYZ")throw new Exception("Transform failed.");results.Add("PASS: source-copy and write instructions");
   byte[] compressed=Lz4.Encode(source,"fast",0);if(!Lz4.Decode(compressed,source.Length).SequenceEqual(source))throw new Exception("LZ4 failed.");results.Add("PASS: embedded LZ4 roundtrip");
   using(var release=Release.Load(null)){results.Add("PASS: embedded release signature");byte[] original=Release.Resource("release");original[original.Length-1]^=1;string temp=Path.Combine(Path.GetTempPath(),"RCE-tampered-"+Guid.NewGuid().ToString("N")+".rce");File.WriteAllBytes(temp,original);try{rejected=false;try{using(var bad=Release.Load(temp)){} }catch(InvalidDataException){rejected=true;}if(!rejected)throw new Exception("Tampered package accepted.");results.Add("PASS: tampered release rejected");}finally{File.Delete(temp);}}
-  
+
   string transactionRoot=Path.Combine(Path.GetTempPath(),"RCE-publication-test-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(transactionRoot);
   try{string live=Engine.Under(transactionRoot,"RemasteredCE"),stage=Engine.Under(transactionRoot,"RemasteredCE.staging_test"),previous=Engine.Under(transactionRoot,"RemasteredCE.previous_test");Directory.CreateDirectory(live);Directory.CreateDirectory(stage);File.WriteAllText(Engine.Under(live,"old.txt"),"old installation");File.WriteAllText(Engine.Under(transactionRoot,"Launch_Remastered_CE.exe"),"old launcher");File.WriteAllText(Engine.Under(transactionRoot,"RemasteredCE_Bootstrap.exe"),"old bootstrap");File.WriteAllText(Engine.Under(stage,"RemasteredCE_Bootstrap.exe"),"new bootstrap");
    rejected=false;try{Engine.PublishVerified(stage,transactionRoot,previous);}catch(FileNotFoundException){rejected=true;}
