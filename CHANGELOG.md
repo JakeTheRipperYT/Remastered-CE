@@ -36,3 +36,5 @@ By **JakeTheRipper**.
 27. **Proximity Fading control (0.1.9):** Added a graphics-menu checkbox below SSAO, affecting near-camera unit fading. Fixed its caption and placement, and added the setting to CE's preference writer so On and Off persist across restarts. Persistence was confirmed in-game. Updates preserve the player's choice.
 
 28. **Installer compatibility (0.1.10):** Fixed Unsupported destination pack by supporting the tooltip localisation pack. Requires the new installer ZIP; older installers now stop with an explicit newer-installer message before installation. Uninstall accepts both four-pack and five-pack installations. A full production build verified all five packs and the engine/launch layout.
+
+29. **Campaign-selection crash (0.1.11):** Fixed packaged Hell UI state writes into read-only metadata. Runtime flags and the label object now use writable engine data; text stays read-only. Windows-mapped helper checks passed for the label, campaign UI writes and Hell/Legendary settings. Game assets are unchanged from 0.1.10.

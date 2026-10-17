@@ -36,7 +36,7 @@ public sealed class MainForm : Form {
  public MainForm(bool preview=false){
   Icon=Icon.ExtractAssociatedIcon(Application.ExecutablePath);Text="Remastered CE";ClientSize=new Size(810,650);MinimumSize=new Size(820,690);StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(23,27,30);ForeColor=Color.FromArgb(235,239,240);AutoScaleMode=AutoScaleMode.Dpi;
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.10",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.11",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
   Controls.Add(new Label{Text="Release package",AutoSize=true,Location=new Point(30,286)});StyleBox(package);package.Location=new Point(30,312);package.Size=new Size(505,29);package.ReadOnly=true;package.Text="GitHub — latest release";Controls.Add(package);
   ButtonStyle(github,"GitHub",new Rectangle(547,310,108,33));github.Click+=(s,e)=>{package.Tag=null;package.Text="GitHub — latest release";};

@@ -1,4 +1,4 @@
-# Remastered CE installer 0.1.10
+# Remastered CE installer 0.1.11
 
 By **JakeTheRipper**.
 

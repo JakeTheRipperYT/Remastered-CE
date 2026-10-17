@@ -1,0 +1,10 @@
+{
+  "version": "0.1.11-preview",
+  "author": "JakeTheRipper",
+  "windowsMappedLabelHelperPassedTwice": true,
+  "statePageProtection": "0x8",
+  "hellAndLegendarySettingsPassed": true,
+  "campaignUiStateWritesPassed": true,
+  "gameAssetsUnchangedFrom0110": true,
+  "freshInGameTest": false
+}
