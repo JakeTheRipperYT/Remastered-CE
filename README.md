@@ -38,9 +38,7 @@ You need:
 
 1. **Total War: SHOGUN 2 Complete Edition** installed through Steam.
 2. **Original Total War: SHOGUN 2** installed through Steam.
-3. Windows 64-bit with **.NET Framework 4.8**.
-4. A normal Windows drive that supports hard links, usually NTFS.
-5. Several GB of free disk space. The installed Remastered CE copy uses roughly 4 GiB, and updates temporarily need extra space while the new version is built.
+3. Several GB of free disk space. The installed Remastered CE copy uses roughly 4 GiB, and updates temporarily need extra space while the new version is built.
 
 The installer uses files from both games that are already installed on your PC. It does **not** download or distribute a complete game executable, engine DLL or game data packs.
 
