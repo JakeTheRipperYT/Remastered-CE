@@ -25,9 +25,9 @@ public sealed class ReleaseVersion : IComparable<ReleaseVersion> {
   return a.Length.CompareTo(b.Length);
  }
 }
-public sealed class OnlineRelease {public string Version,DownloadUrl,InstallerDownloadUrl;public long Size,InstallerSize;}
+public sealed class OnlineRelease {public string Version,DownloadUrl;public long Size;}
 public static class OnlineUpdates {
- public const string AppVersion="0.1.13-preview";
+ public const string AppVersion="0.1.12-preview";
  public const string ApiUrl="https://api.github.com/repos/JakeTheRipperYT/Remastered-CE/releases?per_page=100";
  const string DownloadPrefix="https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/";
  const int MaxPackage=64*1024*1024;
@@ -44,10 +44,7 @@ public static class OnlineUpdates {
     if(best==null||version.CompareTo(ReleaseVersion.Parse(best.Version))>0)best=new OnlineRelease{Version=text,DownloadUrl=url,Size=size};
    }
   }
-  if(best==null)throw new InvalidDataException("No supported Remastered CE update package is published on GitHub.");
-  string appName="RemasteredCE-"+best.Version+".rceu",appUrl=DownloadPrefix+Uri.EscapeDataString("v"+best.Version)+"/"+Uri.EscapeDataString(appName);
-  foreach(object item in releases){var r=J.Obj(item);if(Convert.ToBoolean(r["draft"])||J.S(r,"tag_name")!="v"+best.Version)continue;foreach(object asset in J.Arr(r["assets"])){var a=J.Obj(asset);if(J.S(a,"name")==appName&&J.S(a,"state")=="uploaded"&&J.N(a,"size")>0&&J.N(a,"size")<=MaxPackage&&J.S(a,"browser_download_url")==appUrl){best.InstallerDownloadUrl=appUrl;best.InstallerSize=J.N(a,"size");}}}
-  return best;
+  if(best==null)throw new InvalidDataException("No supported Remastered CE update package is published on GitHub.");return best;
  }
  static byte[] Get(string url,int limit,CancellationToken cancel,Action<long,long> progress){
   cancel.ThrowIfCancellationRequested();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;
@@ -77,13 +74,6 @@ public static class OnlineUpdates {
   byte[] bytes=Get(release.DownloadUrl,MaxPackage,cancel,progress);if(bytes.LongLength!=release.Size)throw new InvalidDataException("The downloaded package size does not match the published release.");
   Engine.NoLinks(folder);Directory.CreateDirectory(folder);string part=Engine.Under(folder,"download-"+Guid.NewGuid().ToString("N")+".part");
   try{File.WriteAllBytes(part,bytes);cancel.ThrowIfCancellationRequested();ValidatePackage(part,release);string final=Engine.Under(folder,"RemasteredCE-"+release.Version+"-"+Engine.Hash(bytes).Substring(0,16)+".rce");if(File.Exists(final))File.Delete(final);File.Move(part,final);return final;}finally{if(File.Exists(part))File.Delete(part);}
- }
- public static string DownloadInstaller(OnlineRelease release,string folder,CancellationToken cancel){
-  string name="RemasteredCE-"+release.Version+".rceu",expected=DownloadPrefix+Uri.EscapeDataString("v"+release.Version)+"/"+Uri.EscapeDataString(name);
-  if(release.InstallerDownloadUrl!=expected||release.InstallerSize<=0||release.InstallerSize>MaxPackage)throw new InvalidDataException("Unexpected installer update address or size.");
-  byte[] bytes=Get(expected,MaxPackage,cancel,null);if(bytes.LongLength!=release.InstallerSize)throw new InvalidDataException("Incomplete installer update download.");
-  Engine.NoLinks(folder);Directory.CreateDirectory(folder);string part=Engine.Under(folder,"installer-"+Guid.NewGuid().ToString("N")+".part");
-  try{File.WriteAllBytes(part,bytes);cancel.ThrowIfCancellationRequested();InstallerBundle.Load(part,release.Version);string final=Engine.Under(folder,"installer-"+release.Version+"-"+Engine.Hash(bytes).Substring(0,16)+".rceu");if(File.Exists(final))File.Delete(final);File.Move(part,final);return final;}finally{if(File.Exists(part))File.Delete(part);}
  }
  public static bool NeedsUpdate(string installed,string available){return ReleaseVersion.Parse(installed).CompareTo(ReleaseVersion.Parse(available))<0;}
 }

@@ -19,14 +19,12 @@ namespace RemasteredCE {
 static class Program {
  [STAThread] static int Main(string[] args){
   if(args.Length>0){try{
-   if(args[0]=="--apply-self-update" && args.Length==5){SelfUpdate.Apply(Int32.Parse(args[1]),args[2],args[3],args[4]);return 0;}
-   if(args[0]=="--resume-update" && args.Length==1){Application.EnableVisualStyles();Application.SetCompatibleTextRenderingDefault(false);Application.Run(new MainForm(false,true));return 0;}
    if(args[0]=="--preview" && args.Length==2){Application.EnableVisualStyles();using(var form=new MainForm(true)){form.Show();Application.DoEvents();using(var bitmap=new Bitmap(form.Width,form.Height)){form.DrawToBitmap(bitmap,new Rectangle(0,0,form.Width,form.Height));bitmap.Save(args[1]);}}return 0;}
    if(args[0]=="--self-test"){SelfTests.Run(args.Length>1?args[1]:"installer-selftest.txt");return 0;}
    if(args[0]=="--build-only" && args.Length==5){string ce=args[1],legacy=args[2],dest=Path.GetFullPath(args[4]);if(Directory.Exists(dest))throw new IOException("Build-only output already exists.");string log=dest+".log";using(var release=Release.Load(args[3])){var engine=new Engine{Progress=(s,p)=>File.AppendAllText(log,p+"% "+s+Environment.NewLine)};engine.Build(release,ce,legacy,dest);}File.AppendAllText(log,"SUCCESS"+Environment.NewLine);return 0;}
    if(args[0]=="--check-online" && args.Length==2){var latest=OnlineUpdates.Latest(CancellationToken.None);string file=OnlineUpdates.Download(latest,args[1],CancellationToken.None,null);Console.WriteLine("Verified online release "+latest.Version);File.WriteAllText(Path.Combine(args[1],"online-check.txt"),latest.Version+Environment.NewLine+Engine.FileHash(file));return 0;}
    throw new ArgumentException("Unknown installer command.");
-  }catch(Exception ex){string log=args[0]=="--build-only"&&args.Length==5?Path.GetFullPath(args[4])+".log":"installer-error.txt";File.AppendAllText(log,"FAILED: "+ex+Environment.NewLine);if(args[0]=="--apply-self-update")MessageBox.Show("Installer update stopped. Your previous installer was preserved.\n\n"+ex.Message,"Remastered CE",MessageBoxButtons.OK,MessageBoxIcon.Warning);return 1;}}
+  }catch(Exception ex){string log=args.Length==5?Path.GetFullPath(args[4])+".log":"installer-error.txt";File.AppendAllText(log,"FAILED: "+ex+Environment.NewLine);return 1;}}
   Application.EnableVisualStyles();Application.SetCompatibleTextRenderingDefault(false);Application.Run(new MainForm());return 0;
  }
 }
@@ -35,10 +33,10 @@ public sealed class MainForm : Form {
  readonly Button install=new Button(),launch=new Button(),choosePackage=new Button(),cancel=new Button(),uninstall=new Button(),github=new Button();
  readonly ProgressBar progress=new ProgressBar();readonly Label state=new Label();CancellationTokenSource cancellation;bool busy;
  readonly string settings=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"RemasteredCE","installer-settings.json");
- public MainForm(bool preview=false,bool resume=false){
+ public MainForm(bool preview=false){
   Icon=Icon.ExtractAssociatedIcon(Application.ExecutablePath);Text="Remastered CE";ClientSize=new Size(810,650);MinimumSize=new Size(820,690);StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(23,27,30);ForeColor=Color.FromArgb(235,239,240);AutoScaleMode=AutoScaleMode.Dpi;
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.13",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.12",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
   Controls.Add(new Label{Text="Release package",AutoSize=true,Location=new Point(30,286)});StyleBox(package);package.Location=new Point(30,312);package.Size=new Size(505,29);package.ReadOnly=true;package.Text="GitHub — latest release";Controls.Add(package);
   ButtonStyle(github,"GitHub",new Rectangle(547,310,108,33));github.Click+=(s,e)=>{package.Tag=null;package.Text="GitHub — latest release";};
@@ -55,7 +53,6 @@ public sealed class MainForm : Form {
   StyleBox(log);log.Multiline=true;log.ReadOnly=true;log.ScrollBars=ScrollBars.Vertical;log.Location=new Point(30,503);log.Size=new Size(750,115);log.Anchor=AnchorStyles.Left|AnchorStyles.Right|AnchorStyles.Bottom|AnchorStyles.Top;Controls.Add(log);
   ce.Text=FindGame("Shogun 2 Complete Edition","shogun2_complete_edition.exe");legacy.Text=FindGame("Total War SHOGUN 2","Shogun2.exe");LoadSettings();if(preview){ce.Text=@"C:\Users\JakeTheRipper\Games\Shogun 2 Complete Edition";legacy.Text=@"C:\Users\JakeTheRipper\Games\Total War SHOGUN 2";}
   using(var r=Release.Load(null))Append("Included release "+J.S(r.Manifest,"version")+". Source assets are extracted locally; no complete game files are included.");
-  if(resume)Shown+=async(s,e)=>await Install();
   FormClosing+=(s,e)=>{if(busy){e.Cancel=true;MessageBox.Show(this,"Wait for the current operation to finish before closing.",Text,MessageBoxButtons.OK,MessageBoxIcon.Information);}};
  }
  void FolderRow(string label,TextBox box,int y){Controls.Add(new Label{Text=label,AutoSize=true,Location=new Point(30,y)});StyleBox(box);box.Location=new Point(30,y+27);box.Size=new Size(625,29);Controls.Add(box);var browse=new Button();ButtonStyle(browse,"Browse…",new Rectangle(667,y+25,113,33));browse.Click+=(s,e)=>{using(var dialog=new FolderBrowserDialog{Description=label,SelectedPath=Directory.Exists(box.Text)?box.Text:""})if(dialog.ShowDialog()==DialogResult.OK)box.Text=dialog.SelectedPath;};}
@@ -71,13 +68,6 @@ public sealed class MainForm : Form {
    if(pkg==null){
     state.Text="Checking GitHub for the latest Remastered CE release...";Append(state.Text);
     var latest=await Task.Run(()=>OnlineUpdates.Latest(cancellation.Token));Append("Latest published release: "+latest.Version);
-    if(OnlineUpdates.NeedsUpdate(OnlineUpdates.AppVersion,latest.Version)&&latest.InstallerDownloadUrl!=null){
-     state.Text="Updating the installer before applying the patch...";Append(state.Text);
-     string updateFolder=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"RemasteredCE","downloads");
-     string bundle=await Task.Run(()=>OnlineUpdates.DownloadInstaller(latest,updateFolder,cancellation.Token));
-     cancellation.Token.ThrowIfCancellationRequested();
-     if(SelfUpdate.Begin(bundle,latest.Version)){Append("Installer update verified. Setup will restart and continue automatically.");BeginInvoke(new Action(()=>Close()));return;}
-    }
     string installedRecord=Engine.Under(cePath,"RemasteredCE/install-state.json");
     if(File.Exists(installedRecord)){
      var current=J.Parse(File.ReadAllText(installedRecord));string version=J.S(current,"version");
@@ -157,7 +147,6 @@ static class SelfTests {
   rejected=false;try{OnlineUpdates.Select(onlineJson.Replace("https://github.com/","https://untrusted.invalid/"));}catch(InvalidDataException){rejected=true;}if(!rejected)throw new Exception("External update URL accepted.");results.Add("PASS: updater rejects download addresses outside the release repository");
   string packageTest=Path.Combine(Path.GetTempPath(),"RCE-version-test-"+Guid.NewGuid().ToString("N")+".rce");File.WriteAllBytes(packageTest,Release.Resource("release"));try{rejected=false;try{OnlineUpdates.ValidatePackage(packageTest,new OnlineRelease{Version="9.9.9"});}catch(InvalidDataException){rejected=true;}if(!rejected)throw new Exception("Mismatched signed release version accepted.");}finally{File.Delete(packageTest);}results.Add("PASS: updater rejects a signed package that differs from the advertised version");
   rejected=false;try{OnlineUpdates.Download(selected,Path.Combine(Path.GetTempPath(),"RCE-cancelled-download"),new CancellationToken(true),null);}catch(OperationCanceledException){rejected=true;}if(!rejected)throw new Exception("Download cancellation failed.");results.Add("PASS: cancelled update download stops before making a request or changing game files");
-  SelfUpdate.Tests(results);
   File.WriteAllLines(path,results);
  }
 }
