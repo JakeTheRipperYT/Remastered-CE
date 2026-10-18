@@ -40,3 +40,6 @@ By **JakeTheRipper**.
 30. **Kneel-fire movement (0.1.12):** Units can receive movement orders while kneel fire remains enabled, with other eligibility checks and the firing drill retained.
 31. **Naval defenders (0.1.12):** Defending fleets now use the normal naval attack group and engage the player. Attacker-group approach also reported by pad345654's Shogun 2 Bugfix Mod.
 32. **Drop-in setting (0.1.12):** The pre-battle checkbox respects the saved campaign setting; changes on that screen are saved too.
+
+35. **Campaign fleet-count banners (0.1.13):** Restored the naval banner's missing lower geometry, which hid the first four to five ship-count bars in CE. Original geometry is rebuilt locally with CE's model format and materials. Static checks passed; in-game confirmation pending.
+36. **Automatic installer updates (0.1.13):** Install / Update can now verify a signed installer update, restart setup and resume the patch installation. Keeps previous setup for rollback. Adds private models.pack reconstruction and uninstall compatibility with earlier layouts. A one-time installer ZIP download is required for 0.1.12 and older.

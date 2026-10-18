@@ -14,3 +14,22 @@ PASS: updater selects newest published package including prereleases and exclude
 PASS: updater rejects download addresses outside the release repository
 PASS: updater rejects a signed package that differs from the advertised version
 PASS: cancelled update download stops before making a request or changing game files
+PASS: installer and config replaced together, previous setup preserved
+PASS: installer replacement rejects changed target
+PASS: restart failure restores both previous installer and config
+PASS: updater quotes spaces and trailing path separators
+
+PASS: published installer bundle signature, hashes, executable and config verified
+PASS: installer bundle version mismatch rejected
+PASS: tampered signed installer rejected before replacement
+PASS: update discovery pairs patch and installer from the same release
+PASS: installer discovery rejects external download addresses
+PASS: signed helper update replaces actual setup, keeps rollback copy and restarts with --resume-update
+PASS: actual parent exits, copied helper verifies bundle and replaces setup at a path with spaces, then resumes automatically
+PASS: installer and config replaced together, previous setup preserved
+PASS: installer replacement rejects changed target
+PASS: restart failure restores both previous installer and config
+PASS: updater quotes spaces and trailing path separators
+PASS: uninstall supports 4 managed packs and preserves vanilla models and user files
+PASS: uninstall supports 5 managed packs and preserves vanilla models and user files
+PASS: uninstall supports 6 managed packs and preserves vanilla models and user files

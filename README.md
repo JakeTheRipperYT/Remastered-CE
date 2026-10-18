@@ -8,7 +8,7 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.12](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.12-preview)**
+**[Download Remastered CE 0.1.13](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.13-preview)**
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -20,7 +20,7 @@ You need:
 
 1. **Total War: SHOGUN 2 Complete Edition** installed through Steam.
 2. **Original Total War: SHOGUN 2** installed through Steam.
-3. Several GB of free disk space. The installed Remastered CE copy uses roughly 4 GiB, and updates temporarily need extra space while the new version is built.
+3. Several GB of free disk space. The installed Remastered CE copy uses roughly 9 GiB, and updates temporarily need extra space while the new version is built.
 
 The installer uses files from both games that are already installed on your PC. It does **not** download or distribute a complete game executable, engine DLL or game data packs.
 
@@ -52,7 +52,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Use Install / Update in installer 0.1.10 or newer to obtain 0.1.12. Installer applications older than 0.1.10 must be replaced with the latest ZIP.**
+**Download the 0.1.13 installer ZIP once if your installer is 0.1.12 or older. Installer 0.1.13 adds automatic installer updates for future releases.**
 
 Updating is the same as installing:
 
@@ -60,7 +60,7 @@ Updating is the same as installing:
 2. Leave **GitHub** selected.
 3. Click **Install / Update Remastered CE**.
 
-The installer checks this GitHub repository for the newest supported release, downloads the signed `.rce` update package, verifies it, and installs it only if a newer version is available. No GitHub account or sign-in is required.
+The installer checks this GitHub repository for the newest supported release, downloads the signed `.rce` update package, verifies it, and installs it only if a newer version is available. When a newer installer is available, it verifies the signed installer bundle, restarts setup, and continues the patch update automatically. Your game-folder selections are retained. No GitHub account or sign-in is required.
 
 The installer builds updates in a temporary staging folder first. Your previous Remastered CE installation is retained during the update so it can be restored if publication fails.
 
@@ -80,7 +80,7 @@ The installer:
 
 1. Verifies the supported Complete Edition executable, engine and required source files.
 2. Extracts the required original assets from your locally installed games.
-3. Reconstructs the five modified game packs used by Remastered CE.
+3. Reconstructs the six modified game packs used by Remastered CE.
 4. Builds a separate Remastered CE engine and executable layout.
 5. Hard-links unchanged Complete Edition data into the separate `RemasteredCE` folder instead of needlessly duplicating everything.
 6. Verifies the finished files before switching the completed build into place.
