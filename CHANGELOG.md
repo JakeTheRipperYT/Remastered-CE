@@ -34,3 +34,9 @@ By **JakeTheRipper**.
 25. **Morale and fatigue tooltip colours (0.1.9):** Added colour coding to 21 battle-tooltip state labels while retaining CE wording. Adapted from the supplied Bug fix collection.
 26. **Hell difficulty (0.1.9):** Added a sixth difficulty position after Legendary for the base Shogun 2 campaign. Hell retains Legendary campaign and battle rules and AI difficulty bonuses, with the Realm Divide fame threshold set to -1. The Hell label displays correctly and battle realism, battle difficulty and Realm Divide controls lock as they do on Legendary.
 27. **Proximity Fading control (0.1.9):** Added a graphics-menu checkbox below SSAO for near-camera unit fading. The setting now saves as On or Off across restarts, and updates preserve the player's choice.
+
+28. **Hell realism and autosaves (0.1.12):** Hell now enforces Legendary battle realism after deployment and automatically saves as `auto_save_hell.{clan}`, retaining Legendary AI bonuses and instant Realm Divide.
+29. **Yari-wall movement (0.1.12):** Units engaged in melee can now follow movement orders without disabling yari wall.
+30. **Kneel-fire movement (0.1.12):** Units can receive movement orders while kneel fire remains enabled, with other eligibility checks and the firing drill retained.
+31. **Naval defenders (0.1.12):** Defending fleets now use the normal naval attack group and engage the player. Attacker-group approach also reported by pad345654's Shogun 2 Bugfix Mod.
+32. **Drop-in setting (0.1.12):** The pre-battle checkbox respects the saved campaign setting; changes on that screen are saved too.
