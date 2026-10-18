@@ -2,6 +2,10 @@
 
 By **JakeTheRipper**.
 
+> **Stay up to date:** Join the **JakeTheRipper Discord** to be notified about frequent Remastered CE updates, fixes and new releases.
+>
+> **[Join the JakeTheRipper Discord](https://discord.com/invite/yBg8bhTkSj)**
+
 Remastered CE is a community remaster and repair patch for **Total War: SHOGUN 2 Complete Edition**. It keeps the Complete Edition as the base game while restoring and improving visuals, effects, artwork and behaviour that were changed or broken in CE.
 
 The patch installs as a **separate Remastered CE copy** beside your normal Complete Edition installation. Your normal game files are not replaced, so you can continue to use vanilla Complete Edition separately.
