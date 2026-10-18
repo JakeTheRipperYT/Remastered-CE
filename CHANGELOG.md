@@ -40,3 +40,10 @@ By **JakeTheRipper**.
 30. **Kneel-fire movement (0.1.12):** Units can receive movement orders while kneel fire remains enabled, with other eligibility checks and the firing drill retained.
 31. **Naval defenders (0.1.12):** Defending fleets now use the normal naval attack group and engage the player. Attacker-group approach also reported by pad345654's Shogun 2 Bugfix Mod.
 32. **Drop-in setting (0.1.12):** The pre-battle checkbox respects the saved campaign setting; changes on that screen are saved too.
+
+33. **Campaign fleet-count banners (0.1.14):** Restored the naval banner's lower geometry so the first ship-count bars can display. The installer reconstructs the model locally from original assets using CE's model format and materials.
+34. **Movement pitch variation (0.1.14):** Corrected the pitch-control scale in 48 infantry and cavalry movement sound banks. Retains the initial variation level selected in testing.
+35. **Movement start delay (0.1.14):** Corrected start-delay conversion curves in the same 48 movement sound banks.
+36. **Combat impact volume (0.1.14):** Increased 47 close-combat impact, weapon-swing and body-fall sound banks by 3 dB.
+37. **Matched-combat audio timing (0.1.14):** Restored 430 original animation sound-timing files for byte-identical CE animations. Stab and kill-move audio reported working in the combined local patch.
+38. **Installer pack support (0.1.14):** Added private model/audio pack reconstruction, path routing and compatible uninstall handling. Requires the 0.1.14 installer ZIP once; automatic installer self-updating remains reverted.
