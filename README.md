@@ -8,7 +8,7 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.13](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.13-preview)**
+**0.1.13 downloads are temporarily withdrawn.** Microsoft Defender has blocked `RemasteredCE_Setup.exe` with detection `Behavior:Win32/DefenseEvasion.A!ml`. The cause is under investigation; a false positive has not been established. Keep the installer blocked. The release has been returned to draft so the GitHub updater no longer offers it, and the current repository installer ZIP has been removed.
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -52,7 +52,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download the 0.1.13 installer ZIP once if your installer is 0.1.12 or older. Installer 0.1.13 adds automatic installer updates for future releases.**
+**The 0.1.13 installer and its self-update feature are currently withdrawn pending investigation of the Defender detection above.** The following describes the intended update workflow; do not use a blocked installer.
 
 Updating is the same as installing:
 
