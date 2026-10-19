@@ -1,0 +1,11 @@
+{
+  "version": "0.1.12-preview",
+  "originalCommit": "ff5b8093114751d6f3983370cf8d430104356c18",
+  "originalCommittedUtc": "2026-10-18T02:35:56Z",
+  "originalPublishedUtc": "2026-10-18T02:36:07Z",
+  "installerFile": "downloads/RemasteredCE_Installer_Preview.zip",
+  "installerSha256": "2a7c11b0df27c7c7dbe77a4fa48322a2943e92c6bf24e1ccdbfd9cd47882ad6c",
+  "packageSha256": "b394bd29c3d9d156e31ceb7f2ed132daa06d3a482dcb7607eccac71e6ab03de7",
+  "retrievedFrom": "https://raw.githubusercontent.com/JakeTheRipperYT/Remastered-CE/ff5b8093114751d6f3983370cf8d430104356c18/downloads/RemasteredCE_Installer_Preview.zip",
+  "rebuilt": false
+}

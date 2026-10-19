@@ -12,7 +12,9 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.12](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.12-preview)**
+**[Download the original Remastered CE 0.1.12 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.12-preview/RemasteredCE_Installer_Preview.zip)**
+
+[0.1.12 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.12-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
