@@ -1,12 +1,15 @@
-# Remastered CE 0.1.14 preview
+# Remastered CE 0.1.12 preview
 
 By **JakeTheRipper**.
 
-- Restore naval fleet-count banner geometry.
-- Correct infantry and cavalry movement pitch and start-delay controls in 48 sound banks.
-- Increase 47 close-combat sound banks by 3 dB and restore 430 original matched-combat sound-timing files. The combined stab/kill-move audio patch was reported working in local testing.
-- Add model/audio pack reconstruction and path routing while preserving prior release recipes and backward-compatible uninstall handling.
+- **Hell difficulty:** Enforces Legendary battle realism after deployment and restores Legendary-style automatic saving, using `auto_save_hell.{clan}` names. Hell keeps instant Realm Divide and Legendary AI difficulty values.
+- **Yari wall:** Engaged units now process movement orders without requiring the player to disable yari wall. Confirmed working in-game.
+- **Kneel fire:** Removed the kneel-fire-specific movement eligibility block. Other eligibility checks and firing-drill behaviour remain in place; packaged native checks passed, with fresh in-game confirmation still pending.
+- **Naval AI:** Replaced the naval holding group with CE's normal naval attack group so defending fleets engage. Confirmed working in-game. This changes tactical group behaviour, not campaign battle ownership or victory conditions.
+- **Drop-in battles:** Pre-battle selection respects the campaign's saved setting; changes on that screen are also saved.
 
-Download and extract this release's installer ZIP once. The 0.1.12 installer does not support the additional packs. Automatic installer self-updating remains reverted.
+Existing installer versions **0.1.10 and newer** can obtain this release through **Install / Update**. For a fresh installation, download **RemasteredCE_Installer_Preview.zip**, extract it and run the included setup. Older installer applications need replacement with the current ZIP.
 
-The patch builds from locally installed original and Complete Edition files. Complete game packs and executables are not distributed. See CHANGELOG.md for the complete change list.
+All earlier content is retained. **Orendiz** is credited for the blood/smoke rework. The naval attacker-group approach was also reported by **pad345654** in the [Shogun 2 Bugfix Mod](https://www.moddb.com/mods/shogun-2-bugfix-mod/downloads/total-war-shogun-2-bugfix-mod); this release implements it against CE's own engine.
+
+Release validation compares the reconstructed engine code/data against the locally tested build, checks relocated helper targets and native rules, and rebuilds all five packs from the signed package. A fresh launcher uninstall/reinstall gameplay test remains pending.
