@@ -1,15 +1,18 @@
-# Remastered CE 0.1.12 preview
+# Remastered CE 0.1.16 preview
 
 By **JakeTheRipper**.
 
-- **Hell difficulty:** Enforces Legendary battle realism after deployment and restores Legendary-style automatic saving, using `auto_save_hell.{clan}` names. Hell keeps instant Realm Divide and Legendary AI difficulty values.
-- **Yari wall:** Engaged units now process movement orders without requiring the player to disable yari wall. Confirmed working in-game.
-- **Kneel fire:** Removed the kneel-fire-specific movement eligibility block. Other eligibility checks and firing-drill behaviour remain in place; packaged native checks passed, with fresh in-game confirmation still pending.
-- **Naval AI:** Replaced the naval holding group with CE's normal naval attack group so defending fleets engage. Confirmed working in-game. This changes tactical group behaviour, not campaign battle ownership or victory conditions.
-- **Drop-in battles:** Pre-battle selection respects the campaign's saved setting; changes on that screen are also saved.
+This release includes every prior 0.1.12 patch recipe, the newer banner and battle-audio fixes, and the corrected independent Hell mode.
 
-Existing installer versions **0.1.10 and newer** can obtain this release through **Install / Update**. For a fresh installation, download **RemasteredCE_Installer_Preview.zip**, extract it and run the included setup. Older installer applications need replacement with the current ZIP.
+- Restore naval fleet-count banner geometry.
+- Correct movement pitch and start-delay controls in 48 infantry/cavalry sound banks.
+- Increase 47 combat sound banks by 3 dB and restore 430 matched-combat sound-timing files. The combined stab/kill-move correction was confirmed in local play.
+- Add seven-pack installer support while retaining backward-compatible uninstall handling.
+- Give Hell its own campaign/human/AI difficulty IDs and 21 copied modifier rows, with battle realism, fame threshold -1 and `auto_save_hell.{clan}` autosaves.
+- Restore the original hardest-difficulty starting enemy armies/rebellions for all nine affected clans under Hell. Start a new Hell campaign for the initial spawns; existing campaigns are not retroactively populated.
 
-All earlier content is retained. **Orendiz** is credited for the blood/smoke rework. The naval attacker-group approach was also reported by **pad345654** in the [Shogun 2 Bugfix Mod](https://www.moddb.com/mods/shogun-2-bugfix-mod/downloads/total-war-shogun-2-bugfix-mod); this release implements it against CE's own engine.
+**Upgrade from 0.1.12:** Download and extract this release's installer ZIP once, then run `RemasteredCE_Setup.exe`. The game launcher itself is unchanged. Automatic installer self-updating remains excluded. Previously withdrawn builds are superseded by this release; the archived original 0.1.12 download remains available.
 
-Release validation compares the reconstructed engine code/data against the locally tested build, checks relocated helper targets and native rules, and rebuilds all five packs from the signed package. A fresh launcher uninstall/reinstall gameplay test remains pending.
+The final installer rebuild was compared with the tested local installation. Native checks cover Hell's IDs, modifiers, startup/load handling, realism, autosave prefix and fame threshold. Lua 5.1 execution checks cover exact starting-force calls, original difficulties and multiplayer suppression. The user confirmed the corrected local result; these checks do not establish that every possible save/campaign path was played through.
+
+The patch reconstructs files from locally installed original and Complete Edition games. Complete game packs and engine DLLs are not distributed. See CHANGELOG.md for all 40 documented entries and source/hell/ for the inspectable Hell implementation.

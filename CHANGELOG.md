@@ -40,3 +40,15 @@ By **JakeTheRipper**.
 30. **Kneel-fire movement (0.1.12):** Units can receive movement orders while kneel fire remains enabled, with other eligibility checks and the firing drill retained.
 31. **Naval defenders (0.1.12):** Defending fleets now use the normal naval attack group and engage the player. Attacker-group approach also reported by pad345654's Shogun 2 Bugfix Mod.
 32. **Drop-in setting (0.1.12):** The pre-battle checkbox respects the saved campaign setting; changes on that screen are saved too.
+
+
+33. **Campaign fleet-count banners (0.1.16):** Restored naval-banner geometry so the ship-count bars can display. Reconstructed from original assets in CE's model format and materials.
+34. **Movement pitch variation (0.1.16):** Corrected the pitch-control scale in 48 infantry and cavalry movement sound banks. Retains the initial variation level selected in local testing.
+35. **Movement start delay (0.1.16):** Corrected start-delay conversion curves in those 48 movement sound banks, reducing synchronized movement audio.
+36. **Combat impact volume (0.1.16):** Increased 47 close-combat impact, weapon-swing and body-fall sound banks by 3 dB.
+37. **Matched-combat audio timing (0.1.16):** Restored 430 original animation sound-timing files for byte-identical CE animations. The combined stab/kill-move audio correction was confirmed working by the user.
+38. **Installer pack support (0.1.16):** Added private model/audio pack reconstruction, bounded pack-index expansion and compatible uninstall handling. Upgrade the installer ZIP once from 0.1.12; the game launcher executable is unchanged. Automatic installer self-updating remains excluded.
+39. **Independent Hell difficulty (0.1.16):** Replaced the previous Legendary-ID alias with campaign mode 4, human handicap -4 and AI handicap +4 at the sixth slider position. Copied Legendary modifier values into 21 separate Hell database rows and extended native lookup bounds. Added independent startup/load handling, battle realism, fame threshold -1 and `auto_save_hell.{clan}` naming. Modifier data is LZ4 encoded for the compressed pack; the earlier local splash-crash packaging error is corrected.
+40. **Hell starting enemies (0.1.16):** The Japan campaign script now recognizes Hell and uses the original hardest-difficulty starting rebellion/army branches for all nine affected clans. Exact armies, generals and spawn locations are retained. Hell's script flag has save/load support. Existing saves do not receive missing starting armies retroactively.
+
+Entries 26 and 28 describe the earlier implementation's intent; entry 39 records the independent-mode correction now included. The withdrawn 0.1.13/0.1.14 builds are superseded by 0.1.16. Version 0.1.15 was local development only.

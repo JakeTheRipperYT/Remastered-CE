@@ -1,0 +1,28 @@
+{
+  "nativeConstructorsPreserveDistinctHumanAndAiIds": true,
+  "allFiveOriginalModesUnchangedByNewConstructor": true,
+  "staleUiFlagCannotChooseTheMode": true,
+  "previousUiResetCannotClearNewModeCache": true,
+  "newAndLoadedSettingsRetainModeFourAndHumanMinusFour": true,
+  "loadCleanupArgumentAndAiSettingsPreserved": true,
+  "hellExplicitlySetsBattleRealism": true,
+  "onlyHellHasMinusOneRealmDivideThreshold": true,
+  "onlyHellOverridesTheAutosavePrefix": true,
+  "nativeDatabaseSelectorUsesDistinctHellRows": {
+    "-4": [
+      "-4"
+    ],
+    "-3": [
+      "-3"
+    ],
+    "3": [
+      "3"
+    ],
+    "4": [
+      "4"
+    ]
+  },
+  "nativePreferenceWriteDoesNotAliasHellToLegendary": true,
+  "nativePackedSettingsDecodeRetainsSixthPositionAsMinusFour": true,
+  "inGameConfirmed": false
+}

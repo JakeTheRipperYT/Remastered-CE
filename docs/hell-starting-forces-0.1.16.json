@@ -1,0 +1,116 @@
+{
+  "luaVersion": "5.1",
+  "wholeScriptExecuted": true,
+  "hellDistinctFlagAndSaveLoadPassed": true,
+  "originalFiveDifficultiesPreserved": 45,
+  "multiplayerChecks": 9,
+  "clanSpawnCalls": {
+    "chosokabe": [
+      [
+        "force_rebellion_in_region",
+        "jap_tosa",
+        0,
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        "names_name_names_japaneseFusamoto",
+        "names_name_names_japaneseIchijo",
+        -140.5,
+        -138,
+        true
+      ]
+    ],
+    "oda": [
+      [
+        "force_rebellion_in_region",
+        "jap_owari",
+        0,
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        "",
+        "names_name_names_odaOda",
+        -13.4,
+        -132.4,
+        true
+      ]
+    ],
+    "takeda": [
+      [
+        "create_force",
+        "murakami",
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        43,
+        -128,
+        "murakami_invaders",
+        true
+      ]
+    ],
+    "tokugawa": [
+      [
+        "create_force",
+        "oda",
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        -9,
+        -139,
+        "oda_invaders",
+        true
+      ]
+    ],
+    "uesugi": [
+      [
+        "force_rebellion_in_region",
+        "jap_echigo",
+        0,
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        "names_name_names_japaneseHarukage",
+        "names_name_names_uesugiNagao",
+        77,
+        -79,
+        true
+      ]
+    ],
+    "hojo": [
+      [
+        "create_force",
+        "ogigayatsu_uesugi",
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        65,
+        -157,
+        "ogigayatsu_invaders",
+        true
+      ]
+    ],
+    "date": [
+      [
+        "force_rebellion_in_region",
+        "jap_iwate",
+        0,
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        "names_name_names_japaneseTanemune",
+        "names_name_names_dateDate",
+        183,
+        -36,
+        true
+      ]
+    ],
+    "mori": [
+      [
+        "create_force",
+        "amako",
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Samurai,Inf_Missile_Bow_Ashigaru,Cav_Spear_Yari_Cavalry",
+        -155.5,
+        -86,
+        "amako_invaders",
+        true
+      ]
+    ],
+    "shimazu": [
+      [
+        "create_force",
+        "ito",
+        "Inf_Spear_Yari_Ashigaru,Inf_Spear_Yari_Ashigaru,Inf_Missile_Bow_Ashigaru,Cav_Spear_Light_Cavalry",
+        -234,
+        -165,
+        "ito_invaders",
+        true
+      ]
+    ]
+  }
+}

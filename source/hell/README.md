@@ -1,0 +1,13 @@
+# Distinct Hell implementation
+
+Hell uses campaign mode 4, human handicap -4 and AI handicap +4 at slider position six. The original five difficulty identities are retained. Seven human and fourteen AI modifier rows copy the corresponding Legendary values into separate Hell rows; native lookup bounds include the new IDs. Hell has its own persistent mode cache, startup/load handling, battle realism, fame threshold -1 and auto_save_hell.{clan} prefix.
+
+The signed .rce package is the authoritative combined recipe: after the 8-byte RCEPKG01 header and 4-byte signature length, skip the signature and extract the ZIP to inspect manifest.json and helper.json. It also contains the unchanged launcher. Engine.cs verifies the signature before normal installation. No private signing key is distributed.
+
+native_generator.py regenerates the engine patch instructions and helper from an unmodified local CE engine and that manifest. It requires Python and pefile. Run: `python native_generator.py --engine PATH_TO_ORIGINAL_DLL --manifest manifest.json --output OUTPUT_DIRECTORY`. baseline-engine.json and baseline-helper.json preserve prior engine patches and helper bytes before adding the distinct Hell implementation. The installer applies the resulting instructions locally; no game DLL is distributed.
+
+campaign_script_patch.py takes the locally extracted original Japan scripting.lua and an output filename. It adds an independent Hell flag, save/load support, and Hell eligibility in nine original hardest-difficulty starting-force branches. It preserves the exact faction, army, general, location and messaging arguments. The signed manifest reconstructs this script from local CE data using equivalent copy/literal operations and LZ4 encoding. The 21 copied modifier rows are also reconstructed and LZ4 encoded by the signed recipe.
+
+The full original and corrected campaign scripts were executed under Lua 5.1 with mocked game interfaces: nine Hell force calls exactly match original Legendary, 45 original clan/difficulty combinations are unchanged, and multiplayer suppression and Hell flag persistence pass. These checks do not replace in-game testing. The user confirmed the corrected local result before publication. Existing campaigns are not retroactively given missing starting armies.
+
+redirect_additional_packs.c documents the model/audio wrapper retained before the new helpers. The original routing and preference helpers remain byte-for-byte intact in baseline-helper.json. Root redirect_portable.c is the historical original helper source, not a replacement for the current combined signed recipe.

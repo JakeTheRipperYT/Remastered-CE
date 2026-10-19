@@ -1,0 +1,32 @@
+{
+  "version": "0.1.16-preview",
+  "minimumInstallerVersion": "0.1.14-preview",
+  "status": "validated_for_publication",
+  "fullBuildFromLocalGamesPassed": true,
+  "allSevenGeneratedPackHashesMatchUserTestedInstallation": true,
+  "engineMatchesUserTestedInstallation": true,
+  "modifiedPacksExcludedFromBaseHardLinks": true,
+  "retainedPreviousAssetRecipes": 3824,
+  "totalAssetRecipes": 3826,
+  "newHellModifierRows": 21,
+  "hellStartingForceClanChecks": 9,
+  "oldDifficultySpawnChecks": 45,
+  "installerSelfTestsPassed": 29,
+  "oldInstallerRejectsPackageBeforeBuild": true,
+  "launcherExecutableUnchanged": true,
+  "installerSelfUpdatingIncluded": false,
+  "localDefenderInstallerScanFoundNoThreats": true,
+  "publicNativeAndLuaGeneratorsReproduceExactRecipes": true,
+  "userConfirmedCorrectedLocalResult": true,
+  "allPossibleGameplayPathsVerified": false,
+  "engineFinalSha256": "d7214d950ddc35590acf282eb578f2ce3e03af19bd735398698e6851665414e5",
+  "packHashes": {
+    "data/data.pack": "3723e44fa68857757385aeab28ab9f8ba3dcfc4cbf8882e003c1c11bb99c8850",
+    "data/shaders.pack": "557b8609be67db84a06369970b276b6eb3c4a4e8ddba803f5aa64544f17ff228",
+    "data/bp_orig.pack": "2114ed6a19eea9ed6693c64e5a19dd3de10cc2a44d6933e2d210d55a8b440c54",
+    "data/web_content.pack": "9356ab855c3c80a427b7654deb62b0fa146113e51cfb76b0e104cf889fb0c82b",
+    "data/local_global.pack": "b8e436030e08683a3b11ea01c89ac5f6d10b5e3a705638d354b5eff6e7fbb84e",
+    "data/models.pack": "0bafdafa990c5e59eb2b2251eed73c8d2c17725cf349f05cd5fbdbd6a188e231",
+    "data/audio.pack": "943a0e6028d3823a5f7f40cfd0523932e85e93116c70b4b5c55e2b76442579c3"
+  }
+}
