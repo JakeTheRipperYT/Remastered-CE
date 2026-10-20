@@ -1,0 +1,17 @@
+{
+  "version": "0.1.17-preview",
+  "engineFinalSha256": "07b92458d92bf1bc834d2d2fc9637bbcf8b8e9d9cf601c65e1c33a2befedcbc4",
+  "fullBuildFromLocalGamesPassed": true,
+  "allEightGeneratedPackHashesMatchUserTestedInstallation": true,
+  "installerSelfTestsPassed": 33,
+  "oldInstallerRejectsPackageBeforeBuild": true,
+  "installLayoutMatchesPreviousInstaller": true,
+  "releaseRehearsedInPrivateRepository": true,
+  "updaterRehearsalPassed": true,
+  "userConfirmedInGame": [
+    "original recruitment videos",
+    "Parrott launch smoke",
+    "close-camera combat audio"
+  ],
+  "launcherSha256": "e1606e76ac88c7995da4a90b82f618de9a402dd0bf515951f3097a4f517c1c13"
+}

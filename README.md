@@ -12,9 +12,9 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.16 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.16-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.17 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.17-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.16 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.16-preview)
+[0.1.17 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.17-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -58,7 +58,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download and extract the 0.1.16 installer ZIP once when upgrading from 0.1.12. The older installer cannot reconstruct the additional model and audio packs. The game launcher executable is unchanged. Automatic installer self-updating is not enabled.**
+**Download and extract the 0.1.17 installer ZIP once when upgrading from 0.1.16 or earlier. Older installers cannot reconstruct the new eighth pack that holds the original recruitment videos. The game launcher executable is unchanged. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 
@@ -86,7 +86,7 @@ The installer:
 
 1. Verifies the supported Complete Edition executable, engine and required source files.
 2. Extracts the required original assets from your locally installed games.
-3. Reconstructs the seven modified game packs used by Remastered CE.
+3. Reconstructs the eight modified game packs used by Remastered CE.
 4. Builds a separate Remastered CE engine and executable layout.
 5. Hard-links unchanged Complete Edition data into the separate `RemasteredCE` folder instead of needlessly duplicating everything.
 6. Verifies the finished files before switching the completed build into place.

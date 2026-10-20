@@ -52,3 +52,7 @@ By **JakeTheRipper**.
 40. **Hell starting enemies (0.1.16):** The Japan campaign script now recognizes Hell and uses the original hardest-difficulty starting rebellion/army branches for all nine affected clans. Exact armies, generals and spawn locations are retained. Hell's script flag has save/load support. Existing saves do not receive missing starting armies retroactively.
 
 Entries 26 and 28 describe the earlier implementation's intent; entry 39 records the independent-mode correction now included. The withdrawn 0.1.13/0.1.14 builds are superseded by 0.1.16. Version 0.1.15 was local development only.
+
+41. **Recruitment videos (0.1.17):** Restored 41 original unit recruitment videos from the original game.
+42. **Parrott gun smoke (0.1.17):** Added the missing launch smoke effect to the Boshin Parrott gun.
+43. **Close-camera combat audio (0.1.17):** Combat sounds are no longer rejected when the camera is close.

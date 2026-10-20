@@ -21,6 +21,10 @@ PASS: base data links include nested files and preserve modified packs
 PASS: uninstall rejects unexpected file paths before removing anything
 PASS: uninstall preserves an unrecognized root launcher and stops before deletion
 PASS: 7-pack uninstall preserves vanilla, user files and previous versions
+PASS: base data links include nested files and preserve modified packs
+PASS: uninstall rejects unexpected file paths before removing anything
+PASS: uninstall preserves an unrecognized root launcher and stops before deletion
+PASS: 8-pack uninstall preserves vanilla, user files and previous versions
 PASS: updater orders versions numerically and avoids same-version installs and downgrades
 PASS: updater selects newest published package including prereleases and excludes drafts
 PASS: updater rejects download addresses outside the release repository

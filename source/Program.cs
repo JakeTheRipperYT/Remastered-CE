@@ -36,7 +36,7 @@ public sealed class MainForm : Form {
  public MainForm(bool preview=false){
   Icon=Icon.ExtractAssociatedIcon(Application.ExecutablePath);Text="Remastered CE";ClientSize=new Size(810,650);MinimumSize=new Size(820,690);StartPosition=FormStartPosition.CenterScreen;Font=new Font("Segoe UI",10);BackColor=Color.FromArgb(23,27,30);ForeColor=Color.FromArgb(235,239,240);AutoScaleMode=AutoScaleMode.Dpi;
   var title=new Label{Text="REMASTERED CE",Font=new Font("Segoe UI Semibold",23),AutoSize=true,Location=new Point(28,24)};Controls.Add(title);
-  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.16",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
+  Controls.Add(new Label{Text="By JakeTheRipper · Preview 0.1.17",AutoSize=true,ForeColor=Color.FromArgb(158,176,181),Location=new Point(31,73)});
   FolderRow("Complete Edition installation",ce,122);FolderRow("Original Shogun 2 installation",legacy,204);
   Controls.Add(new Label{Text="Release package",AutoSize=true,Location=new Point(30,286)});StyleBox(package);package.Location=new Point(30,312);package.Size=new Size(505,29);package.ReadOnly=true;package.Text="GitHub — latest release";Controls.Add(package);
   ButtonStyle(github,"GitHub",new Rectangle(547,310,108,33));github.Click+=(s,e)=>{package.Tag=null;package.Text="GitHub — latest release";};
@@ -117,11 +117,11 @@ static class SelfTests {
    if(!rejected||!File.Exists(Engine.Under(live,"old.txt"))||File.ReadAllText(Engine.Under(transactionRoot,"RemasteredCE_Bootstrap.exe"))!="old bootstrap"||File.ReadAllText(Engine.Under(transactionRoot,"Launch_Remastered_CE.exe"))!="old launcher")throw new Exception("Publication rollback failed.");results.Add("PASS: failed update restores previous folder and already-replaced bootstrap");
    File.WriteAllText(Engine.Under(stage,"Launch_Remastered_CE.exe"),"new launcher");Engine.PublishVerified(stage,transactionRoot,previous);if(!File.Exists(Engine.Under(previous,"old.txt"))||File.ReadAllText(Engine.Under(transactionRoot,"Launch_Remastered_CE.exe"))!="new launcher")throw new Exception("Publication commit failed.");results.Add("PASS: verified update publishes and preserves previous installation");
   }finally{Engine.NoLinks(transactionRoot);if(!Path.GetFileName(transactionRoot).StartsWith("RCE-publication-test-",StringComparison.Ordinal))throw new Exception("Invalid self-test cleanup target.");Directory.Delete(transactionRoot,true);}
-  for(int packCount=4;packCount<=7;packCount++){
+  for(int packCount=4;packCount<=8;packCount++){
   string uninstallRoot=Path.Combine(Path.GetTempPath(),"RCE-uninstall-test-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(uninstallRoot);
   try{
    string live=Engine.Under(uninstallRoot,"RemasteredCE"),record=Engine.Under(live,"install-state.json");Directory.CreateDirectory(Engine.Under(live,"data"));Directory.CreateDirectory(Engine.Under(live,"previous-launchers"));
-   var packs=new[]{"data/data.pack","data/shaders.pack","data/bp_orig.pack","data/web_content.pack","data/local_global.pack","data/models.pack","data/audio.pack"}.Take(packCount).ToArray();
+   var packs=new[]{"data/data.pack","data/shaders.pack","data/bp_orig.pack","data/web_content.pack","data/local_global.pack","data/models.pack","data/audio.pack","data/movies.pack"}.Take(packCount).ToArray();
    File.WriteAllText(Engine.Under(uninstallRoot,"shogun2_complete_edition.exe"),"vanilla executable");Directory.CreateDirectory(Engine.Under(uninstallRoot,"data"));File.WriteAllText(Engine.Under(uninstallRoot,"data/data.pack"),"vanilla pack");
    Directory.CreateDirectory(Engine.Under(uninstallRoot,"RemasteredCE.previous_test"));File.WriteAllText(Engine.Under(uninstallRoot,"RemasteredCE.previous_test/keep.txt"),"previous version");
    foreach(string pack in packs)File.WriteAllText(Engine.Under(live,pack),"modified pack");File.WriteAllText(Engine.Under(live,"CE.dll"),"modified engine");
