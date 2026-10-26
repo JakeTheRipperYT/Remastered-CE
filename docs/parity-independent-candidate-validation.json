@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": 12294,
+  "packedAssetsVerified": 19,
+  "heavyBunePlacementExcluded": true,
+  "ninjaAmmunitionVerified": true,
+  "moriHarbourLinkUnique": true,
+  "prefixIntegrity": [
+    {
+      "pack": "data.pack",
+      "publishedPrefixRestoredHash": "2de7cd06f880a6fcd98907b36721ba4fd0ae5d5a01b5bb9041703edde0886720",
+      "onlyNewIndexRecordsAndAppendedPayloadsChanged": true,
+      "indexRecords": 16
+    },
+    {
+      "pack": "local_global.pack",
+      "publishedPrefixRestoredHash": "b8e436030e08683a3b11ea01c89ac5f6d10b5e3a705638d354b5eff6e7fbb84e",
+      "onlyNewIndexRecordsAndAppendedPayloadsChanged": true,
+      "indexRecords": 2
+    },
+    {
+      "pack": "models.pack",
+      "publishedPrefixRestoredHash": "0bafdafa990c5e59eb2b2251eed73c8d2c17725cf349f05cd5fbdbd6a188e231",
+      "sourceBodyShift": 80,
+      "allOldPayloadBytesPreserved": true,
+      "indexRecords": 10654
+    }
+  ],
+  "allCandidateTablesRoundtrip": true,
+  "newUnitReferencesValidated": true,
+  "CEClanNinjaStatsPreserved": true,
+  "loadingScreensExcluded": true,
+  "retainedOtherPackRecipes": 5,
+  "sekigaharaExcluded": true
+}

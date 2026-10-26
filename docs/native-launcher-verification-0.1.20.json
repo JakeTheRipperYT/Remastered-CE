@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "compiledLauncherExecuted": true,
+  "win32APIsSimulated": true,
+  "realGameLaunched": false,
+  "cases": 8,
+  "launcherSha256": "e1606e76ac88c7995da4a90b82f618de9a402dd0bf515951f3097a4f517c1c13",
+  "steamAppId": "3846830",
+  "privateExecutable": "RemasteredCE/shogun2_complete_edition.exe",
+  "details": [
+    {
+      "case": "normal",
+      "exit": 0,
+      "simulatedCreateProcessCalls": 1
+    },
+    {
+      "case": "spaces in installation path",
+      "exit": 0,
+      "simulatedCreateProcessCalls": 1
+    },
+    {
+      "case": "unicode installation path",
+      "exit": 0,
+      "simulatedCreateProcessCalls": 1
+    },
+    {
+      "case": "module failure",
+      "exit": 1,
+      "simulatedCreateProcessCalls": 0
+    },
+    {
+      "case": "overlong module path",
+      "exit": 1,
+      "simulatedCreateProcessCalls": 0
+    },
+    {
+      "case": "Steam App ID failure",
+      "exit": 1,
+      "simulatedCreateProcessCalls": 0
+    },
+    {
+      "case": "Steam Game ID failure",
+      "exit": 1,
+      "simulatedCreateProcessCalls": 0
+    },
+    {
+      "case": "process creation failure",
+      "exit": 1,
+      "simulatedCreateProcessCalls": 1
+    }
+  ]
+}

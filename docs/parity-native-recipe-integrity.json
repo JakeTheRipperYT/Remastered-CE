@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "engineSourceHashVerified": true,
+  "originalReleasedEnginePatchesRetained": 81,
+  "totalEnginePatches": 99,
+  "previousCandidateEnginePatchesRetained": 96,
+  "previousHelperPrefixBytesPreserved": 12332,
+  "capturePolicyDIR64Preserved": true,
+  "recipeReproducesEditedEngine": true,
+  "finalEngineSha256": "850d700470b90863c7e9dcd5a6044ea30d94e6938d6ca92b6e2ad8f8ce92ce15",
+  "releasedHelperPrefixBytesPreserved": 11567,
+  "unwindTableSortedAndNewEntriesPresent": true,
+  "liveBattleValidated": false
+}

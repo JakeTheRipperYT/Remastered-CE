@@ -12,9 +12,9 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.17 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.17-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.20 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.20-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.17 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.17-preview)
+[0.1.20 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.20-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -58,7 +58,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download and extract the 0.1.17 installer ZIP once when upgrading from 0.1.16 or earlier. Older installers cannot reconstruct the new eighth pack that holds the original recruitment videos. The game launcher executable is unchanged. Automatic installer self-updating is not enabled.**
+**The 0.1.20 installer ZIP includes the latest offline release. Existing 0.1.17 installers can also download this signed update through GitHub. Installers older than 0.1.17 must be replaced because they cannot reconstruct all eight packs. The game launcher is unchanged. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 

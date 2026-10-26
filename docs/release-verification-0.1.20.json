@@ -1,0 +1,33 @@
+{
+  "version": "0.1.20-preview",
+  "status": "PASS",
+  "engineFinalSha256": "850d700470b90863c7e9dcd5a6044ea30d94e6938d6ca92b6e2ad8f8ce92ce15",
+  "fullSignedSetupBuildPassed": true,
+  "allEightPackHashesVerifiedBySetup": true,
+  "allEightPackHashesMatchInstalledCandidateRecord": true,
+  "installedCandidateVersion": "0.1.20-ce-parity-test",
+  "installerSelfTestsPassed": 33,
+  "original017SetupAcceptsSignedUpdate": true,
+  "tamperedSignatureRejected": true,
+  "sameVersionAndDowngradeRejected": true,
+  "launcherSha256": "e1606e76ac88c7995da4a90b82f618de9a402dd0bf515951f3097a4f517c1c13",
+  "launcherUnchangedFrom017": true,
+  "setupSupportsCrossVolumeBuildOnlyStaging": true,
+  "gameInstallationModifiedDuringReleaseVerification": false,
+  "sekigaharaExcluded": true,
+  "loadingScreensExcluded": true,
+  "heavyBunePlacementExcluded": true,
+  "liveBattleAcceptancePending": true,
+  "packHashes": {
+    "data/data.pack": "e09f6e984f6dc7a45840574ff8fc04ff2025167636e92f7f4f03b792eb4f054d",
+    "data/shaders.pack": "557b8609be67db84a06369970b276b6eb3c4a4e8ddba803f5aa64544f17ff228",
+    "data/bp_orig.pack": "2114ed6a19eea9ed6693c64e5a19dd3de10cc2a44d6933e2d210d55a8b440c54",
+    "data/web_content.pack": "9356ab855c3c80a427b7654deb62b0fa146113e51cfb76b0e104cf889fb0c82b",
+    "data/local_global.pack": "9543d691b25bcc6ff65af598a40f40558cbb396df1fa6bbed6b0f207603db38b",
+    "data/models.pack": "a72779357409b6f368d9857c783debe15d81dbcfb2c09fcec1b312c295b138a3",
+    "data/audio.pack": "943a0e6028d3823a5f7f40cfd0523932e85e93116c70b4b5c55e2b76442579c3",
+    "data/movies.pack": "009f9a4d71d28c6588fbd31a11be3fa6a079f1c3d229f126fdfa27ff7fbb574f"
+  },
+  "recipePreservesUnreferencedStagedPayloadBytes": true,
+  "manifestBytes": 26939753
+}

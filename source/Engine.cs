@@ -66,7 +66,12 @@ public sealed class Engine {
    string relative="data/"+source.Substring(sourceRoot.Length+1).Replace('\\','/');
    string target=Under(stage,relative);if(File.Exists(target))continue;
    Directory.CreateDirectory(Path.GetDirectoryName(target));
-   if(!CreateHardLinkW(target,source,IntPtr.Zero))throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error(),"Unable to link required base game data: "+relative);
+   if(!CreateHardLinkW(target,source,IntPtr.Zero)){
+    int error=Marshal.GetLastWin32Error();
+    if(error!=17)throw new System.ComponentModel.Win32Exception(error,"Unable to link required base game data: "+relative);
+    // Build-only verification may stage on another drive; installed layouts still use hard links.
+    CopyFile(source,target);
+   }
    linked.Add(relative);
   }
   return linked.ToArray();
