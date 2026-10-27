@@ -1,5 +1,7 @@
 # Historical source reference
 
+The [0.1.25 custom-mod launcher fix](launcher-modfix/README.md) provides a checked source patch, pinned build recipe, regression tests and reversible hotfix deployment for the published combined launcher.
+
 This directory preserves the source and generators published through0.1.20. It does not contain the newer night-reinforcement and combined-launcher implementation in0.1.25. Use the current signed release and release-verification documentation for the supported installer.
 
 # Source notes
