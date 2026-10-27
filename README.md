@@ -18,6 +18,8 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
+**Launcher mod fix 2 (October 27):** the default ZIP now includes compressed S2CE/PFH3 support, custom-mod discovery in `RemasteredCE/data`, and an existing-user-script launch mode. Existing 0.1.25 users should download the updated ZIP and click **Install / Update** once; recognised older launchers are updated without rebuilding game packs or moving mods. The signed engine/data package is unchanged. [Build and validation details](source/launcher-modfix/README.md).
+
 See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 
 ## Before installing
@@ -61,7 +63,7 @@ Updating is the same as installing:
 2. Leave **GitHub** selected.
 3. Click **Install / Update Remastered CE**.
 
-The installer checks this GitHub repository for the newest supported release, downloads the signed `.rce` update package, verifies it, and installs it only if a newer version is available. No GitHub account or sign-in is required.
+The installer checks this GitHub repository for the newest supported release, downloads the signed `.rce` update package, verifies it, and installs it only if a newer version is available. At the same 0.1.25 engine version, this updated installer can also apply the launcher-only correction to a recognised original or mod-fix-1 launcher, with ownership checks, backups and rollback. No GitHub account or sign-in is required.
 
 The installer builds updates in a temporary staging folder first. Your previous Remastered CE installation is retained during the update so it can be restored if publication fails.
 
@@ -69,11 +71,11 @@ You can also use **Offline...** to install the included release or a downloaded 
 
 ## Mods
 
-The right-hand panel scans the CE game `data` folder for third-party packs, `RemasteredCE/mods`, CE Workshop content (`steamapps/workshop/content/3846830`) in detected Steam libraries, and folders added with **Add folder**. PNG previews and known CE base-game archives are excluded. OG Shogun 2 Workshop content (`34330`) is not scanned automatically.
+The right-hand panel scans the CE game `data` folder and private `RemasteredCE/data` folder for third-party packs, `RemasteredCE/mods`, CE Workshop content (`steamapps/workshop/content/3846830`) in detected Steam libraries, and folders added with **Add folder**. PNG previews and known CE base-game archives are excluded. OG Shogun 2 Workshop content (`34330`) is not scanned automatically.
 
 Use profiles to keep selections and order. **Auto-sort** follows declared pack dependencies and uses deterministic ordering; it cannot establish compatibility between mods. Selected optional packs are staged as exact copies, leaving original Workshop files in place. Third-party movie packs in game `data` remain automatically loaded by the engine. The manager never moves base game packs.
 
-The launcher temporarily writes the CE user mod script for a play session and restores its previous bytes after the game closes. Interrupted sessions can be recovered on the next startup; conflicting external edits are preserved for review. Use **Copy mod list** to share enabled pack names, order and hashes.
+For a manual mod script, check **Use existing user.script.txt (ignore selections)**; that mode preserves its bytes and ignores the selection grid. Leave it unchecked to use the selected profile. In selected-profile mode, the launcher temporarily writes the CE user mod script for a play session and restores its previous bytes after the game closes. Interrupted sessions can be recovered on the next startup; conflicting external edits are preserved for review. Use **Copy mod list** to share enabled pack names, order and hashes.
 
 ## Uninstalling
 

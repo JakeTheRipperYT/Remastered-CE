@@ -1,0 +1,253 @@
+--- a/RemasteredCE/Mods.cs
++++ b/RemasteredCE/Mods.cs
+@@ -124,7 +124,8 @@
+ 			uint num5 = binaryReader.ReadUInt32();
+ 			modPack.Type = (int)(num & 0xF);
+ 			modPack.AutoLoaded = gameData && modPack.Type == 4;
+-			if ((num & (uint)(~(flag ? 111 : 79))) != 0 || modPack.Type > 4 || num3 > 2097152 || num5 > 67108864 || num4 > 1000000 || num2 > 10000)
++			bool compressed = (flag || modPack.Format == "PFH3") && (num & 0x20) != 0;
++			if ((num & (uint)(~((flag || modPack.Format == "PFH3") ? 111 : 79))) != 0 || modPack.Type > 4 || num3 > 2097152 || num5 > 67108864 || num4 > 1000000 || num2 > 10000)
+ 			{
+ 				throw new InvalidDataException("Unsupported or oversized pack index.");
+ 			}
+@@ -180,7 +181,7 @@
+ 				uint num10 = BitConverter.ToUInt32(array3, cursor);
+ 				cursor += 4;
+ 				uint num11 = num10;
+-				if (flag && (num & 0x20) != 0)
++				if (compressed)
+ 				{
+ 					if (cursor + 4 > array3.Length)
+ 					{
+@@ -209,7 +210,7 @@
+ 				}
+ 				else
+ 				{
+-					num7 = checked(num7 + num10);
++					num7 = checked(num7 + num11);
+ 				}
+ 			}
+ 			if (cursor != array3.Length || (!flag && num7 != fileStream.Length))
+@@ -312,7 +313,8 @@
+ 					throw new IOException("Too many packs. Choose a more specific mods folder.");
+ 				}
+ 				string fullPath = Path.GetFullPath(item);
+-				if ((!Names.Equals(Path.GetDirectoryName(fullPath), Path.GetFullPath(Path.Combine(game, "data"))) || !GameLayout.BasePacks.Contains(Path.GetFileName(fullPath), Names)) && !found.ContainsKey(fullPath))
++				bool baseData = GameDataFolders(game).Any(folder => Names.Equals(Path.GetDirectoryName(fullPath), Path.GetFullPath(folder)));
++				if ((!baseData || !GameLayout.BasePacks.Contains(Path.GetFileName(fullPath), Names)) && !found.ContainsKey(fullPath))
+ 				{
+ 					ModPack modPack = ReadPack(fullPath, label, data);
+ 					if (!data || modPack.Error != null || modPack.Type == 3 || modPack.Type == 4)
+@@ -327,6 +329,7 @@
+ 			}
+ 		};
+ 		action(Path.Combine(game, "data"), "Game data", 0, arg4: true);
++		action(Path.Combine(game, "RemasteredCE", "data"), "Remastered CE data", 0, arg4: true);
+ 		action(Path.Combine(game, "RemasteredCE", "mods"), "Remastered CE mods", 4, arg4: false);
+ 		foreach (string item2 in steamApps ?? SteamApps(game))
+ 		{
+@@ -350,6 +353,11 @@
+ 			action(item3, "Custom folder", 4, arg4: false);
+ 		}
+ 		return found.Values.OrderBy((ModPack x) => x.Name, Names).ThenBy((ModPack x) => x.Path, Names).ToList();
++	}
++
++	public static string[] GameDataFolders(string game)
++	{
++		return new[] { Path.Combine(game, "RemasteredCE", "data"), Path.Combine(game, "data") };
+ 	}
+ 
+ 	public static void ApplyProfile(List<ModPack> packs, ModProfile profile)
+--- a/RemasteredCE/ModScriptSession.cs
++++ b/RemasteredCE/ModScriptSession.cs
+@@ -9,6 +9,18 @@
+ 
+ public sealed class ModScriptSession : IDisposable
+ {
++	public static ModScriptSession Prepare(string settings, string scriptPath, string active, List<ModPack> packs, bool useExistingScript, Func<bool> gameRunning = null)
++	{
++		var session = new ModScriptSession(settings, scriptPath, gameRunning);
++		// Recover an interrupted managed session before either launch mode.
++		session.Recover();
++		if (useExistingScript)
++		{
++			return null;
++		}
++		session.Begin(active, packs);
++		return session;
++	}
+ 	private readonly string script;
+ 
+ 	private readonly string journal;
+--- a/RemasteredCE/ModProfile.cs
++++ b/RemasteredCE/ModProfile.cs
+@@ -2,6 +2,7 @@
+ 
+ public sealed class ModProfile
+ {
++	public bool UseExistingScript;
+ 	public string[] Order = new string[0];
+ 
+ 	public string[] Enabled = new string[0];
+--- a/RemasteredCE/ModForm.cs
++++ b/RemasteredCE/ModForm.cs
+@@ -28,6 +28,8 @@
+ 	private readonly Label summary = new Label();
+ 
+ 	private readonly Button play = new Button();
++
++	private readonly CheckBox existingScript = new CheckBox();
+ 
+ 	private readonly List<Control> actions = new List<Control>();
+ 
+@@ -124,6 +126,7 @@
+ 			};
+ 			profiles.SelectedIndex = -1;
+ 			profiles.Text = profile.Name;
++			existingScript.Checked = false;
+ 			foreach (ModPack pack in packs)
+ 			{
+ 				pack.Enabled = pack.AutoLoaded;
+@@ -132,6 +135,7 @@
+ 		});
+ 		Add(flowLayoutPanel, "Patch only", () =>
+ 		{
++			existingScript.Checked = false;
+ 			foreach (ModPack pack2 in packs)
+ 			{
+ 				pack2.Enabled = pack2.AutoLoaded;
+@@ -301,12 +305,15 @@
+ 			await Play();
+ 		};
+ 		tableLayoutPanel3.Controls.Add(play, 1, 0);
+-		tableLayoutPanel3.Controls.Add(new Label
+-		{
+-			Text = "Mods stay in their original folders. The Steam mod script is restored after playing.",
+-			Dock = DockStyle.Fill,
+-			TextAlign = ContentAlignment.MiddleLeft
+-		}, 0, 0);
++		existingScript.Text = "Use existing user.script.txt (ignore selections)";
++		existingScript.Dock = DockStyle.Fill;
++		existingScript.CheckedChanged += (sender, e) =>
++		{
++			grid.Enabled = !busy && !existingScript.Checked;
++			play.Text = existingScript.Checked ? "Play existing script" : "Play Remastered CE";
++		};
++		actions.Add(existingScript);
++		tableLayoutPanel3.Controls.Add(existingScript, 0, 0);
+ 		tableLayoutPanel.Controls.Add(tableLayoutPanel3);
+ 		profiles.SelectionChangeCommitted += async (object s, EventArgs e) =>
+ 		{
+@@ -443,6 +450,7 @@
+ 
+ 	private void CaptureState()
+ 	{
++		profile.UseExistingScript = existingScript.Checked;
+ 		profile.Name = profiles.Text.Trim();
+ 		profile.Order = packs.Select((ModPack p) => p.Path).ToArray();
+ 		profile.Enabled = (from p in packs
+@@ -475,13 +483,13 @@
+ 	private void SetBusy(bool value)
+ 	{
+ 		busy = value;
+-		grid.Enabled = !value;
++		grid.Enabled = !value && !existingScript.Checked;
+ 		foreach (Control action in actions)
+ 		{
+ 			action.Enabled = !value;
+ 		}
+ 		play.Enabled = !value;
+-		play.Text = (value ? "Please wait…" : "Play Remastered CE");
++		play.Text = value ? "Please wait…" : (existingScript.Checked ? "Play existing script" : "Play Remastered CE");
+ 		if (BusyChanged != null)
+ 		{
+ 			BusyChanged(value);
+@@ -504,6 +512,7 @@
+ 		{
+ 			List<ModPack> list = await Task.Run(() => Mods.Discover(game, profile.Folders));
+ 			Mods.ApplyProfile(list, profile);
++			existingScript.Checked = profile.UseExistingScript;
+ 			packs = list;
+ 			Render();
+ 			status.Text = "Found " + packs.Count + " packs. Steam and Workshop files were read only.";
+@@ -590,7 +599,8 @@
+ 
+ 	private async Task Play()
+ 	{
+-		List<string> list = Mods.Issues(packs, game);
++		bool manual = existingScript.Checked;
++		List<string> list = manual ? new List<string>() : Mods.Issues(packs, game);
+ 		if (list.Count > 0)
+ 		{
+ 			Error(new InvalidDataException(string.Join("\r\n", list)));
+@@ -609,16 +619,15 @@
+ 			Directory.CreateDirectory(sessionRoot);
+ 			using (new FileStream(Path.Combine(sessionRoot, "session.lock"), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, 1, FileOptions.DeleteOnClose))
+ 			{
+-				string active = await Task.Run(() => Mods.Stage(packs, settings, (string text) =>
++				string active = manual ? null : await Task.Run(() => Mods.Stage(packs, settings, (string text) =>
+ 				{
+ 					BeginInvoke((Action)(() =>
+ 					{
+ 						status.Text = text;
+ 					}));
+ 				}));
+-				using ModScriptSession session = new ModScriptSession(sessionRoot, Mods.UserScript);
+-				session.Begin(active, packs);
+-				status.Text = "Playing. Your original Steam mod script will be restored when the game closes.";
++				using ModScriptSession session = ModScriptSession.Prepare(sessionRoot, Mods.UserScript, active, packs, manual);
++				status.Text = manual ? "Playing with your existing script. Launcher selections are ignored; the script is unchanged." : "Playing. Your original Steam mod script will be restored when the game closes.";
+ 				string launcher = Path.Combine(game, "Launch_Remastered_CE.exe");
+ 				IEnumerable<string> args = new string[2] { "--direct", "--wait" }.Concat(forwarded).Select(Mods.QuoteArgument);
+ 				int num = await Task.Run(() =>
+@@ -637,7 +646,7 @@
+ 					throw new IOException("The game launcher stopped with code " + num + ".");
+ 				}
+ 			}
+-			status.Text = "Game closed. Original Steam mod script restored.";
++			status.Text = manual ? "Game closed. Existing user script was left unchanged." : "Game closed. Original Steam mod script restored.";
+ 		}
+ 		catch (Exception ex)
+ 		{
+--- a/RemasteredCE/UnifiedForm.cs
++++ b/RemasteredCE/UnifiedForm.cs
+@@ -94,7 +94,7 @@
+ 		}, 0, 1);
+ 		tableLayoutPanel2.Controls.Add(new Label
+ 		{
+-			Text = "v" + "0.1.25-preview".Split('-')[0],
++			Text = "0.1.25 mod fix 1",
+ 			Dock = DockStyle.Fill,
+ 			TextAlign = ContentAlignment.MiddleRight,
+ 			ForeColor = Color.FromArgb(158, 176, 181)
+--- a/Properties/AssemblyInfo.cs
++++ b/Properties/AssemblyInfo.cs
+@@ -8,3 +8,5 @@
+ [assembly: AssemblyProduct("Remastered CE")]
+ [assembly: AssemblyTitle("Remastered CE by JakeTheRipper")]
+ [assembly: AssemblyVersion("0.0.0.0")]
++[assembly: AssemblyFileVersion("0.1.25.1")]
++[assembly: AssemblyInformationalVersion("0.1.25-modfix.1")]
+--- a/RemasteredCE_Setup.csproj
++++ b/RemasteredCE_Setup.csproj
+@@ -1,11 +1,12 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+-    <AssemblyName>RemasteredCE_Setup</AssemblyName>
++    <AssemblyName>RemasteredCE_Launcher</AssemblyName>
+     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+     <OutputType>WinExe</OutputType>
+     <UseWindowsForms>True</UseWindowsForms>
+     <TargetFramework>net48</TargetFramework>
+     <PlatformTarget>x64</PlatformTarget>
++    <PathMap>$(MSBuildProjectDirectory)=/_/RemasteredCE</PathMap>
+   </PropertyGroup>
+   <PropertyGroup>
+     <LangVersion>14.0</LangVersion>
+@@ -33,4 +34,4 @@
+     <Reference Include="System.Core" />
+     <Reference Include="System.Net.Http" />
+   </ItemGroup>
+-</Project>
+\ No newline at end of file
++</Project>
