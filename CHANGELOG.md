@@ -2,6 +2,17 @@
 
 By **JakeTheRipper**.
 
+## 0.1.25 launcher mod fix 2 — October 27, 2026
+
+- Read compressed sequential CE/PFH3 mod indexes with correct stored-size accounting and existing bounds checks.
+- Discover custom packs in `RemasteredCE/data` while excluding base archives.
+- Add an explicit existing-user-script mode; retain profile-based script backup and recovery.
+- Include the corrected combined launcher in normal installation and offline repair with the updated installer.
+- Let existing 0.1.25 users receive the launcher-only correction through Install / Update without reconstructing game packs or moving mods. Verify ownership, keep a backup, and roll back a failed state-file replacement.
+- Preserve the signed 0.1.25 engine/data package unchanged. Older installers must be replaced to receive this launcher update.
+
+## Included patch changes
+
 1. **Campaign trees:** Replaced CE campaign-tree models with vanilla models while preserving CE's original placement records.
 2. **Campaign terrain:** Applied CE ROTS ground textures and material maps across all four seasons; water assets retained.
 3. **Campaign rendering:** Applied ROTS terrain-rendering and seasonal lighting settings to the base campaign.

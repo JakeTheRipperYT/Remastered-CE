@@ -21,6 +21,6 @@ Run "Restore Original Launcher.cmd" to restore the verified backup.
 This is a separately built launcher hotfix for the existing 0.1.25-preview installation. It is not a new signed .rce release. The original embedded signed package is unchanged. Offline repair with this updated launcher preserves the corrected launcher; older setup executables still reinstall their original launcher. A later official update can replace this hotfix.
 
 TESTING
-37 focused parser, staging, discovery, manual-script, profile and UI assertions pass, plus the existing built-in installer checks, 11 installer-integration checks and five deployment/restore/failure checks. No live campaign or the affected user's actual mod files were available for in-game testing. Parser acceptance alone does not establish that every database/script mod is compatible with the game or other enabled mods.
+37 focused parser, staging, discovery, manual-script, profile and UI assertions pass, plus the existing built-in installer checks, 20 installer-integration checks and five deployment/restore/failure checks. No live campaign or the affected user's actual mod files were available for in-game testing. Parser acceptance alone does not establish that every database/script mod is compatible with the game or other enabled mods.
 
 The hotfix executable is unsigned, as are the original launchers. It does not claim to resolve the separate antivirus report against the original-Shogun-2 Ultimate Patch.

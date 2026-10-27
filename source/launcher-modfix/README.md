@@ -17,11 +17,11 @@ Use a new `-WorkDirectory` for each clean build. Outputs:
 - `_build/RemasteredCE_Installer_Preview.zip`: updated normal installer. Run Install / Update once to install the corrected combined launcher.
 - `_build/RemasteredCE-0.1.25-Launcher-Mod-Fix.zip`: optional reversible launcher-only hotfix for an unmodified original 0.1.25 installation.
 
-The recipe runs 37 focused parser/staging/discovery/script/profile/UI assertions, the 33 existing built-in result lines, 11 installer-integration checks and five deployment/restore/failure checks. Tests use temporary fixtures, not a live installation. `--build-only` can additionally verify complete reconstruction in a separate directory from locally installed games.
+The recipe runs 37 focused parser/staging/discovery/script/profile/UI assertions, the 33 existing built-in result lines, 20 installer-integration checks and five deployment/restore/failure checks. Tests use temporary fixtures, not a live installation. `--build-only` can additionally verify complete reconstruction in a separate directory from locally installed games.
 
 ## Installer integration
 
-`installer-integration.patch` stages the executing fixed launcher for the exact authenticated 0.1.25 package only, records its actual ownership hash and retains the original signed offline `.rce` byte-for-byte. Offline repair with this updated setup also preserves the fix. Future packages keep their own signed launcher payload; an unexpected launcher in the pinned package is rejected.
+`installer-integration.patch` stages the executing fixed launcher for the exact authenticated 0.1.25 package only, records its actual ownership hash and retains the original signed offline `.rce` byte-for-byte. Offline repair with this updated setup also preserves the fix. At the same engine version, an ownership-checked launcher-only transaction updates recognised older launchers, retains game packs and mods, saves backups and rolls back if the state-file replacement fails. Future packages keep their own signed launcher payload; an unexpected launcher in the pinned package is rejected.
 
 The engine recipes, public key, signed package bytes and game data are unchanged. The combined executable remains unsigned. No signing check is weakened and no new private key is introduced. Older installers still deploy the original launcher; users must replace their setup ZIP to receive this update.
 
