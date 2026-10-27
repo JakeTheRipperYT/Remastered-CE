@@ -8,7 +8,7 @@ function Run($program, [string[]]$arguments) {
 }
 $zipPath = Join-Path $WorkDirectory 'original-installer.zip'
 if(!(Test-Path -LiteralPath $zipPath)) {
-    Invoke-WebRequest 'https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.25-preview/RemasteredCE_Installer_Preview.zip' -OutFile $zipPath
+    Invoke-WebRequest 'https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.25-preview/RemasteredCE-0.1.25-original-build-input.zip' -OutFile $zipPath
 }
 if((Get-FileHash -LiteralPath $zipPath).Hash.ToLowerInvariant() -ne '2920f295cd764837787b2308d7fb2a1803538ec1d87cf8b6f1c8f35f8012d1de') { throw 'Original release hash mismatch.' }
 $installer = Join-Path $WorkDirectory 'original-installer'
@@ -29,10 +29,13 @@ foreach($file in $textFiles) { [IO.File]::WriteAllText($file.FullName,[IO.File]:
 Run 'git' @('-C',$source,'init','--quiet')
 Run 'git' @('-C',$source,'apply','--check',(Join-Path $PSScriptRoot 'launcher-modfix.patch'))
 Run 'git' @('-C',$source,'apply',(Join-Path $PSScriptRoot 'launcher-modfix.patch'))
+Run 'git' @('-C',$source,'apply','--check',(Join-Path $PSScriptRoot 'installer-integration.patch'))
+Run 'git' @('-C',$source,'apply',(Join-Path $PSScriptRoot 'installer-integration.patch'))
 $compiled = Join-Path $WorkDirectory 'compiled'
 Run 'dotnet' @('build',(Join-Path $source 'RemasteredCE_Setup.csproj'),'-c','Release','-o',$compiled)
 $executable = Join-Path $compiled 'RemasteredCE_Launcher.exe'
 Run 'powershell.exe' @('-NoProfile','-ExecutionPolicy','Bypass','-File',(Join-Path $PSScriptRoot 'Test-Launcher.ps1'),'-Executable',$executable)
+Run 'powershell.exe' @('-NoProfile','-ExecutionPolicy','Bypass','-File',(Join-Path $PSScriptRoot 'Test-Installer-Integration.ps1'),'-Executable',$executable)
 $testLog = Join-Path $WorkDirectory 'builtin-selftest.txt'
 $process = Start-Process -FilePath $executable -ArgumentList '--self-test',('"' + $testLog + '"') -WindowStyle Hidden -Wait -PassThru
 if($process.ExitCode -ne 0) { throw 'Built-in self-tests failed.' }
@@ -64,3 +67,11 @@ Run 'powershell.exe' @('-NoProfile','-ExecutionPolicy','Bypass','-File',(Join-Pa
 $output = Join-Path $WorkDirectory 'RemasteredCE-0.1.25-Launcher-Mod-Fix.zip'
 Compress-Archive -Path "$hotfix/*" -DestinationPath $output -Force
 Write-Output "Created tested hotfix: $output"
+$installerOutput = Join-Path $WorkDirectory 'integrated-installer'
+New-Item -ItemType Directory -Force $installerOutput | Out-Null
+Copy-Item -LiteralPath $executable -Destination (Join-Path $installerOutput 'RemasteredCE_Setup.exe')
+Copy-Item -LiteralPath ($executable + '.config') -Destination (Join-Path $installerOutput 'RemasteredCE_Setup.exe.config')
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'INSTALLER-README.txt') -Destination (Join-Path $installerOutput 'README.txt')
+$installerZip = Join-Path $WorkDirectory 'RemasteredCE_Installer_Preview.zip'
+Compress-Archive -Path "$installerOutput/*" -DestinationPath $installerZip -Force
+Write-Output "Created integrated installer: $installerZip"

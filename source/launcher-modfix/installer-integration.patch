@@ -1,0 +1,77 @@
+--- a/RemasteredCE/Engine.cs
++++ b/RemasteredCE/Engine.cs
+@@ -429,13 +429,7 @@
+ 			Log("Linking required local base game data…", 93);
+ 			dictionary4["baseDataFiles"] = LinkBaseData(ce, stage);
+ 		}
+-		if (release.ModManager != null)
+-		{
+-			File.WriteAllBytes(Under(stage, "RemasteredCE_Launcher.exe"), release.ModManager);
+-			File.WriteAllBytes(Under(stage, "release.rce"), release.PackageBytes);
+-			dictionary4["unifiedLauncherSha256"] = Hash(release.ModManager);
+-			dictionary4["offlineReleaseSha256"] = Hash(release.PackageBytes);
+-		}
++		InstallerLauncher.Stage(release, stage, dictionary4);
+ 		File.WriteAllText(Under(stage, "install-state.json"), J.Json().Serialize(dictionary4));
+ 		Log("All generated files verified.", 94);
+ 	}
+--- a/RemasteredCE/InstallerLauncher.cs
++++ b/RemasteredCE/InstallerLauncher.cs
+@@ -0,0 +1,37 @@
++using System;
++using System.Collections.Generic;
++using System.IO;
++using System.Reflection;
++
++namespace RemasteredCE;
++
++public static class InstallerLauncher
++{
++    // Only the signed 0.1.25 package this launcher was built and tested with
++    // receives this installer-side launcher update. Future packages retain
++    // their own authenticated launcher payload.
++    public const string PackageHash = "2f24997b7ddd4bb266f8a4f2e65b48084b09852ef51f9f3b3399bcc62f3f0c52";
++    public const string OriginalLauncherHash = "ff77839ebb0495bb7e0906364aa078ae882d593eeb03abd60a2bed4ee89f023e";
++
++    public static byte[] Select(Release release)
++    {
++        if (release.ModManager == null) return null;
++        if (release.PackageHash != PackageHash || J.S(release.Manifest, "version") != "0.1.25-preview")
++            return release.ModManager;
++        if (Engine.Hash(release.ModManager) != OriginalLauncherHash)
++            throw new InvalidDataException("Unexpected launcher in the pinned 0.1.25 package.");
++        return File.ReadAllBytes(Assembly.GetExecutingAssembly().Location);
++    }
++
++    public static void Stage(Release release, string stage, Dictionary<string, object> state)
++    {
++        byte[] manager = Select(release);
++        if (manager == null) return;
++        File.WriteAllBytes(Engine.Under(stage, "RemasteredCE_Launcher.exe"), manager);
++        File.WriteAllBytes(Engine.Under(stage, "release.rce"), release.PackageBytes);
++        state["unifiedLauncherSha256"] = Engine.Hash(manager);
++        state["offlineReleaseSha256"] = Engine.Hash(release.PackageBytes);
++        if (release.PackageHash == PackageHash)
++            state["unifiedLauncherBuild"] = "0.1.25-modfix2";
++    }
++}
+--- a/Properties/AssemblyInfo.cs
++++ b/Properties/AssemblyInfo.cs
+@@ -8,5 +8,5 @@
+ [assembly: AssemblyProduct("Remastered CE")]
+ [assembly: AssemblyTitle("Remastered CE by JakeTheRipper")]
+ [assembly: AssemblyVersion("0.0.0.0")]
+-[assembly: AssemblyFileVersion("0.1.25.1")]
++[assembly: AssemblyFileVersion("0.1.25.2")]
+ [assembly: AssemblyInformationalVersion("0.1.25-modfix.1")]
+--- a/RemasteredCE/UnifiedForm.cs
++++ b/RemasteredCE/UnifiedForm.cs
+@@ -94,7 +94,7 @@
+ 		}, 0, 1);
+ 		tableLayoutPanel2.Controls.Add(new Label
+ 		{
+-			Text = "0.1.25 mod fix 1",
++			Text = "0.1.25 mod fix 2",
+ 			Dock = DockStyle.Fill,
+ 			TextAlign = ContentAlignment.MiddleRight,
+ 			ForeColor = Color.FromArgb(158, 176, 181)
