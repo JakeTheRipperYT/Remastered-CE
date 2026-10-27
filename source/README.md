@@ -1,3 +1,7 @@
+# Historical source reference
+
+This directory preserves the source and generators published through0.1.20. It does not contain the newer night-reinforcement and combined-launcher implementation in0.1.25. Use the current signed release and release-verification documentation for the supported installer.
+
 # Source notes
 
 Engine.cs, OnlineUpdates.cs and Program.cs target x64 .NET Framework 4.8 WinForms. app.manifest uses asInvoker. launcher.c is the unchanged native game launcher. redirect_portable.c is historical original routing source; the current combined native patch is represented by the signed package's manifest.json and helper.json. See hell/README.md for the Hell generator, preserved baseline helper and additional model/audio routing wrapper.

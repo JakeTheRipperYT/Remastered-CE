@@ -1,23 +1,20 @@
-# Remastered CE 0.1.20 preview
+# Remastered CE 0.1.25 preview
 
 By **JakeTheRipper**.
 
-This cumulative release includes all 0.1.17 content and adds:
+This cumulative release retains 0.1.20 and adds:
 
-- Single-unit group retention, compact frames and reliable ungroup/regroup cleanup.
-- Locked land-formation spacing through capture, rotation and direct/copied/composite dragging.
-- Land artillery formation-centre aiming with consistent native range and arc checks.
-- Numeric fear, corrected trait/skill morale progression and first-ranked-volley startup.
-- Neutral Hard/Very Hard AI ranged marksmanship and loading bonuses, retaining other difficulty effects.
-- Missing Yari abilities, Ikko Warrior Nuns recruitment/rosters, ninja ammunition, bow-accuracy links, holy-site XP and naval corrections.
-- Additional status colours and a CE-native Oda banner correction.
+- Land night battles allow normally eligible reinforcing armies on either side when their own leading general has the effective night-battle ability. The attacking army and direct target remain included. Normal range, alliance, army-limit and naval restrictions remain in place.
+- Preview strength, final participant handling, allied voting and deployment portraits, unit cards, availability text and counters use the same reinforcement policy.
+- A larger combined setup/mod launcher with matching blue-grey colours, green accents and a single Play button. The redundant setup-panel Mods & Launch button is removed.
+- CE Workshop/local/custom-folder discovery, profiles, dependency sorting, PFHs metadata support, optional pack staging and recoverable mod-script restoration.
+- An installed launcher beside the managed mods folder and a signed offline package for repair. Startup handoff arguments are accepted correctly; the actual installed window was checked.
+- PNG previews and CE base archives, including the stock movie packs, are excluded from the mod list.
 
-See [CHANGELOG.md](CHANGELOG.md) for the cumulative details.
+**Install/update:** download and extract the new installer ZIP. Keep `RemasteredCE_Setup.exe` and its `.config` together. Close the game and other launcher windows, then run setup and choose Install / Update. Older installers must be replaced for this release. After installation, use Play Remastered CE on the right, with Steam running.
 
-**Install/update:** download and extract the installer ZIP, close CE, run RemasteredCE_Setup.exe, then choose Install / Update. Existing 0.1.17 installers can also fetch this signed update through GitHub. The new setup is recommended for the latest bundled offline release; automatic installer self-updating remains excluded.
+The installer reconstructs all eight existing packs from your locally installed original and Complete Edition games, verifies the output and retains the previous installation during updates. Complete game packs and engine DLLs are not distributed.
 
-Launch using the Launch Remastered CE button or the white-helmet launcher in the CE installation folder, with Steam running.
+The OG audio and tooltip-wrapping changes were not ported. All eight existing pack recipes remain unchanged from 0.1.20. This release contains no multiplayer-desync fix and no Sekigahara update.
 
-Loading-screen changes and the unproven Heavy Bune placement addition are excluded; native CE oars are retained. No Sekigahara campaign build is updated. Existing CE fatigue/Mori fixes are preserved.
-
-The setup reconstructs this release from locally installed original and Complete Edition games; full game packs and engine DLLs are not distributed. Native and pack fixtures passed; broader live battle and multiplayer acceptance remain pending.
+Native policy/UI, Windows unwind, mod-loader, script-parser, setup, rollback and signed-package checks passed. A complete installation using the final setup executable is verified before publication. Live CE night-battle entry/results and multiplayer acceptance remain pending. Dependency sorting does not guarantee mod compatibility.

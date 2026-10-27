@@ -1,27 +1,13 @@
-# Remastered CE installer 0.1.12
+# Remastered CE installer 0.1.25
 
-By **JakeTheRipper**.
+Extract the installer ZIP, keep the setup EXE and .config together, and run setup. Both Steam editions are required. Windows x64, .NET Framework 4.8 and a filesystem supporting Windows hard links are required. Supported CE build: 25810990, with matching original hashes; unsupported inputs are rejected.
 
-Extract the installer ZIP and run **RemasteredCE_Setup.exe**, keeping its `.config` file alongside it. Both Steam editions must be installed. The installer detects Steam libraries or accepts selected folders. Close the game, then choose **Install / Update Remastered CE**. Use the white-helmet **Launch Remastered CE** application afterward.
+The combined window keeps installation on the left and mods/Play on the right. Download this new ZIP once: older installers cannot install the new launcher layout. GitHub updates and signed offline packages remain supported. Automatic installer self-updating is excluded.
 
-Windows x64, .NET Framework 4.8 and a filesystem supporting Windows hard links (normally NTFS) are required. This release supports CE Steam build 25810990 with matching original file hashes. Unsupported or modified inputs are rejected. Do not restore old vanilla files over a newer Steam build to bypass this check.
+The installer reconstructs eight private packs (about22 GiB), builds the private engine/bootstrap, links unchanged local base data, and verifies the result before publication. Updates retain the previous installation. Vanilla game files are not replaced. Mod folders survive updates and are retained by uninstall; edited launcher/package files are protected.
 
-The installer builds `<CE folder>/RemasteredCE` from local installations. Unchanged CE data is linked locally; five modified packs are reconstructed separately. Vanilla game files are not replaced. The game executable, engine DLL and NVIDIA runtime are not distributed. Settings, saves and shader caches remain shared with CE. The installation adds approximately 4 GiB; updates require space for another staged copy and retain the previous installation.
+Mod discovery uses CE Workshop ID3846830, game data, RemasteredCE/mods and explicitly added folders. Base game archives and PNG thumbnails are excluded. Auto-sort follows declared dependencies; it does not solve arbitrary mod incompatibilities. The original CE user mod script is journaled and restored after play, with interrupted-session recovery and external-edit protection.
 
-The DLSS launch layout and launcher are unchanged from the working release: the separate executable retains its original filename, with the locally copied NVIDIA runtime beside it. Normal hardware capability checks remain active.
+Use Launch_Remastered_CE.exe or the installed RemasteredCE_Launcher.exe to open the combined window, then Play Remastered CE. Steam is required to play.
 
-## Included changes
-
-0.1.9 adds Hell difficulty after Legendary in the base Shogun 2 campaign, retaining Legendary rules and AI bonuses while setting required Realm Divide fame to -1. Battle-tooltip morale and fatigue labels gain colour coding.
-
-Graphics options now include **Proximity Fading** below SSAO. Checked enables near-camera unit fading; unchecked disables it. Both choices persist across normal restarts. Settings remain shared with vanilla CE. Updates preserve an existing selection.
-
-The previous diplomacy, DLSS, smoke/blood, artwork and rendering changes are retained. Blood and smoke rework: **Orendiz**. Tooltip colours: supplied **Bug fix collection**.
-
-## Updates and verification
-
-Leave GitHub selected and choose Install / Update for the newest signed release. 0.1.10 requires the new installer ZIP because it adds localisation-pack support. An older installer reports that it needs replacing before copying files. Unsupported/newer vanilla builds are rejected instead of overwriting their files.
-
-Production checks replay the three new asset recipes with exact compression, compare relocated native helpers and hooks with the confirmed local implementation, and verify the release signature. Local Hell gameplay and proximity-setting persistence were confirmed; a fresh packaged in-game installation has not been claimed.
-
-See THIRD_PARTY_NOTICES.txt for licensing and source-mod credits.
+See release-verification-0.1.25.json, the main README and CHANGELOG for current validation and limitations. Historical verification and source files remain in the repository; they describe their original releases. Current implementation changes are not added to the source directory in this release.

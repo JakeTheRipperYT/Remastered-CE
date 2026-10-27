@@ -12,9 +12,9 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.20 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.20-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.25 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.25-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.20 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.20-preview)
+[0.1.25 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.25-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
@@ -26,39 +26,34 @@ You need:
 
 1. **Total War: SHOGUN 2 Complete Edition** installed through Steam.
 2. **Original Total War: SHOGUN 2** installed through Steam.
-3. Several GB of free disk space. The installed Remastered CE copy uses roughly 13 GiB, and updates temporarily need extra space while the new version is built.
+3. Several GB of free disk space. The eight reconstructed packs use roughly 22 GiB. Updates need another staged copy; unchanged base data is hard-linked on the same drive, and previous installations are retained.
 
 The installer uses files from both games that are already installed on your PC. It does **not** download or distribute a complete game executable, engine DLL or game data packs.
 
 ## How to install
 
 1. Download and extract the installer ZIP.
-2. Close both SHOGUN 2 and Complete Edition if either is running.
+2. Close the game and any other Remastered CE launcher windows.
 3. Run **`RemasteredCE_Setup.exe`**.
 4. The installer will try to find both Steam installations automatically. If either path is blank or incorrect, use **Browse** and select the correct game folder.
 5. Leave **GitHub - latest release** selected.
 6. Click **Install / Update Remastered CE**.
 7. Wait until the installer reports that the installation is ready.
-8. Click **Launch Remastered CE**.
+8. Choose your mods in the right-hand panel, then click **Play Remastered CE**.
 
 The installer verifies that your local game files match the supported version before making anything. It then builds the Remastered CE installation locally and verifies the completed files before publishing the new version.
 
 ## How to launch Remastered CE
 
-After installation, use either:
+After installation, open **`Launch_Remastered_CE.exe`** in your Complete Edition folder, or **`RemasteredCE/RemasteredCE_Launcher.exe`** beside the managed mods folder. Both open the combined setup and mod window. Use **Play Remastered CE** on the right to start the game.
 
-- the **Launch Remastered CE** button inside the installer, or
-- the white-helmet **`Launch_Remastered_CE.exe`** placed in your Complete Edition folder.
-
-**Steam must be running.**
-
-The launcher starts the separate Remastered CE executable inside the `RemasteredCE` folder with the correct Complete Edition Steam App ID. For normal use, launch Remastered CE through this launcher rather than opening the executable inside the `RemasteredCE` folder directly.
+**Steam must be running to play.** The launcher starts the private Remastered CE executable with the Complete Edition Steam App ID. Use this entry instead of opening the private game executable directly.
 
 Your normal Complete Edition installation remains available separately through Steam.
 
 ## Updating
 
-**The 0.1.20 installer ZIP includes the latest offline release. Existing 0.1.17 installers can also download this signed update through GitHub. Installers older than 0.1.17 must be replaced because they cannot reconstruct all eight packs. The game launcher is unchanged. Automatic installer self-updating is not enabled.**
+**Download the 0.1.25 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The ZIP includes the signed offline release. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 
@@ -71,6 +66,14 @@ The installer checks this GitHub repository for the newest supported release, do
 The installer builds updates in a temporary staging folder first. Your previous Remastered CE installation is retained during the update so it can be restored if publication fails.
 
 You can also use **Offline...** to install the included release or a downloaded `.rce` package without using the automatic GitHub updater.
+
+## Mods
+
+The right-hand panel scans the CE game `data` folder for third-party packs, `RemasteredCE/mods`, CE Workshop content (`steamapps/workshop/content/3846830`) in detected Steam libraries, and folders added with **Add folder**. PNG previews and known CE base-game archives are excluded. OG Shogun 2 Workshop content (`34330`) is not scanned automatically.
+
+Use profiles to keep selections and order. **Auto-sort** follows declared pack dependencies and uses deterministic ordering; it cannot establish compatibility between mods. Selected optional packs are staged as exact copies, leaving original Workshop files in place. Third-party movie packs in game `data` remain automatically loaded by the engine. The manager never moves base game packs.
+
+The launcher temporarily writes the CE user mod script for a play session and restores its previous bytes after the game closes. Interrupted sessions can be recovered on the next startup; conflicting external edits are preserved for review. Use **Copy mod list** to share enabled pack names, order and hashes.
 
 ## Uninstalling
 
@@ -104,6 +107,8 @@ In Graphics options, use **Proximity Fading** below SSAO to enable or disable un
 - **[Detailed installer notes](docs/README.md)**
 - **[Validation results](docs/self-tests.txt)**
 - **[Third-party notices](THIRD_PARTY_NOTICES.txt)**
+
+Example combined launcher with illustrative mod entries:
 
 ![Remastered CE installer](docs/preview.png)
 
