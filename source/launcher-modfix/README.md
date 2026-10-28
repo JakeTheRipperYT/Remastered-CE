@@ -26,3 +26,7 @@ The recipe runs 37 focused parser/staging/discovery/script/profile/UI assertions
 The engine recipes, public key, signed package bytes and game data are unchanged. The combined executable remains unsigned. No signing check is weakened and no new private key is introduced. Older installers still deploy the original launcher; users must replace their setup ZIP to receive this update.
 
 The standalone deployment tool checks exact installed hashes, keeps backups, updates ownership and rolls back partial failures. Parser acceptance does not establish compatibility of arbitrary campaign/database/script mods and does not promise to remove antivirus detections.
+
+## 0.1.28 release build
+
+The public 0.1.28 installer retains mod fix 2 and adds custom data-pack preservation during full upgrades, empty game-hint startup handling, and the new signed audio/trait package. See [RELEASE-028-BUILD.txt](RELEASE-028-BUILD.txt) and [Build-Release-028.ps1](Build-Release-028.ps1) for the pinned, byte-verified three-patch build. The original `Build.ps1` reproduces the historical v25 launcher hotfix.

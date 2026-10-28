@@ -1,1 +1,1 @@
-source/launcher-modfix/*.patch whitespace=-space-before-tab
+source/launcher-modfix/*.patch whitespace=-space-before-tab,-blank-at-eol

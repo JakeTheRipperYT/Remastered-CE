@@ -12,13 +12,13 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.25 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.25-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.28 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.28-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.25 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.25-preview)
+[0.1.28 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.28-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
-**Launcher mod fix 2 (October 27):** the default ZIP now includes compressed S2CE/PFH3 support, custom-mod discovery in `RemasteredCE/data`, and an existing-user-script launch mode. Existing 0.1.25 users should download the updated ZIP and click **Install / Update** once; recognised older launchers are updated without rebuilding game packs or moving mods. The signed engine/data package is unchanged. [Build and validation details](source/launcher-modfix/README.md).
+**0.1.28 preview:** adds the firing-audio correction and the Heroic Victory / 80% enemy-casualty / native chance-10 War Is Slaughter trigger. Includes the corrected mod launcher (compressed CE/PFH3 support, custom mods in `RemasteredCE/data`, and existing-user-script mode); full upgrades preserve custom data-folder packs. Download the new setup executable for this release. The recent renderer/caching optimization experiments are excluded. [Release notes](RELEASE_NOTES.md).
 
 See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 

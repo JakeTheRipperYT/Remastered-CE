@@ -1,0 +1,285 @@
+--- a/Properties/AssemblyInfo.cs
++++ b/Properties/AssemblyInfo.cs
+@@ -8,5 +8,5 @@
+ [assembly: AssemblyProduct("Remastered CE")]
+ [assembly: AssemblyTitle("Remastered CE by JakeTheRipper")]
+ [assembly: AssemblyVersion("0.0.0.0")]
+-[assembly: AssemblyFileVersion("0.1.25.2")]
+-[assembly: AssemblyInformationalVersion("0.1.25-modfix.2")]
++[assembly: AssemblyFileVersion("0.1.28.0")]
++[assembly: AssemblyInformationalVersion("0.1.28-preview")]
+--- a/RemasteredCE/Engine.cs
++++ b/RemasteredCE/Engine.cs
+@@ -132,13 +132,13 @@
+ 		{
+ 			throw new FileNotFoundException("Select the original Shogun 2 installation containing Shogun2.exe.");
+ 		}
+-		Log("Verifying CE executable…", 0);
++		Log("Verifying CE executableâ€¦", 0);
+ 		RequireHash(Under(ce, "shogun2_complete_edition.exe"), J.S(r.Manifest, "ceExeSha256"));
+-		Log("Verifying vanilla CE engine…", 2);
++		Log("Verifying vanilla CE engineâ€¦", 2);
+ 		RequireHash(Under(ce, "empire.retail.x64.dll"), J.S(r.Manifest, "engineSourceSha256"));
+ 		if (J.N(r.Manifest, "schema") == 2)
+ 		{
+-			Log("Verifying the locally installed NVIDIA DLSS runtime…", 3);
++			Log("Verifying the locally installed NVIDIA DLSS runtimeâ€¦", 3);
+ 			RequireHash(Under(ce, "nvngx_dlss.dll"), J.S(r.Manifest, "dlssRuntimeSha256"));
+ 		}
+ 		int num = 0;
+@@ -146,7 +146,7 @@
+ 		for (int i = 0; i < array.Length; i++)
+ 		{
+ 			Dictionary<string, object> d = J.Obj(array[i]);
+-			Log("Verifying vanilla " + J.S(d, "source") + "…", 3 + num * 3);
++			Log("Verifying vanilla " + J.S(d, "source") + "â€¦", 3 + num * 3);
+ 			RequireHash(Under(ce, J.S(d, "source")), J.S(d, "sourceSha256"));
+ 			num++;
+ 		}
+@@ -304,7 +304,7 @@
+ 			}
+ 			string text2 = Under(stage, text);
+ 			Directory.CreateDirectory(Path.GetDirectoryName(text2));
+-			Log("Copying " + text + "…", 17 + (int)(65L * (long)num / Math.Max(1, val)));
++			Log("Copying " + text + "â€¦", 17 + (int)(65L * (long)num / Math.Max(1, val)));
+ 			CopyFile(Under(ce, J.S(dictionary2, "source")), text2);
+ 			using (FileStream fileStream = new FileStream(text2, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+ 			{
+@@ -346,10 +346,10 @@
+ 				}
+ 				fileStream.Flush(flushToDisk: true);
+ 			}
+-			Log("Verifying completed " + text + "…", 83);
++			Log("Verifying completed " + text + "â€¦", 83);
+ 			RequireHash(text2, J.S(dictionary2, "sha256"));
+ 		}
+-		Log("Building the separate Remastered engine…", 88);
++		Log("Building the separate Remastered engineâ€¦", 88);
+ 		byte[] array5 = File.ReadAllBytes(Under(ce, "empire.retail.x64.dll"));
+ 		using (MemoryStream file = new MemoryStream(array5, writable: true))
+ 		{
+@@ -383,7 +383,7 @@
+ 			bytes2 = Encoding.ASCII.GetBytes("CE.dll\0");
+ 			Buffer.BlockCopy(bytes2, 0, array6, 58872, bytes2.Length);
+ 			File.WriteAllBytes(Under(stage, "shogun2_complete_edition.exe"), array6);
+-			Log("Copying the local NVIDIA DLSS runtime…", 92);
++			Log("Copying the local NVIDIA DLSS runtimeâ€¦", 92);
+ 			CopyFile(Under(ce, "nvngx_dlss.dll"), Under(stage, "nvngx_dlss.dll"));
+ 			RequireHash(Under(stage, "nvngx_dlss.dll"), J.S(release.Manifest, "dlssRuntimeSha256"));
+ 		}
+@@ -426,7 +426,7 @@
+ 		if (flag)
+ 		{
+ 			dictionary4["layoutVersion"] = 2;
+-			Log("Linking required local base game data…", 93);
++			Log("Linking required local base game dataâ€¦", 93);
+ 			dictionary4["baseDataFiles"] = LinkBaseData(ce, stage);
+ 		}
+ 		InstallerLauncher.Stage(release, stage, dictionary4);
+@@ -732,6 +732,55 @@
+ 		}
+ 	}
+ 
++	private static void PreserveCustomDataPacks(string installed, string stage)
++	{
++		string data = Under(installed, "data");
++		if (!Directory.Exists(data)) return;
++		NoLinks(data);
++		var owned = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
++		foreach (string name in GameLayout.BasePacks) owned.Add("data/" + name);
++		string record = Under(installed, "install-state.json");
++		RejectLinkedFile(record);
++		if (File.Exists(record))
++		{
++			var state = J.Parse(File.ReadAllText(record));
++			var paths = new List<string>();
++			if (state.ContainsKey("files")) foreach (var item in J.Arr(state["files"])) paths.Add(J.S(J.Obj(item), "file"));
++			if (state.ContainsKey("baseDataFiles")) foreach (var item in J.Arr(state["baseDataFiles"])) paths.Add(Convert.ToString(item));
++			foreach (string value in paths)
++			{
++				string relative = (value ?? "").Replace('\\', '/');
++				if (!relative.StartsWith("data/", StringComparison.OrdinalIgnoreCase)) continue;
++				string checkedPath = Under(installed, relative);
++				owned.Add(checkedPath.Substring(Path.GetFullPath(installed).TrimEnd('\\').Length + 1).Replace('\\', '/'));
++			}
++		}
++		var directories = new Stack<string>();
++		directories.Push(data);
++		while (directories.Count != 0)
++		{
++			string folder = directories.Pop();
++			NoLinks(folder);
++			foreach (string child in Directory.EnumerateDirectories(folder)) { NoLinks(child); directories.Push(child); }
++			foreach (string file in Directory.EnumerateFiles(folder, "*.pack", SearchOption.TopDirectoryOnly))
++			{
++				RejectLinkedFile(file);
++				string relative = "data/" + file.Substring(data.TrimEnd('\\').Length + 1).Replace('\\', '/');
++				if (owned.Contains(relative)) continue;
++				string destination = Under(stage, relative);
++				NoLinks(Path.GetDirectoryName(destination));
++				RejectLinkedFile(destination);
++				if (File.Exists(destination) || Directory.Exists(destination))
++					throw new IOException("A custom data pack conflicts with the staged game data. The current installation was retained: " + relative);
++				Directory.CreateDirectory(Path.GetDirectoryName(destination));
++				string expected = FileHash(file);
++				File.Copy(file, destination, false);
++				if (FileHash(destination) != expected || FileHash(file) != expected)
++					throw new IOException("A custom data pack changed while preserving it: " + relative);
++			}
++		}
++	}
++
+ 	public static void PublishVerified(string stage, string ce, string previous)
+ 	{
+ 		string text = Under(ce, "RemasteredCE");
+@@ -742,6 +791,7 @@
+ 		{
+ 			throw new IOException("Invalid publication staging folder.");
+ 		}
++		PreserveCustomDataPacks(text, stage);
+ 		HashSet<string> hashSet = new HashSet<string>();
+ 		List<string> list = new List<string>();
+ 		bool flag = false;
+--- a/RemasteredCE/ModForm.cs
++++ b/RemasteredCE/ModForm.cs
+@@ -66,7 +66,7 @@
+ 		settings = (preview ? Path.Combine(game, "preview-settings") : Mods.SettingsRoot(game));
+ 		sessionRoot = (preview ? Path.Combine(game, "preview-sessions") : Mods.SessionRoot);
+ 		forwarded = arguments ?? new string[0];
+-		Text = "Remastered CE — Mods & Launch";
++		Text = "Remastered CE â€” Mods & Launch";
+ 		ClientSize = new Size(1100, 730);
+ 		MinimumSize = new Size(880, 620);
+ 		Font = new Font("Segoe UI", 10f);
+@@ -152,7 +152,7 @@
+ 		{
+ 			await RefreshMods();
+ 		});
+-		Add(flowLayoutPanel, "Add folder…", () =>
++		Add(flowLayoutPanel, "Add folderâ€¦", () =>
+ 		{
+ 			using FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog
+ 			{
+@@ -410,7 +410,7 @@
+ 			}
+ 		};
+ 		Render();
+-		status.Text = "Ready - Remastered CE 0.1.25-preview";
++		status.Text = "Ready - Remastered CE 0.1.28-preview";
+ 	}
+ 
+ 	private void Add(FlowLayoutPanel panel, string text, Action action)
+@@ -489,7 +489,7 @@
+ 			action.Enabled = !value;
+ 		}
+ 		play.Enabled = !value;
+-		play.Text = value ? "Please wait…" : (existingScript.Checked ? "Play existing script" : "Play Remastered CE");
++		play.Text = value ? "Please waitâ€¦" : (existingScript.Checked ? "Play existing script" : "Play Remastered CE");
+ 		if (BusyChanged != null)
+ 		{
+ 			BusyChanged(value);
+@@ -507,7 +507,7 @@
+ 			CaptureState();
+ 		}
+ 		SetBusy(value: true);
+-		status.Text = "Finding local and Workshop packs…";
++		status.Text = "Finding local and Workshop packsâ€¦";
+ 		try
+ 		{
+ 			List<ModPack> list = await Task.Run(() => Mods.Discover(game, profile.Folders));
+@@ -547,7 +547,7 @@
+ 	private void UpdateSummary()
+ 	{
+ 		List<string> list = Mods.Issues(packs, game);
+-		summary.Text = ((list.Count > 0) ? string.Join("  ", list.Take(2)) : (Enumerable.Count(packs, (ModPack p) => p.Enabled) + " enabled · " + Mods.OverlapSummary(packs)));
++		summary.Text = ((list.Count > 0) ? string.Join("  ", list.Take(2)) : (Enumerable.Count(packs, (ModPack p) => p.Enabled) + " enabled Â· " + Mods.OverlapSummary(packs)));
+ 	}
+ 
+ 	private void MoveSelection(int direction)
+--- a/RemasteredCE/OnlineUpdates.cs
++++ b/RemasteredCE/OnlineUpdates.cs
+@@ -10,7 +10,7 @@
+ 
+ public static class OnlineUpdates
+ {
+-	public const string AppVersion = "0.1.25-preview";
++	public const string AppVersion = "0.1.28-preview";
+ 
+ 	public const string ApiUrl = "https://api.github.com/repos/JakeTheRipperYT/Remastered-CE/releases?per_page=100";
+ 
+@@ -84,7 +84,7 @@
+ 		using HttpClient httpClient = new HttpClient();
+ 		cancellationTokenSource.CancelAfter(TimeSpan.FromMinutes(2.0));
+ 		CancellationToken token = cancellationTokenSource.Token;
+-		httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("RemasteredCE/0.1.25-preview");
++		httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("RemasteredCE/0.1.28-preview");
+ 		httpClient.DefaultRequestHeaders.Accept.ParseAdd("application/vnd.github+json");
+ 		try
+ 		{
+--- a/RemasteredCE/Release.cs
++++ b/RemasteredCE/Release.cs
+@@ -79,7 +79,7 @@
+ 		{
+ 			throw new InvalidDataException("This update requires a newer installer. Download the installer ZIP from the Remastered CE GitHub releases page.");
+ 		}
+-		if (release.Manifest.ContainsKey("minimumInstallerVersion") && ReleaseVersion.Parse("0.1.25-preview").CompareTo(ReleaseVersion.Parse(J.S(release.Manifest, "minimumInstallerVersion"))) < 0)
++		if (release.Manifest.ContainsKey("minimumInstallerVersion") && ReleaseVersion.Parse(OnlineUpdates.AppVersion).CompareTo(ReleaseVersion.Parse(J.S(release.Manifest, "minimumInstallerVersion"))) < 0)
+ 		{
+ 			throw new InvalidDataException("This release needs a newer installer. Download the latest installer ZIP from the Remastered CE GitHub releases page.");
+ 		}
+--- a/RemasteredCE/UnifiedForm.cs
++++ b/RemasteredCE/UnifiedForm.cs
+@@ -94,7 +94,7 @@
+ 		}, 0, 1);
+ 		tableLayoutPanel2.Controls.Add(new Label
+ 		{
+-			Text = "0.1.25 mod fix 2",
++			Text = "0.1.28 preview — mod loading fix included",
+ 			Dock = DockStyle.Fill,
+ 			TextAlign = ContentAlignment.MiddleRight,
+ 			ForeColor = Color.FromArgb(158, 176, 181)
+--- a/RemasteredCE/UnifiedLauncher.cs
++++ b/RemasteredCE/UnifiedLauncher.cs
+@@ -9,6 +9,13 @@
+ 
+ public static class UnifiedLauncher
+ {
++	public static string ResolveGameHint(string[] args, string detected)
++	{
++		if (args.Length == 0 || args[0] != "--game") return detected ?? "";
++		if (args.Length < 2 || args[1] == "--") throw new ArgumentException("The --game option requires a game folder.");
++		return string.IsNullOrWhiteSpace(args[1]) ? "" : args[1];
++	}
++
+ 	public static string CacheExecutable(string source, string cacheRoot)
+ 	{
+ 		source = Path.GetFullPath(source);
+@@ -61,7 +68,7 @@
+ 	{
+ 		try
+ 		{
+-			if (args.Length != 0 && args[0] == "--game" && (args.Length < 2 || string.IsNullOrWhiteSpace(args[1])))
++			if (args.Length != 0 && args[0] == "--game" && (args.Length < 2 || args[1] == "--"))
+ 			{
+ 				throw new ArgumentException("The --game option requires a game folder.");
+ 			}
+@@ -75,7 +82,7 @@
+ 			string[] array = new string[0];
+ 			if (args.Length >= 2 && args[0] == "--game")
+ 			{
+-				text2 = args[1];
++				text2 = ResolveGameHint(args, text2);
+ 				int num = Array.IndexOf(args, "--");
+ 				if (num >= 0)
+ 				{
+--- a/RemasteredCE_Setup.csproj
++++ b/RemasteredCE_Setup.csproj
+@@ -24,7 +24,7 @@
+     <None Remove="release" />
+     <EmbeddedResource Include="publicKey" LogicalName="publicKey" />
+     <EmbeddedResource Include="lz4" LogicalName="lz4" />
+-    <EmbeddedResource Include="release" LogicalName="release" />
++    <EmbeddedResource Include="release" LogicalName="release" Condition="'$(IncludeRelease)' == 'true'" />
+     <ApplicationConfig Remove="RemasteredCE_Setup.exe.config" />
+     <ApplicationConfig Include="RemasteredCE_Setup.exe.config" />
+   </ItemGroup>
