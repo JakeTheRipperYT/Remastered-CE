@@ -1,20 +1,17 @@
-# Remastered CE 0.1.25 preview
+# Remastered CE 0.1.28 preview
 
-By **JakeTheRipper**.
+This release adds the firing-audio correction and revised War Is Slaughter trait trigger to the existing cumulative patch. It also includes the corrected combined mod launcher from **0.1.25 mod fix 2**.
 
-This cumulative release retains 0.1.20 and adds:
+- **Firing audio:** prioritize weapon/projectile compatibility when selecting firing sounds, addressing cases where bows, matchlocks or other weapons selected an unrelated cannon sound. The incoming-projectile path and other native scoring/cache behavior retain their rules.
+- **War Is Slaughter progression:** a winning general must achieve a **Heroic Victory** with **at least 80% enemy casualties**, followed by the native **chance-10** trait roll. Applies to Shogun/ROTS and FOTS. The own-army-loss condition is removed; existing trait levels, effects and the separate Ikko creation roll remain.
+- **Mod launcher:** retains compressed CE/PFH3 mod-pack reading, custom-mod discovery in `RemasteredCE/data`, and **Use existing user.script.txt (ignore selections)** mode. The corrected launcher is included in installation and offline repair.
+- **Mod preservation during upgrades:** custom `.pack` files under the managed `data` folder are retained alongside the existing `mods` folder. Base-game archives are replaced by the new release as intended; conflicting or linked custom sources are rejected rather than overwritten.
+- **Retained content:** existing night reinforcements, Hell difficulty, gameplay fixes, artwork, blood/smoke and other previously released content remain.
 
-- Land night battles allow normally eligible reinforcing armies on either side when their own leading general has the effective night-battle ability. The attacking army and direct target remain included. Normal range, alliance, army-limit and naval restrictions remain in place.
-- Preview strength, final participant handling, allied voting and deployment portraits, unit cards, availability text and counters use the same reinforcement policy.
-- A larger combined setup/mod launcher with matching blue-grey colours, green accents and a single Play button. The redundant setup-panel Mods & Launch button is removed.
-- CE Workshop/local/custom-folder discovery, profiles, dependency sorting, PFHs metadata support, optional pack staging and recoverable mod-script restoration.
-- An installed launcher beside the managed mods folder and a signed offline package for repair. Startup handoff arguments are accepted correctly; the actual installed window was checked.
-- PNG previews and CE base archives, including the stock movie packs, are excluded from the mod list.
+The withdrawn renderer-threading and recent caching/GC/input optimization experiments are **not included**. No new FPS or map-loading gain is claimed.
 
-**Install/update:** download and extract the new installer ZIP. Keep `RemasteredCE_Setup.exe` and its `.config` together. Close the game and other launcher windows, then run setup and choose Install / Update. Older installers must be replaced for this release. After installation, use Play Remastered CE on the right, with Steam running.
+## Install or update
 
-The installer reconstructs all eight existing packs from your locally installed original and Complete Edition games, verifies the output and retains the previous installation during updates. Complete game packs and engine DLLs are not distributed.
+Download and extract **RemasteredCE_Installer_Preview.zip**. Keep `RemasteredCE_Setup.exe` and its `.config` together, close the game and other launcher windows, then run setup and choose **Install / Update**. Existing users should use the new setup executable so they receive the corrected mod launcher. Both the original Shogun 2 and Complete Edition installations are required.
 
-The OG audio and tooltip-wrapping changes were not ported. All eight existing pack recipes remain unchanged from 0.1.20. This release contains no multiplayer-desync fix and no Sekigahara update.
-
-Native policy/UI, Windows unwind, mod-loader, script-parser, setup, rollback and signed-package checks passed. A complete installation using the final setup executable is verified before publication. Live CE night-battle entry/results and multiplayer acceptance remain pending. Dependency sorting does not guarantee mod compatibility.
+The installer reconstructs the patch from local game files and checks the generated outputs. Full game packs and engine DLLs are not distributed. Native/asset checks and installer reconstruction/publication verification are documented with the release; these do not establish that every third-party mod or live multiplayer scenario is compatible.

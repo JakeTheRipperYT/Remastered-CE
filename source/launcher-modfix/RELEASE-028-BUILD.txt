@@ -1,0 +1,40 @@
+Remastered CE 0.1.28 launcher/setup source delta
+
+This release keeps public launcher mod fix 2 and adds the current signed v28
+engine/data package (audio compatibility scoring and heroic-victory trait
+trigger). The new patch is only launcher/installer code; no complete game
+assets, game DLLs or private signing key are included.
+
+Changes over the existing two public patches:
+- Version/UI metadata 0.1.28-preview and dynamic minimum-installer comparison.
+- Allow an explicit empty --game hint to open manual folder selection, while
+  missing arguments remain rejected.
+- Keep custom unowned .pack files recursively under RemasteredCE/data across
+  a full upgrade. Generated/base files are excluded using known names and
+  prior ownership records. Reparse paths and name collisions fail closed.
+  Source/copy hashes are checked before live-directory publication, so a
+  failure leaves the old installation intact. Custom packs are not marked
+  installer-owned; old copies remain in the retained previous installation.
+- New packages install their own signed lean GUI payload. The historical
+  pinned v25 same-version hotfix path remains supported; it does not substitute
+  the setup for the GUI in the new signed v28 package.
+- Separate lean and setup resource builds, avoiding circular package embedding.
+
+Reproduce on Windows x64 with .NET SDK 10.0.401, .NET Framework 4.8 targeting
+pack, Git and Windows PowerShell. Keep this file, release-028.patch,
+Build-Release-028.ps1 and Test-New-Release.ps1 beside the existing public
+launcher-modfix.patch, installer-integration.patch and Test-Launcher.ps1.
+
+  powershell -NoProfile -File .\Build-Release-028.ps1 -WorkDirectory F:\Codex\Builds\RemasteredCE28
+
+Use a fresh work directory. All build/download/temp/NuGet/.NET state is directed
+there. The recipe recovers the pinned original launcher sources with pinned
+ILSpy, applies the three inspectable deltas, compiles a lean GUI, authenticates
+the published v28 package and checks that its signed GUI matches the build,
+then embeds that package in setup. It checks exact GUI/setup/package hashes.
+It does not require or expose a signing key, install into a game or start one.
+
+The native engine and all eight data reconstruction recipes are those from
+the restored pre-optimization build. v29/v30 optimization experiments are
+excluded. Build-only/full installer acceptance and the publisher-preservation
+fixtures are recorded separately in the release verification documents.

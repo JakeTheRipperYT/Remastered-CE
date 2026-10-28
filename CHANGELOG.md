@@ -2,7 +2,7 @@
 
 By **JakeTheRipper**.
 
-## 0.1.25 launcher mod fix 2 — October 27, 2026
+## 0.1.25 launcher mod fix 2 â€” October 27, 2026
 
 - Read compressed sequential CE/PFH3 mod indexes with correct stored-size accounting and existing bounds checks.
 - Discover custom packs in `RemasteredCE/data` while excluding base archives.
@@ -104,3 +104,13 @@ The installer reconstructs all eight existing packs from your locally installed 
 The OG audio and tooltip-wrapping changes were not ported. All eight existing pack recipes remain unchanged from 0.1.20. This release contains no multiplayer-desync fix and no Sekigahara update.
 
 Native policy/UI, Windows unwind, mod-loader, script-parser, setup, rollback and signed-package checks passed. A complete installation using the final setup executable is verified before publication. Live CE night-battle entry/results and multiplayer acceptance remain pending. Dependency sorting does not guarantee mod compatibility.
+
+## 0.1.28 preview â€” firing audio and Heroic Victory trait trigger
+
+- Correct firing-sound rule priority so weapon/projectile compatibility wins over conflicting unit preference. Preserve native incoming/unknown caller scoring and cache behavior.
+- Require a winning general, Heroic Victory and at least 80% enemy casualties for ordinary War Is Slaughter/Bloodthirsty progression, using native trait chance 10. Apply both standard/ROTS and FOTS branches; preserve levels/effects and the separate Ikko creation roll.
+- Include the corrected combined mod launcher: compressed CE/PFH3 stored-size accounting, custom packs in `RemasteredCE/data`, manual `user.script.txt` mode, and installation/offline-repair integration.
+- Preserve custom data-folder packs during full upgrades as well as the managed mods folder, with base-archive exclusions, collision rejection and reparse-point protection.
+- Retain existing cumulative gameplay, visual/audio, night-reinforcement, Hell difficulty and launcher features. Exclude the withdrawn renderer-threading and recent caching/GC/input optimization experiments.
+
+Native, script/asset and installer verification evidence accompanies this release. No new live FPS/loading improvement or blanket third-party-mod/multiplayer compatibility claim is made.
