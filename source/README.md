@@ -1,3 +1,7 @@
+# Current source
+
+See [installer](installer/README.md) for the 0.1.55 launcher/setup source and byte-checked public rebuild. See [campaign-weather](campaign-weather/README.md) for the native controller source and helper builder. The signed release contains the cumulative reconstruction recipes; complete game archives, engine DLLs and private signing keys are excluded.
+
 # Historical source reference
 
 The [0.1.25 custom-mod launcher fix](launcher-modfix/README.md) provides a checked source patch, pinned build recipe, regression tests and reversible hotfix deployment for the published combined launcher.

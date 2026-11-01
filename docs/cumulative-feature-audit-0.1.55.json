@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "version": "0.1.55-preview",
+  "testedEngine54Exact": true,
+  "testedNineArchiveRecipes54Exact": true,
+  "public28EnginePatchesRetained": 119,
+  "public28HelperPrefixBytesRetained": 18564,
+  "sevenOtherOriginalPackRecipesUnchanged": true,
+  "arrowLayoutAndSoundRemapPinned": true,
+  "addonAssets": 59,
+  "alwaysNightOptionAndShaderHelpersPresent": true,
+  "features": [
+    "campaign settlement damage smoke and siege fire",
+    "main campaign night-attack preview fades",
+    "saved Always Night campaign override",
+    "night scene in battles without trait/reinforcement changes",
+    "four-season amber night lanterns",
+    "campaign-only repeating weather forecasts",
+    "synchronized sky, rain, lighting and colour fades",
+    "native lightning and thunder",
+    "permanent opening puddle materials and grass layout",
+    "native-weather Accuracy and Reload Skill values and persistent penalty bars",
+    "sound-bank CE unit references",
+    "collapsible Spacebar arrow control",
+    "retained public28 gameplay, visuals, audio, heroic trigger and launcher fixes"
+  ],
+  "excluded": [
+    "withdrawn renderer/threading/caching/GC/input experiments"
+  ],
+  "nativeControllerSourceSha256": {
+    "dynamic_controller.inc": "7f0e2d689ab94997ed43a842f4a117fef21fa5b93e8b94478dc061b9eb7080de",
+    "fade_parameters.inc": "3f5f42254b349b635bb8c73723750823291b7b3b07c67e002a59ae74a063ebc9",
+    "unit_weather_cards.inc": "b0b7be16c42f37f479da533b452bd1c9f0c31188a61625e5d985048b2989887e"
+  }
+}

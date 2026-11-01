@@ -12,13 +12,13 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.28 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.28-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.55 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.55-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.28 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.28-preview)
+[0.1.55 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.55-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
-**0.1.28 preview:** adds the firing-audio correction and the Heroic Victory / 80% enemy-casualty / native chance-10 War Is Slaughter trigger. Includes the corrected mod launcher (compressed CE/PFH3 support, custom mods in `RemasteredCE/data`, and existing-user-script mode); full upgrades preserve custom data-folder packs. Download the new setup executable for this release. The recent renderer/caching optimization experiments are excluded. [Release notes](RELEASE_NOTES.md).
+**0.1.55 preview:** adds restored campaign damage/siege effects, campaign day/night and saved Always Night controls, seasonal night lanterns, cycling campaign-battle weather with smooth transitions, native lightning/thunder, permanent starting puddles, weather-adjusted unit info stats, sound-bank reference repairs and the collapsible battle-panel arrow. Includes all earlier fixes. Use this release's new setup executable. [Release notes](RELEASE_NOTES.md).
 
 See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 
@@ -28,7 +28,7 @@ You need:
 
 1. **Total War: SHOGUN 2 Complete Edition** installed through Steam.
 2. **Original Total War: SHOGUN 2** installed through Steam.
-3. Several GB of free disk space. The eight reconstructed packs use roughly 22 GiB. Updates need another staged copy; unchanged base data is hard-linked on the same drive, and previous installations are retained.
+3. Several GB of free disk space. The nine reconstructed packs use roughly 22 GiB. Updates need another staged copy; unchanged base data is hard-linked on the same drive, and previous installations are retained.
 
 The installer uses files from both games that are already installed on your PC. It does **not** download or distribute a complete game executable, engine DLL or game data packs.
 
@@ -55,7 +55,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download the 0.1.25 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The ZIP includes the signed offline release. Automatic installer self-updating is not enabled.**
+**Download the 0.1.55 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The setup embeds the signed offline release. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 
@@ -91,7 +91,7 @@ The installer:
 
 1. Verifies the supported Complete Edition executable, engine and required source files.
 2. Extracts the required original assets from your locally installed games.
-3. Reconstructs the eight modified game packs used by Remastered CE.
+3. Reconstructs the eight modified game packs and the campaign-visual add-on used by Remastered CE.
 4. Builds a separate Remastered CE engine and executable layout.
 5. Hard-links unchanged Complete Edition data into the separate `RemasteredCE` folder instead of needlessly duplicating everything.
 6. Verifies the finished files before switching the completed build into place.

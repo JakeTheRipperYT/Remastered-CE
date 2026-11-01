@@ -1,3 +1,5 @@
+Included in the cumulative0.1.55 release. The settlement damage and siege effects were confirmed working in-game during the private preview tests.
+
 # Campaign particle season source
 
 CE can allocate its battle-terrain service while displaying the campaign map,

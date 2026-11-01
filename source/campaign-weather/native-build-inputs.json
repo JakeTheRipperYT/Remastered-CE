@@ -1,0 +1,14 @@
+{
+  "seasonPatch": {
+    "offset": 28960100,
+    "data": "SIsF7XSMAUiFwHQRgLgAAQAAAHQIi4CkFwAA6ylIixXYdIwBMcBIhdJ0G0iLksAAAACLgnABAABIa8BQSAOCaAEAAItAMIkFpHSMAZCQkJCQkJCQkJCQ"
+  },
+  "engineEditedSha25632": "a6d6251d198f15c4bb7ca3febb607570e0b9baa9568f106f56260031a1ad491c",
+  "engineFinalSha25632": "3d596a060f936e57f8ea188c15b8f2cd0b510079c1b7b77b545b3216ee7d115f",
+  "parentNightSetRva": 57965676,
+  "expectedHelperSha256": "db128a0f83c09bd1de8a183f81105b627d84c9e5570a3fa62dc7ca7e4cc92a8a",
+  "expectedEngineSha256": "4741f3648496eb7ea3881eac2225a1c15608253f8bcc4855934276a3927faae1",
+  "acceptedLinkerDebugTimestamp": 1793490145,
+  "linkerDebugTimestampPayloadOffset": 106388,
+  "msvcToolsVersion": "14.51.36231"
+}
