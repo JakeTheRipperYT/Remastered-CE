@@ -1,5 +1,16 @@
 # Remastered CE 0.1.71 Preview
 
+## 🟢 **[DOWNLOAD ONLY THE INSTALLER ZIP — CLICK HERE](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip)**
+
+> [!IMPORTANT]
+> **📦 THE ONLY FILE YOU NEED TO DOWNLOAD IS `RemasteredCE_Installer_Preview.zip`.**
+>
+> **🟡 Right-click the ZIP → Extract All → open the extracted folder → run `RemasteredCE_Setup.exe`.**
+> **Extract the entire ZIP before running setup.**
+> **Keep the extracted setup and its `.config` file together.**
+>
+> **You do not need to download the separate EXE, `.rce` update package, or other release assets for a normal installation.** The ZIP includes the setup and required installation files; the launcher handles online update downloads.
+
 Retained changes since 0.1.55:
 
 - Unit selection: prevent rapid mouse movement from clearing clicked units, restore the original game's drag threshold, and refresh selection-box contents on release.
