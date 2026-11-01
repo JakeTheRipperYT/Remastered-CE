@@ -10,13 +10,18 @@ Remastered CE is a community remaster and repair patch for **Total War: SHOGUN 2
 
 The patch installs as a **separate Remastered CE copy** beside your normal Complete Edition installation. Your normal game files are not replaced, so you can continue to use vanilla Complete Edition separately.
 
-## Download
+## 🟢 **[DOWNLOAD ONLY THE INSTALLER ZIP — CLICK HERE](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip)**
 
-**[Download Remastered CE 0.1.71 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip)**
+> [!IMPORTANT]
+> **📦 THE ONLY FILE YOU NEED TO DOWNLOAD IS `RemasteredCE_Installer_Preview.zip`.**
+>
+> **🟡 Right-click the ZIP → Extract All → open the extracted folder → run `RemasteredCE_Setup.exe`.**
+> **Extract the entire ZIP before running setup.**
+> **Keep the extracted setup and its `.config` file together.**
+>
+> **You do not need to download the separate EXE, `.rce` update package, or other release assets for a normal installation.** The ZIP includes the setup and required installation files; the launcher handles online update downloads.
 
-[0.1.71 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.71-preview)
-
-Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
+[Release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.71-preview)
 
 **0.1.71 preview:** improves unit selection, smoke stability and particle rendering performance, and adds matte grass with opening-ground wetness preservation. Includes all earlier changes. Use this release's new setup executable. [Release notes](RELEASE_NOTES.md).
 
@@ -34,7 +39,7 @@ The installer uses files from both games that are already installed on your PC. 
 
 ## How to install
 
-1. Download and extract the installer ZIP.
+1. **[Download ONLY `RemasteredCE_Installer_Preview.zip`](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip), right-click it and choose Extract All.**
 2. Close the game and any other Remastered CE launcher windows.
 3. Run **`RemasteredCE_Setup.exe`**.
 4. The installer will try to find both Steam installations automatically. If either path is blank or incorrect, use **Browse** and select the correct game folder.
