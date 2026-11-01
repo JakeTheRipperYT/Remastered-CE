@@ -1,1 +1,9 @@
 source/launcher-modfix/*.patch whitespace=-space-before-tab,-blank-at-eol
+
+# Preserve exact published compiler inputs for byte-checked source rebuilds.
+source/installer/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/campaign-weather/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# These two original compiler inputs intentionally retain their original spacing.
+source/installer/RemasteredCE/MainForm.cs whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/installer/RemasteredCE/SelfTests.cs whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,17 +1,22 @@
-# Remastered CE 0.1.28 preview
+# Remastered CE 0.1.55 Preview
 
-This release adds the firing-audio correction and revised War Is Slaughter trait trigger to the existing cumulative patch. It also includes the corrected combined mod launcher from **0.1.25 mod fix 2**.
+This cumulative release includes all previously published content and the changes tested in the private previews through 0.1.54.
 
-- **Firing audio:** prioritize weapon/projectile compatibility when selecting firing sounds, addressing cases where bows, matchlocks or other weapons selected an unrelated cannon sound. The incoming-projectile path and other native scoring/cache behavior retain their rules.
-- **War Is Slaughter progression:** a winning general must achieve a **Heroic Victory** with **at least 80% enemy casualties**, followed by the native **chance-10** trait roll. Applies to Shogun/ROTS and FOTS. The own-army-loss condition is removed; existing trait levels, effects and the separate Ikko creation roll remain.
-- **Mod launcher:** retains compressed CE/PFH3 mod-pack reading, custom-mod discovery in `RemasteredCE/data`, and **Use existing user.script.txt (ignore selections)** mode. The corrected launcher is included in installation and offline repair.
-- **Mod preservation during upgrades:** custom `.pack` files under the managed `data` folder are retained alongside the existing `mods` folder. Base-game archives are replaced by the new release as intended; conflicting or linked custom sources are rejected rather than overwritten.
-- **Retained content:** existing night reinforcements, Hell difficulty, gameplay fixes, artwork, blood/smoke and other previously released content remain.
+- Restore campaign settlement damage smoke, flames and siege effects when an unloaded battle terrain previously supplied an invalid season.
+- Add smooth main-campaign day/night transitions when toggling the pre-battle Night attack option.
+- Add a saved **Always night campaign map** setting in Graphics → Advanced. It overrides the temporary campaign preview and renders battles using their night scene without granting night-battle traits or changing reinforcement rules.
+- Add small warm amber floating lantern particles to the main campaign's night appearance in all four seasons; retain normal seasonal particles by day.
+- Add campaign-battle weather forecasts with constant weather or repeating combinations of clear, rain, heavy rain, fog and seasonal snow. The Wait button keeps its existing limit; weather cycles in the order described by the forecast until battle end. Custom and historical battles retain their existing weather behavior.
+- Blend sky, rain/snow, lighting, colour and exposure through weather changes with synchronized rain/sky timing. Keep the sky heading fixed and avoid abrupt scene flashes. Rainy weather includes native lightning and thunder.
+- Preserve the battle's starting puddle layout and materials throughout combat. Rain-start battles retain their puddles; dry-start battles do not gain puddles or lose grass later. Other wet shading can still respond to weather.
+- Update campaign-battle unit information cards' **Accuracy** and **Reload Skill** values and modifier bars using native current-weather effects. Red penalty bars recover from UI refreshes and remain while the penalty applies. Fatigue is outside this display change.
+- Repair sound-bank unit references for CE's changed registry, including affected garrison and Ikko warrior-nun memberships.
+- Add an arrow control for the collapsible Spacebar battle-options panel.
 
-The withdrawn renderer-threading and recent caching/GC/input optimization experiments are **not included**. No new FPS or map-loading gain is claimed.
+The retained grass dithering correction, firing-audio fix, Heroic Victory trait trigger, night reinforcements, Hell difficulty, artwork, blood/smoke, corrected mod launcher and other earlier content remain included. Withdrawn renderer/threading/caching/GC/input experiments remain excluded; no new performance gain is claimed.
 
 ## Install or update
 
-Download and extract **RemasteredCE_Installer_Preview.zip**. Keep `RemasteredCE_Setup.exe` and its `.config` together, close the game and other launcher windows, then run setup and choose **Install / Update**. Existing users should use the new setup executable so they receive the corrected mod launcher. Both the original Shogun 2 and Complete Edition installations are required.
+Download and extract **RemasteredCE_Installer_Preview.zip**. Keep setup and its .config together, close the game and launcher windows, then choose **Install / Update**. Use the new setup for this release: older setup versions cannot install its nine-pack layout. Both original SHOGUN 2 and Complete Edition installations are required. The installer reconstructs and verifies the patch from local files; complete game archives and engine DLLs are not distributed.
 
-The installer reconstructs the patch from local game files and checks the generated outputs. Full game packs and engine DLLs are not distributed. Native/asset checks and installer reconstruction/publication verification are documented with the release; these do not establish that every third-party mod or live multiplayer scenario is compatible.
+The signed offline package is embedded in setup; select Offline → Use included release (offline) to install without GitHub. New and existing users receive the same cumulative release. Custom mods are preserved by the installer; compatibility with every third-party mod is not claimed.

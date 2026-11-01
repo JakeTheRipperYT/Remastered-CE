@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "version": "0.1.55-preview",
+  "verifiedUtc": "2026-11-01T00:15:09.701000+00:00",
+  "setupSha256": "aae105446af15d1776c4710e62aa16b6afd6fb5fed8ecbbb6ec6ccaed685fc90",
+  "packageSha256": "2e39f5bfc72cf1c86d44c206025e6cdc601ff0ed080377d9958f5fa17af45246",
+  "launcherSha256": "e38b844071cabfbad78c8e1c606a08590bcef1d0748a444d83dcdc06c28d213c",
+  "engineSha256": "4741f3648496eb7ea3881eac2225a1c15608253f8bcc4855934276a3927faae1",
+  "installerZipSha256": "c20b7975c3c1ad5ebfbf2847c1a22c6941fa9dbfb622904479fed25c030ccb5f",
+  "zipExtractedSetupUsedForFullTest": true,
+  "allNinePacksReconstructedAndHashVerified": true,
+  "actualFinalSetupBuildAndPublicationPassed": true,
+  "actualFinalSetupUninstallPassed": true,
+  "fullBuildPublicationAssertions": 38,
+  "customModsPreservedDuringUpgradeAndUninstall": true,
+  "publicationRollbackPassed": true,
+  "installedOfflinePackageSignatureAndOwnershipVerified": true,
+  "publicSetupSourceReproducesExactBinaries": true,
+  "publicNativeSourceReproducesExactHelper": true,
+  "linkerDebugTimestampReplayedForNativeReproduction": true,
+  "oldInstallerRejectsMinimumVersion": true,
+  "newSignedPackageChecks": 19,
+  "accepted54EngineAndNineArchiveRecipesIdentical": true,
+  "userConfirmedCampaignAndBattleFeatures": true,
+  "userConfirmedPuddleAndPersistentPenaltyBarFixes": true,
+  "experimentalOptimizationsIncluded": false,
+  "completeGameArchivesOrDllsDistributed": false,
+  "realGameInstallationModifiedByAcceptanceTest": false,
+  "installWrapperCalled": false,
+  "scope": "Actual ZIP setup Build and PublishVerified on an isolated F target, forced publication rollback, actual Uninstall, and launcher/signature/package integration checks. Install wrapper and user-preference mutation are excluded. Live feature acceptance applies to the byte-identical54 engine and archive recipes.",
+  "nativeTests": {
+    "unit-weather-card-validation.json": {
+      "status": "PASS",
+      "cases": 105,
+      "nativeNegativeBranchVisibilityRepair": true,
+      "nativeWidgetResetRecovery": true,
+      "activePenaltyFramesChecked": 1800
+    },
+    "controller-unwind-validation.json": {
+      "status": "PASS",
+      "cases": 942,
+      "windowsVirtualUnwindCalls": 942
+    },
+    "fade-native-validation.json": {
+      "status": "PASS",
+      "cases": 96
+    },
+    "sky-material-validation.json": {
+      "status": "PASS",
+      "cases": 12
+    },
+    "native-colour-storm-validation.json": {
+      "status": "PASS"
+    },
+    "weather-cycle-validation.json": {
+      "status": "PASS",
+      "cases": 6
+    },
+    "deployment-puddle-validation.json": {
+      "status": "PASS",
+      "cases": 6
+    },
+    "puddle-material-validation.json": {
+      "status": "PASS",
+      "cases": [
+        {
+          "base": "0x180000000",
+          "initial": 0,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        },
+        {
+          "base": "0x180000000",
+          "initial": 1,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        },
+        {
+          "base": "0x230000000",
+          "initial": 0,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        },
+        {
+          "base": "0x230000000",
+          "initial": 1,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        },
+        {
+          "base": "0x7ff600000000",
+          "initial": 0,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        },
+        {
+          "base": "0x7ff600000000",
+          "initial": 1,
+          "rawBurn": 0.10000000149011612,
+          "nativeShaderMultiplier": 0.9800000190734863
+        }
+      ]
+    },
+    "dither-preservation-validation.json": {
+      "status": "PASS"
+    }
+  },
+  "packHashes": {
+    "data/data.pack": "19eea72063884289b591fb42a7e30e84f0290ffa98aa248b30c46bb61d81e05d",
+    "data/shaders.pack": "557b8609be67db84a06369970b276b6eb3c4a4e8ddba803f5aa64544f17ff228",
+    "data/bp_orig.pack": "2114ed6a19eea9ed6693c64e5a19dd3de10cc2a44d6933e2d210d55a8b440c54",
+    "data/web_content.pack": "9356ab855c3c80a427b7654deb62b0fa146113e51cfb76b0e104cf889fb0c82b",
+    "data/local_global.pack": "9543d691b25bcc6ff65af598a40f40558cbb396df1fa6bbed6b0f207603db38b",
+    "data/models.pack": "a72779357409b6f368d9857c783debe15d81dbcfb2c09fcec1b312c295b138a3",
+    "data/audio.pack": "943a0e6028d3823a5f7f40cfd0523932e85e93116c70b4b5c55e2b76442579c3",
+    "data/movies.pack": "009f9a4d71d28c6588fbd31a11be3fa6a079f1c3d229f126fdfa27ff7fbb574f",
+    "data/rce_campaign_night_visuals.pack": "55b0baa62325ffce2a16533a8bc0605b687ede93e3c3b79b4319823d1d9ec097"
+  }
+}

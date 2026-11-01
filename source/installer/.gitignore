@@ -1,0 +1,5 @@
+bin/
+obj/
+release
+_build/
+*.pdb
