@@ -1,0 +1,305 @@
+ controller
+
+ Timestamp is 6ae6e439 (Sun Nov  1 02:03:21 2026)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004245H .text$mn                CODE
+ 0002:00000000 0000ffacH .rdata                  DATA
+ 0002:0000ffac 00000018H .rdata$voltmd           DATA
+ 0002:0000ffc4 000000acH .rdata$zzzdbg           DATA
+ 0002:00010070 000002d0H .xdata                  DATA
+ 0002:00010340 00000632H .edata                  DATA
+ 0003:00000000 00000000H .data                   DATA
+ 0003:00000000 00000844H .bss                    DATA
+ 0004:00000000 00000210H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_image_info_bitfield 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0001:00001904       DynamicAmbientFrame        0000000180002904 f   controller.obj
+ 0001:00001a98       DynamicBattleTick          0000000180002a98 f   controller.obj
+ 0001:00001db4       DynamicForecastUI          0000000180002db4 f   controller.obj
+ 0001:00001eb4       DynamicParticleMaterial    0000000180002eb4 f   controller.obj
+ 0001:00001fd0       DynamicSkyDestroy          0000000180002fd0 f   controller.obj
+ 0001:00002024       DynamicSkyMaterial         0000000180003024 f   controller.obj
+ 0001:00002178       DynamicUnitCardFrame       0000000180003178 f   controller.obj
+ 0001:000022a0       DynamicUnitCardStats       00000001800032a0 f   controller.obj
+ 0001:000025b8       DynamicWeatherFrame        00000001800035b8 f   controller.obj
+ 0001:000037ac       DynamicWeatherParameters   00000001800047ac f   controller.obj
+ 0001:00003980       DynamicWeatherParticleCount 0000000180004980 f   controller.obj
+ 0001:00003a30       DynamicWeatherProgram      0000000180004a30 f   controller.obj
+ 0001:00003ab4       NightBattleClimate         0000000180004ab4 f   controller.obj
+ 0001:00003bfc       NightCheckboxCommit        0000000180004bfc f   controller.obj
+ 0001:00003c58       NightCheckboxInit          0000000180004c58 f   controller.obj
+ 0001:00003cdc       NightMapBattleSet          0000000180004cdc f   controller.obj
+ 0001:00003d48       NightMapFrame              0000000180004d48 f   controller.obj
+ 0001:00003e1c       NightMapLoad               0000000180004e1c f   controller.obj
+ 0001:00003fa0       NightMapSelect             0000000180004fa0 f   controller.obj
+ 0001:00004140       memset                     0000000180005140 f   controller.obj
+ 0001:00004160       engine_base                0000000180005160 f   adapters.obj
+ 0001:00004174       OriginalUnitCardFrame      0000000180005174 f   adapters.obj
+ 0001:00004185       OriginalUnitCardStats      0000000180005185 f   adapters.obj
+ 0001:00004195       OriginalLoad               0000000180005195 f   adapters.obj
+ 0001:000041a1       OriginalSelect             00000001800051a1 f   adapters.obj
+ 0001:000041ab       OriginalFrame              00000001800051ab f   adapters.obj
+ 0001:000041b8       OriginalCheckboxInit       00000001800051b8 f   adapters.obj
+ 0001:000041c2       OriginalBattleClimate      00000001800051c2 f   adapters.obj
+ 0001:000041cc       OriginalForecastUI         00000001800051cc f   adapters.obj
+ 0001:000041d6       OriginalBattleTick         00000001800051d6 f   adapters.obj
+ 0001:000041e9       OriginalWeatherFrame       00000001800051e9 f   adapters.obj
+ 0001:000041f7       OriginalWeatherParticleCount 00000001800051f7 f   adapters.obj
+ 0001:00004203       OriginalWeatherParameters  0000000180005203 f   adapters.obj
+ 0001:0000420d       OriginalParticleMaterial   000000018000520d f   adapters.obj
+ 0001:00004217       OriginalSkyDestroy         0000000180005217 f   adapters.obj
+ 0001:00004221       OriginalWeatherProgram     0000000180005221 f   adapters.obj
+ 0001:0000422b       OriginalSkyMaterial        000000018000522b f   adapters.obj
+ 0001:00004235       ResumeUnitCardFrame        0000000180005235 f   adapters.obj
+ 0001:00004236       ResumeUnitCardStats        0000000180005236 f   adapters.obj
+ 0001:00004237       ResumeLoad                 0000000180005237 f   adapters.obj
+ 0001:00004238       ResumeSelect               0000000180005238 f   adapters.obj
+ 0001:00004239       ResumeFrame                0000000180005239 f   adapters.obj
+ 0001:0000423a       ResumeCheckboxInit         000000018000523a f   adapters.obj
+ 0001:0000423b       ResumeBattleClimate        000000018000523b f   adapters.obj
+ 0001:0000423c       ResumeForecastUI           000000018000523c f   adapters.obj
+ 0001:0000423d       ResumeBattleTick           000000018000523d f   adapters.obj
+ 0001:0000423e       ResumeWeatherFrame         000000018000523e f   adapters.obj
+ 0001:0000423f       ResumeWeatherParticleCount 000000018000523f f   adapters.obj
+ 0001:00004240       ResumeWeatherParameters    0000000180005240 f   adapters.obj
+ 0001:00004241       ResumeParticleMaterial     0000000180005241 f   adapters.obj
+ 0001:00004242       ResumeSkyDestroy           0000000180005242 f   adapters.obj
+ 0001:00004243       ResumeWeatherProgram       0000000180005243 f   adapters.obj
+ 0001:00004244       ResumeSkyMaterial          0000000180005244 f   adapters.obj
+ 0002:0000f9c0       ??_C@_1BE@OOKOKHHC@?$AAs?$AAh?$AAo?$AA_?$AAj?$AAa?$AAp?$AAa?$AAn@ 00000001800159c0     controller.obj
+ 0002:0000f9e0       ??_C@_1EO@PLDDBGIJ@?$AA?2?$AAe?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AA?2?$AAr?$AAc?$AAe@ 00000001800159e0     controller.obj
+ 0002:0000fa30       ??_C@_1EO@GGNAANAD@?$AA?2?$AAe?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AA?2?$AAr?$AAc?$AAe@ 0000000180015a30     controller.obj
+ 0002:0000fa80       ??_C@_1EO@DFGKBPOB@?$AA?2?$AAe?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AA?2?$AAr?$AAc?$AAe@ 0000000180015a80     controller.obj
+ 0002:0000fad0       ??_C@_1EO@LEPLGOHO@?$AA?2?$AAe?$AAn?$AAv?$AAi?$AAr?$AAo?$AAn?$AAm?$AAe?$AAn?$AAt?$AA?2?$AAr?$AAc?$AAe@ 0000000180015ad0     controller.obj
+ 0002:0000fb20       ??_C@_0BK@PODOGGM@rce_campaign_always_night@ 0000000180015b20     controller.obj
+ 0002:0000fb40       ??_C@_08CJLOJPNI@selected@ 0000000180015b40     controller.obj
+ 0002:0000fb4c       ??_C@_06IKLLLDHL@normal@   0000000180015b4c     controller.obj
+ 0002:0000fb58       ??_C@_1M@IKKIHJKB@?$AAc?$AAl?$AAe?$AAa?$AAr@ 0000000180015b58     controller.obj
+ 0002:0000fb68       ??_C@_19GIKLMKL@?$AAr?$AAa?$AAi?$AAn@ 0000000180015b68     controller.obj
+ 0002:0000fb78       ??_C@_1BG@GKFDOBIK@?$AAh?$AAe?$AAa?$AAv?$AAy?$AA?5?$AAr?$AAa?$AAi?$AAn@ 0000000180015b78     controller.obj
+ 0002:0000fb90       ??_C@_17NDAKPLJP@?$AAf?$AAo?$AAg@ 0000000180015b90     controller.obj
+ 0002:0000fb98       ??_C@_19MLCADODB@?$AAs?$AAn?$AAo?$AAw@ 0000000180015b98     controller.obj
+ 0002:0000fba8       ??_C@_1BG@KHPJGDBA@?$AAh?$AAe?$AAa?$AAv?$AAy?$AA?5?$AAs?$AAn?$AAo?$AAw@ 0000000180015ba8     controller.obj
+ 0002:0000fbc0       ??_C@_1BA@KDMGPDJH@?$AAu?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn@ 0000000180015bc0     controller.obj
+ 0002:0000fbd0       ??_C@_1BI@PFPIKGFN@?$AA?5?$AAa?$AAl?$AAl?$AA?5?$AAn?$AAi?$AAg?$AAh?$AAt?$AA?4@ 0000000180015bd0     controller.obj
+ 0002:0000fbe8       ??_C@_1BE@GKLIFBFA@?$AA?5?$AAa?$AAl?$AAl?$AA?5?$AAd?$AAa?$AAy?$AA?4@ 0000000180015be8     controller.obj
+ 0002:0000fc00       ??_C@_1DO@IDMCEOLG@?$AAC?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAs?$AAk?$AAi?$AAe?$AAs?$AA?5?$AAw?$AAi?$AAt?$AAh@ 0000000180015c00     controller.obj
+ 0002:0000fc40       ??_C@_1BM@BLNKOMIC@?$AAI?$AAn?$AAt?$AAe?$AAr?$AAm?$AAi?$AAt?$AAt?$AAe?$AAn?$AAt?$AA?5@ 0000000180015c40     controller.obj
+ 0002:0000fc60       ??_C@_1M@FEAINNNN@?$AA?5?$AAa?$AAn?$AAd?$AA?5@ 0000000180015c60     controller.obj
+ 0002:0000fc6c       ??_C@_15JOGBDECP@?$AA?0?$AA?5@ 0000000180015c6c     controller.obj
+ 0002:0000fc78       ??_C@_1BI@HGGIKKKF@?$AAc?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAs?$AAk?$AAi?$AAe?$AAs@ 0000000180015c78     controller.obj
+ 0002:0000fc90       ??_C@_13JOFGPIOO@?$AA?4@   0000000180015c90     controller.obj
+ 0002:0000fc98       ??_C@_0BD@BIHGHJGI@rce_weather_shared@ 0000000180015c98     controller.obj
+ 0002:0000fcb0       ??_C@_0BG@LEBJEIEA@g_rce_weather_surface@ 0000000180015cb0     controller.obj
+ 0002:0000fcc8       ??_C@_0BI@MIHHINLL@g_rce_weather_old_shape@ 0000000180015cc8     controller.obj
+ 0002:0000fce0       ??_C@_0BI@HJCCGGBG@g_rce_weather_new_shape@ 0000000180015ce0     controller.obj
+ 0002:0000fcf8       ??_C@_0BL@IAEEMHIO@g_rce_weather_old_material@ 0000000180015cf8     controller.obj
+ 0002:0000fd18       ??_C@_0BL@PHGPIGFA@g_rce_weather_new_material@ 0000000180015d18     controller.obj
+ 0002:0000fd38       ??_C@_0BI@EPDBJJMM@g_rce_weather_old_range@ 0000000180015d38     controller.obj
+ 0002:0000fd50       ??_C@_0BI@POGEHCGB@g_rce_weather_new_range@ 0000000180015d50     controller.obj
+ 0002:0000fd68       ??_C@_0BL@GOHFGNEP@t_rce_weather_previous_sky@ 0000000180015d68     controller.obj
+ 0002:0000fd88       ??_C@_0BL@HNEOGHKD@t_rce_weather_previous_sun@ 0000000180015d88     controller.obj
+ 0002:0000fda8       ??_C@_0BE@JNFAFCGN@RigidModels?1Skybox?1@ 0000000180015da8     controller.obj
+ 0002:0000fdc0       ??_C@_1IM@HHMJHIPF@?$AAc?$AAa?$AAm?$AAp?$AAa?$AAi?$AAg?$AAn?$AA_?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAh@ 0000000180015dc0     controller.obj
+ 0002:0000fe50       ??_C@_1IM@OKCKGDHP@?$AAc?$AAa?$AAm?$AAp?$AAa?$AAi?$AAg?$AAn?$AA_?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAh@ 0000000180015e50     controller.obj
+ 0002:0000fee0       ??_C@_1BK@JLHDJPME@?$AAm?$AAa?$AAr?$AAk?$AAs?$AAm?$AAa?$AAn?$AAs?$AAh?$AAi?$AAp@ 0000000180015ee0     controller.obj
+ 0002:0000ff00       ??_C@_1BK@EPECKNJE@?$AAr?$AAe?$AAl?$AAo?$AAa?$AAd?$AA_?$AAs?$AAk?$AAi?$AAl?$AAl@ 0000000180015f00     controller.obj
+ 0002:0000ff20       ??_C@_08NPFIGENG@bar_base@ 0000000180015f20     controller.obj
+ 0002:0000ff30       ??_C@_07FCCNDJLB@bar_mod@  0000000180015f30     controller.obj
+ 0002:0000ff38       __real@00000000            0000000180015f38     controller.obj
+ 0002:0000ff3c       __real@3ca3d70a            0000000180015f3c     controller.obj
+ 0002:0000ff40       __real@3e4ccccd            0000000180015f40     controller.obj
+ 0002:0000ff44       __real@3eb33333            0000000180015f44     controller.obj
+ 0002:0000ff48       __real@3f000000            0000000180015f48     controller.obj
+ 0002:0000ff4c       __real@3f266666            0000000180015f4c     controller.obj
+ 0002:0000ff50       __real@3f800000            0000000180015f50     controller.obj
+ 0002:0000ff54       __real@40800000            0000000180015f54     controller.obj
+ 0002:0000ff58       __real@41400000            0000000180015f58     controller.obj
+ 0002:0000ff5c       __real@41f00000            0000000180015f5c     controller.obj
+ 0002:0000ff60       __real@42340000            0000000180015f60     controller.obj
+ 0002:0000ff64       __real@42b40000            0000000180015f64     controller.obj
+ 0002:0000ff68       __real@461c4000            0000000180015f68     controller.obj
+ 0002:0000ff6c       __real@47a8c000            0000000180015f6c     controller.obj
+ 0002:0000ff70       __real@47c35000            0000000180015f70     controller.obj
+ 0002:0000ff74       __real@c61c4000            0000000180015f74     controller.obj
+ 0002:0000ff80       __xmm@80000000800000008000000080000000 0000000180015f80     controller.obj
+ 0002:0000ffac       __volatile_metadata        0000000180015fac     <linker-defined>
+ 0003:00000000       _fltused                   0000000180017000     controller.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0001:00000000       ?append@Weather@@YAXPEA_WIAEAIPEB_W@Z 0000000180001000 f   controller.obj
+ 0001:00000044       ?assetFor@@YAIIIIII@Z      0000000180001044 f   controller.obj
+ 0001:000000dc       ?bindProgramParameter@@YAX_KPEAX1@Z 00000001800010dc f   controller.obj
+ 0001:0000011c       ?buildForecast@@YA_NPEAXAEAUForecast@@@Z 000000018000111c f   controller.obj
+ 0001:00000474       ?captureOpeningGround@@YA_NPEAXAEBUForecast@@@Z 0000000180001474 f   controller.obj
+ 0001:00000784       ?cardStatIs@@YA_NPEAXPEB_W@Z 0000000180001784 f   controller.obj
+ 0001:000007ec       ?cardWeather@@YA?AUCardWeather@@_KPEAX@Z 00000001800017ec f   controller.obj
+ 0001:000009ec       ?cardWeatherBars@@YA_K_KPEAX@Z 00000001800019ec f   controller.obj
+ 0001:00000ba8       ?cardWeatherDraw@@YAPEAUCardWeatherDraw@@PEAX@Z 0000000180001ba8 f   controller.obj
+ 0001:00000c04       ?cursor@Weather@@YA?AUCursor@1@AEBUPlan@1@M@Z 0000000180001c04 f   controller.obj
+ 0001:00000c64       ?describe@Weather@@YAXAEBUPlan@1@_NPEA_WI@Z 0000000180001c64 f   controller.obj
+ 0001:00000da8       ?endFade@@YAX_K_N@Z        0000000180001da8 f   controller.obj
+ 0001:00000e68       ?flag@@YA_N_KPEB_W@Z       0000000180001e68 f   controller.obj
+ 0001:00000edc       ?key@@YA_K_K@Z             0000000180001edc f   controller.obj
+ 0001:00000f50       ?loadNight@@YAPEAX_KPEAXI@Z 0000000180001f50 f   controller.obj
+ 0001:00001070       ?make@Weather@@YA_NAEBUInput@1@AEAUPlan@1@@Z 0000000180002070 f   controller.obj
+ 0001:00001404       ?material@@YA?AUFloat4@@PEAXI_N@Z 0000000180002404 f   controller.obj
+ 0001:00001458       ?name@Weather@@YAPEB_WI@Z  0000000180002458 f   controller.obj
+ 0001:000014b0       ?ownCheckbox@@YA_NPEAX@Z   00000001800024b0 f   controller.obj
+ 0001:00001508       ?releaseTexture@@YAX_KAEAPEAXPEAE@Z 0000000180002508 f   controller.obj
+ 0001:0000154c       ?retainSkyTexture@@YAPEAX_KPEAX_N@Z 000000018000254c f   controller.obj
+ 0001:0000164c       ?samePath@@YA_NPEBUWidePath@@PEB_W@Z 000000018000264c f   controller.obj
+ 0001:000016f8       ?setFade@@YAX_KIAEBUFloat4@@@Z 00000001800026f8 f   controller.obj
+ 0001:0000178c       ?startingGround@@YAX_K@Z   000000018000278c f   controller.obj
+ 0001:000018a0       ?writeFlag@@YAX_KPEB_W_N@Z 00000001800028a0 f   controller.obj
+ 0002:00000000       ?alwaysKey@@3QB_WB         0000000180006000     controller.obj
+ 0002:00000030       ?previewKey@@3QB_WB        0000000180006030     controller.obj
+ 0002:00000060       ?weatherAssets@@3QBUWeatherAsset@@B 0000000180006060     controller.obj
+ 0002:00010070       $unwind$?key@@YA_K_K@Z     0000000180016070     controller.obj
+ 0002:00010070       $unwind$NightCheckboxInit  0000000180016070     controller.obj
+ 0002:00010078       $unwind$?endFade@@YAX_K_N@Z 0000000180016078     controller.obj
+ 0002:00010078       $unwind$?flag@@YA_N_KPEB_W@Z 0000000180016078     controller.obj
+ 0002:00010084       $unwind$?writeFlag@@YAX_KPEB_W_N@Z 0000000180016084     controller.obj
+ 0002:00010094       $unwind$?loadNight@@YAPEAX_KPEAXI@Z 0000000180016094     controller.obj
+ 0002:000100a8       $unwind$NightMapLoad       00000001800160a8     controller.obj
+ 0002:000100bc       $unwind$NightMapSelect     00000001800160bc     controller.obj
+ 0002:000100d4       $unwind$NightMapFrame      00000001800160d4     controller.obj
+ 0002:000100e4       $unwind$DynamicWeatherProgram 00000001800160e4     controller.obj
+ 0002:000100e4       $unwind$NightCheckboxCommit 00000001800160e4     controller.obj
+ 0002:000100e4       $unwind$NightMapBattleSet  00000001800160e4     controller.obj
+ 0002:000100f4       $unwind$NightBattleClimate 00000001800160f4     controller.obj
+ 0002:0001010c       $unwind$?make@Weather@@YA_NAEBUInput@1@AEAUPlan@1@@Z 000000018001610c     controller.obj
+ 0002:0001011c       $unwind$?append@Weather@@YAXPEA_WIAEAIPEB_W@Z 000000018001611c     controller.obj
+ 0002:0001011c       $unwind$?cardStatIs@@YA_NPEAXPEB_W@Z 000000018001611c     controller.obj
+ 0002:00010124       $unwind$?describe@Weather@@YAXAEBUPlan@1@_NPEA_WI@Z 0000000180016124     controller.obj
+ 0002:00010138       $unwind$?bindProgramParameter@@YAX_KPEAX1@Z 0000000180016138     controller.obj
+ 0002:00010140       $unwind$?setFade@@YAX_KIAEBUFloat4@@@Z 0000000180016140     controller.obj
+ 0002:00010148       $unwind$DynamicWeatherParameters 0000000180016148     controller.obj
+ 0002:00010160       $unwind$?retainSkyTexture@@YAPEAX_KPEAX_N@Z 0000000180016160     controller.obj
+ 0002:00010170       $unwind$?releaseTexture@@YAX_KAEAPEAXPEAE@Z 0000000180016170     controller.obj
+ 0002:00010170       $unwind$DynamicSkyDestroy  0000000180016170     controller.obj
+ 0002:00010178       $unwind$?samePath@@YA_NPEBUWidePath@@PEB_W@Z 0000000180016178     controller.obj
+ 0002:00010184       $unwind$?assetFor@@YAIIIIII@Z 0000000180016184     controller.obj
+ 0002:00010194       $unwind$?buildForecast@@YA_NPEAXAEAUForecast@@@Z 0000000180016194     controller.obj
+ 0002:000101b0       $unwind$DynamicForecastUI  00000001800161b0     controller.obj
+ 0002:000101c4       $unwind$DynamicBattleTick  00000001800161c4     controller.obj
+ 0002:000101dc       $unwind$?captureOpeningGround@@YA_NPEAXAEBUForecast@@@Z 00000001800161dc     controller.obj
+ 0002:0001020c       $unwind$?startingGround@@YAX_K@Z 000000018001620c     controller.obj
+ 0002:00010218       $unwind$DynamicWeatherFrame 0000000180016218     controller.obj
+ 0002:0001024c       $unwind$DynamicWeatherParticleCount 000000018001624c     controller.obj
+ 0002:00010258       $unwind$DynamicParticleMaterial 0000000180016258     controller.obj
+ 0002:00010268       $unwind$DynamicSkyMaterial 0000000180016268     controller.obj
+ 0002:00010278       $unwind$DynamicAmbientFrame 0000000180016278     controller.obj
+ 0002:00010298       $unwind$?cardWeather@@YA?AUCardWeather@@_KPEAX@Z 0000000180016298     controller.obj
+ 0002:000102b4       $unwind$?cardWeatherBars@@YA_K_KPEAX@Z 00000001800162b4     controller.obj
+ 0002:000102cc       $unwind$DynamicUnitCardStats 00000001800162cc     controller.obj
+ 0002:000102f4       $unwind$DynamicUnitCardFrame 00000001800162f4     controller.obj
+ 0002:00010308       $xdatasym                  0000000180016308     adapters.obj
+ 0002:00010340       .edata                     0000000180016340     controller.exp
+ 0002:00010368       rgpv                       0000000180016368     controller.exp
+ 0002:00010438       rgszName                   0000000180016438     controller.exp
+ 0002:00010508       rgwOrd                     0000000180016508     controller.exp
+ 0002:00010570       szName                     0000000180016570     controller.exp
+ 0002:0001057f       $N00001                    000000018001657f     controller.exp
+ 0002:00010593       $N00002                    0000000180016593     controller.exp
+ 0002:000105a5       $N00003                    00000001800165a5     controller.exp
+ 0002:000105b7       $N00004                    00000001800165b7     controller.exp
+ 0002:000105cf       $N00005                    00000001800165cf     controller.exp
+ 0002:000105e1       $N00006                    00000001800165e1     controller.exp
+ 0002:000105f4       $N00007                    00000001800165f4     controller.exp
+ 0002:00010609       $N00008                    0000000180016609     controller.exp
+ 0002:0001061e       $N00009                    000000018001661e     controller.exp
+ 0002:00010632       $N00010                    0000000180016632     controller.exp
+ 0002:0001064b       $N00011                    000000018001664b     controller.exp
+ 0002:00010667       $N00012                    0000000180016667     controller.exp
+ 0002:0001067d       $N00013                    000000018001667d     controller.exp
+ 0002:00010690       $N00014                    0000000180016690     controller.exp
+ 0002:000106a4       $N00015                    00000001800166a4     controller.exp
+ 0002:000106b6       $N00016                    00000001800166b6     controller.exp
+ 0002:000106c8       $N00017                    00000001800166c8     controller.exp
+ 0002:000106d6       $N00018                    00000001800166d6     controller.exp
+ 0002:000106e3       $N00019                    00000001800166e3     controller.exp
+ 0002:000106f2       $N00020                    00000001800166f2     controller.exp
+ 0002:00010708       $N00021                    0000000180016708     controller.exp
+ 0002:0001071b       $N00022                    000000018001671b     controller.exp
+ 0002:00010730       $N00023                    0000000180016730     controller.exp
+ 0002:00010743       $N00024                    0000000180016743     controller.exp
+ 0002:00010751       $N00025                    0000000180016751     controller.exp
+ 0002:0001075e       $N00026                    000000018001675e     controller.exp
+ 0002:00010777       $N00027                    0000000180016777     controller.exp
+ 0002:00010786       $N00028                    0000000180016786     controller.exp
+ 0002:00010799       $N00029                    0000000180016799     controller.exp
+ 0002:000107ad       $N00030                    00000001800167ad     controller.exp
+ 0002:000107c3       $N00031                    00000001800167c3     controller.exp
+ 0002:000107d9       $N00032                    00000001800167d9     controller.exp
+ 0002:000107ee       $N00033                    00000001800167ee     controller.exp
+ 0002:00010808       $N00034                    0000000180016808     controller.exp
+ 0002:00010825       $N00035                    0000000180016825     controller.exp
+ 0002:0001083c       $N00036                    000000018001683c     controller.exp
+ 0002:00010850       $N00037                    0000000180016850     controller.exp
+ 0002:00010861       $N00038                    0000000180016861     controller.exp
+ 0002:00010874       $N00039                    0000000180016874     controller.exp
+ 0002:00010885       $N00040                    0000000180016885     controller.exp
+ 0002:00010891       $N00041                    0000000180016891     controller.exp
+ 0002:0001089c       $N00042                    000000018001689c     controller.exp
+ 0002:000108b3       $N00043                    00000001800168b3     controller.exp
+ 0002:000108c0       $N00044                    00000001800168c0     controller.exp
+ 0002:000108d1       $N00045                    00000001800168d1     controller.exp
+ 0002:000108e3       $N00046                    00000001800168e3     controller.exp
+ 0002:000108f7       $N00047                    00000001800168f7     controller.exp
+ 0002:0001090b       $N00048                    000000018001690b     controller.exp
+ 0002:0001091e       $N00049                    000000018001691e     controller.exp
+ 0002:00010936       $N00050                    0000000180016936     controller.exp
+ 0002:00010951       $N00051                    0000000180016951     controller.exp
+ 0002:00010966       $N00052                    0000000180016966     controller.exp
+ 0003:00000004       ?parametersRegistered@@3EA 0000000180017004     controller.obj
+ 0003:00000010       ?state@@3UState@@A         0000000180017010     controller.obj
+ 0003:00000068       ?settingsKey@@3_KA         0000000180017068     controller.obj
+ 0003:00000070       ?fadeBuffer@@3PAEA         0000000180017070     controller.obj
+ 0003:000000c0       ?fadeFields@@3PAY0EI@EA    00000001800170c0     controller.obj
+ 0003:000002c0       ?previousSkyParameter@@3PAEA 00000001800172c0     controller.obj
+ 0003:00000300       ?previousSunParameter@@3PAEA 0000000180017300     controller.obj
+ 0003:00000340       ?simulationForecast@@3UForecast@@A 0000000180017340     controller.obj
+ 0003:000003d0       ?publishedForecast@@3UForecast@@A 00000001800173d0     controller.obj
+ 0003:00000458       ?forecastLock@@3JC         0000000180017458     controller.obj
+ 0003:0000045c       ?forecastGeneration@@3IA   000000018001745c     controller.obj
+ 0003:00000460       ?openingGround@@3UOpeningGround@@A 0000000180017460     controller.obj
+ 0003:000004c0       ?weatherRender@@3UWeatherRender@@A 00000001800174c0     controller.obj
+ 0003:000007c0       ?cardWeatherDraws@@3PAUCardWeatherDraw@@A 00000001800177c0     controller.obj
+ 0003:00000840       ?cardWeatherDrawNext@@3IA  0000000180017840     controller.obj

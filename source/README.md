@@ -1,21 +1,5 @@
 # Current source
 
-See [installer](installer/README.md) for the 0.1.55 launcher/setup source and byte-checked public rebuild. See [campaign-weather](campaign-weather/README.md) for the native controller source and helper builder. The signed release contains the cumulative reconstruction recipes; complete game archives, engine DLLs and private signing keys are excluded.
+See [installer](installer/README.md) for the exact 0.1.71 setup/launcher source and checked rebuild. Native selection, particle rendering, grass and weather audit sources accompany this release in their corresponding directories. The signed package contains cumulative reconstruction instructions. Private signing keys, complete game archives and game engine DLLs are excluded.
 
-# Historical source reference
-
-The [0.1.25 custom-mod launcher fix](launcher-modfix/README.md) provides a checked source patch, pinned build recipe, regression tests and reversible hotfix deployment for the published combined launcher.
-
-This directory preserves the source and generators published through0.1.20. It does not contain the newer night-reinforcement and combined-launcher implementation in0.1.25. Use the current signed release and release-verification documentation for the supported installer.
-
-# Source notes
-
-Engine.cs, OnlineUpdates.cs and Program.cs target x64 .NET Framework 4.8 WinForms. app.manifest uses asInvoker. launcher.c is the unchanged native game launcher. redirect_portable.c is historical original routing source; the current combined native patch is represented by the signed package's manifest.json and helper.json. See hell/README.md for the Hell generator, preserved baseline helper and additional model/audio routing wrapper.
-
-The installer embeds the signed release as `release`, its public verification key as `publicKey`, and the native LZ4 library as `lz4`. It reconstructs eight modified packs from local game inputs, expands the private staging pack index in bounded chunks, and supports four-, five-, six-, seven- and eight-pack uninstall records. Automatic installer self-updating is excluded. The application does not patch game process memory.
-
-OnlineUpdates.cs selects public releases without account credentials, restricts download URLs to this repository, checks numeric versions and validates package signatures. Its cancellation, version, signature, rollback, link and uninstall checks run through `RemasteredCE_Setup.exe --self-test OUTPUT.txt` using temporary fixtures.
-
-Generating a newly signed release additionally requires the developer's private signing key, which is deliberately excluded. The signed .rce file contains the complete combined reconstruction instructions. Source/hell includes an inspectable and reproducible generator for the new native Hell instructions and the campaign script correction without redistributing the game's script.
-
-Version 0.1.20 retains the 0.1.17 signed-package format and 32 MiB manifest limit. Its complete cumulative recipe fits that limit. Cross-volume build-only staging copies base files only when Windows reports ERROR_NOT_SAME_DEVICE; other hard-link failures still stop the build. Normal installation stages beside the live CE copy and keeps hard links.
+The s2fix trial was withdrawn and is not part of this release.

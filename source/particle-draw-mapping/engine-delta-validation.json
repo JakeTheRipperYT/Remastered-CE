@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "previousEngineSha256": "61e98d68289d6c99ef8da13eb6c368af8e4fa9c7499eba86d409dca3e61d301d",
+  "newEngineSha256": "d3d228794bdd05c892184a7110504449bd591ae9b6f86e30451f4c5c4a2ab1d7",
+  "changedBytes": 91,
+  "permittedBytes": 95,
+  "onlyThreeDrawCallSitesAdapterAndPEChecksumChanged": true,
+  "samePELayoutAndUnwindTables": true,
+  "checksumValid": true
+}

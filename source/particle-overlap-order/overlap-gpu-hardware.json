@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "device": "HARDWARE",
+  "actualInstalledAlphaSmokeShader": true,
+  "lightingConstantsIdentical": true,
+  "onlyDrawOrderChanges": true,
+  "maxRGBJump": 0.11962449550628662,
+  "maxAlphaDifference": 0.0,
+  "firstOrder": [
+    "B",
+    "A",
+    "C"
+  ],
+  "secondOrder": [
+    "C",
+    "B",
+    "A"
+  ],
+  "scope": "Offline overlapping triangles rendered with installed PS and source-alpha blending. Demonstrates mechanism, not live flashing identification."
+}

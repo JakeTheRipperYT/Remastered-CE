@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "actualNativeTerrainUploadExecuted": true,
+  "rawDefinitionPreserved": true,
+  "deploymentCombatAndTransitionsMatchNative": true,
+  "cases": [
+    {
+      "base": "0x180000000",
+      "initial": 0,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    },
+    {
+      "base": "0x180000000",
+      "initial": 1,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    },
+    {
+      "base": "0x230000000",
+      "initial": 0,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    },
+    {
+      "base": "0x230000000",
+      "initial": 1,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 0,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 1,
+      "rawBurn": 0.10000000149011612,
+      "nativeShaderMultiplier": 0.9800000190734863
+    }
+  ]
+}

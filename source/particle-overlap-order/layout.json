@@ -1,0 +1,14 @@
+{
+  "writes": [
+    {
+      "offset": 28046128,
+      "before": "0f84c7000000",
+      "data": "e9c800000090",
+      "reason": "Give each transparent emitter an independent native distance-sort key; do not coalesce into averaged buckets"
+    }
+  ],
+  "siteRva": 28049200,
+  "targetRva": 28049405,
+  "noNewCode": true,
+  "noStackOrUnwindChange": true
+}

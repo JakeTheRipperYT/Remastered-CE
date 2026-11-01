@@ -12,13 +12,13 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 
 ## Download
 
-**[Download Remastered CE 0.1.55 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.55-preview/RemasteredCE_Installer_Preview.zip)**
+**[Download Remastered CE 0.1.71 installer ZIP](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip)**
 
-[0.1.55 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.55-preview)
+[0.1.71 release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.71-preview)
 
 Download the installer ZIP, extract the whole ZIP to a normal folder, and keep `RemasteredCE_Setup.exe` and its `.config` file together.
 
-**0.1.55 preview:** adds restored campaign damage/siege effects, campaign day/night and saved Always Night controls, seasonal night lanterns, cycling campaign-battle weather with smooth transitions, native lightning/thunder, permanent starting puddles, weather-adjusted unit info stats, sound-bank reference repairs and the collapsible battle-panel arrow. Includes all earlier fixes. Use this release's new setup executable. [Release notes](RELEASE_NOTES.md).
+**0.1.71 preview:** improves unit selection, smoke stability and particle rendering performance, and adds matte grass with opening-ground wetness preservation. Includes all earlier changes. Use this release's new setup executable. [Release notes](RELEASE_NOTES.md).
 
 See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 
@@ -55,7 +55,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download the 0.1.55 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The setup embeds the signed offline release. Automatic installer self-updating is not enabled.**
+**Download the 0.1.71 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The setup embeds the signed offline release. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 

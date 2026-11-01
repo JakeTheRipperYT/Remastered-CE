@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "compiledControllerExecuted": true,
+  "engineAndRegistryCallsModeled": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "checks": 27,
+      "nativeCalls": 167,
+      "status": "PASS"
+    },
+    {
+      "base": "0x230000000",
+      "checks": 27,
+      "nativeCalls": 167,
+      "status": "PASS"
+    },
+    {
+      "base": "0x7ff600000000",
+      "checks": 27,
+      "nativeCalls": 167,
+      "status": "PASS"
+    }
+  ],
+  "totalChecks": 81
+}

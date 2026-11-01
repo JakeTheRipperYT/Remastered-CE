@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "cases": 145,
+  "largeSameSourceCase": {
+    "emitters": 1000,
+    "groupsBefore": 1000,
+    "groupsAfter": 1,
+    "visibleEmitters": 1000,
+    "materialSetupsBefore": 1000,
+    "materialSetupsAfter": 1,
+    "nativeAppendCalls": 999,
+    "allocations": 1020,
+    "frees": 1020,
+    "freedByNativeCleanup": 1010
+  },
+  "boundaries": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    8,
+    9,
+    31,
+    32,
+    33,
+    127,
+    128,
+    129,
+    1000
+  ],
+  "randomInterleavingCases": 128,
+  "exactStrict64DrawSequencePreserved": true,
+  "nativeAppendGrowthExecuted": true,
+  "nativeDrawLoopExecuted": true,
+  "nativeDestructorExecuted": true,
+  "noLeaksOrDoubleFrees": true,
+  "adapterReplayAndRegistersPreserved": true,
+  "scope": "Offline native execution. Material setup counts are actual native draw flags; live FPS recovery remains pending."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "compiledProgramBindingHookExecuted": true,
+  "nativeVectorGrowAndAppendExecuted": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "shaderStages": 6,
+      "existingBindingsPreserved": true,
+      "repeatRegistrationDeduplicated": true
+    },
+    {
+      "base": "0x230000000",
+      "shaderStages": 6,
+      "existingBindingsPreserved": true,
+      "repeatRegistrationDeduplicated": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "shaderStages": 6,
+      "existingBindingsPreserved": true,
+      "repeatRegistrationDeduplicated": true
+    }
+  ]
+}

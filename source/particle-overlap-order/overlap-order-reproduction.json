@@ -1,0 +1,166 @@
+{
+  "status": "REPRODUCED_CAMERA_STRAFE_ORDER_JUMP",
+  "fixedEmitterWorldPositions": {
+    "A": [
+      0,
+      0,
+      3
+    ],
+    "B": [
+      2,
+      0,
+      3
+    ],
+    "C": [
+      0,
+      0,
+      4
+    ]
+  },
+  "cameraMovementMetres": 0.02,
+  "original": [
+    {
+      "cameraX": -0.01,
+      "groups": [
+        {
+          "key": 16.020099639892578,
+          "members": [
+            "B",
+            "A"
+          ]
+        },
+        {
+          "key": 16.000099182128906,
+          "members": [
+            "C"
+          ]
+        }
+      ],
+      "drawOrder": [
+        "B",
+        "A",
+        "C"
+      ],
+      "expectedDistanceOrder": [
+        "C",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "cameraX": 0.01,
+      "groups": [
+        {
+          "key": 16.000099182128906,
+          "members": [
+            "C"
+          ]
+        },
+        {
+          "key": 15.980100631713867,
+          "members": [
+            "B",
+            "A"
+          ]
+        }
+      ],
+      "drawOrder": [
+        "C",
+        "B",
+        "A"
+      ],
+      "expectedDistanceOrder": [
+        "C",
+        "B",
+        "A"
+      ]
+    }
+  ],
+  "candidate": [
+    {
+      "cameraX": -0.01,
+      "groups": [
+        {
+          "key": 16.000099182128906,
+          "members": [
+            "C"
+          ]
+        },
+        {
+          "key": 13.04010009765625,
+          "members": [
+            "B"
+          ]
+        },
+        {
+          "key": 9.000100135803223,
+          "members": [
+            "A"
+          ]
+        }
+      ],
+      "drawOrder": [
+        "C",
+        "B",
+        "A"
+      ],
+      "expectedDistanceOrder": [
+        "C",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "cameraX": 0.01,
+      "groups": [
+        {
+          "key": 16.000099182128906,
+          "members": [
+            "C"
+          ]
+        },
+        {
+          "key": 12.960100173950195,
+          "members": [
+            "B"
+          ]
+        },
+        {
+          "key": 9.000100135803223,
+          "members": [
+            "A"
+          ]
+        }
+      ],
+      "drawOrder": [
+        "C",
+        "B",
+        "A"
+      ],
+      "expectedDistanceOrder": [
+        "C",
+        "B",
+        "A"
+      ]
+    }
+  ],
+  "originalCompositeBrightness": [
+    0.61449375,
+    0.24480625
+  ],
+  "candidateCompositeBrightness": [
+    0.24480625,
+    0.24480625
+  ],
+  "additionalCandidateFrames": 21,
+  "patch": {
+    "rva": "0x1abff30",
+    "before": "0f84c7000000",
+    "after": "e9c800000090"
+  },
+  "scope": "Actual native CE bucket creation and member sort. Global group ordering represented by its native descending mean-distance key. Scalar source-alpha blend demonstration, not live game evidence or GPU capture. Candidate disables bucket coalescing only; may increase material submissions. Live acceptance pending.",
+  "randomCandidateFrames": 128,
+  "randomFarCandidateFrames": 64,
+  "maximumGroups": 62,
+  "nativeCapacityGrowthExercised": true
+}

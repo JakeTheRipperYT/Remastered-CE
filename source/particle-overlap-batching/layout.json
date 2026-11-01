@@ -1,0 +1,43 @@
+{
+  "writes": [
+    {
+      "offset": 28368832,
+      "before": "498bff498bf7",
+      "data": "e81b9ec30190",
+      "reason": "Merge adjacent same-source runs after strict global particle sorting"
+    }
+  ],
+  "slot": 18688,
+  "startRva": 57968896,
+  "endRva": 57969220,
+  "exports": {
+    "Append": 57969145,
+    "BatchAdapter": 57969120,
+    "MergeAdjacent": 57968896
+  },
+  "unwind": [
+    [
+      57968896,
+      57968941,
+      57969152
+    ],
+    [
+      57968941,
+      57969100,
+      57969168
+    ],
+    [
+      57969100,
+      57969116,
+      57969196
+    ],
+    [
+      57969120,
+      57969145,
+      57969212
+    ]
+  ],
+  "callSite": 28371904,
+  "afterSort": true,
+  "nativeAppendRva": 1256800
+}

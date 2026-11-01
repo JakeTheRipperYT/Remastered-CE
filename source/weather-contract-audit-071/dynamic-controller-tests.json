@@ -1,0 +1,1311 @@
+{
+  "status": "PASS_NATIVE_FIXTURE_NOT_LIVE_ACCEPTANCE",
+  "cases": 144,
+  "observations": 1575,
+  "nativeClimateBindingExecuted": true,
+  "nativeParticleDrawCountExecuted": true,
+  "pausedSimulationStable": true,
+  "waitCountersAndSpecUnchanged": true,
+  "startingGroundHeld": true,
+  "cyclicForecastText": true,
+  "customBattleEarlyExclusion": true,
+  "legacyHarnessUpdatedForExistingCyclicAndFadeContract": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "observations": 15,
+      "nativeRebinds": 3
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 1
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 3,
+      "observations": 15,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "observations": 10,
+      "nativeRebinds": 2
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 3,
+      "observations": 10,
+      "nativeRebinds": 2
+    }
+  ]
+}

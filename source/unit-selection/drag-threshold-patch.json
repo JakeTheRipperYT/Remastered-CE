@@ -1,0 +1,19 @@
+{
+  "beforeEditedSha256": "59dfae5449403c92cdf1bfd3e569ed9dd31063f4aac989270378b2497d2e8ebc",
+  "afterEditedSha256": "e0c1705615770542ddac22b7a354b115e6a66910b3d6ec0f3814d57e43ba2375",
+  "afterFinalSha256": "612c636f4c0d28628bb39539d96f52c6902e598c8b17163914cb97e461b99eb9",
+  "writes": [
+    {
+      "offset": 4209473,
+      "rva": 4212545,
+      "before": "0f57c0e8778ee1ff",
+      "data": "f30f1005b71edb01"
+    },
+    {
+      "offset": 4209517,
+      "rva": 4212589,
+      "before": "0f57c0e84b8ee1ff",
+      "data": "f30f10058b1edb01"
+    }
+  ]
+}

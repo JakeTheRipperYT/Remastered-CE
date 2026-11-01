@@ -1,0 +1,99 @@
+{
+  "stateRva": 55959424,
+  "codeRva": 34970336,
+  "codeBytes": 204,
+  "labels": {
+    "ResetClick": 34970336,
+    "RememberFriendlyPress": 34970368,
+    "ConsumeRelease": 34970424,
+    "GuardGroundClear": 34970472
+  },
+  "runtime": [
+    [
+      34970336,
+      34970366,
+      34970488
+    ],
+    [
+      34970368,
+      34970421,
+      34970504
+    ],
+    [
+      34970424,
+      34970470,
+      34970520
+    ],
+    [
+      34970472,
+      34970487,
+      34970536
+    ]
+  ],
+  "writes": [
+    {
+      "offset": 23413619,
+      "before": "c6815103000000",
+      "data": "f80f83664bb000",
+      "rva": 23416691,
+      "reason": "ResetClick"
+    },
+    {
+      "offset": 23414164,
+      "before": "488b8ed8020000",
+      "data": "f80f836549b000",
+      "rva": 23417236,
+      "reason": "RememberFriendlyPress"
+    },
+    {
+      "offset": 23414497,
+      "before": "0fb6f20f85b6020000",
+      "data": "f80f835048b0009090",
+      "rva": 23417569,
+      "reason": "ConsumeRelease"
+    },
+    {
+      "offset": 23414852,
+      "before": "e81732ffff",
+      "data": "e81f47b000",
+      "rva": 23417924,
+      "reason": "GuardGroundClear"
+    },
+    {
+      "offset": 34967264,
+      "before": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "data": "48c7059544400100000000c68151030000000f8482b44fff0f857cb44fffcccc80bea60b000000751980bea70b000000751080bea80b00000075074889355e444001488b8ed80200000f846cb64fff0f8566b64fffcccccc4c8b1d414440014c891d4244400148c7052f444001000000000fb6f20f8546ba4fff0f848ab74fff0f8584b74fffcccc483b0d194440017501c3e9e9ea4effcc21000000604f6501b24f6501e4b6d8022100000050516501885265012cb7d80221000000dd5265010d53650188b6d80201000000",
+      "reason": "Position-independent helpers and chained unwind metadata"
+    },
+    {
+      "offset": 680,
+      "before": "dc8a1502",
+      "data": "ac8b1502",
+      "reason": "Map executable padding"
+    },
+    {
+      "offset": 760,
+      "before": "71ff7100",
+      "data": "90ff7100",
+      "reason": "Reserve two zero-initialized click-owner pointers"
+    },
+    {
+      "offset": 50520952,
+      "before": "503674035437740354377403000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "data": "e09a1502fe9a1502789b1502009b1502359b1502889b1502389b1502669b1502989b1502689b1502779b1502a89b1502503674035437740354377403",
+      "reason": "Insert sorted helper runtime functions"
+    },
+    {
+      "offset": 572,
+      "before": "84c31800",
+      "data": "b4c31800",
+      "reason": "Extend exception directory"
+    },
+    {
+      "offset": 800,
+      "before": "84c31800",
+      "data": "b4c31800",
+      "reason": "Extend mapped exception table"
+    }
+  ]
+}

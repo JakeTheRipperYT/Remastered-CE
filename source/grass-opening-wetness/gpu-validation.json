@@ -1,0 +1,191 @@
+{
+  "status": "PASS_D3D11_WARP",
+  "actualCompiledGrassGBufferShaders": true,
+  "draws": 36,
+  "startingWetSurvivesCurrentClear": true,
+  "startingClearIgnoresCurrentRain": true,
+  "allFiveGBufferOutputsMatchAcrossIncomingPermutation": true,
+  "nonCampaignFallbackRetained": true,
+  "results": [
+    {
+      "managed": 0,
+      "openingWet": 0,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.22499999403953552
+      ]
+    },
+    {
+      "managed": 0,
+      "openingWet": 0,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.44999998807907104
+      ]
+    },
+    {
+      "managed": 0,
+      "openingWet": 0,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 0,
+      "openingWet": 1,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.22499999403953552
+      ]
+    },
+    {
+      "managed": 0,
+      "openingWet": 1,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.44999998807907104
+      ]
+    },
+    {
+      "managed": 0,
+      "openingWet": 1,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": false,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 0,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 0,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 0,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 1,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.22499999403953552,
+        0.22499999403953552
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 1,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.44999998807907104,
+        0.44999998807907104
+      ]
+    },
+    {
+      "managed": 1,
+      "openingWet": 1,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 0,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 0,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 0,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 1,
+      "multiplier": 0.25,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.22499999403953552,
+        0.22499999403953552
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 1,
+      "multiplier": 0.5,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.44999998807907104,
+        0.44999998807907104
+      ]
+    },
+    {
+      "managed": 2,
+      "openingWet": 1,
+      "multiplier": 1.0,
+      "currentWetAndDryMatch": true,
+      "roughness": [
+        0.8999999761581421,
+        0.8999999761581421
+      ]
+    }
+  ]
+}

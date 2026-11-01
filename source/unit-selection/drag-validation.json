@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "realPredicateCasesPerEngine": 3121,
+  "realPredicateEngines": 3,
+  "ce57MatchesOGExactly": true,
+  "ce56DiffersFromOG": true,
+  "completeNativeReleaseCases": [
+    {
+      "edition": "ce56",
+      "case": "stationary",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce56",
+      "case": "tiny diagonal",
+      "selected": 0,
+      "directClear": 0,
+      "boxReplace": 1,
+      "collectBox": 1
+    },
+    {
+      "edition": "ce56",
+      "case": "below OG threshold",
+      "selected": 0,
+      "directClear": 0,
+      "boxReplace": 1,
+      "collectBox": 1
+    },
+    {
+      "edition": "ce56",
+      "case": "deliberate box",
+      "selected": 0,
+      "directClear": 0,
+      "boxReplace": 1,
+      "collectBox": 1
+    },
+    {
+      "edition": "ce56",
+      "case": "horizontal only",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce56",
+      "case": "vertical only",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce57",
+      "case": "stationary",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce57",
+      "case": "tiny diagonal",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce57",
+      "case": "below OG threshold",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce57",
+      "case": "deliberate box",
+      "selected": 0,
+      "directClear": 0,
+      "boxReplace": 1,
+      "collectBox": 1
+    },
+    {
+      "edition": "ce57",
+      "case": "horizontal only",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    },
+    {
+      "edition": "ce57",
+      "case": "vertical only",
+      "selected": 1,
+      "directClear": 0,
+      "boxReplace": 0,
+      "collectBox": 0
+    }
+  ],
+  "scope": "Actual native predicate and complete release handler. Only picking/UI/selection collection dependencies are fixtures; fixture rectangle contains no units. No live process access."
+}

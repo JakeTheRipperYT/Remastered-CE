@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "removedRuntimeFunctionRows": 4,
+  "allRetainedRuntimeFunctionRowsIdentical": true,
+  "allOtherExecutableAndOriginalSectionsIdentical": true,
+  "legacyRegionZeroed": true,
+  "absolutePointersToLegacy": [],
+  "externalRipReferencesToLegacy": [],
+  "unownedArithmeticCandidates": [
+    "0x3748870",
+    "0x37488d4",
+    "0x37488d8",
+    "0x3745739",
+    "0x374887a",
+    "0x37488fc",
+    "0x374887f"
+  ],
+  "peChecksumValid": true
+}

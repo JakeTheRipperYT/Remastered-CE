@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "sourceSha256": "63baba1f84b11aba18342f622b00287df5d4019bdbfc3aaf9a5c73353d3f50d2",
+  "candidateSha256": "175ccc1aae2fab48b1b6ec3a771b9a63a76b82bb9e833e5d99ceaeb6a546bf5a",
+  "sourceBytes": 87520,
+  "candidateBytes": 349648,
+  "mipLevels": 8,
+  "mips": [
+    {
+      "level": 0,
+      "width": 256,
+      "height": 256,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 1,
+      "width": 128,
+      "height": 128,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 2,
+      "width": 64,
+      "height": 64,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 3,
+      "width": 32,
+      "height": 32,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 4,
+      "width": 16,
+      "height": 16,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 5,
+      "width": 8,
+      "height": 8,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 6,
+      "width": 4,
+      "height": 4,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    },
+    {
+      "level": 7,
+      "width": 2,
+      "height": 2,
+      "rgbPreservedExactly": true,
+      "alphaEqualsOriginalGreenExactly": true,
+      "decodedNormalMatchesOGExactly": true
+    }
+  ],
+  "scope": "Default normal map packing only. RGB preserved at every decoded texel; alpha repurposed for CE RAB normal decoding. Smoke diffuse opacity, shaders, depth, native code and custom normal maps are unchanged. Flashing acceptance remains pending."
+}

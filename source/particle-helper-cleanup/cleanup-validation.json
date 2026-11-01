@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "removedStartRva": 57968896,
+  "removedEndRva": 57969220,
+  "removedBytes": 324,
+  "removedFixups": [
+    18938
+  ],
+  "removedUnwindRows": [
+    [
+      57968896,
+      57968941,
+      57969152
+    ],
+    [
+      57968941,
+      57969100,
+      57969168
+    ],
+    [
+      57969100,
+      57969116,
+      57969196
+    ],
+    [
+      57969120,
+      57969145,
+      57969212
+    ]
+  ],
+  "remainingHelperBytesUnchanged": true,
+  "editedEngineUnchanged": true,
+  "externalDirectBranches": [],
+  "activeBatchHook": 57989024
+}

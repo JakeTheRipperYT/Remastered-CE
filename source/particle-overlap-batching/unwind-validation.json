@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "windowsRtlVirtualUnwind": true,
+  "bases": 3,
+  "chainedUnwindExecuted": true,
+  "boundaries": 1158,
+  "cases": [
+    {
+      "base": "0x180000000",
+      "function": "MergeAdjacent",
+      "owners": [],
+      "boundaries": 23
+    },
+    {
+      "base": "0x180000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1
+      ],
+      "boundaries": 51
+    },
+    {
+      "base": "0x180000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 84
+    },
+    {
+      "base": "0x180000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 102
+    },
+    {
+      "base": "0x180000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 91
+    },
+    {
+      "base": "0x180000000",
+      "function": "BatchAdapter",
+      "owners": [],
+      "boundaries": 7
+    },
+    {
+      "base": "0x180000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x180000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x180000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x180000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x230000000",
+      "function": "MergeAdjacent",
+      "owners": [],
+      "boundaries": 23
+    },
+    {
+      "base": "0x230000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1
+      ],
+      "boundaries": 51
+    },
+    {
+      "base": "0x230000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 84
+    },
+    {
+      "base": "0x230000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 102
+    },
+    {
+      "base": "0x230000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 91
+    },
+    {
+      "base": "0x230000000",
+      "function": "BatchAdapter",
+      "owners": [],
+      "boundaries": 7
+    },
+    {
+      "base": "0x230000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x230000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x230000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x230000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "MergeAdjacent",
+      "owners": [],
+      "boundaries": 23
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1
+      ],
+      "boundaries": 51
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 84
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 102
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "MergeAdjacent",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 91
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "BatchAdapter",
+      "owners": [],
+      "boundaries": 7
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        2,
+        1
+      ],
+      "boundaries": 7
+    },
+    {
+      "base": "0x7ff600000000",
+      "function": "BatchAdapter",
+      "owners": [
+        1,
+        0,
+        1
+      ],
+      "boundaries": 7
+    }
+  ],
+  "scope": "Actual Windows unwinding at executed instruction boundaries, including early exits, loop and epilogs. All nonvolatile GPRs and XMM6-XMM15 checked."
+}

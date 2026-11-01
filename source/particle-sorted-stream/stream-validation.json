@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "cases": 43,
+  "fixtures": [
+    {
+      "emitters": 0,
+      "sources": 0,
+      "streamScratchAllocations": 0,
+      "sourceMarkerAllocations": 0,
+      "cameraCallsPerPreparation": 0,
+      "emitterPositionCallsPerPreparation": 0,
+      "drawRuns": 0,
+      "allocations": 0,
+      "frees": 0
+    },
+    {
+      "emitters": 0,
+      "sources": 0,
+      "streamScratchAllocations": 0,
+      "sourceMarkerAllocations": 0,
+      "cameraCallsPerPreparation": 0,
+      "emitterPositionCallsPerPreparation": 0,
+      "drawRuns": 0,
+      "allocations": 0,
+      "frees": 0
+    },
+    {
+      "emitters": 1,
+      "sources": 1,
+      "streamScratchAllocations": 1,
+      "sourceMarkerAllocations": 1,
+      "cameraCallsPerPreparation": 1,
+      "emitterPositionCallsPerPreparation": 1,
+      "drawRuns": 1,
+      "allocations": 3,
+      "frees": 3
+    },
+    {
+      "emitters": 1000,
+      "sources": 1,
+      "streamScratchAllocations": 1,
+      "sourceMarkerAllocations": 1,
+      "cameraCallsPerPreparation": 1,
+      "emitterPositionCallsPerPreparation": 1000,
+      "drawRuns": 1,
+      "allocations": 3,
+      "frees": 3
+    },
+    {
+      "emitters": 1000,
+      "sources": 2,
+      "streamScratchAllocations": 1,
+      "sourceMarkerAllocations": 2,
+      "cameraCallsPerPreparation": 2,
+      "emitterPositionCallsPerPreparation": 1000,
+      "drawRuns": 472,
+      "allocations": 4,
+      "frees": 4
+    },
+    {
+      "emitters": 56,
+      "sources": 3,
+      "streamScratchAllocations": 1,
+      "sourceMarkerAllocations": 3,
+      "cameraCallsPerPreparation": 3,
+      "emitterPositionCallsPerPreparation": 56,
+      "drawRuns": 31,
+      "allocations": 6,
+      "frees": 6
+    },
+    {
+      "emitters": 33,
+      "sources": 33,
+      "streamScratchAllocations": 1,
+      "sourceMarkerAllocations": 33,
+      "cameraCallsPerPreparation": 33,
+      "emitterPositionCallsPerPreparation": 33,
+      "drawRuns": 33,
+      "allocations": 40,
+      "frees": 40
+    }
+  ],
+  "exactDistanceOrderPreserved": true,
+  "uniqueKeySequenceMatchesStrict64": true,
+  "stableSourceTiePriority": true,
+  "nativeSortAndClearExecuted": true,
+  "nativeEmptyVectorGatherCopyExecuted": true,
+  "nativeDrawAndDestructorExecuted": true,
+  "noLeaksOrDoubleFrees": true,
+  "scope": "Offline native source preparation and streamed draw; allocator/camera/position functions are controlled fixtures. Actual live FPS remains unmeasured."
+}

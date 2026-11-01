@@ -1,6 +1,6 @@
 {
-  "version": "0.1.55-preview",
-  "packageSha256": "2e39f5bfc72cf1c86d44c206025e6cdc601ff0ed080377d9958f5fa17af45246",
-  "setupSha256": "aae105446af15d1776c4710e62aa16b6afd6fb5fed8ecbbb6ec6ccaed685fc90",
-  "launcherSha256": "e38b844071cabfbad78c8e1c606a08590bcef1d0748a444d83dcdc06c28d213c"
+  "version": "0.1.71-preview",
+  "packageSha256": "81c928cd6f6a519758c0c1554b05c35d63da6ff429de9987c4948de4ed8b98dc",
+  "setupSha256": "98981c63b4506bfa9c402049373477737101ce1ee09523b43fc3a7506a759473",
+  "launcherSha256": "cfa3f491eda22e091dec6687af268db182df1ed57ed63c1b9be96c5e7f259953"
 }

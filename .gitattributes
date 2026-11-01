@@ -7,3 +7,14 @@ source/campaign-weather/** -text whitespace=blank-at-eol,blank-at-eof,space-befo
 # These two original compiler inputs intentionally retain their original spacing.
 source/installer/RemasteredCE/MainForm.cs whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 source/installer/RemasteredCE/SelfTests.cs whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve native/shader development inputs and their recorded validation data.
+source/particle*/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/grass*/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/unit-selection/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/weather-contract-audit-071/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/installer-verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Retain shader source spacing used by the verified compiled replacements.
+source/grass*/replacements/fx/*.hlsl whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source/particle*/**/*.asm whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

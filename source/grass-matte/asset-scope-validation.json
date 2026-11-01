@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "mainChangedAssets": [
+    "fx/rigidgrasscommon.hlsl",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrasswet.hlsl_ps_ps30_main.fxc"
+  ],
+  "overlayChangedAssets": [
+    "fx/rigidgrasscommon.hlsl",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrasswet.hlsl_ps_ps30_main.fxc"
+  ],
+  "shaderEntryCount": 786,
+  "overlayEntryCount": 59,
+  "allOtherAssetContentsUnchanged": true,
+  "weatherControllerAndEngineUnchanged": true,
+  "allGrassVertexShadowAndAlphaDitherPreserved": true
+}

@@ -410,7 +410,7 @@ public sealed class ModForm : Form
 			}
 		};
 		Render();
-		status.Text = "Ready - Remastered CE 0.1.55-preview";
+		status.Text = "Ready - Remastered CE 0.1.71-preview";
 	}
 
 	private void Add(FlowLayoutPanel panel, string text, Action action)

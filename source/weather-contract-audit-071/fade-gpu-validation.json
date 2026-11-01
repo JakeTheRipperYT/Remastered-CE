@@ -1,0 +1,1005 @@
+{
+  "status": "PASS_D3D11_WARP",
+  "deviceFeatureLevel": "0xb000",
+  "samples": 66,
+  "actualCubemapSampling": true,
+  "actualStagedSkyFunction": true,
+  "initialPuddleCoverageAndMaterialsPermanent": true,
+  "steadyModeKeepsIncomingRainStrengthAndNativeSky": true,
+  "grassCullingStaysAtOpeningPolicy": true,
+  "stableParticleDensityTapersToZero": true,
+  "snowAndRoughnessContinuous": true,
+  "disabledNativeRenderingPreserved": true,
+  "results": [
+    {
+      "reverse": false,
+      "progress": 0.0,
+      "sky": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "puddle": 0.0,
+      "snow": 0.0,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.0
+    },
+    {
+      "reverse": false,
+      "progress": 0.03125,
+      "sky": [
+        0.96875,
+        0.0,
+        0.03125
+      ],
+      "puddle": 0.0,
+      "snow": 0.03125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.004984676837921143
+    },
+    {
+      "reverse": false,
+      "progress": 0.0625,
+      "sky": [
+        0.9375,
+        0.0,
+        0.0625
+      ],
+      "puddle": 0.0,
+      "snow": 0.0625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.026839636266231537
+    },
+    {
+      "reverse": false,
+      "progress": 0.09375,
+      "sky": [
+        0.90625,
+        0.0,
+        0.09375
+      ],
+      "puddle": 0.0,
+      "snow": 0.09375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.06453410536050797
+    },
+    {
+      "reverse": false,
+      "progress": 0.125,
+      "sky": [
+        0.875,
+        0.0,
+        0.125
+      ],
+      "puddle": 0.0,
+      "snow": 0.125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.10534128546714783
+    },
+    {
+      "reverse": false,
+      "progress": 0.15625,
+      "sky": [
+        0.84375,
+        0.0,
+        0.15625
+      ],
+      "puddle": 0.0,
+      "snow": 0.15625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.14528988301753998
+    },
+    {
+      "reverse": false,
+      "progress": 0.1875,
+      "sky": [
+        0.8125,
+        0.0,
+        0.1875
+      ],
+      "puddle": 0.0,
+      "snow": 0.1875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.18512338399887085
+    },
+    {
+      "reverse": false,
+      "progress": 0.21875,
+      "sky": [
+        0.78125,
+        0.0,
+        0.21875
+      ],
+      "puddle": 0.0,
+      "snow": 0.21875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.22112764418125153
+    },
+    {
+      "reverse": false,
+      "progress": 0.25,
+      "sky": [
+        0.75,
+        0.0,
+        0.25
+      ],
+      "puddle": 0.0,
+      "snow": 0.25,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.25319814682006836
+    },
+    {
+      "reverse": false,
+      "progress": 0.28125,
+      "sky": [
+        0.71875,
+        0.0,
+        0.28125
+      ],
+      "puddle": 0.0,
+      "snow": 0.28125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.2853601276874542
+    },
+    {
+      "reverse": false,
+      "progress": 0.3125,
+      "sky": [
+        0.6875,
+        0.0,
+        0.3125
+      ],
+      "puddle": 0.0,
+      "snow": 0.3125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.3187083601951599
+    },
+    {
+      "reverse": false,
+      "progress": 0.34375,
+      "sky": [
+        0.65625,
+        0.0,
+        0.34375
+      ],
+      "puddle": 0.0,
+      "snow": 0.34375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.35545966029167175
+    },
+    {
+      "reverse": false,
+      "progress": 0.375,
+      "sky": [
+        0.625,
+        0.0,
+        0.375
+      ],
+      "puddle": 0.0,
+      "snow": 0.375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.39319315552711487
+    },
+    {
+      "reverse": false,
+      "progress": 0.40625,
+      "sky": [
+        0.59375,
+        0.0,
+        0.40625
+      ],
+      "puddle": 0.0,
+      "snow": 0.40625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.4279109537601471
+    },
+    {
+      "reverse": false,
+      "progress": 0.4375,
+      "sky": [
+        0.5625,
+        0.0,
+        0.4375
+      ],
+      "puddle": 0.0,
+      "snow": 0.4375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.46176987886428833
+    },
+    {
+      "reverse": false,
+      "progress": 0.46875,
+      "sky": [
+        0.53125,
+        0.0,
+        0.46875
+      ],
+      "puddle": 0.0,
+      "snow": 0.46875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.4940858781337738
+    },
+    {
+      "reverse": false,
+      "progress": 0.5,
+      "sky": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "puddle": 0.0,
+      "snow": 0.5,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.5216101408004761
+    },
+    {
+      "reverse": false,
+      "progress": 0.53125,
+      "sky": [
+        0.46875,
+        0.0,
+        0.53125
+      ],
+      "puddle": 0.0,
+      "snow": 0.53125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.5504392981529236
+    },
+    {
+      "reverse": false,
+      "progress": 0.5625,
+      "sky": [
+        0.4375,
+        0.0,
+        0.5625
+      ],
+      "puddle": 0.0,
+      "snow": 0.5625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.585371732711792
+    },
+    {
+      "reverse": false,
+      "progress": 0.59375,
+      "sky": [
+        0.40625,
+        0.0,
+        0.59375
+      ],
+      "puddle": 0.0,
+      "snow": 0.59375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.6214905977249146
+    },
+    {
+      "reverse": false,
+      "progress": 0.625,
+      "sky": [
+        0.375,
+        0.0,
+        0.625
+      ],
+      "puddle": 0.0,
+      "snow": 0.625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.6547659635543823
+    },
+    {
+      "reverse": false,
+      "progress": 0.65625,
+      "sky": [
+        0.34375,
+        0.0,
+        0.65625
+      ],
+      "puddle": 0.0,
+      "snow": 0.65625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.6924166679382324
+    },
+    {
+      "reverse": false,
+      "progress": 0.6875,
+      "sky": [
+        0.3125,
+        0.0,
+        0.6875
+      ],
+      "puddle": 0.0,
+      "snow": 0.6875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.7352740168571472
+    },
+    {
+      "reverse": false,
+      "progress": 0.71875,
+      "sky": [
+        0.28125,
+        0.0,
+        0.71875
+      ],
+      "puddle": 0.0,
+      "snow": 0.71875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.7713353633880615
+    },
+    {
+      "reverse": false,
+      "progress": 0.75,
+      "sky": [
+        0.25,
+        0.0,
+        0.75
+      ],
+      "puddle": 0.0,
+      "snow": 0.75,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.7991262078285217
+    },
+    {
+      "reverse": false,
+      "progress": 0.78125,
+      "sky": [
+        0.21875,
+        0.0,
+        0.78125
+      ],
+      "puddle": 0.0,
+      "snow": 0.78125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.8260770440101624
+    },
+    {
+      "reverse": false,
+      "progress": 0.8125,
+      "sky": [
+        0.1875,
+        0.0,
+        0.8125
+      ],
+      "puddle": 0.0,
+      "snow": 0.8125,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.8573465943336487
+    },
+    {
+      "reverse": false,
+      "progress": 0.84375,
+      "sky": [
+        0.15625,
+        0.0,
+        0.84375
+      ],
+      "puddle": 0.0,
+      "snow": 0.84375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.8950404524803162
+    },
+    {
+      "reverse": false,
+      "progress": 0.875,
+      "sky": [
+        0.125,
+        0.0,
+        0.875
+      ],
+      "puddle": 0.0,
+      "snow": 0.875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.9347095489501953
+    },
+    {
+      "reverse": false,
+      "progress": 0.90625,
+      "sky": [
+        0.09375,
+        0.0,
+        0.90625
+      ],
+      "puddle": 0.0,
+      "snow": 0.90625,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.9662848711013794
+    },
+    {
+      "reverse": false,
+      "progress": 0.9375,
+      "sky": [
+        0.0625,
+        0.0,
+        0.9375
+      ],
+      "puddle": 0.0,
+      "snow": 0.9375,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.988223671913147
+    },
+    {
+      "reverse": false,
+      "progress": 0.96875,
+      "sky": [
+        0.03125,
+        0.0,
+        0.96875
+      ],
+      "puddle": 0.0,
+      "snow": 0.96875,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 0.997944176197052
+    },
+    {
+      "reverse": false,
+      "progress": 1.0,
+      "sky": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "puddle": 0.0,
+      "snow": 1.0,
+      "roughness": 1.0,
+      "edge": 0.0,
+      "centre": 0.0,
+      "precipitationCoverage": 1.0
+    },
+    {
+      "reverse": true,
+      "progress": 0.0,
+      "sky": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "puddle": 1.0,
+      "snow": 0.0,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 1.0
+    },
+    {
+      "reverse": true,
+      "progress": 0.03125,
+      "sky": [
+        0.96875,
+        0.0,
+        0.03125
+      ],
+      "puddle": 1.0,
+      "snow": 0.03125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.997944176197052
+    },
+    {
+      "reverse": true,
+      "progress": 0.0625,
+      "sky": [
+        0.9375,
+        0.0,
+        0.0625
+      ],
+      "puddle": 1.0,
+      "snow": 0.0625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.988223671913147
+    },
+    {
+      "reverse": true,
+      "progress": 0.09375,
+      "sky": [
+        0.90625,
+        0.0,
+        0.09375
+      ],
+      "puddle": 1.0,
+      "snow": 0.09375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.9662848711013794
+    },
+    {
+      "reverse": true,
+      "progress": 0.125,
+      "sky": [
+        0.875,
+        0.0,
+        0.125
+      ],
+      "puddle": 1.0,
+      "snow": 0.125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.9347095489501953
+    },
+    {
+      "reverse": true,
+      "progress": 0.15625,
+      "sky": [
+        0.84375,
+        0.0,
+        0.15625
+      ],
+      "puddle": 1.0,
+      "snow": 0.15625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.8950404524803162
+    },
+    {
+      "reverse": true,
+      "progress": 0.1875,
+      "sky": [
+        0.8125,
+        0.0,
+        0.1875
+      ],
+      "puddle": 1.0,
+      "snow": 0.1875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.8573465943336487
+    },
+    {
+      "reverse": true,
+      "progress": 0.21875,
+      "sky": [
+        0.78125,
+        0.0,
+        0.21875
+      ],
+      "puddle": 1.0,
+      "snow": 0.21875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.8260770440101624
+    },
+    {
+      "reverse": true,
+      "progress": 0.25,
+      "sky": [
+        0.75,
+        0.0,
+        0.25
+      ],
+      "puddle": 1.0,
+      "snow": 0.25,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.7991262078285217
+    },
+    {
+      "reverse": true,
+      "progress": 0.28125,
+      "sky": [
+        0.71875,
+        0.0,
+        0.28125
+      ],
+      "puddle": 1.0,
+      "snow": 0.28125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.7713353633880615
+    },
+    {
+      "reverse": true,
+      "progress": 0.3125,
+      "sky": [
+        0.6875,
+        0.0,
+        0.3125
+      ],
+      "puddle": 1.0,
+      "snow": 0.3125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.7352740168571472
+    },
+    {
+      "reverse": true,
+      "progress": 0.34375,
+      "sky": [
+        0.65625,
+        0.0,
+        0.34375
+      ],
+      "puddle": 1.0,
+      "snow": 0.34375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.6924166679382324
+    },
+    {
+      "reverse": true,
+      "progress": 0.375,
+      "sky": [
+        0.625,
+        0.0,
+        0.375
+      ],
+      "puddle": 1.0,
+      "snow": 0.375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.6547659635543823
+    },
+    {
+      "reverse": true,
+      "progress": 0.40625,
+      "sky": [
+        0.59375,
+        0.0,
+        0.40625
+      ],
+      "puddle": 1.0,
+      "snow": 0.40625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.6214905977249146
+    },
+    {
+      "reverse": true,
+      "progress": 0.4375,
+      "sky": [
+        0.5625,
+        0.0,
+        0.4375
+      ],
+      "puddle": 1.0,
+      "snow": 0.4375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.585371732711792
+    },
+    {
+      "reverse": true,
+      "progress": 0.46875,
+      "sky": [
+        0.53125,
+        0.0,
+        0.46875
+      ],
+      "puddle": 1.0,
+      "snow": 0.46875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.5504392981529236
+    },
+    {
+      "reverse": true,
+      "progress": 0.5,
+      "sky": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "puddle": 1.0,
+      "snow": 0.5,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.5216101408004761
+    },
+    {
+      "reverse": true,
+      "progress": 0.53125,
+      "sky": [
+        0.46875,
+        0.0,
+        0.53125
+      ],
+      "puddle": 1.0,
+      "snow": 0.53125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.4940858781337738
+    },
+    {
+      "reverse": true,
+      "progress": 0.5625,
+      "sky": [
+        0.4375,
+        0.0,
+        0.5625
+      ],
+      "puddle": 1.0,
+      "snow": 0.5625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.46176987886428833
+    },
+    {
+      "reverse": true,
+      "progress": 0.59375,
+      "sky": [
+        0.40625,
+        0.0,
+        0.59375
+      ],
+      "puddle": 1.0,
+      "snow": 0.59375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.4279109537601471
+    },
+    {
+      "reverse": true,
+      "progress": 0.625,
+      "sky": [
+        0.375,
+        0.0,
+        0.625
+      ],
+      "puddle": 1.0,
+      "snow": 0.625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.39319315552711487
+    },
+    {
+      "reverse": true,
+      "progress": 0.65625,
+      "sky": [
+        0.34375,
+        0.0,
+        0.65625
+      ],
+      "puddle": 1.0,
+      "snow": 0.65625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.35545966029167175
+    },
+    {
+      "reverse": true,
+      "progress": 0.6875,
+      "sky": [
+        0.3125,
+        0.0,
+        0.6875
+      ],
+      "puddle": 1.0,
+      "snow": 0.6875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.3187083601951599
+    },
+    {
+      "reverse": true,
+      "progress": 0.71875,
+      "sky": [
+        0.28125,
+        0.0,
+        0.71875
+      ],
+      "puddle": 1.0,
+      "snow": 0.71875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.2853601276874542
+    },
+    {
+      "reverse": true,
+      "progress": 0.75,
+      "sky": [
+        0.25,
+        0.0,
+        0.75
+      ],
+      "puddle": 1.0,
+      "snow": 0.75,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.25319814682006836
+    },
+    {
+      "reverse": true,
+      "progress": 0.78125,
+      "sky": [
+        0.21875,
+        0.0,
+        0.78125
+      ],
+      "puddle": 1.0,
+      "snow": 0.78125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.22112764418125153
+    },
+    {
+      "reverse": true,
+      "progress": 0.8125,
+      "sky": [
+        0.1875,
+        0.0,
+        0.8125
+      ],
+      "puddle": 1.0,
+      "snow": 0.8125,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.18512338399887085
+    },
+    {
+      "reverse": true,
+      "progress": 0.84375,
+      "sky": [
+        0.15625,
+        0.0,
+        0.84375
+      ],
+      "puddle": 1.0,
+      "snow": 0.84375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.14528988301753998
+    },
+    {
+      "reverse": true,
+      "progress": 0.875,
+      "sky": [
+        0.125,
+        0.0,
+        0.875
+      ],
+      "puddle": 1.0,
+      "snow": 0.875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.10534128546714783
+    },
+    {
+      "reverse": true,
+      "progress": 0.90625,
+      "sky": [
+        0.09375,
+        0.0,
+        0.90625
+      ],
+      "puddle": 1.0,
+      "snow": 0.90625,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.06453410536050797
+    },
+    {
+      "reverse": true,
+      "progress": 0.9375,
+      "sky": [
+        0.0625,
+        0.0,
+        0.9375
+      ],
+      "puddle": 1.0,
+      "snow": 0.9375,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.026839636266231537
+    },
+    {
+      "reverse": true,
+      "progress": 0.96875,
+      "sky": [
+        0.03125,
+        0.0,
+        0.96875
+      ],
+      "puddle": 1.0,
+      "snow": 0.96875,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.004984676837921143
+    },
+    {
+      "reverse": true,
+      "progress": 1.0,
+      "sky": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "puddle": 1.0,
+      "snow": 1.0,
+      "roughness": 0.6000000238418579,
+      "edge": 0.7840005159378052,
+      "centre": 1.0,
+      "precipitationCoverage": 0.0
+    }
+  ]
+}

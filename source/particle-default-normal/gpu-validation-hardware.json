@@ -1,0 +1,34 @@
+{
+  "status": "PASS_D3D11_HARDWARE",
+  "actualInstalledPixelShaders": true,
+  "realBC3SourceAndRepackedBGRA8": true,
+  "reference": "Same shader with RGB read, retaining inherited decode; corrected texture rendered through unchanged installed RAB shader",
+  "results": [
+    {
+      "shader": "fxc/dx11_sm_5_0_default_particle.hlsl_ps_ps30_volumetric_particle.fxc",
+      "cases": 188,
+      "comparedPixels": 108288,
+      "maxAbsoluteError": 0.004107687622308731,
+      "visiblePixels": 93888,
+      "nonzeroColourPixels": 93888,
+      "distinctOutputs": 60,
+      "originalWrongChannelMaxError": 0.11655467566185962,
+      "alphaError": 0,
+      "changedComponents": 205202
+    },
+    {
+      "shader": "fxc/dx11_sm_5_0_default_particle.hlsl_ps_ps30_volumetric_particle_alpha.fxc",
+      "cases": 188,
+      "comparedPixels": 108288,
+      "maxAbsoluteError": 0.0025267116725444794,
+      "visiblePixels": 92736,
+      "nonzeroColourPixels": 108288,
+      "distinctOutputs": 90,
+      "originalWrongChannelMaxError": 0.07144898921251297,
+      "alphaError": 0,
+      "changedComponents": 169762
+    }
+  ],
+  "cases": 376,
+  "scope": "Offline D3D11 rendering. Proves correct normal-channel sampling and unchanged alpha, not live flashing resolution."
+}

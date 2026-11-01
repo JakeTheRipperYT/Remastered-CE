@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "readOnly": true,
+  "mapResolvedAgainstExactControllerObjects": true,
+  "decoderCheckedAgainstNativeFixtures": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "initialWet": 0,
+      "status": "PASS"
+    },
+    {
+      "base": "0x180000000",
+      "initialWet": 1,
+      "status": "PASS"
+    },
+    {
+      "base": "0x230000000",
+      "initialWet": 0,
+      "status": "PASS"
+    },
+    {
+      "base": "0x230000000",
+      "initialWet": 1,
+      "status": "PASS"
+    },
+    {
+      "base": "0x7ff600000000",
+      "initialWet": 0,
+      "status": "PASS"
+    },
+    {
+      "base": "0x7ff600000000",
+      "initialWet": 1,
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Dynamic campaign-battle weather contract — retained behavior
+
+Scope: campaign battles only. Custom and historical battles retain their native weather behavior.
+The forecast preserves the initially rolled weather. Waiting retains the native three-Wait limit and updates the forecast; no extra rerolls are introduced.
+The plan uses a private deterministic seed, preserves actual gameplay time of day, and remains independent of the local Always Night visual preference and shared engine RNG.
+Use seasonally valid native states: rain/fog/clear outside winter, snow/fog/clear in winter, restricted to available scenes. Some battles stay steady; multi-state forecasts repeat, rather than stopping permanently at the last entry.
+Use battle simulation time for progression. Existing policy uses 180–240 second phase spacing and 30–60 second fades.
+Sky textures, environment lighting/colours, fog, precipitation density, vegetation wind strength and ambient weather effects transition gradually on the shared weather progress. Precipitation must remain present after a completed transition until the next weather change.
+Preserve time of day, sun Euler direction and sky heading across weather changes, and preserve Always Night functionality. Avoid repeatedly rebuilding sky jobs during a fade.
+Rain/storms retain native lightning and thunder handling, with guards against replacing the transition envelope during a fade.
+Update native climate/database weather gameplay effects along with the visual transition. Unit cards show native weather-adjusted Accuracy and Reload Skill, refresh while open, restore in clear weather, and preserve fatigue/other bonuses without stacking.
+Opening ground is immutable for the battle: rainy start retains the opening puddle coverage, shape, material and grass-cull policy even after clearing; clear start never gains puddles when later rain begins. Later sky/precipitation must not choose a new ground policy. Preserve this through deployment/Start Battle, steady frames and shader-resource refreshes.
+
+Grass correction 0.1.71: retain matte dielectric base, then apply the wet coating using the campaign opening-ground flag rather than the currently selected dry/rain grass shader. Native fallback remains for unmanaged battles. The engine/helper and terrain assets remain identical to 0.1.70. Hardware and WARP execute the actual grass GBuffer shaders in 36 cases each; native transition fixtures cover 96 scenarios and named weather-buffer registration at three bases. In-game terrain-puddle appearance still requires confirmation.
+
+Active build: 0.1.71-preview. s2fix 0.1.69 remains withdrawn. Multiplayer pursuit remains paused and uninstalled.

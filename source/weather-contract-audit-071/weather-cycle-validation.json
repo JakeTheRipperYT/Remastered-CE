@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "nativeGameplayAndRenderWraparound": true,
+  "openingTerrainRetained": true,
+  "pauseStable": true,
+  "balancedOneHourCoverage": true,
+  "cases": 6,
+  "rows": [
+    {
+      "base": "0x180000000",
+      "initial": 0,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 190,
+      "oneHourSeconds": {
+        "0": 1320,
+        "1": 1140,
+        "2": 1140
+      },
+      "allTextureJobsFreed": true
+    },
+    {
+      "base": "0x180000000",
+      "initial": 1,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 202,
+      "oneHourSeconds": {
+        "0": 1212,
+        "1": 1212,
+        "2": 1176
+      },
+      "allTextureJobsFreed": true
+    },
+    {
+      "base": "0x230000000",
+      "initial": 0,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 190,
+      "oneHourSeconds": {
+        "0": 1320,
+        "1": 1140,
+        "2": 1140
+      },
+      "allTextureJobsFreed": true
+    },
+    {
+      "base": "0x230000000",
+      "initial": 1,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 202,
+      "oneHourSeconds": {
+        "0": 1212,
+        "1": 1212,
+        "2": 1176
+      },
+      "allTextureJobsFreed": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 0,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 190,
+      "oneHourSeconds": {
+        "0": 1320,
+        "1": 1140,
+        "2": 1140
+      },
+      "allTextureJobsFreed": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 1,
+      "loops": 4,
+      "transitions": 12,
+      "slotSeconds": 202,
+      "oneHourSeconds": {
+        "0": 1212,
+        "1": 1212,
+        "2": 1176
+      },
+      "allTextureJobsFreed": true
+    }
+  ]
+}

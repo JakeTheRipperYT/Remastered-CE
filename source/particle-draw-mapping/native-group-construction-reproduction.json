@@ -1,0 +1,63 @@
+{
+  "status": "REPRODUCED_NATIVE_GROUP_ORDER_DIVERGENCE",
+  "thresholds": {
+    "sharedDistanceSquared": 128,
+    "farDistanceSquared": 150000
+  },
+  "insertionOrder": [
+    "A",
+    "C",
+    "B",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "squaredDistances": {
+    "A": 1000,
+    "C": 1230,
+    "B": 1120,
+    "D": 940,
+    "E": 900,
+    "F": 870,
+    "G": 1110
+  },
+  "groups": [
+    {
+      "key": 1175.0,
+      "members": [
+        "C",
+        "G"
+      ]
+    },
+    {
+      "key": 967.9998779296875,
+      "members": [
+        "B",
+        "A",
+        "D",
+        "E",
+        "F"
+      ]
+    }
+  ],
+  "globalOrder": [
+    "C",
+    "B",
+    "G",
+    "A",
+    "D",
+    "E",
+    "F"
+  ],
+  "bucketOrder": [
+    "C",
+    "G",
+    "B",
+    "A",
+    "D",
+    "E",
+    "F"
+  ],
+  "scope": "Original native bucket-builder and emitter-sort machine code. Allocation/vector helpers and camera/origin inputs are faithful fixtures; global concurrent-vector sort is represented by descending native group keys."
+}

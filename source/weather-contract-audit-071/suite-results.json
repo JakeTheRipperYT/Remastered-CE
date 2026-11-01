@@ -1,0 +1,142 @@
+{
+  "status": "PASS_ALL_AUTOMATED_LIVE_PENDING",
+  "installedVersion": "0.1.71-preview",
+  "tests": [
+    {
+      "test": "test_weather_plan.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 3.08,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_weather_plan.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_dynamic_controller.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.24,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\dynamic-controller-tests.json",
+      "status": "PASS",
+      "cases": 144,
+      "observations": 1575,
+      "rerunReason": "Historical standalone test expected obsolete at-first forecast text and pre-fade renderer state; replaced with existing cyclic/fade contract without changing installed application code."
+    },
+    {
+      "test": "test_controller_native.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.29,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_controller_native.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_program_bindings.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.2,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_program_bindings.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_deployment_puddles.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.72,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_deployment_puddles.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_native_colour_and_storm.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.19,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_native_colour_and_storm.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unit_weather_cards.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 2.46,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_unit_weather_cards.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_weather_cycles_native.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 2.25,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_weather_cycles_native.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_puddle_material.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.67,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_puddle_material.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_battle_scene.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.32,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_battle_scene.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_actual_checkbox_notify.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.81,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_actual_checkbox_notify.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_fade_gpu.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.2,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_fade_gpu.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_grass_gpu.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 0.2,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_grass_gpu.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_sky_material.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 1.82,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_sky_material.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_grass_gpu.py",
+      "args": [
+        "--hardware"
+      ],
+      "exitCode": 0,
+      "seconds": 0.34,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_grass_gpu-hardware.log",
+      "status": "PASS"
+    },
+    {
+      "test": "test_fades_native.py",
+      "args": [],
+      "exitCode": 0,
+      "seconds": 40.09,
+      "log": "F:\\Codex\\Remastered-CE-Port\\work\\weather-contract-audit-071\\test_fades_native.log",
+      "status": "PASS"
+    }
+  ],
+  "liveGameplayVerified": false,
+  "scope": "Native installed helper, original unchanged engine routines, compiled policy, shader binding, actual installed grass DXBC, and installed shader helper math under controlled fixtures. Does not establish live campaign visual/audio acceptance.",
+  "originalStaleHarnessFailurePreserved": true
+}

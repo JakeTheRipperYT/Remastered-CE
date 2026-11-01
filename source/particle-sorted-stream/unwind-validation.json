@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "windowsRtlVirtualUnwind": true,
+  "nonvolatileGPRAndXMMVerified": true,
+  "bases": [
+    {
+      "base": "0x180000000",
+      "boundaries": 2223
+    },
+    {
+      "base": "0x230000000",
+      "boundaries": 2223
+    },
+    {
+      "base": "0x7ff600000000",
+      "boundaries": 2223
+    }
+  ],
+  "boundaries": 6669,
+  "chainedMetadataVerified": true
+}

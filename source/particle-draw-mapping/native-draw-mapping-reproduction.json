@@ -1,0 +1,64 @@
+{
+  "status": "REPRODUCED",
+  "nativeFunction": "0x181a9df80",
+  "sourceOrder": [
+    "C",
+    "B",
+    "G",
+    "A",
+    "D",
+    "E",
+    "F"
+  ],
+  "bucketOrder": [
+    "C",
+    "G",
+    "B",
+    "A",
+    "D",
+    "E",
+    "F"
+  ],
+  "invisibleEmitter": "G",
+  "expectedDraws": [
+    "C",
+    "B",
+    "A",
+    "D",
+    "E",
+    "F"
+  ],
+  "actualDraws": [
+    {
+      "index": 0,
+      "draws": "C"
+    },
+    {
+      "index": 2,
+      "draws": "G"
+    },
+    {
+      "index": 3,
+      "draws": "A"
+    },
+    {
+      "index": 4,
+      "draws": "D"
+    },
+    {
+      "index": 5,
+      "draws": "E"
+    },
+    {
+      "index": 6,
+      "draws": "F"
+    }
+  ],
+  "missing": [
+    "B"
+  ],
+  "incorrectlyDrawn": [
+    "G"
+  ],
+  "scope": "Offline execution of original native dispatcher. Synthetic bucket ordering and visibility, not an in-game capture."
+}

@@ -1,0 +1,106 @@
+{
+  "status": "PASS_FORECAST_POLICY_ONLY_NOT_INSTALLED",
+  "allMultiStatePlansCycle": true,
+  "equalStateIntervals": true,
+  "wraparoundFadesChecked": true,
+  "inputs": 112640,
+  "uniqueSequences": 124,
+  "phaseCounts": {
+    "2": 26143,
+    "1": 34033,
+    "3": 39040,
+    "4": 13424
+  },
+  "examples": [
+    {
+      "sequence": [
+        0,
+        3
+      ],
+      "forecast": "Clear skies with intermittent fog."
+    },
+    {
+      "sequence": [
+        0,
+        3,
+        1
+      ],
+      "forecast": "Clear skies with intermittent fog and rain."
+    },
+    {
+      "sequence": [
+        0,
+        1,
+        3
+      ],
+      "forecast": "Clear skies with intermittent rain and fog."
+    },
+    {
+      "sequence": [
+        0,
+        1
+      ],
+      "forecast": "Clear skies with intermittent rain."
+    },
+    {
+      "sequence": [
+        1,
+        3
+      ],
+      "forecast": "Intermittent rain and fog."
+    },
+    {
+      "sequence": [
+        1,
+        0,
+        3
+      ],
+      "forecast": "Intermittent rain, clear skies and fog."
+    },
+    {
+      "sequence": [
+        1,
+        3,
+        0
+      ],
+      "forecast": "Intermittent rain, fog and clear skies."
+    },
+    {
+      "sequence": [
+        1,
+        0
+      ],
+      "forecast": "Intermittent rain and clear skies."
+    },
+    {
+      "sequence": [
+        3,
+        1,
+        0
+      ],
+      "forecast": "Intermittent fog, rain and clear skies."
+    },
+    {
+      "sequence": [
+        3,
+        0
+      ],
+      "forecast": "Intermittent fog and clear skies."
+    },
+    {
+      "sequence": [
+        3,
+        0,
+        1
+      ],
+      "forecast": "Intermittent fog, clear skies and rain."
+    },
+    {
+      "sequence": [
+        3,
+        1
+      ],
+      "forecast": "Intermittent fog and rain."
+    }
+  ]
+}

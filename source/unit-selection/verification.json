@@ -1,0 +1,22 @@
+{
+  "status": "PASS_USER_CONFIRMED_IN_GAME",
+  "version": "0.1.58-preview",
+  "engineSha256": "61e98d68289d6c99ef8da13eb6c368af8e4fa9c7499eba86d409dca3e61d301d",
+  "fix": "Refresh native rectangle membership at release before converting to selection IDs",
+  "nativeScenarios": 136,
+  "windowsUnwindBoundaries": 27,
+  "packageIntegrationChecks": 19,
+  "sourceReproductionExact": true,
+  "signedSetupReconstructsInstalledEngine": true,
+  "allNineArchivesRetained": true,
+  "noWritableExecutableSections": true,
+  "installed": true,
+  "published": false,
+  "liveConfirmation": {
+    "status": "USER_CONFIRMED_IN_GAME",
+    "version": "0.1.58-preview",
+    "date": "2026-10-31",
+    "feedback": "perfect it works",
+    "scope": "User confirmed the unit-selection/fast-drag fix works after launching0.1.58."
+  }
+}

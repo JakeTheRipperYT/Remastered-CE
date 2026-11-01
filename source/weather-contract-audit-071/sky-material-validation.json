@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "nativeLightningSunDirectionCannotRotateSky": true,
+  "nativeSkyMaterialAndSunDirectionConversionExecuted": true,
+  "uniformStableThroughFadeAndCompletion": true,
+  "platformMathOnlyModeled": true,
+  "cases": 12,
+  "rows": [
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "samples": 21,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "samples": 21,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "samples": 21,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "samples": 14,
+      "oldBugDetectedByControl": true
+    }
+  ]
+}

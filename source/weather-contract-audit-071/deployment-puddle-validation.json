@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "deploymentStateSurvivesStartBattle": true,
+  "battleSpecificationReplacementPreservesGround": true,
+  "temporaryWeatherEnumResetIgnored": true,
+  "fullPuddleMaterialRangeAndMaskRestored": true,
+  "shaderResetRecoversInSteadyFrame": true,
+  "deploymentRerollRespected": true,
+  "cases": 6,
+  "rows": [
+    {
+      "base": "0x180000000",
+      "initial": 0,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    },
+    {
+      "base": "0x180000000",
+      "initial": 1,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    },
+    {
+      "base": "0x230000000",
+      "initial": 0,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    },
+    {
+      "base": "0x230000000",
+      "initial": 1,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 0,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "initial": 1,
+      "startBattleAndStageChangePreserveGround": true,
+      "completeNativeMaterialRestored": true,
+      "steadyGPUBufferReuploaded": true
+    }
+  ]
+}

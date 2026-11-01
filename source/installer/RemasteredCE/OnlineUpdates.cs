@@ -10,7 +10,7 @@ namespace RemasteredCE;
 
 public static class OnlineUpdates
 {
-	public const string AppVersion = "0.1.55-preview";
+	public const string AppVersion = "0.1.71-preview";
 
 	public const string ApiUrl = "https://api.github.com/repos/JakeTheRipperYT/Remastered-CE/releases?per_page=100";
 
@@ -84,7 +84,7 @@ public static class OnlineUpdates
 		using HttpClient httpClient = new HttpClient();
 		cancellationTokenSource.CancelAfter(TimeSpan.FromMinutes(2.0));
 		CancellationToken token = cancellationTokenSource.Token;
-		httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("RemasteredCE/0.1.55-preview");
+		httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("RemasteredCE/0.1.71-preview");
 		httpClient.DefaultRequestHeaders.Accept.ParseAdd("application/vnd.github+json");
 		try
 		{

@@ -1,0 +1,885 @@
+{
+  "status": "PASS",
+  "colourTargetAndOutputContinuousOnWeatherClock": true,
+  "rainEnablesNativeLightningAndThunderIntervals": true,
+  "precipitationPersistsAfterCompletion": true,
+  "grassCullDefinitionsStayAtOpeningValues": true,
+  "rainAndSkyShareExactClock": true,
+  "startingPuddlesHeldAcrossEveryLaterPhaseAndCompletion": true,
+  "environmentSunAnglesFixedAcrossAllPhases": true,
+  "noRepeatedSkyJobRebuilds": true,
+  "fixedSkyOrientationAcrossAllPhases": true,
+  "nativeRegistryAndBufferInitializationExecuted": true,
+  "nativeDirtyAndTextureBindingExecuted": true,
+  "actualAmbientCallsiteExecuted": true,
+  "ambientOutgoingAndIncomingRatesFade": true,
+  "cases": 96,
+  "customWeatherExclusion": true,
+  "coldTextureGuardsTestedAtThreeBases": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x180000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x230000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 0,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 1,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 0,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 0,
+      "initial": 1,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 2,
+      "night": 1,
+      "naval": 1,
+      "initial": 1,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 0,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 0,
+      "retainedTextures": 12,
+      "freedExactlyOnce": 12
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 0,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 0,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    },
+    {
+      "base": "0x7ff600000000",
+      "season": 3,
+      "night": 1,
+      "naval": 1,
+      "initial": 4,
+      "retainedTextures": 9,
+      "freedExactlyOnce": 9
+    }
+  ]
+}

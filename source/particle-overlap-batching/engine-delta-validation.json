@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "previousEngineSha256": "f61ac54399141d2a6556fd802085e5c494175f8d6da89bdc26369da5aedc04f0",
+  "newEngineSha256": "7b09f73bdf745118517c8a1762747d60811a763c2b7984d4389cc8f94f90e615",
+  "strict64OrderingRetained": true,
+  "oldHelperBytesPreserved": true,
+  "newHelperBytes": 324,
+  "onlyNewNativeEnginePatch": "Post-sort call plus replay of original instructions",
+  "allNineArchiveRecipesIdentical": true,
+  "helperExecutableNotWritable": true,
+  "checksumValid": true
+}

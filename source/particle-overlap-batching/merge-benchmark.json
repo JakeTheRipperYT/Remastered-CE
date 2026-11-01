@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "nativeWindowsExecution": true,
+  "actualCandidateAndNativeAppend": true,
+  "writeXorExecute": true,
+  "rows": [
+    {
+      "emitters": 32,
+      "sourceRunLength": 32,
+      "groupsAfter": 1,
+      "medianMicroseconds": 1.0,
+      "maxMicroseconds": 1.4
+    },
+    {
+      "emitters": 128,
+      "sourceRunLength": 128,
+      "groupsAfter": 1,
+      "medianMicroseconds": 1.5,
+      "maxMicroseconds": 1.6
+    },
+    {
+      "emitters": 1000,
+      "sourceRunLength": 1,
+      "groupsAfter": 1000,
+      "medianMicroseconds": 3.1,
+      "maxMicroseconds": 3.3
+    },
+    {
+      "emitters": 1000,
+      "sourceRunLength": 8,
+      "groupsAfter": 125,
+      "medianMicroseconds": 5.0,
+      "maxMicroseconds": 5.1
+    },
+    {
+      "emitters": 1000,
+      "sourceRunLength": 1000,
+      "groupsAfter": 1,
+      "medianMicroseconds": 5.2,
+      "maxMicroseconds": 5.7
+    },
+    {
+      "emitters": 10000,
+      "sourceRunLength": 10000,
+      "groupsAfter": 1,
+      "medianMicroseconds": 20.6,
+      "maxMicroseconds": 178.7
+    }
+  ],
+  "scope": "Isolated CPU microbenchmark with head capacity preallocated. Excludes allocation, gathering, sorting, material setup and GPU work; not battle FPS."
+}

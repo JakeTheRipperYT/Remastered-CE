@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "actualNativeTonalInterpolationExecuted": true,
+  "actualNativeLightningSoundAndEffectDispatchExecuted": true,
+  "rows": [
+    {
+      "base": "0x180000000",
+      "nativeTonalSamples": 7,
+      "nativeLightningVisualAndSoundDispatch": true
+    },
+    {
+      "base": "0x230000000",
+      "nativeTonalSamples": 7,
+      "nativeLightningVisualAndSoundDispatch": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "nativeTonalSamples": 7,
+      "nativeLightningVisualAndSoundDispatch": true
+    }
+  ],
+  "liveAudioVisualAcceptancePending": true
+}

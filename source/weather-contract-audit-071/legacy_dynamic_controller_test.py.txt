@@ -1,0 +1,147 @@
+"""Run candidate hooks and real CE climate binding/particle-count instructions.
+Scene XML loading and renderer ownership are stand-ins; live rendering remains
+an explicit acceptance requirement, not something this fixture can establish.
+"""
+from pathlib import Path
+import sys,json,struct,ctypes as C
+sys.dont_write_bytecode=True
+W=Path(__file__).resolve().parent
+sys.path.insert(0,str(W));import test_controller_native as n
+import pefile
+stock=pefile.PE('D:/SteamLibrary/steamapps/common/Shogun 2 Complete Edition/empire.retail.x64.dll',fast_load=True)
+catalog=json.loads((W/'environment-catalog.json').read_text())
+catalog={r['path'].replace('/','\\'):r for r in catalog}
+class Input(C.Structure):_fields_=[(k,C.c_uint) for k in ['campaign','seed','waitRoll','season','night','naval','initial','available']]
+class Phase(C.Structure):_fields_=[(k,C.c_uint) for k in ['kind','startSeconds','blendSeconds']]
+class Plan(C.Structure):_fields_=[('count',C.c_uint),('phases',Phase*4)]
+policy=C.CDLL(str(W/'plan_test.dll'));policy.mask.argtypes=[C.c_uint]*3;policy.mask.restype=C.c_uint
+policy.make.argtypes=[C.POINTER(Input),C.POINTER(Plan)];policy.make.restype=C.c_bool
+precip=lambda k:1 if k in (1,2) else 2 if k in (4,5) else 3 if k==3 else 0
+kind=lambda r:3 if '\\fog\\' in r['path'].replace('/','\\') else {'WT_WET_GUSTY':1,'WT_WET_STORMY':2,'WT_SNOW_GUSTY':4,'WT_SNOW_STORMY':5}.get(r['weather'],0)
+class WeatherFixture(n.Fixture):
+ def __init__(self,base,season,night,naval,initial,seed,origin=1):
+  super().__init__(base)
+  self.battle=0x280000;self.setup=0x2b0000;self.spec=0x2b1000;self.model=0x2b2000;self.climate=0x2b3000
+  self.weather=0x2b4000;self.system=0x2b5000;self.db=0x2c0000;self.node=0x2e0000
+  self.renderer=0x300000;self.manager=self.renderer+0xf88;self.ui=0x320000;self.scratch=0x330000
+  self.rebinds=[];self.scenes=[];self.text=[];self.clock=0
+  self.u.mem_write(self.battle+0x283c9,bytes([origin]));self.wq(self.battle+8,self.setup)
+  self.wq(self.battle+0x28410,self.weather);self.wq(self.battle+0x28068,self.system);self.wq(self.system+0x20,self.db)
+  self.wq(self.setup+0x90,self.spec);self.wq(self.setup+0x110,self.model);self.wq(self.model+0x2e8,self.climate)
+  self.wn(self.spec+0x10,seed);self.wn(self.spec+0xbc,night);self.u.mem_write(self.spec+0x48,bytes([naval]))
+  self.wn(self.weather+0x18,1);self.wn(self.weather+0x14,3);self.wn(self.model+0x28,1)
+  self.wn(self.climate+0x60,season);self.wn(self.climate+0x64,night);self.wn(self.climate+0x68,precip(initial));self.wn(self.setup+0xc8,precip(initial))
+  matches=[r for r in catalog.values() if f'/{["spring","summer","autumn","winter"][season]}/{["day","night"][night]}/' in r['path'] and ('/sea/' in r['path'])==bool(naval) and kind(r)==initial]
+  if not matches and initial==1:matches=[r for r in catalog.values() if f'/{["spring","summer","autumn","winter"][season]}/{["day","night"][night]}/' in r['path'] and ('/sea/' in r['path'])==bool(naval) and kind(r)==2]
+  self.initialPath=matches[0]['path'].replace('/','\\')
+  self.wide(self.climate,self.initialPath,0x380000);self.wide(self.node+0xd48,self.initialPath,0x381000)
+  self.wq(self.node+0x50,self.renderer);self.wq(self.node+0xac0,self.renderer);self.wq(self.renderer,0x310000);self.wq(0x3100b0,base+0x3ff0500)
+  self.wq(base+0x3372b90,self.ui);self.wq(base+0x3372c28,self.ui);self.wq(self.ui+0x2b0,self.battle);self.wq(self.ui+0x80,0x321000)
+  self.seedDefinitions();self.setScene(self.initialPath)
+  for layer in range(2):
+   material=self.node+0x110+layer*0x120;self.wq(material+0xe0,self.node);self.wn(material+0xe8,layer);self.wn(material+0x98,65536)
+  # Execute native instructions at their original RVAs under relocated bases.
+  for rva,length in [(0x5d0080,0x200),(0x5b0ed0,0x10),(0x1b82850,0x90),(0x1b84cf0,0x50)]:self.u.mem_write(base+rva,stock.get_data(rva,length))
+  # Restore the actual patched entry points overwritten by the raw code above.
+  for write in n.layout['writes']:
+   self.u.mem_write(base+write['rva'],bytes.fromhex(write['data']))
+  self.setupDatabase()
+  self.handlers.update({0x421edb:self.originalTick,0x16407b5:self.originalUI,0x1ba06b5:self.originalWeather,
+   0x19a070:self.ctor24,0x19a990:self.assign24,0x19b6d0:lambda:self.ret(0),0x3ff0500:self.requestScene,
+   0x148aab0:self.setText,0x1a75030:lambda:self.ret(self.scratch),0x1a4b990:self.copyEnvironment,
+   0x1a87bd0:self.copyPrevious,0x1a9a9b0:self.blendEnvironment,
+   0x1050f40:lambda:self.ret(0x350000),0x12dd50:lambda:self.ret(0x350100),
+   0x106f2f0:lambda:self.ret(0x350200),0xf97fc0:lambda:self.ret(0x350300),
+   0x1046000:lambda:self.ret(0x350400),0x10448d0:lambda:self.ret(0x350500),0x5d0080:self.observeRebind})
+ def wide(self,at,value,data):
+  self.u.mem_write(data,value.encode('utf-16-le')+b'\0\0');self.u.mem_write(at,struct.pack('<QQQ',len(value),len(value),data))
+ def readWide(self,at):return bytes(self.u.mem_read(self.q(at+16),(self.q(at)&65535)*2)).decode('utf-16-le')
+ def ctor24(self):
+  out=self.reg(n.UC_X86_REG_RCX);source=self.reg(n.UC_X86_REG_RDX);value=self.zstr(source)
+  self.u.mem_write(out,struct.pack('<QQQ',len(value),len(value),source));self.ret(out)
+ def assign24(self):
+  out=self.reg(n.UC_X86_REG_RCX);value=self.readWide(self.reg(n.UC_X86_REG_RDX));self.wide(out,value,0x382000);self.ret(out)
+ def seedDefinitions(self):
+  for index,(count,mist) in enumerate([(0,0),(0,0),(0,0),(5000,0),(10000,100),(20000,0),(20000,60)]):
+   self.wn(self.node+0xe80+index*0x168,count);self.wn(self.node+0xee8+index*0x168,mist)
+ def setScene(self,path):
+  weather=catalog[path]['weather'];index={'WT_DRY_BREEZE':0,'WT_DRY_GUSTY':1,'WT_WET_GUSTY':3,'WT_WET_STORMY':4,'WT_SNOW_GUSTY':5,'WT_SNOW_STORMY':6}[weather]
+  self.wn(self.node+0xe8,index);self.wfloat(self.manager+0x80+0x248,float(index))
+ def requestScene(self):
+  path=self.readWide(self.reg(n.UC_X86_REG_RDX));assert path in catalog
+  self.scenes.append(path);self.setScene(path);self.ret()
+ def originalTick(self):
+  rsp=self.reg(n.UC_X86_REG_RSP)
+  self.wr(n.UC_X86_REG_RBX,self.q(rsp));self.wr(n.UC_X86_REG_RBP,self.q(rsp+8));self.wr(n.UC_X86_REG_RSP,rsp+16);self.ret()
+ def originalUI(self):self.ret()
+ def originalWeather(self):
+  self.blendEnvironment(False)
+  rsp=self.reg(n.UC_X86_REG_RSP)
+  self.wr(n.UC_X86_REG_RSI,self.q(rsp));self.wr(n.UC_X86_REG_RBX,self.q(rsp+8));self.wr(n.UC_X86_REG_RSP,rsp+16);self.ret()
+ def setText(self):self.text.append(self.readWide(self.reg(n.UC_X86_REG_RDX)));self.ret()
+ def copyEnvironment(self):
+  self.u.mem_write(self.reg(n.UC_X86_REG_RCX),bytes(self.u.mem_read(self.reg(n.UC_X86_REG_RDX),0x790)));self.ret()
+ def copyPrevious(self):
+  self.u.mem_write(self.reg(n.UC_X86_REG_RCX)+0x810,bytes(self.u.mem_read(self.reg(n.UC_X86_REG_RDX),0x790)));self.ret()
+ def blendEnvironment(self,returning=True):
+  manager=self.reg(n.UC_X86_REG_RCX) if returning else self.manager
+  p=self.floating(manager+0x38);target=self.floating(manager+0x80+0x248);old=self.floating(manager+0x810+0x248)
+  self.wfloat(manager+0xfa0+0x248,target+(old-target)*p)
+  if returning:self.ret()
+ def setupDatabase(self):
+  self.wn(0x350000+0xc,1);self.wq(0x350000+0x10,0x350110);self.wq(0x350110,0x350120);self.wn(0x350100,0)
+  for table,array in [(0x350400,0x350600),(0x350500,0x350700)]:self.wn(table+0xc,4);self.wq(table+0x10,array)
+  for i in range(4):
+   weather=0x351000+i*0x100;description=0x352000+i*0x100
+   self.wn(weather+0x1c,i);self.wq(0x350600+i*8,weather);self.wq(0x350700+i*8,description)
+   self.wq(description+0x18,0x350120);self.wq(description+0x20,weather);self.wq(description+0x28,0x350300);self.wn(description+0x38,1)
+  self.wq(self.climate+0x18,0x352000+self.n(self.climate+0x68)*0x100)
+ def observeRebind(self):self.rebinds.append(self.n(self.climate+0x68)) # Continue actual CE instructions.
+ def wfloat(self,at,value):self.u.mem_write(at,struct.pack('<f',value))
+ def floating(self,at):return struct.unpack('<f',self.u.mem_read(at,4))[0]
+ def tick(self,time):
+  self.clock=time;self.wfloat(self.model+0x38,time);self.call('DynamicBattleTick',self.battle,0,0)
+ def frame(self):self.call('DynamicWeatherFrame',self.node,0)
+
+cases=[]
+for base in [0x180000000,0x230000000,0x7ff600000000]:
+ for season in range(4):
+  for night in range(2):
+   for naval in range(2):
+    dayMask=policy.mask(season,0,naval);nightMask=policy.mask(season,1,naval)
+    mask=(dayMask&nightMask)|(2 if (dayMask|nightMask)&6 else 0)
+    for initial in [0,4 if season==3 else 1,3]:
+     seed=0;p=Plan()
+     while True:
+      i=Input(1,seed,1,season,night,naval,initial,mask)
+      assert policy.make(C.byref(i),C.byref(p))
+      if p.count>=3:break
+      seed+=1
+     f=WeatherFixture(base,season,night,naval,initial,seed)
+     f.tick(0);f.call('DynamicForecastUI',f.ui);assert f.text and 'at first' in f.text[-1]
+     originalSpec=bytes(f.u.mem_read(f.spec,0xc4));definitions=bytes(f.u.mem_read(f.node+0xd68,0x9d8))
+     f.wn(f.model+0x28,5);f.tick(0);f.frame();assert not f.scenes
+     observations=0
+     for phase in list(p.phases)[1:p.count]:
+      for progress in [0,.25,.5,.75,1]:
+       time=phase.startSeconds+phase.blendSeconds*progress
+       f.tick(time);f.frame();assert f.scenes
+       assert abs(f.floating(f.manager+0x38)-(1-progress))<.0001
+       climatePrecip=f.n(f.climate+0x68)
+       assert climatePrecip==f.n(f.setup+0xc8)
+       assert f.q(f.climate+0x18)==0x352000+climatePrecip*0x100
+       # Each draw executes CE's real original count instructions and our wrapper.
+       for layer in range(2):
+        count=f.call('DynamicWeatherParticleCount',f.node+0x110+layer*0x120);assert count<=65536 and count%6 in (0,4)
+       old=list(f.scenes);f.tick(time);f.frame();assert f.scenes==old # paused/unchanged clock
+       observations+=1
+     assert bytes(f.u.mem_read(f.spec,0xc4))==originalSpec
+     assert bytes(f.u.mem_read(f.node+0xd68,0x9d8))==definitions # Native definitions never edited.
+     assert f.n(f.weather+0x14)==3 and f.n(f.weather+0x18)==1
+     cases.append(dict(base=hex(base),season=season,night=night,naval=naval,initial=initial,observations=observations,sceneChanges=len(f.scenes),nativeRebinds=len(f.rebinds)))
+ # Hostile setup pointers establish early exclusion of all new hooks.
+ f=WeatherFixture(base,0,0,0,0,1,origin=0);f.wq(f.battle+8,0xdead00000000)
+ f.tick(300);f.call('DynamicForecastUI',f.ui);f.frame()
+ assert not f.text and not f.scenes and not f.rebinds
+report=dict(status='PASS_NATIVE_FIXTURE_NOT_LIVE_ACCEPTANCE',cases=len(cases),observations=sum(r['observations'] for r in cases),nativeClimateBindingExecuted=True,nativeWeatherLoadEntryExecuted=True,nativeParticleDrawCountExecuted=True,rendererAndSceneDeserializerModeled=True,customBattleEarlyExclusion=True,results=cases)
+(W/'dynamic-controller-tests.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='results'},indent=2))

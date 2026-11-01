@@ -1,0 +1,445 @@
+{
+  "status": "COMPILED_NOT_INSTALLED",
+  "sourceVersion": "0.1.32-preview",
+  "helperPrefixBytes": 18564,
+  "moduleStartRva": 57970688,
+  "exports": {
+    "DynamicAmbientFrame": 57977092,
+    "DynamicBattleTick": 57977496,
+    "DynamicForecastUI": 57978292,
+    "DynamicParticleMaterial": 57978548,
+    "DynamicSkyDestroy": 57978832,
+    "DynamicSkyMaterial": 57978916,
+    "DynamicUnitCardFrame": 57979256,
+    "DynamicUnitCardStats": 57979552,
+    "DynamicWeatherFrame": 57980344,
+    "DynamicWeatherParameters": 57984940,
+    "DynamicWeatherParticleCount": 57985408,
+    "DynamicWeatherProgram": 57985584,
+    "NightBattleClimate": 57985716,
+    "NightCheckboxCommit": 57986044,
+    "NightCheckboxInit": 57986136,
+    "NightMapBattleSet": 57986268,
+    "NightMapFrame": 57986376,
+    "NightMapLoad": 57986588,
+    "NightMapSelect": 57986976,
+    "OriginalBattleClimate": 57987522,
+    "OriginalBattleTick": 57987542,
+    "OriginalCheckboxInit": 57987512,
+    "OriginalForecastUI": 57987532,
+    "OriginalFrame": 57987499,
+    "OriginalLoad": 57987477,
+    "OriginalParticleMaterial": 57987597,
+    "OriginalSelect": 57987489,
+    "OriginalSkyDestroy": 57987607,
+    "OriginalSkyMaterial": 57987627,
+    "OriginalUnitCardFrame": 57987444,
+    "OriginalUnitCardStats": 57987461,
+    "OriginalWeatherFrame": 57987561,
+    "OriginalWeatherParameters": 57987587,
+    "OriginalWeatherParticleCount": 57987575,
+    "OriginalWeatherProgram": 57987617,
+    "ResumeBattleClimate": 57987643,
+    "ResumeBattleTick": 57987645,
+    "ResumeCheckboxInit": 57987642,
+    "ResumeForecastUI": 57987644,
+    "ResumeFrame": 57987641,
+    "ResumeLoad": 57987639,
+    "ResumeParticleMaterial": 57987649,
+    "ResumeSelect": 57987640,
+    "ResumeSkyDestroy": 57987650,
+    "ResumeSkyMaterial": 57987652,
+    "ResumeUnitCardFrame": 57987637,
+    "ResumeUnitCardStats": 57987638,
+    "ResumeWeatherFrame": 57987646,
+    "ResumeWeatherParameters": 57987648,
+    "ResumeWeatherParticleCount": 57987647,
+    "ResumeWeatherProgram": 57987651,
+    "engine_base": 57987424
+  },
+  "writes": [
+    {
+      "rva": 22712208,
+      "offset": 22709136,
+      "before": "40554156488d6c24b1",
+      "data": "e9e3211a0290909090",
+      "target": 57979256,
+      "kind": "UnitCardFrame"
+    },
+    {
+      "rva": 22980288,
+      "offset": 22977216,
+      "before": "488bc455564156",
+      "data": "e9db0b16029090",
+      "target": 57979552,
+      "kind": "UnitCardStats"
+    },
+    {
+      "rva": 28884192,
+      "offset": 28881120,
+      "before": "488bc448895810",
+      "data": "e93711bc019090",
+      "target": 57986588,
+      "kind": "Load"
+    },
+    {
+      "rva": 28921456,
+      "offset": 28918384,
+      "before": "48895c2408",
+      "data": "e92b81bb01",
+      "target": 57986976,
+      "kind": "Select"
+    },
+    {
+      "rva": 28784304,
+      "offset": 28781232,
+      "before": "4055564155",
+      "data": "e99396bd01",
+      "target": 57986376,
+      "kind": "Frame"
+    },
+    {
+      "rva": 21520400,
+      "offset": 21517328,
+      "before": "48895c2410",
+      "data": "e9436c2c02",
+      "target": 57986136,
+      "kind": "CheckboxInit"
+    },
+    {
+      "rva": 5678432,
+      "offset": 5675360,
+      "before": "48895c2418",
+      "data": "e94f251e03",
+      "target": 57985716,
+      "kind": "BattleClimate"
+    },
+    {
+      "rva": 23332784,
+      "offset": 23329712,
+      "before": "48895c2408",
+      "data": "e9ffa51002",
+      "target": 57978292,
+      "kind": "ForecastUI"
+    },
+    {
+      "rva": 4333264,
+      "offset": 4330192,
+      "before": "405553488dac2448b0ffff",
+      "data": "e9c38b3203909090909090",
+      "target": 57977496,
+      "kind": "BattleTick"
+    },
+    {
+      "rva": 28968624,
+      "offset": 28965552,
+      "before": "488bc45356",
+      "data": "e903afba01",
+      "target": 57980344,
+      "kind": "WeatherFrame"
+    },
+    {
+      "rva": 28855536,
+      "offset": 28852464,
+      "before": "4c8b89e0000000",
+      "data": "e98b7cbc019090",
+      "target": 57985408,
+      "kind": "WeatherParticleCount"
+    },
+    {
+      "rva": 27467280,
+      "offset": 27464208,
+      "before": "48895c2408",
+      "data": "e997a9d101",
+      "target": 57984940,
+      "kind": "WeatherParameters"
+    },
+    {
+      "rva": 28928368,
+      "offset": 28925296,
+      "before": "48895c2410",
+      "data": "e93f45bb01",
+      "target": 57978548,
+      "kind": "ParticleMaterial"
+    },
+    {
+      "rva": 28728384,
+      "offset": 28725312,
+      "before": "48895c2408",
+      "data": "e98b53be01",
+      "target": 57978832,
+      "kind": "SkyDestroy"
+    },
+    {
+      "rva": 28227664,
+      "offset": 28224592,
+      "before": "48895c2410",
+      "data": "e9db11c601",
+      "target": 57985584,
+      "kind": "WeatherProgram"
+    },
+    {
+      "rva": 28929616,
+      "offset": 28926544,
+      "before": "48895c2410",
+      "data": "e9cf41bb01",
+      "target": 57978916,
+      "kind": "SkyMaterial"
+    },
+    {
+      "rva": 28969937,
+      "offset": 28966865,
+      "before": "e8aacffaff",
+      "data": "e82e9dba01",
+      "target": 57977092,
+      "kind": "AmbientCall"
+    },
+    {
+      "rva": 7924256,
+      "offset": 7921184,
+      "before": "e94792fb02",
+      "data": "e9b7e2fb02",
+      "target": 57986268,
+      "kind": "BattleSet"
+    },
+    {
+      "rva": 22694571,
+      "offset": 22691499,
+      "before": "e8908bdeff",
+      "data": "e84c811a02",
+      "target": 57986044,
+      "kind": "CheckboxCommitOff"
+    },
+    {
+      "rva": 22694601,
+      "offset": 22691529,
+      "before": "e8728bdeff",
+      "data": "e82e811a02",
+      "target": 57986044,
+      "kind": "CheckboxCommitOn"
+    }
+  ],
+  "unwind": [
+    [
+      57970688,
+      57970754,
+      58056988
+    ],
+    [
+      57970756,
+      57970905,
+      58057092
+    ],
+    [
+      57970908,
+      57970970,
+      58057016
+    ],
+    [
+      57970972,
+      57971828,
+      58057108
+    ],
+    [
+      57971828,
+      57972609,
+      58057180
+    ],
+    [
+      57972612,
+      57972713,
+      58056988
+    ],
+    [
+      57972716,
+      57973227,
+      58057368
+    ],
+    [
+      57973228,
+      57973670,
+      58057396
+    ],
+    [
+      57973860,
+      57974182,
+      58056996
+    ],
+    [
+      57974184,
+      57974376,
+      58056824
+    ],
+    [
+      57974376,
+      57974490,
+      58056824
+    ],
+    [
+      57974492,
+      57974608,
+      58056816
+    ],
+    [
+      57974608,
+      57974893,
+      58056852
+    ],
+    [
+      57974896,
+      57975811,
+      58056972
+    ],
+    [
+      57976072,
+      57976140,
+      58057072
+    ],
+    [
+      57976140,
+      57976395,
+      58057056
+    ],
+    [
+      57976396,
+      57976566,
+      58057080
+    ],
+    [
+      57976568,
+      57976713,
+      58057024
+    ],
+    [
+      57976716,
+      57976992,
+      58057228
+    ],
+    [
+      57976992,
+      57977092,
+      58056836
+    ],
+    [
+      57977092,
+      57977493,
+      58057336
+    ],
+    [
+      57977496,
+      57978289,
+      58057156
+    ],
+    [
+      57978292,
+      57978545,
+      58057136
+    ],
+    [
+      57978548,
+      57978831,
+      58057304
+    ],
+    [
+      57978832,
+      57978916,
+      58057072
+    ],
+    [
+      57978916,
+      57979256,
+      58057320
+    ],
+    [
+      57979256,
+      57979550,
+      58057460
+    ],
+    [
+      57979552,
+      57980343,
+      58057420
+    ],
+    [
+      57980344,
+      57984940,
+      58057240
+    ],
+    [
+      57984940,
+      57985407,
+      58057032
+    ],
+    [
+      57985408,
+      57985584,
+      58057292
+    ],
+    [
+      57985584,
+      57985716,
+      58056932
+    ],
+    [
+      57985716,
+      57986044,
+      58056948
+    ],
+    [
+      57986044,
+      57986135,
+      58056932
+    ],
+    [
+      57986136,
+      57986265,
+      58056816
+    ],
+    [
+      57986268,
+      57986375,
+      58056932
+    ],
+    [
+      57986376,
+      57986585,
+      58056916
+    ],
+    [
+      57986588,
+      57986976,
+      58056872
+    ],
+    [
+      57986976,
+      57987390,
+      58056892
+    ],
+    [
+      57987444,
+      57987461,
+      58057480
+    ],
+    [
+      57987461,
+      57987477,
+      58057488
+    ],
+    [
+      57987499,
+      57987512,
+      58057500
+    ],
+    [
+      57987542,
+      57987561,
+      58057512
+    ],
+    [
+      57987561,
+      57987575,
+      58057520
+    ]
+  ],
+  "writableDataOffset": 110592
+}

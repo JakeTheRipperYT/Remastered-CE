@@ -1,0 +1,38 @@
+{
+  "startRva": 57968784,
+  "endRva": 57968857,
+  "labels": {
+    "next": 28,
+    "scan": 46,
+    "loop": 48,
+    "draw": 63,
+    "missing": 72
+  },
+  "callSites": [
+    27910124,
+    28050953,
+    28051253
+  ],
+  "writes": [
+    {
+      "offset": 27907052,
+      "before": "ff9058010000",
+      "data": "e89fa8ca0190",
+      "reason": "Resolve emitter identity before native draw callback"
+    },
+    {
+      "offset": 28047881,
+      "before": "ff9058010000",
+      "data": "e88282c80190",
+      "reason": "Resolve emitter identity before native draw callback"
+    },
+    {
+      "offset": 28048181,
+      "before": "ff9058010000",
+      "data": "e85681c80190",
+      "reason": "Resolve emitter identity before native draw callback"
+    }
+  ],
+  "leaf": true,
+  "stackBytes": 0
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "compiledBattleWrapperExecuted": true,
+  "engineAssetSelectorModeled": true,
+  "results": [
+    {
+      "base": "0x180000000",
+      "cases": 129,
+      "nightAssetSelections": 65,
+      "gameplayMetadataUnchanged": true,
+      "battleSeedUnchanged": true
+    },
+    {
+      "base": "0x230000000",
+      "cases": 129,
+      "nightAssetSelections": 65,
+      "gameplayMetadataUnchanged": true,
+      "battleSeedUnchanged": true
+    },
+    {
+      "base": "0x7ff600000000",
+      "cases": 129,
+      "nightAssetSelections": 65,
+      "gameplayMetadataUnchanged": true,
+      "battleSeedUnchanged": true
+    }
+  ],
+  "totalCases": 387
+}

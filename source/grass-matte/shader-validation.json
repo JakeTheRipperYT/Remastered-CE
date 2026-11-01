@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "roughnessFloor": 0.9,
+  "metalness": 0,
+  "compiledPixelVariants": 6,
+  "changedAssets": [
+    "fx/rigidgrasscommon.hlsl",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_gbuffer.fxc",
+    "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrass.hlsl_ps_ps30_main.fxc",
+    "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrasswet.hlsl_ps_ps30_main.fxc"
+  ],
+  "variants": [
+    {
+      "path": "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_gbuffer.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\n\u0000",
+      "beforeSha256": "9cefed537e4ee90e36e7e58eb098ce6ce3394f51d1582d0b0fbccd00afd17c51",
+      "sha256": "c2b8fb837916a96eaf1e3d1fa55b84264923b44437eeaba42b8cad6be251d963"
+    },
+    {
+      "path": "fxc/dx11_sm_5_0_default_rigidgrass.hlsl_ps_ps30_main.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\nfog_3k.hlsl(303,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(586,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(130,95-136): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them\nsky.hlsl(275,2): warning X4000: use of potentially uninitialized variable (get_environment_colour)\nsky.hlsl(138,2): warning X4000: use of potentially uninitialized variable (spherical_harmonic)\n\u0000",
+      "beforeSha256": "bcbef928ffd17d99c5d42f00932ef771e4c566ff6e8f63ef9bbbabecda689223",
+      "sha256": "e75b9746000d4ac35dc12b0a64e2d59ffa96714c31e6d729246e9a69a64b3d0f"
+    },
+    {
+      "path": "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_gbuffer.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\n\u0000",
+      "beforeSha256": "6f77863143f79cfe1addd62193823f2a8189a85ed673f4f53c6f5bd2bc747d63",
+      "sha256": "e3b30336155ac5de4d2cb7e0b6397dffee923f3e2c694044fcf57362ac11db06"
+    },
+    {
+      "path": "fxc/dx11_sm_5_0_default_rigidgrasswet.hlsl_ps_ps30_main.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\nfog_3k.hlsl(303,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(586,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(130,95-136): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them\nsky.hlsl(275,2): warning X4000: use of potentially uninitialized variable (get_environment_colour)\nsky.hlsl(138,2): warning X4000: use of potentially uninitialized variable (spherical_harmonic)\n\u0000",
+      "beforeSha256": "b8ded4ec4f670f0d8b19637148433a13f8f23797a8363bebc9ef358049f4d44c",
+      "sha256": "866489cf93fa538410673760a2c4019488381451fabb28085b9ab9ce79a693a1"
+    },
+    {
+      "path": "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrass.hlsl_ps_ps30_main.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\nfog_3k.hlsl(303,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(586,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(130,95-136): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them\nsky.hlsl(275,2): warning X4000: use of potentially uninitialized variable (get_environment_colour)\nsky.hlsl(138,2): warning X4000: use of potentially uninitialized variable (spherical_harmonic)\n\u0000",
+      "beforeSha256": "c27144ff38f34a093277d97339dabe6e1320936db18b6cb5a3a85f26c47d9b20",
+      "sha256": "2c1a9f31c77f77771a33fd5b55d0a6300ed5c413cdadebdbfe0ed7b22ecb1bc4"
+    },
+    {
+      "path": "fxc/dx11_sm_5_0_enable_shadows_shadows_hardware_gather_5_0_rigidgrasswet.hlsl_ps_ps30_main.fxc",
+      "controlMatchesInstalled": true,
+      "interfaceUnchanged": true,
+      "compilerFlags": 4096,
+      "preservedDither": "screen",
+      "warnings": "sky.hlsl(232,9-103): warning X3206: implicit truncation of vector type\nsky.hlsl(233,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(234,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(235,9-124): warning X3206: implicit truncation of vector type\nsky.hlsl(247,9-113): warning X3206: implicit truncation of vector type\nsky.hlsl(248,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(249,9-134): warning X3206: implicit truncation of vector type\nsky.hlsl(250,9-134): warning X3206: implicit truncation of vector type\nlighting.hlsl(839,9-130): warning X3206: implicit truncation of vector type\nRigidStandardFragments.hlsl(203,39-66): warning X3206: 'shroud': implicit truncation of vector type\nRigidGrassCommon.hlsl(123,38-76): warning X3206: 'distance': implicit truncation of vector type\nfog_3k.hlsl(303,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(586,27-64): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\nfog_3k.hlsl(130,95-136): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them\nsky.hlsl(275,2): warning X4000: use of potentially uninitialized variable (get_environment_colour)\nsky.hlsl(138,2): warning X4000: use of potentially uninitialized variable (spherical_harmonic)\n\u0000",
+      "beforeSha256": "47d11e2b9e60ec79d1b5d2617dfaf051b3cb4e0f6a23111b04f5c894285e7310",
+      "sha256": "3b0091cc8f163c8d917075229ad3f9bb004a5df9d562f39906809bc41f95d48a"
+    }
+  ],
+  "unchangedVertexAndShadowShaders": true,
+  "sceneLightingSourceUnchanged": true,
+  "weatherLogicUnchanged": true,
+  "installed": false
+}

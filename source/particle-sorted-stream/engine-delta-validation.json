@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "previousEngineSha256": "7b09f73bdf745118517c8a1762747d60811a763c2b7984d4389cc8f94f90e615",
+  "newEngineSha256": "c59a7f6be8202cbc65ff3ecb2d1bc6b9192d3073cec4f116f84ddd62c20633d1",
+  "oldHelperBytesAndMetadataPreserved": true,
+  "codeInVerifiedControllerTextAlignmentPadding": true,
+  "newHelperBytes": 1304,
+  "allNineArchiveRecipesIdentical": true,
+  "helperExecutableNotWritable": true,
+  "checksumValid": true,
+  "nativePatches": [
+    "source preparation entry detour",
+    "post-gather streamed draw call"
+  ]
+}

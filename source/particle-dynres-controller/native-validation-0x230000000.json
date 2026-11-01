@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "checks": 134,
+  "base": "0x230000000",
+  "nativeFunction": "181b2cbd0",
+  "originalFrameRelativeResponses": [
+    {
+      "candidate": false,
+      "frameMs": 12,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": false,
+      "frameMs": 16,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": false,
+      "frameMs": 24,
+      "particleMs": 6,
+      "scale": 0.7099999785423279,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1817,
+        1022
+      ]
+    },
+    {
+      "candidate": false,
+      "frameMs": 32,
+      "particleMs": 6,
+      "scale": 0.7099999785423279,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1817,
+        1022
+      ]
+    },
+    {
+      "candidate": false,
+      "frameMs": 48,
+      "particleMs": 6,
+      "scale": 0.7099999785423279,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1817,
+        1022
+      ]
+    },
+    {
+      "candidate": true,
+      "frameMs": 12,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": true,
+      "frameMs": 16,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": true,
+      "frameMs": 24,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": true,
+      "frameMs": 32,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    },
+    {
+      "candidate": true,
+      "frameMs": 48,
+      "particleMs": 6,
+      "scale": 0.6899999976158142,
+      "retired": 1,
+      "timingTicks": 6000000,
+      "queryCalls": 2,
+      "viewport": [
+        0,
+        0,
+        1766,
+        993
+      ]
+    }
+  ],
+  "staleOriginal": {
+    "scale": 0.6899999976158142,
+    "retired": 0,
+    "timingTicks": 6000000,
+    "queryCalls": 0,
+    "viewport": [
+      0,
+      0,
+      1766,
+      993
+    ]
+  },
+  "staleCandidate": {
+    "scale": 0.699999988079071,
+    "retired": 0,
+    "timingTicks": 6000000,
+    "queryCalls": 0,
+    "viewport": [
+      0,
+      0,
+      1792,
+      1008
+    ]
+  },
+  "notReadyOriginal": {
+    "scale": 0.6899999976158142,
+    "retired": 0,
+    "timingTicks": 6000000,
+    "queryCalls": 1,
+    "viewport": [
+      0,
+      0,
+      1766,
+      993
+    ]
+  },
+  "notReadyCandidate": {
+    "scale": 0.699999988079071,
+    "retired": 0,
+    "timingTicks": 6000000,
+    "queryCalls": 1,
+    "viewport": [
+      0,
+      0,
+      1792,
+      1008
+    ]
+  },
+  "candidateBudgetMs": 3.3,
+  "gameFilesChanged": false,
+  "reportedSpikeAttribution": "Controller mechanism reproduced; live contribution not yet measured."
+}

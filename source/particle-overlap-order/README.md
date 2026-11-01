@@ -1,0 +1,15 @@
+# Strict emitter overlap-order candidate (private 0.1.64)
+
+Live result: USER CONFIRMED0.1.64 FIXES FLASHING BUT CAUSES A HUGE FPS DROP.0.1.65 addresses redundant material setup while retaining strict order. The user confirmed0.1.61,0.1.62 and0.1.63 did not fix close-camera strafe flashing. This candidate tests the overlap/draw-order mechanism; do not claim live resolution.
+
+CE coalesces emitters into distance buckets (`181abfe80`), sorts the bucket members separately, then globally sorts buckets by their mean-distance key (`181aff420`, insertion helper `181afa6b0`). When it updates a bucket mean, it starts the sum with10 rather than0, adding a count-dependent bias. Coarse bucket keys can change relative order even when the actual emitter distance order does not change. Ordinary source-alpha blending is order dependent, including for differently lit shades of gray with identical alpha.
+
+Native reproduction: source1 emitters A=(0,0,3),B=(2,0,3); source2 emitter C=(0,0,4). Camera moves from x=-0.01 to x=+0.01. True distance order remains C,B,A. CE's merged A/B key changes from16.02010 to15.98010 while C is16.00010, flipping submission from B,A,C to C,B,A. The native bucket builder/member sorts are executed in Unicorn; global group ordering is represented by its verified descending mean-distance key. Scalar alpha compositing changes brightness0.61449 to0.24481 for fixed per-emitter brightness and alpha. An offline hardware test through the installed alpha smoke PS, with fixed lighting and draw-order-only changes, produces a0.119624 maximum RGB difference and zero alpha difference.
+
+Change one conditional branch at RVA0x1abff30 from `0f84c7000000` to `e9c800000090`, always taking the native new-group path. Each emitter receives its own key. Existing native allocation/capacity growth, sorting, upload and drawing code remain. No new code, stack frame, PE section, helper change, shader change, asset change or unwind-table change. All nine archive recipes remain identical to0.1.63. Earlier draw-index correction is retained, including tie-order robustness.
+
+Candidate stays C,B,A across both positions and21 strafe positions.128 randomized native fixtures cover near/far distances, up to62 groups, and native capacity growth.5,057 retained draw-index checks pass; signed setup reconstruction matches tested engine `f61ac54399141d2a6556fd802085e5c494175f8d6da89bdc26369da5aedc04f0`. Only the native branch and recomputed PE checksum differ from the installed0.1.63 engine.
+
+Tradeoff: independent groups can cause additional material submissions/flushes. GPU shader performance changes are retained, but live CPU cost must be checked. If the candidate resolves flashing, sorting can be refined with evidence rather than retaining unnecessary batching losses.
+
+Build/receipt roots: F:/Codex/Remastered-CE-Port/work/particle-overlap-order and work/release-064. The GPU overlap harness depends on the existing particle-default-normal/test_gpu.py fixture. Nothing was publicly released or pushed.

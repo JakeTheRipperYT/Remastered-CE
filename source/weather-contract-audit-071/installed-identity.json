@@ -1,0 +1,387 @@
+{
+  "status": "PASS",
+  "installedVersion": "0.1.71-preview",
+  "installedEngineSha256": "3524965067e6f745de95e572d1d965cce6096c908930bd81cd0ce08cee4946ae",
+  "installedHelperPayloadExact": true,
+  "originalWaitHandlerUnchanged": true,
+  "waitHandlerStartRva": 7038960,
+  "waitHandlerEndRva": 7038976,
+  "weatherAssetsIdenticalToUserConfirmed52": [
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fx/skydome.hlsl",
+      "sha256": "e8c35eade31ff7b8eb66d2865c0d9eb51d24d2c8dc992b42f1c2b8c918229b10"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fx/sun.hlsl",
+      "sha256": "6e370a90b0b71f2d141ed8dd1c79158a3f1ea551b6b2775e20e26869a6bb58da"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fx/terraintile.hlsl",
+      "sha256": "ccf805cff8c10418d4f0588a19d555533433dacceb5e25492036ec3dcf89f26b"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fx/weather.hlsl",
+      "sha256": "858a6be1c7bf210fc0e2758c7ea5c1a7fa00f5edee42b1c33967ba93cbd35e04"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fx/wind.hlsl",
+      "sha256": "ff52c12282795ef168dc02d836a269364c5716cdac06ce40340404b829ea0a92"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_ps_ps30_gbuffer.fxc",
+      "sha256": "cde226d81e0a299ec9d2ecd33046b4adf832d2b1ba268fa611c92c918fcca3c5"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_ps_ps30_main.fxc",
+      "sha256": "eef116d2cbaa7ca8fe44c269d29f7419f872f00afb5772a2338d2e967f272765"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_ps_ps30_skygen.fxc",
+      "sha256": "ec962141df346dc636200263f563ecaa05da1d6c9cf73e970a02e9ec1f37a3fe"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_vs_vs30_depth.fxc",
+      "sha256": "4f5d6f2fcd9797310b02fb9af11026cc6551f3876e37bd4671b8a9578f842047"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_vs_vs30_main.fxc",
+      "sha256": "4f5d6f2fcd9797310b02fb9af11026cc6551f3876e37bd4671b8a9578f842047"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_sun.hlsl_ps_ps30_main.fxc",
+      "sha256": "3de5d3847f28b523421760aabfe82948cac77161493eff12650daeb42144e63b"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_sun.hlsl_vs_vs30_main.fxc",
+      "sha256": "2dbfdba364a971a5e735e7e12f506a255b92b55dfcf5d19435a62d5efb51b347"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ds_ds_main_near_silouette_sm5.fxc",
+      "sha256": "05c4ea3554f1bb934d176101558a74a1205a23a222a433f1a239de3dd58d5237"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_hs_hs_main_near_silouette_sm5.fxc",
+      "sha256": "39cfbbd2d84389a698c56fa6d383e1684954925097b2d70d60f588c1e62ffc0a"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_blendmap.fxc",
+      "sha256": "e41a89e7d834bfcaf04c567ebd870351b5814e7bb09de6efee6a71dbb4102313"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_fog.fxc",
+      "sha256": "edc789cd66448331740d24e179e9a5f0c07a75c0878d999584b877f4eae0cf98"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_gbuffer.fxc",
+      "sha256": "50224c33c0aebe636cb191d3f65fbe60e556138e06085b7b869ab27e026bf470"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_gbuffer_sm5.fxc",
+      "sha256": "4c055887aacf6bc7456b019ddfbc6c4f1a78e9edea21573595ae1791f8bbeaae"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_fog.fxc",
+      "sha256": "1dbf35cc758827d057760eff70637dfb76a86421d115b65c2ff81715c549bdcf"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_gbuffer.fxc",
+      "sha256": "48cd7000bd2024fe0a72086fec6e393e2c1b66d21dbae01701431f897d4090ad"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_gbuffer_sm5.fxc",
+      "sha256": "84a87dbd8692458e445af63b8c486479764c328fff1365e99159a6267f4cb4c8"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_fog.fxc",
+      "sha256": "ba8dc12e3c693438ab365f5c8875939b37e104b6d37372d9df1614291320960e"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_gbuffer.fxc",
+      "sha256": "08367a34253527b9f574bfe35852bd28f136487b1386f7db2d93d6ef9dd709b7"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_gbuffer_sm5.fxc",
+      "sha256": "2cd4652d89750f7af9d3fba698edb1950b8560fc1449a57ddaefc396c11b58c0"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_not_visible_gbuffer.fxc",
+      "sha256": "bc16757e6c6bfa7944414d611afdaddb0c8720e9a813a03de1b2e39b998047f4"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry.fxc",
+      "sha256": "f28b16036b90d14621ecf9139b777a10f7d22aae14e7367d3ca27454b92d1989"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry_gbuffer.fxc",
+      "sha256": "e7305a620249828301d9b7ab0d432fd3cfb9148425304da278e29111d5c8acdd"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry_gbuffer_sm5.fxc",
+      "sha256": "59450dfca9e506f03d32d9b7a18c3e8047a66ce81c6cfcc0ee17becefc7953fc"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow.fxc",
+      "sha256": "93450e522de34532633abbd5a09e843026dc30942026c412756929b2dc701bdc"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow_gbuffer.fxc",
+      "sha256": "30ab82feb6cd608ac396f1ea57bbf69991e5474322a9c44e7869133d2f099e8b"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow_gbuffer_sm5.fxc",
+      "sha256": "efd95206295dcc6e59daf1d844d74882b3801bc34777656443d4e90b0aa00e9f"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet.fxc",
+      "sha256": "e92aea7ecd03940f2faa00f5d9b06e10e47fa992f167c8491127401ebdcf3d9c"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet_gbuffer.fxc",
+      "sha256": "9b666508b66f5cfb3848b0ba6c725f5c584e79798143d529b54311d44847350f"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet_gbuffer_sm5.fxc",
+      "sha256": "428659f86c8b4b8b387980971e2301470277ff3db92f6aa89a5fae481a970fb5"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_wireframe_infield.fxc",
+      "sha256": "4469e2fc00a04c6069d5fb32f34e66cb4e3b045566baa4727ab13152bb44bead"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_wireframe_outfield.fxc",
+      "sha256": "4045552f8b78d1e1926bbe3601048bf6f9f7cefb9dd9cecec5b2942466f73e97"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps_depth_out.fxc",
+      "sha256": "a4d3c0e430c52a0f17cc34e26b6913fcccabfa8563056802e3e16d83f9c0d6b9"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_vs_vs30_depth.fxc",
+      "sha256": "edd971518348ea1be2d840fab194e4715626e222b2ed30e2adbb7554f1c7173d"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_vs_vs30_infield.fxc",
+      "sha256": "885947f7983a7b11d0e4b5b245446c6ba1a8441b475567f69f1270f15802a543"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_vs_vs30_infield_silouette_sm5.fxc",
+      "sha256": "97c6e5612ad4603d4effe25b85aad289beef9976624e71037d199e6a3d45afcc"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_vs_vs30_not_visible.fxc",
+      "sha256": "e39e2ad13dcbb56044ed1aa7f708fbf91e8b95da2ce002f8d0decee85417099e"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_ps_rain_pixel.fxc",
+      "sha256": "9980a4102e11af51fe5d6e376d9a8d54ced569f6ab212ab1a1e8e19c7a93c7e6"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_ps_snow_pixel.fxc",
+      "sha256": "c8ccd9feda81588cec47ae1ac7291bb6595e65cd9ae0384455d1f62aab01e3ad"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_vs_rain_vertex.fxc",
+      "sha256": "76dfcd59a599721aed59d6da14b49fb4e3d3710ccd2e75367ec396428b14a04c"
+    },
+    {
+      "pack": "data/shaders.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_vs_snow_vertex.fxc",
+      "sha256": "693d270a5f451c09b412296798cc888881b31d39b6c10b48f76bf855de6bd1e5"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fx/sun.hlsl",
+      "sha256": "569b751a7d9b6884a0c52173ab7409cb40cec545d1156d0186b51544ffa5324e"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fx/terraintile.hlsl",
+      "sha256": "fef6c5ce4e025c28077f0e705f93ab870bfbcca57f139c99b93ed1748c66e9d6"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fx/weather.hlsl",
+      "sha256": "a7cf72cb1819837a4f0ce7ae4afb3a405ddd6475f15e93b5b3367b9649f7e399"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fx/weather_transition.hlsl",
+      "sha256": "04323f398c1bfe802ee7b5a4f9230a59c56dd1aa3b9828c068cf2dbf05747d07"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fx/wind.hlsl",
+      "sha256": "97c1ee0ed60ac476f985c222c43612b984fa44f765128344fdd89aacef6e7a88"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_ps_ps30_gbuffer.fxc",
+      "sha256": "20ef900660e4b79b137ee8d6cdde72f00b1bfb673a556ad820778be930fdd155"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_skydome.hlsl_ps_ps30_main.fxc",
+      "sha256": "20e68595070d007b927c29b7f6d85939f790ef4f5c13d6b809443f90cff39c11"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_sun.hlsl_ps_ps30_main.fxc",
+      "sha256": "6f478b570fb423e08a7f629d1a4d84d55d81c9420ab18ef1a3d16ab7afebaa13"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_fog.fxc",
+      "sha256": "ba2e71c724ba46f56419301490ce32f1b16ba1804a201117e00fb4236670b206"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_gbuffer.fxc",
+      "sha256": "d9f4fb4a64c77ea7317897b3c8a57ad5b75bd2503383234941d9f6dd7658a2ae"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_dry_gbuffer_sm5.fxc",
+      "sha256": "1e1a70f3d006ef9e69d8aa3e32d084b0aac354a58f55d10d152f5494c32e87cf"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_fog.fxc",
+      "sha256": "ebdc86b10b7e8240b03b7dad2d657db351e2c4637dfc5d8b03d9f6fae445fb74"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_gbuffer.fxc",
+      "sha256": "1937127e6d18fb8e676a0444ee127ed22494fde8d2d6baf53fb322d8263ace5a"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_snow_gbuffer_sm5.fxc",
+      "sha256": "91e61d0e780d25a525be585d6ee4c3c957db9210bfd7f7f441b730254fb20074"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_fog.fxc",
+      "sha256": "f60d8c824f62f1f04b96b2aec89d3b335437bb1011bc5db8cca1031f925de89e"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_gbuffer.fxc",
+      "sha256": "a68124b272df603798caee2e93319cfb582def0b2a799c866ae72fd1cbf6fcc1"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_infield_wet_gbuffer_sm5.fxc",
+      "sha256": "0e28f47aeceb22b2388e7d99aaf87c7c5385be964b6375632fdf44d1d73d0921"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry.fxc",
+      "sha256": "1dc962b03a9feb1190cbf76a2302d91d783d0a7d4c3a749ab6c5073508a6f755"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry_gbuffer.fxc",
+      "sha256": "33dcea5fe869693de35011304141bea995ad461e3853632d9736c6d82b46dec2"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_dry_gbuffer_sm5.fxc",
+      "sha256": "053f61ad085eb84816df69a2f4cbebb5fc33635f481ac0648d474b0a9dbf94a8"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow.fxc",
+      "sha256": "db54c1b2d4fb7cd3c7f7f88d536e48b0c9b5a271966244f7cbd7a776b156fec8"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow_gbuffer.fxc",
+      "sha256": "931b5d53f40514a41641641625e6f2024d0fb427c4abd5677adc97ab8fd80572"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_snow_gbuffer_sm5.fxc",
+      "sha256": "64cc79532e53fa15b84f883361613781129ae28b488f0be3b869345204cf471b"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet.fxc",
+      "sha256": "bf77b701382dbafee4db35ef8d28292e57566eb669c3481266a61b222f746961"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet_gbuffer.fxc",
+      "sha256": "7302596bd47384de45b156cfa46f6ab9802fce2e56de5cd7381873730db8a20f"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_terraintile.hlsl_ps_ps30_outfield_wet_gbuffer_sm5.fxc",
+      "sha256": "bf34f1640ef6b9bfb434c2a33b60122056e88c80be0a26b7717514df6af851a4"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_ps_rain_pixel.fxc",
+      "sha256": "47219670a1d87e5f9e397914125ed743a13feb52eb8cededf0ee3c09483b91d2"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_ps_snow_pixel.fxc",
+      "sha256": "309d6337a4a4cc62713d26c9d2e9da7aa55e0e3328ee89cda6bdfef01058c060"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_vs_rain_vertex.fxc",
+      "sha256": "0c159dfda8c48c03fb99e18d56abc4413b56c0dfec29011e6a27a45911482dab"
+    },
+    {
+      "pack": "data/rce_campaign_night_visuals.pack",
+      "asset": "fxc/dx11_sm_5_0_default_weather.hlsl_vs_snow_vertex.fxc",
+      "sha256": "dedb3d22b93e8d49c73724b88b3f231c82995295c254ab255f35cecb9267950b"
+    }
+  ],
+  "scope": "Identity and source-of-tests audit. Native tests execute helper bytes extracted/verified against the installed PE; grass GPU tests consume installed archive bytes. No live gameplay claimed."
+}

@@ -1,0 +1,1142 @@
+[
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_3.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_4.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_5.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_6.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/autumn_day_dry_7.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_troy_northern_aegean_day_dry_02.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/dry/default_autumn_day_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/fog/autumn_day_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/fog/default_autumn_day_fog.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_autumn_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_1.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_2.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_4.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_6.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_7.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_8.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/autumn_day_rain_9.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "11"
+  },
+  {
+    "path": "weather/japan/land/autumn/day/rain/default_autumn_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_3.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_4.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_5.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_6.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_7.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/autumn_night_dry_8.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/dry/default_autumn_night_dry.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/fog/autumn_night_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/fog/default_autumn_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_1.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_10.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_2.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_4.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_6.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_7.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_8.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/autumn_night_rain_9.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/autumn/night/rain/default_autumn_night_rain.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/default_spring_day_dry.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_3.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_4.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_5.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_6.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/dry/spring_day_dry_overcasta.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/fog/default_spring_day_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_phar_crisis_morning_01.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/fog/spring_day_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/rain/default_spring_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/rain/spring_day_rain_1.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/rain/spring_day_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/rain/spring_day_rain_4.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/day/rain/spring_day_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/default_spring_night_dry.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_2.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_3.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_4.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_5.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_6.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_7.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_8.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/dry/spring_night_dry_9.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/fog/default_spring_night_fog.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/fog/spring_night_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/fog/spring_night_fog_2.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/default_spring_night_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_1.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_10.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_2.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_4.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_6.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_7.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_8.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/spring/night/rain/spring_night_rain_9.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/default_summer_day_dry.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_10.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_troy_northern_aegean_day_dry_02.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_11.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\day_dry_03.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_3.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_4.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_5.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_6.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_7.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_8.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/dry/summer_day_dry_9.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/fog/default_summer_day_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/fog/summer_day_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/fog/summer_day_fog_2_mtb.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_phar_crisis_morning_01.dd",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/default_summer_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_1.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_2.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_4.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "11"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_6.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_7.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_8.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/day/rain/summer_day_rain_9.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/default_summer_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_5.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_6.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_7.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_8.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/dry/summer_night_dry_9.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/fog/default_summer_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/fog/summer_night_fog_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/default_summer_night_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_1.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_10.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_2.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_3.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_4.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_5.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "33"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_6.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_7.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_8.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/summer/night/rain/summer_night_rain_9.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "22"
+  },
+  {
+    "path": "weather/japan/land/winter/day/dry/default_winter_day_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/dry/winter_day_dry_1.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/dry/winter_day_dry_2.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/dry/winter_day_dry_3.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/dry/winter_day_dry_4.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_morning_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/fog/default_winter_day_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/default_winter_day_snow.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/default_winter_day_snow_mtb.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/winter_day_snow_1.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/winter_day_snow_2.environment",
+    "weather": "WT_SNOW_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/winter_day_snow_3.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/day/snow/winter_day_snow_4.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/dry/default_winter_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/dry/winter_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/dry/winter_night_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/dry/winter_night_dry_3.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/dry/winter_night_dry_4.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/fog/default_winter_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/default_winter_night_snow.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/winter_night_snow_1.environment",
+    "weather": "WT_SNOW_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/winter_night_snow_2.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/winter_night_snow_3.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\sky_phar_crisis_morning_01.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/winter_night_snow_4.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/land/winter/night/snow/winter_night_snow_5.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/day/dry/autumn_day_dry_5.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_troy_northern_aegean_day_dry_02.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/day/dry/default_autumn_day_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/day/fog/default_autumn_day_fog.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/day/fog/default_autumn_day_fog_mtb.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_5.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/day/rain/default_autumn_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/night/dry/autumn_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/night/dry/default_autumn_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/night/fog/default_autumn_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/autumn/night/rain/default_autumn_night_rain.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "10"
+  },
+  {
+    "path": "weather/japan/sea/spring/day/dry/default_spring_day_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\Skybox_Sunny_HorisonClouds.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/day/fog/default_spring_day_fog.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/day/rain/default_spring_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/night/dry/default_spring_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/night/dry/spring_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/night/fog/default_spring_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/spring/night/rain/default_spring_night_rain.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "10"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/default_summer_day_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/summer_day_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/summer_day_dry_2.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_blue_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/summer_day_dry_3.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/summer_day_dry_4.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_evening_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/dry/summer_day_dry_5.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\sky_troy_northern_aegean_day_dry_02.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/fog/default_summer_day_fog.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/day/rain/default_summer_day_rain.environment",
+    "weather": "WT_WET_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/night/dry/default_summer_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/night/dry/summer_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/night/fog/default_summer_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/summer/night/rain/default_summer_night_rain.environment",
+    "weather": "WT_WET_STORMY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "10"
+  },
+  {
+    "path": "weather/japan/sea/winter/day/dry/default_winter_day_dry.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_evening4.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/day/dry/winter_day_dry_1_mtb.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_morning_2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/day/fog/default_winter_day_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_5.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/day/snow/default_winter_day_snow.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/dry/default_winter_night_dry.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/dry/winter_night_dry_1.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/dry/winter_night_dry_2_mtb.environment",
+    "weather": "WT_DRY_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night3.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/fog/default_winter_night_fog.environment",
+    "weather": "WT_DRY_BREEZE",
+    "sky": "skyboxes\\tex\\3k_sky_night2.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/snow/default_winter_night_snow.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_night1.dds",
+    "lightning": "0"
+  },
+  {
+    "path": "weather/japan/sea/winter/night/snow/winter_night_snow_1_mtb.environment",
+    "weather": "WT_SNOW_GUSTY",
+    "sky": "skyboxes\\tex\\3k_sky_overcast_1_night.dds",
+    "lightning": "0"
+  }
+]

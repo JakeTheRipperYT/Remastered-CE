@@ -1,0 +1,27 @@
+{
+  "writes": [
+    {
+      "rva": 28494920,
+      "offset": 28491848,
+      "before": "18",
+      "data": "20",
+      "reason": "Normalize particle GPU ticks by timestamp frequency, not whole-frame GPU cost"
+    },
+    {
+      "rva": 28495047,
+      "offset": 28491975,
+      "before": "488b8bb8000000",
+      "data": "31ff9090909090",
+      "reason": "Hold resolution until a fresh completed particle timing is available"
+    },
+    {
+      "rva": 48740176,
+      "offset": 48732496,
+      "before": "1f85eb51b81ed53f",
+      "data": "462575029a086b3f",
+      "reason": "Absolute3.3ms particle GPU budget in the existing adaptive controller"
+    }
+  ],
+  "helperUnchanged": true,
+  "stackAndUnwindUnchanged": true
+}

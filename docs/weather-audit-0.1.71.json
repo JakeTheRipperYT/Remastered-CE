@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ALL_AUTOMATED_LIVE_PENDING",
+  "version": "0.1.71-preview",
+  "forecastInputs": 112640,
+  "nativeControllerCases": 144,
+  "nativeControllerObservations": 1575,
+  "nativeFadeCases": 96,
+  "unitCardCases": 105,
+  "unitCardPenaltyFrames": 1800,
+  "skyMaterialCases": 12,
+  "startingGroundDeploymentCases": 6,
+  "actualGrassShaderDrawsHardware": 36,
+  "actualGrassShaderDrawsWARP": 36,
+  "skyAndGroundGPUSamples": 66,
+  "weatherAssetIdentityChecks": 75,
+  "nativeHelperEqualsInstalled": true,
+  "originalWaitHandlerUnchanged": true,
+  "allAutomatedTestsPassed": true,
+  "liveCampaignValidation": "PENDING: game launched at main menu; rainy-start and clear-start campaigns must be loaded.",
+  "noGameFilesChangedByAudit": true,
+  "noImageVideoCaptured": true
+}

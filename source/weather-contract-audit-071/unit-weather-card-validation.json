@@ -1,0 +1,1068 @@
+{
+  "status": "PASS",
+  "cases": 105,
+  "nativeNegativeBranchVisibilityRepair": true,
+  "nativeWidgetResetRecovery": true,
+  "stableWidgetsAvoidRedraw": true,
+  "activePenaltyFramesChecked": 1800,
+  "actualNativeWideStatKeyComparison": true,
+  "actualNativeWeatherAccuracyGetter": true,
+  "actualNativeReloadBranchCompared": true,
+  "clearRainSnowFogReversal": true,
+  "bonusesPreserved": true,
+  "fatigueUntouched": true,
+  "customCampaignAndNavalExcluded": true,
+  "heldOpenCardRefreshes": true,
+  "rows": [
+    {
+      "base": "0x180000000",
+      "weapon": 0,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 0,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 0,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 1,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 1,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 1,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 11,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 11,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 11,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 12,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 12,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 12,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 13,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 13,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 13,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 18,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 18,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 18,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 19,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 19,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 19,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x180000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 0,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 0,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 0,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 1,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 1,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 1,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 11,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 11,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 11,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 12,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 12,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 12,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 13,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 13,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 13,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 18,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 18,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 18,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 19,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 19,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 19,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x230000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 0,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 0,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 0,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 0,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 1,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 1,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 1,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 1,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 11,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 11,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 11,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 11,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 12,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 12,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 12,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 12,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 13,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 13,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 13,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 13,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 18,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 18,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 18,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 18,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 19,
+      "precipitation": 1,
+      "displayed": [
+        35,
+        29,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 19,
+      "precipitation": 2,
+      "displayed": [
+        45,
+        33,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 19,
+      "precipitation": 3,
+      "displayed": [
+        40,
+        35,
+        15
+      ]
+    },
+    {
+      "base": "0x7ff600000000",
+      "weapon": 19,
+      "precipitation": 0,
+      "displayed": [
+        50,
+        35,
+        15
+      ]
+    }
+  ]
+}

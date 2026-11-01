@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "changedBytes": 17,
+  "guardedControllerWriteBytes": 16,
+  "peChecksumRecomputed": true,
+  "changedOffsets": [
+    496,
+    497,
+    28492360,
+    28492487,
+    28492488,
+    28492489,
+    28492490,
+    28492491,
+    28492492,
+    28492493,
+    48733008,
+    48733009,
+    48733010,
+    48733011,
+    48733012,
+    48733013,
+    48733014
+  ],
+  "onlyControllerChanged": true,
+  "helperUnchanged": true,
+  "unwindMetadataUnchanged": true,
+  "shaderAndArchiveRecipesUnchanged": true
+}

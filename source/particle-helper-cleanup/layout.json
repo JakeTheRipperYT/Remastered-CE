@@ -1,0 +1,53 @@
+{
+  "writes": [
+    {
+      "offset": 28368832,
+      "before": "e81b9ec30190",
+      "data": "e8dbebc30190",
+      "reason": "Stream sorted source lists directly after gathering"
+    },
+    {
+      "offset": 28219376,
+      "before": "48895c2410",
+      "data": "e9f72fc601",
+      "reason": "Prepare sorted source and one empty marker without emitter buckets"
+    }
+  ],
+  "slot": 37632,
+  "startRva": 57987840,
+  "endRva": 57989144,
+  "exports": {
+    "Allocate": 57989052,
+    "BatchAdapter": 57989024,
+    "Clear": 57989069,
+    "PrepareSource": 57988076,
+    "Release": 57989064,
+    "RenderStream": 57988340,
+    "Sort": 57989074
+  },
+  "unwind": [
+    [
+      57987840,
+      57988076,
+      57989080
+    ],
+    [
+      57988076,
+      57988339,
+      57989092
+    ],
+    [
+      57988340,
+      57989013,
+      57989112
+    ],
+    [
+      57989024,
+      57989052,
+      57989136
+    ]
+  ],
+  "callSite": 28371904,
+  "afterSort": true,
+  "sourcePrepareSite": 28222448
+}

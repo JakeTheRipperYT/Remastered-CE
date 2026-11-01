@@ -1,0 +1,1826 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        102
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 0
+    },
+    {
+      "edition": "57",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0,
+      "dy": 0,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "57",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0.02,
+      "dy": 0.02,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "57",
+      "case": "click/small/cancel/group exclusion",
+      "active": false,
+      "dx": 0.6,
+      "dy": 0.6,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "57",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0.6,
+      "dy": 0.6,
+      "group": true,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "none",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "empty old rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        1,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "different old rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 0,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 1,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 2,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "mixed",
+      "cachedCounts": [
+        2,
+        1
+      ],
+      "selected": [
+        101,
+        103,
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "land",
+      "cachedCounts": [
+        2,
+        0
+      ],
+      "selected": [
+        101,
+        103
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "ships",
+      "cachedCounts": [
+        0,
+        1
+      ],
+      "selected": [
+        201
+      ],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "preview": "correct rectangle",
+      "direction": 3,
+      "eligibleKind": "none",
+      "cachedCounts": [
+        0,
+        0
+      ],
+      "selected": [],
+      "releaseRefreshes": 1
+    },
+    {
+      "edition": "58",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0,
+      "dy": 0,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "58",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0.02,
+      "dy": 0.02,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "58",
+      "case": "click/small/cancel/group exclusion",
+      "active": false,
+      "dx": 0.6,
+      "dy": 0.6,
+      "group": false,
+      "selected": [
+        999
+      ]
+    },
+    {
+      "edition": "58",
+      "case": "click/small/cancel/group exclusion",
+      "active": true,
+      "dx": 0.6,
+      "dy": 0.6,
+      "group": true,
+      "selected": [
+        999
+      ]
+    }
+  ],
+  "scope": "Complete native release, native rectangle scan, actual native plane-bound tests, native vector append and ID conversion. Only camera/frustum generation, world ownership, allocation and final selection consumer are fixtures. Mixed land/ship IDs inside final box must match with zero, stale or current previews."
+}

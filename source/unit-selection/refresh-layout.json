@@ -1,0 +1,48 @@
+{
+  "startRva": 34970544,
+  "endRva": 34970589,
+  "unwindRva": 34970592,
+  "runtime": [
+    34970544,
+    34970589,
+    34970592
+  ],
+  "writes": [
+    {
+      "offset": 34967472,
+      "before": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "data": "4883ec3848894c24204889542428488d89a8020000e8264830fe488b4c2420488b5424284883c438e9e3e94fffcccccc0104010004620000",
+      "reason": "Refresh native box contents immediately before converting them to IDs"
+    },
+    {
+      "offset": 23415282,
+      "before": "e8c92f0000",
+      "data": "e8b945b000",
+      "reason": "Call native refresh then original ID collector at commit"
+    },
+    {
+      "offset": 680,
+      "before": "ac8b1502",
+      "data": "e88b1502",
+      "reason": "Map remaining executable padding"
+    },
+    {
+      "offset": 50521000,
+      "before": "503674035437740354377403000000000000000000000000",
+      "data": "b09b1502dd9b1502e09b1502503674035437740354377403",
+      "reason": "Insert sorted runtime function for refresh adapter"
+    },
+    {
+      "offset": 572,
+      "before": "b4c31800",
+      "data": "c0c31800",
+      "reason": "Extend exception directory"
+    },
+    {
+      "offset": 800,
+      "before": "b4c31800",
+      "data": "c0c31800",
+      "reason": "Extend mapped exception table"
+    }
+  ]
+}
