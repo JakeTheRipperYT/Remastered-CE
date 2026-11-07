@@ -1,0 +1,364 @@
+{
+  "native-verification.json": {
+    "status": "PASS",
+    "changedBytes": 1127,
+    "sevenGuardedRangesOnly": true,
+    "normalEngineUnchanged": true,
+    "allOtherSimFixesByteIdentical": true,
+    "relativeReferenceCases": 186,
+    "embeddedStrings": {
+      "0x1821e8f50": "inf_bos_shogunate",
+      "0x1821e9a60": "inf_bos_imperial",
+      "0x1821e9758": "inf_bos_self",
+      "0x1821e9a50": "rel_catholic",
+      "0x1821e9a78": "rel_buddhist"
+    },
+    "aiThreshold75Verified": true,
+    "references": [
+      {
+        "site": "0x180730bc2",
+        "target": "0x180730c52",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730bcc",
+        "target": "0x180730d25",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730be4",
+        "target": "0x180730c15",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730be9",
+        "target": "0x1821e8f50",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730bf0",
+        "target": "0x18019b6d0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730bf7",
+        "target": "0x1821e9a60",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730bfe",
+        "target": "0x180730c07",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c00",
+        "target": "0x1821e8f50",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c0a",
+        "target": "0x180730c4d",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c0c",
+        "target": "0x1821e9758",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c13",
+        "target": "0x180730c4d",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c18",
+        "target": "0x1821e9a50",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c1f",
+        "target": "0x18019b6d0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c26",
+        "target": "0x1821e9a78",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c2d",
+        "target": "0x180730c4d",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c32",
+        "target": "0x1821e9a78",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c39",
+        "target": "0x18019b6d0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c40",
+        "target": "0x1821e9a50",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730c47",
+        "target": "0x18073145a",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c4d",
+        "target": "0x180730e32",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c64",
+        "target": "0x18106e900",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c6f",
+        "target": "0x18106eb50",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c82",
+        "target": "0x18073145a",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c8c",
+        "target": "0x180730c93",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730c91",
+        "target": "0x180730c7f",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730ca4",
+        "target": "0x180730cef",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cb6",
+        "target": "0x180730cbe",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cbc",
+        "target": "0x180730cc4",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cc2",
+        "target": "0x180730ca1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cc7",
+        "target": "0x180730ca1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cce",
+        "target": "0x180730ca1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cd4",
+        "target": "0x180730cda",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cd8",
+        "target": "0x180730ccb",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730ce4",
+        "target": "0x180730ca1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730ced",
+        "target": "0x180730ca1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cf2",
+        "target": "0x180730d00",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730cfa",
+        "target": "0x18073145a",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d0b",
+        "target": "0x1821e9758",
+        "kind": "rip"
+      },
+      {
+        "site": "0x180730d12",
+        "target": "0x18019b6d0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d20",
+        "target": "0x180730eb9",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d2c",
+        "target": "0x18073145a",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d32",
+        "target": "0x180730d08",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d37",
+        "target": "0x180730d6c",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d3c",
+        "target": "0x18072f8c0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d54",
+        "target": "0x180730d5d",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d58",
+        "target": "0x18072f8c0",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730d71",
+        "target": "0x180730b60",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1807932ba",
+        "target": "0x180730d34",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1807932c1",
+        "target": "0x1807934a1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1807932d6",
+        "target": "0x18106eb50",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1807932eb",
+        "target": "0x180793321",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1807932fa",
+        "target": "0x1807932e8",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180793303",
+        "target": "0x1807932e8",
+        "kind": "branch"
+      },
+      {
+        "site": "0x18079330d",
+        "target": "0x180728250",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180793315",
+        "target": "0x1807932e8",
+        "kind": "branch"
+      },
+      {
+        "site": "0x18079331f",
+        "target": "0x1807932e8",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180793324",
+        "target": "0x180793335",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180793330",
+        "target": "0x180730b60",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180793335",
+        "target": "0x1807934a1",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180730b7b",
+        "target": "0x180730d34",
+        "kind": "branch"
+      },
+      {
+        "site": "0x180ac51f9",
+        "target": "0x180730d6f",
+        "kind": "branch"
+      },
+      {
+        "site": "0x1817391c5",
+        "target": "0x180730d34",
+        "kind": "branch"
+      }
+    ],
+    "gameplayTested": false
+  },
+  "recipe-preservation.json": {
+    "status": "PASS",
+    "normalPackRecipesUnchanged": 9,
+    "normalEngineRecipeUnchanged": true,
+    "normalHelperUnchanged": true,
+    "existingAlternateEntriesPreserved": 25234,
+    "newReligionEntries": 4,
+    "previousModeAttributionPreserved": true
+  },
+  "installer-reconstruction.json": {
+    "status": "PASS",
+    "signedPackageVerified": true,
+    "normalEngineReconstructedFromOriginal": true,
+    "normalEngineSha256": "071249e2fa79f21646e0da6d8070ff89f26bc3c85906798a6af09d650633c044",
+    "alternateEngineSha256": "35e507fc3adf6893cb78afe346b61d7342594bacc4793827c57ad26d857a4541",
+    "modeDataSha256": "fab6bc36fa102990005f67c997f7d9a79d1149c7535d787f05c07adc1e6663ce",
+    "alternateBootstrapSha256": "a96605a8290a0130677be6bd74012a605ba9ea9a6e9b361a3674e89adc0f1549",
+    "actualInstallerModeStageTested": true,
+    "existingNinePackRecipesPreserved": true,
+    "gameplayTested": false,
+    "state": {
+      "simTurnsStateSha256": "634504e8c9257935cd037ad16e566550ac251a0ec4a1ef8970a62510faf53eac",
+      "simTurnsLicenseSha256": "233c8c99ea410f89a57bb2e012c52acffd30c14ffcd752e78c72c96e51de2ee5"
+    }
+  },
+  "asset-verification.json": {
+    "status": "PASS",
+    "signedInstallerAlternateEngineByteIdentical": true,
+    "allFourReligionAssetsDecodedByteIdentically": true,
+    "generatedPrefixMatchesRecipe": true,
+    "modeEntryCount": 25238
+  },
+  "scope": "Structural and signed installer verification; gameplay and multiplayer not verified."
+}

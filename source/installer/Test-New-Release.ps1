@@ -11,11 +11,11 @@ $script:passed=0
 function Assert($ok,$message){if(!$ok){throw $message};$script:passed++;Write-Output ('PASS: '+$message)}
 $r=[RemasteredCE.Release]::Load($null)
 try{
- Assert ([RemasteredCE.J]::S($r.Manifest,'version') -eq '0.1.71-preview') 'Final setup embeds v71 release'
- Assert ([RemasteredCE.J]::S($r.Manifest,'minimumInstallerVersion') -eq '0.1.71-preview') 'New package requires corrected v71 installer'
+ Assert ([RemasteredCE.J]::S($r.Manifest,'version') -eq '0.1.80-preview') 'Final setup embeds v80 release'
+ Assert ([RemasteredCE.J]::S($r.Manifest,'minimumInstallerVersion') -eq '0.1.79-preview') 'New package requires corrected v80 installer'
  Assert ($r.PackageHash -eq [RemasteredCE.Engine]::FileHash($Package)) 'Embedded signature and package match final release asset'
  Assert ([RemasteredCE.Engine]::Hash($r.ModManager) -eq [RemasteredCE.Engine]::FileHash($ExpectedGui)) 'Signed package embeds corrected lean GUI exactly'
- Assert ([RemasteredCE.Engine]::Hash([RemasteredCE.InstallerLauncher]::Select($r)) -eq [RemasteredCE.Engine]::FileHash($ExpectedGui)) 'v71 uses authenticated GUI payload instead of executing setup'
+ Assert ([RemasteredCE.Engine]::Hash([RemasteredCE.InstallerLauncher]::Select($r)) -eq [RemasteredCE.Engine]::FileHash($ExpectedGui)) 'v80 uses authenticated GUI payload instead of executing setup'
  Assert ([RemasteredCE.Engine]::FileHash($exe) -ne [RemasteredCE.Engine]::FileHash($ExpectedGui)) 'Setup and lean GUI are distinct, avoiding recursively embedded packages'
  $state=New-Object 'Collections.Generic.Dictionary[string,object]'
  [RemasteredCE.InstallerLauncher]::Stage($r,$root,$state)
@@ -36,5 +36,5 @@ try{
  foreach($bad in @([string[]]@('--game'),[string[]]@('--game','--'))){$rejected=$false;try{[RemasteredCE.UnifiedLauncher]::ResolveGameHint($bad,'') | Out-Null}catch{$rejected=$true};Assert $rejected 'Missing argument remains rejected'}
  $result=@{status='PASS';checks=$script:passed;setupSha256=[RemasteredCE.Engine]::FileHash($exe);guiSha256=[RemasteredCE.Engine]::FileHash($ExpectedGui);packageSha256=$r.PackageHash;fixture=$root;scope='Actual new-package authentication, staging, offline repair ownership, staged GUI startup/selftests and empty-hint parser. No game started or installed files changed.'}
  $result | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $root 'new-package-integration.json') -Encoding utf8
- Write-Output ('Passed '+$script:passed+' v71 package integration checks. Fixture: '+$root)
+ Write-Output ('Passed '+$script:passed+' v80 package integration checks. Fixture: '+$root)
 }finally{$r.Dispose()}

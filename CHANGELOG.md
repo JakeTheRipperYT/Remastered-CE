@@ -1,3 +1,17 @@
+# Remastered CE 0.1.80 Preview — Sim Turns and Campaign Fixes
+
+This cumulative update retains the earlier Remastered CE fixes and adds:
+
+- Optional 8-player simultaneous turns, selected in the launcher's Launch options. It uses a separate engine and isolated lobby/gifting UI data. Leave the checkbox off for normal Remastered CE.
+- Repeatable religion/allegiance switching in Sim Turns mode through Clan Summary: Shinto-Buddhism/Christianity/Ikko in Sengoku, Fujiwara/Minamoto/Taira in Rise, and Emperor/Independent/Shogun in Fall. Includes the Freedom of Faith incident/tooltips and AI conversion at at least 75% native population support, subject to the supplied eligibility rules. Normal mode's religion behavior is unchanged.
+- Fleet agents accompany a bulk army landing, and FOTS farm hover cards display contextual fertility-dependent wealth. Both engines include these fixes; actual farm income is unchanged.
+- An auto-sized Launch options section fixes clipped checkboxes.
+- Missing original animation sound timing restored, with corrected CE compression: 2,035 missing timing files and 430 corrected earlier matched-combat restorations.
+- Ten seasonal fog profiles adjusted, and opening-ground weather state retained through Start Battle, weather transitions and result/quit stages, including native snow coating strength.
+
+
+---
+
 # Remastered CE 0.1.71 Preview
 
 Retained changes since 0.1.55:

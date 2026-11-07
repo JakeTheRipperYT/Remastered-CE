@@ -94,7 +94,7 @@ public sealed class UnifiedForm : Form
 		}, 0, 1);
 		tableLayoutPanel2.Controls.Add(new Label
 		{
-			Text = "0.1.71 preview — mod loading fix included",
+			Text = "0.1.80 preview — mod loading fix included",
 			Dock = DockStyle.Fill,
 			TextAlign = ContentAlignment.MiddleRight,
 			ForeColor = Color.FromArgb(158, 176, 181)

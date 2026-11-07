@@ -10,7 +10,7 @@ Remastered CE is a community remaster and repair patch for **Total War: SHOGUN 2
 
 The patch installs as a **separate Remastered CE copy** beside your normal Complete Edition installation. Your normal game files are not replaced, so you can continue to use vanilla Complete Edition separately.
 
-## 🟢 **[DOWNLOAD ONLY THE INSTALLER ZIP — CLICK HERE](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip)**
+## 🟢 **[DOWNLOAD ONLY THE INSTALLER ZIP — CLICK HERE](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.80-preview/RemasteredCE_Installer_Preview.zip)**
 
 > [!IMPORTANT]
 > **📦 THE ONLY FILE YOU NEED TO DOWNLOAD IS `RemasteredCE_Installer_Preview.zip`.**
@@ -21,9 +21,9 @@ The patch installs as a **separate Remastered CE copy** beside your normal Compl
 >
 > **You do not need to download the separate EXE, `.rce` update package, or other release assets for a normal installation.** The ZIP includes the setup and required installation files; the launcher handles online update downloads.
 
-[Release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.71-preview)
+[Release notes and files](https://github.com/JakeTheRipperYT/Remastered-CE/releases/tag/v0.1.80-preview)
 
-**0.1.71 preview:** improves unit selection, smoke stability and particle rendering performance, and adds matte grass with opening-ground wetness preservation. Includes all earlier changes. Use this release's new setup executable. [Release notes](RELEASE_NOTES.md).
+**0.1.80 preview:** adds optional 8-player Sim Turns, religion switching in that mode, fleet-agent landing and contextual FOTS farm-card fixes, restored animation sound timing and weather/fog corrections. Download the new installer ZIP. [Release notes](RELEASE_NOTES.md).
 
 See the **[full changelog](CHANGELOG.md)** for all included fixes, restorations and improvements.
 
@@ -39,7 +39,7 @@ The installer uses files from both games that are already installed on your PC. 
 
 ## How to install
 
-1. **[Download ONLY `RemasteredCE_Installer_Preview.zip`](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.71-preview/RemasteredCE_Installer_Preview.zip), right-click it and choose Extract All.**
+1. **[Download ONLY `RemasteredCE_Installer_Preview.zip`](https://github.com/JakeTheRipperYT/Remastered-CE/releases/download/v0.1.80-preview/RemasteredCE_Installer_Preview.zip), right-click it and choose Extract All.**
 2. Close the game and any other Remastered CE launcher windows.
 3. Run **`RemasteredCE_Setup.exe`**.
 4. The installer will try to find both Steam installations automatically. If either path is blank or incorrect, use **Browse** and select the correct game folder.
@@ -60,7 +60,7 @@ Your normal Complete Edition installation remains available separately through S
 
 ## Updating
 
-**Download the 0.1.71 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The setup embeds the signed offline release. Automatic installer self-updating is not enabled.**
+**Download the 0.1.80 installer ZIP once, even if you used an older Remastered CE installer. The new combined launcher requires the new installer; older installers reject this package before building files. The setup embeds the signed offline release. Automatic installer self-updating is not enabled.**
 
 Updating is the same as installing:
 

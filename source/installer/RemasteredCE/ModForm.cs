@@ -30,6 +30,7 @@ public sealed class ModForm : Form
 	private readonly Button play = new Button();
 
 	private readonly CheckBox existingScript = new CheckBox();
+	private readonly CheckBox simTurns = new CheckBox();
 
 	private readonly List<Control> actions = new List<Control>();
 
@@ -78,7 +79,7 @@ public sealed class ModForm : Form
 		{
 			Dock = DockStyle.Fill,
 			ColumnCount = 1,
-			RowCount = 7,
+			RowCount = 8,
 			Padding = new Padding(22)
 		};
 		tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
@@ -88,6 +89,7 @@ public sealed class ModForm : Form
 		tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 40f));
 		tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
 		tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 90f));
+		tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 		tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 55f));
 		Controls.Add(tableLayoutPanel);
 		tableLayoutPanel.Controls.Add(new Label
@@ -127,6 +129,7 @@ public sealed class ModForm : Form
 			profiles.SelectedIndex = -1;
 			profiles.Text = profile.Name;
 			existingScript.Checked = false;
+			simTurns.Checked = false;
 			foreach (ModPack pack in packs)
 			{
 				pack.Enabled = pack.AutoLoaded;
@@ -136,6 +139,7 @@ public sealed class ModForm : Form
 		Add(flowLayoutPanel, "Patch only", () =>
 		{
 			existingScript.Checked = false;
+			simTurns.Checked = false;
 			foreach (ModPack pack2 in packs)
 			{
 				pack2.Enabled = pack2.AutoLoaded;
@@ -313,7 +317,54 @@ public sealed class ModForm : Form
 			play.Text = existingScript.Checked ? "Play existing script" : "Play Remastered CE";
 		};
 		actions.Add(existingScript);
-		tableLayoutPanel3.Controls.Add(existingScript, 0, 0);
+		GroupBox launchOptions = new GroupBox
+		{
+			Dock = DockStyle.Fill,
+			Text = "Launch options",
+			ForeColor = ForeColor,
+			AutoSize = true,
+			AutoSizeMode = AutoSizeMode.GrowAndShrink,
+			Padding = new Padding(14, 24, 14, 12),
+			Margin = new Padding(3, 4, 3, 10)
+		};
+		TableLayoutPanel optionRows = new TableLayoutPanel
+		{
+			Dock = DockStyle.Top,
+			AutoSize = true,
+			AutoSizeMode = AutoSizeMode.GrowAndShrink,
+			ColumnCount = 1,
+			RowCount = 3,
+			Margin = Padding.Empty
+		};
+		optionRows.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
+		for (int row = 0; row < 3; row++) optionRows.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+		existingScript.Dock = DockStyle.None;
+		existingScript.AutoSize = true;
+		existingScript.Margin = new Padding(3, 12, 3, 3);
+		simTurns.Text = "8-player simultaneous turns (beta)";
+		simTurns.AutoSize = true;
+		simTurns.Font = new Font(Font, FontStyle.Bold);
+		simTurns.Margin = new Padding(3, 4, 3, 4);
+		simTurns.Enabled = EngineMode.Available(game);
+		new ToolTip().SetToolTip(simTurns, "Use the separate Sim Turns engine with Remastered CE fixes. All players must use the same mode and build.");
+		Label modeHelp = new Label
+		{
+			Text = "All campaign players must use the same mode and build.",
+			AutoSize = true,
+			ForeColor = Color.FromArgb(158, 176, 181),
+			Margin = new Padding(25, 0, 3, 3)
+		};
+		optionRows.SizeChanged += (sender, e) =>
+		{
+			int width = Math.Max(100, optionRows.ClientSize.Width - modeHelp.Margin.Horizontal);
+			if (modeHelp.MaximumSize.Width != width) modeHelp.MaximumSize = new Size(width, 0);
+		};
+		optionRows.Controls.Add(simTurns, 0, 0);
+		optionRows.Controls.Add(modeHelp, 0, 1);
+		optionRows.Controls.Add(existingScript, 0, 2);
+		launchOptions.Controls.Add(optionRows);
+		actions.Add(simTurns);
+		tableLayoutPanel.Controls.Add(launchOptions);
 		tableLayoutPanel.Controls.Add(tableLayoutPanel3);
 		profiles.SelectionChangeCommitted += async (object s, EventArgs e) =>
 		{
@@ -410,7 +461,7 @@ public sealed class ModForm : Form
 			}
 		};
 		Render();
-		status.Text = "Ready - Remastered CE 0.1.71-preview";
+		status.Text = "Ready - Remastered CE 0.1.80-preview";
 	}
 
 	private void Add(FlowLayoutPanel panel, string text, Action action)
@@ -451,6 +502,7 @@ public sealed class ModForm : Form
 	private void CaptureState()
 	{
 		profile.UseExistingScript = existingScript.Checked;
+		profile.UseSimTurns = simTurns.Checked;
 		profile.Name = profiles.Text.Trim();
 		profile.Order = packs.Select((ModPack p) => p.Path).ToArray();
 		profile.Enabled = (from p in packs
@@ -489,6 +541,7 @@ public sealed class ModForm : Form
 			action.Enabled = !value;
 		}
 		play.Enabled = !value;
+		simTurns.Enabled = !value && EngineMode.Available(game);
 		play.Text = value ? "Please waitâ€¦" : (existingScript.Checked ? "Play existing script" : "Play Remastered CE");
 		if (BusyChanged != null)
 		{
@@ -513,6 +566,7 @@ public sealed class ModForm : Form
 			List<ModPack> list = await Task.Run(() => Mods.Discover(game, profile.Folders));
 			Mods.ApplyProfile(list, profile);
 			existingScript.Checked = profile.UseExistingScript;
+			simTurns.Checked = profile.UseSimTurns && EngineMode.Available(game);
 			packs = list;
 			Render();
 			status.Text = "Found " + packs.Count + " packs. Steam and Workshop files were read only.";
@@ -600,6 +654,7 @@ public sealed class ModForm : Form
 	private async Task Play()
 	{
 		bool manual = existingScript.Checked;
+		bool simultaneous = simTurns.Checked;
 		List<string> list = manual ? new List<string>() : Mods.Issues(packs, game);
 		if (list.Count > 0)
 		{
@@ -615,6 +670,11 @@ public sealed class ModForm : Form
 		try
 		{
 			Save();
+			if (simultaneous)
+			{
+				status.Text = "Verifying the simultaneous-turns build...";
+				await Task.Run(() => EngineMode.Verify(game, true));
+			}
 			Directory.CreateDirectory(settings);
 			Directory.CreateDirectory(sessionRoot);
 			using (new FileStream(Path.Combine(sessionRoot, "session.lock"), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, 1, FileOptions.DeleteOnClose))
@@ -629,7 +689,7 @@ public sealed class ModForm : Form
 				using ModScriptSession session = ModScriptSession.Prepare(sessionRoot, Mods.UserScript, active, packs, manual);
 				status.Text = manual ? "Playing with your existing script. Launcher selections are ignored; the script is unchanged." : "Playing. Your original Steam mod script will be restored when the game closes.";
 				string launcher = Path.Combine(game, "Launch_Remastered_CE.exe");
-				IEnumerable<string> args = new string[2] { "--direct", "--wait" }.Concat(forwarded).Select(Mods.QuoteArgument);
+				IEnumerable<string> args = EngineMode.Arguments(simultaneous).Concat(forwarded).Select(Mods.QuoteArgument);
 				int num = await Task.Run(() =>
 				{
 					using Process process = Process.Start(new ProcessStartInfo(launcher, string.Join(" ", args))

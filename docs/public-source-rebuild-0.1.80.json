@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_PUBLIC_SOURCE_REBUILD_PASS",
+  "launcherSha256": "0319b8777f93afc9e4c1a206d8ff47689fca89a39d877f7195d50c44ed1666d2",
+  "setupSha256": "9746b2c94a6059d47e6a49818f4ef97346ef97bfaf0e9856bfb26c6d7dc7e833",
+  "packageSha256": "7f636116dc825b016329e8830b5d347ba03e14bfdff0e632b02b5abb4bfa1669",
+  "priorIdenticalBinaryApplicationSelfTests": 36,
+  "additionalFixtureRerun": "Blocked as expected by the currently open CE launcher; original identical-binary 36-check result retained.",
+  "engineCompilerInvoked": false
+}

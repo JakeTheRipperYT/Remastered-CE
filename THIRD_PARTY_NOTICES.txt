@@ -34,3 +34,34 @@ Better Vanilla Smoke: source of the ported matchlock firing-smoke effect.
 GBJ blood rework (supplied gjb_reworkdata archive, with_effects2 variant): source of the ported blood effects and ground-splatter artwork.
 CE compatibility changes, atlas corrections and ground-decal alpha correction: JakeTheRipper.
 These source mods are not represented as original work by JakeTheRipper.
+
+
+SimTurnsBeta8P 1.1 — njn313
+
+MIT License
+
+Copyright (c) 2026 njn313
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+This license applies to every version of this repository, including the commits
+made before this file was added.
+
+
+Religion switching: user-supplied religion_swap DLL patch v5 and associated Freedom of Faith data/localization. Integrated only into the optional Sim Turns engine.

@@ -373,6 +373,7 @@ internal static class SelfTests
 			}
 		}
 		list.Add("PASS: overlapping multi-chunk pack expansion preserves original bytes and rejects invalid shifts");
+		EngineModeTests.Run(list);
 		File.WriteAllLines(path, list);
 	}
 }

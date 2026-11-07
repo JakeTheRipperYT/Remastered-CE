@@ -1,5 +1,7 @@
 param([Parameter(Mandatory=$true)][string]$WorkDirectory,[Parameter(Mandatory=$true)][string]$Package)
 $ErrorActionPreference='Stop'
+$env:DOTNET_NOLOGO='1';$env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE='1'
+$env:DOTNET_GENERATE_ASPNET_CERTIFICATE='false';$env:DOTNET_CLI_TELEMETRY_OPTOUT='1'
 $work=[IO.Path]::GetFullPath($WorkDirectory)
 if(Test-Path -LiteralPath $work){throw 'Use a new work directory.'}
 [IO.Directory]::CreateDirectory($work)|Out-Null

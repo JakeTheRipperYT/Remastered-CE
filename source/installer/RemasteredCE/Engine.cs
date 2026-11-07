@@ -102,7 +102,7 @@ public sealed class Engine
 
 	public static void GameClosed()
 	{
-		string[] array = new string[4] { "shogun2_complete_edition", "RemasteredCE_Bootstrap", "Launch_Remastered_CE", "RemasteredCE_Launcher" };
+		string[] array = new string[5] { "shogun2_complete_edition", "RemasteredCE_Bootstrap", "Launch_Remastered_CE", "RemasteredCE_Launcher", "RemasteredCE_Sim8" };
 		for (int i = 0; i < array.Length; i++)
 		{
 			if (Process.GetProcessesByName(array[i]).Any((Process p) => p.Id != Process.GetCurrentProcess().Id))
@@ -371,6 +371,12 @@ public sealed class Engine
 			throw new InvalidDataException("Engine modifications failed verification.");
 		}
 		array5 = PePatch.Inject(array5, release.Helper);
+		string injectedHash = release.Manifest.ContainsKey("engineInjectedSha256")
+			? J.S(release.Manifest, "engineInjectedSha256") : J.S(release.Manifest, "engineFinalSha256");
+		if (Hash(array5) != injectedHash)
+			throw new InvalidDataException("Engine path redirection failed verification.");
+		if (release.Manifest.ContainsKey("enginePostPatches"))
+			ApplyEnginePost(array5, J.Arr(release.Manifest["enginePostPatches"]));
 		if (Hash(array5) != J.S(release.Manifest, "engineFinalSha256"))
 		{
 			throw new InvalidDataException("Engine path redirection failed verification.");
@@ -441,8 +447,23 @@ public sealed class Engine
 			dictionary4["baseDataFiles"] = LinkBaseData(ce, stage);
 		}
 		InstallerLauncher.Stage(release, stage, dictionary4);
+		EngineMode.Stage(release, stage, dictionary4, Cancel);
 		File.WriteAllText(Under(stage, "install-state.json"), J.Json().Serialize(dictionary4));
 		Log("All generated files verified.", 94);
+	}
+
+	public static void ApplyEnginePost(byte[] image, object[] patches)
+	{
+		foreach (object item in patches)
+		{
+			var patch = J.Obj(item);
+			int offset = checked((int)J.N(patch, "offset"));
+			byte[] before = J.B(patch, "before"), after = J.B(patch, "data");
+			if (before.Length != after.Length || offset < 0 || offset > image.Length - before.Length ||
+				!image.Skip(offset).Take(before.Length).SequenceEqual(before))
+				throw new InvalidDataException("A guarded native engine update did not match its baseline.");
+			Buffer.BlockCopy(after, 0, image, offset, after.Length);
+		}
 	}
 
 	private void CopyFile(string source, string target)
@@ -639,6 +660,7 @@ public sealed class Engine
 				list.Add(Under(text, relative));
 			}
 			list.Add(Under(text, "CE.dll"));
+			list.AddRange(EngineMode.OwnedFiles(text, dictionary));
 			if (dictionary.ContainsKey("unifiedLauncherSha256"))
 			{
 				list.Add(Under(text, "RemasteredCE_Launcher.exe"));

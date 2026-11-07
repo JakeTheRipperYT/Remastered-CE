@@ -13,6 +13,7 @@ public sealed class Release : IDisposable
 	public Dictionary<string, object> Manifest;
 
 	public Dictionary<string, object> Helper;
+	public Dictionary<string, object> SimTurns;
 
 	public byte[] Launcher;
 
@@ -65,6 +66,13 @@ public sealed class Release : IDisposable
 		{
 			release.Manifest = J.Parse(Encoding.UTF8.GetString(ReadEntry(zip, "manifest.json", 33554432)));
 			release.Helper = J.Parse(Encoding.UTF8.GetString(ReadEntry(zip, "helper.json", 1048576)));
+			if (release.Manifest.ContainsKey("simTurnsSha256"))
+			{
+				byte[] mode = ReadEntry(zip, "sim-turns.json", 16 * 1024 * 1024);
+				if (Engine.Hash(mode) != J.S(release.Manifest, "simTurnsSha256"))
+					throw new InvalidDataException("Sim Turns recipe hash mismatch.");
+				release.SimTurns = J.Parse(Encoding.UTF8.GetString(mode));
+			}
 			release.Launcher = ReadEntry(zip, "launcher.exe", 1048576);
 			if (release.Manifest.ContainsKey("unifiedLauncherSha256"))
 			{

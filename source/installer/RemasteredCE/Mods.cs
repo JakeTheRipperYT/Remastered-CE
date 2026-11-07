@@ -40,7 +40,7 @@ public static class Mods
 
 	public static bool GameRunning()
 	{
-		return new string[2] { "shogun2_complete_edition", "RemasteredCE_Bootstrap" }.Any((string n) => Process.GetProcessesByName(n).Length != 0);
+		return new string[3] { "shogun2_complete_edition", "RemasteredCE_Bootstrap", "RemasteredCE_Sim8" }.Any((string n) => Process.GetProcessesByName(n).Length != 0);
 	}
 
 	public static void Atomic(string path, byte[] bytes)
